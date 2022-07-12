@@ -1,5 +1,4 @@
-# Preparing for the SDSC Summer Institute 2021
-7/28/21 - [Prep Day Recording](https://ucsd.zoom.us/rec/play/bcUnoeSmHStcgMAi3fU95_fDpH8DtS1qsDVutXKcMCL3s7EFJ3hIxaHQ_ErLUge5ukd8zW-tkQ1opg.q3UJUrf_MCaEGnWs)
+# Preparing for the SDSC Summer Institute 2022
 
 You will get the most out of the SDSC Summer Institute if you are prepared prior to the event. By brushing up on your knowledge of Linux and installing all necessary software on your laptop before to the event, you’ll be able to focus your attention on the skills and topics that are most relevant to high performance and data intensive computing.
 
