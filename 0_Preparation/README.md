@@ -26,7 +26,7 @@ Please read the Expanse user guide and familiarize yourself with the hardware, f
 <hr>
 
 ##  Account Requirements: (PENDING) <a name="accounts"></a>
-* You will be given an XSEDE training account to access the Expanse portal. Information on the account will be sent to you via email. Please complete the process of activating your account before the prep day begins. 
+* You will be given an XSEDE or ACCESS training account to access the Expanse portal. Information on the account will be sent to you via email. Please complete the process of activating your account before the prep day begins. 
 * Go to https://portal.expanse.sdsc.edu, to confirm you are able to acess and login. 
 * As a reminder, we are asking all attendees to use the training accounts that we are providing, even if you already have your own account. This will minimize problems related to custom configurations (e.g., environment variables, choice of shell, etc.) that may cause some of the hands-on examples to break. This also gives participants access to the Expanse reservation created for the workshop.
 
