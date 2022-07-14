@@ -41,20 +41,20 @@ Please read the Expanse user guide and familiarize yourself with the hardware, f
 [Back to Top](#top)
 <hr>
 
-##  Remote access via Zoom, Slack, and GitHub <a name="remote"></a>
+##  Remote access via GitHub, Zoom, and Slack <a name="remote"></a>
 
-* For the institute, we will coordinate our remote access via Zoom, Slack, and GitHub
+* For the institute, we will coordinate our remote access using GitHub, Zoom, and Slack.
 * When setting up your “display name” on both Zoom & Slack, please use your FIRST name, LAST name, and institution (i.e., Harry Potter (SDSC)).
 
 ### Github: <a name="github"></a>
-* Training material will be located on the SDSC Summer Institute [GitHub repo](https://github.com/sdsc/sdsc-summer-institute-2022) and one of the Thursday [!!!] hands-on sessions will require a GitHub account. If you do not already have one, you can create a free personal GitHub account
+* Training material will be located on the SDSC Summer Institute [GitHub repo](https://github.com/sdsc/sdsc-summer-institute-2022) and one of the Thursday [!!!] hands-on sessions will require a GitHub account.
 * If you do not already have one, you can create a free personal GitHub account [here](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-github/signing-up-for-a-new-github-account).  
 * For basic GitHub usage on SDSC systems, see here: https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/using_github
 
 ### Zoom:  <a name="zoom"></a>
 * You will need to install the latest [Zoom](https://zoom.us/download) client, which is available for Windows, MacOS and Linux. Once installed, you can test your microphone and camera interface with Zoom [here](https://zoom.us/test). You can find more information on Zoom system requirements, including bandwidth requirements [here](https://support.zoom.us/hc/en-us/articles/201362023-System-Requirements-for-PC-Mac-and-Linux).  
 
-Connection details were sent via as a calendar invite to all HPC/DS participants. You should have received TWO invites (1) preparation day and (2) instruction days. If you did not receive this as noted, please contact cwong@sdsc.edu.
+Connection details were sent as a calendar invite to all HPC/DS participants. You should have received TWO invites (1) preparation day and (2) instruction days. If you did not receive this as noted, please contact cwong@sdsc.edu.
 
 ### Slack:  <a name="slack"></a>
 * We will also be using Slack as our main platform for announcements, where participants can communicate and ask for help. Download ([Windows](https://slack.com/downloads/windows), [MacOS](https://slack.com/downloads/mac), or [Linux](https://slack.com/downloads/linux)) and [get started](https://slack.com/help/articles/218080037-Getting-started-for-new-Slack-users). Zoom chat will be disabled. Make sure to turn on your Slack notifications to receive alerts. 
