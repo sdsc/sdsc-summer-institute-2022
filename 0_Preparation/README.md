@@ -17,14 +17,14 @@ This section contains a set of detailed start-up instructions for setting up you
    * [Launching Jupyter Notebooks](#jup-ntbks)
 
   
-## Expanse User Guide (PENDING) <a name="expanse-guide"></a>
+## Expanse User Guide <a name="expanse-guide"></a>
 Please read the Expanse user guide and familiarize yourself with the hardware, file systems, batch job submission, compilers and modules. The guide can be found here:
 * [Expanse User Guide](https://www.sdsc.edu/support/user_guides/expanse.html)
 
 [Back to Top](#top)
 <hr>
 
-##  Account Requirements: (PENDING) <a name="accounts"></a>
+##  Account Requirements: <a name="accounts"></a>
 * You will be given an XSEDE training account to access the Expanse portal. Information on the account will be sent to you via email. Please complete the process of activating your account before the prep day begins. 
 * Go to https://portal.expanse.sdsc.edu, to confirm you are able to acess and login. 
 * As a reminder, we are asking all attendees to use the training accounts that we are providing, even if you already have your own account. This will minimize problems related to custom configurations (e.g., environment variables, choice of shell, etc.) that may cause some of the hands-on examples to break. This also gives participants access to the Expanse reservation created for the workshop.
@@ -32,7 +32,7 @@ Please read the Expanse user guide and familiarize yourself with the hardware, f
 [Back to Top](#top)
 <hr>
 
- ## Computer Requirements: (PENDING) <a name="computer-req"></a>
+ ## Computer Requirements: <a name="computer-req"></a>
 * After you access your account information, confirm that you can login (SSH) to Expanse using the device you plan to use during the SDSC Summer Institute (laptop, workstation, etc...).  Detailed instructions on connecting to Expanse using SSH can be found [here](https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/connecting-to-hpc-systems).  
 * We recommend a second screen for the hands-on sessions. The first to view the presentation, the second for hands-on.
 * For visualization tutorial a mouse with scroll wheel is highly recommended (laptop track pads are very difficult to use for 3D navigation).
@@ -73,17 +73,17 @@ The document below contains a list of software being used at the institute and i
 [Back to Top](#top)
 <hr>
 
-## Preparation Activities: (PENDING) <a name="prep-activities"></a>
+## Preparation Activities: <a name="prep-activities"></a>
 The Summer Institute is a combination of in-depth lectures and hands-on learning. The following documents will guide you through the necessary steps needed to be prepared to get to work when you arrive at the Institute.
 
-### Basic HPC Skills: (PENDING) <a name="basic-skills">
+### Basic HPC Skills: <a name="basic-skills">
 * [Connecting Securely to SDSC HPC Systems](https://github.com/sdsc-hpc-training-org/hpc-security)
     * WATCH - [Indispensable Security: Tips to Use SDSC's HPC Resources Securely](https://education.sdsc.edu/training/interactive/202007_security_tips/index.php)
 * [Basic_Linux_Skills](https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/basic_linux_skills)
 * [Interactive Computing](https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/interactive_computing)
 * [Using GitHub on Expanse](https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/using_github)
 
-### Launching Jupyter Notebooks: (PENDING) <a name="jup-ntbks">
+### Launching Jupyter Notebooks: <a name="jup-ntbks">
 * View the presentation: [Running Secure Jupyter Notebooks on Expanse](https://github.com/sdsc/sdsc-summer-institute-2021/blob/main/0_Preparation/MThomas-Running-Secure-Jupyter-Notebooks-on-Expanse.pdf)
 * Follow the guide here: [Launching Jupyter Notebooks - SI20 Instructions](https://github.com/sdsc/sdsc-summer-institute-2021/blob/main/0_Preparation/launching_jupyter_notebooks.md)
 * Read the full tutorial here: [Notebooks-101 Tutorial](https://hpc-training.sdsc.edu/notebooks-101/)
