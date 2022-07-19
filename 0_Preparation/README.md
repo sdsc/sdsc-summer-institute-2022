@@ -79,7 +79,7 @@ The Summer Institute is a combination of in-depth lectures and hands-on learning
 ### Basic HPC Skills: <a name="basic-skills">
 * [Connecting Securely to SDSC HPC Systems](https://github.com/sdsc-hpc-training-org/hpc-security)
     * WATCH - [Indispensable Security: Tips to Use SDSC's HPC Resources Securely](https://education.sdsc.edu/training/interactive/202007_security_tips/index.php)
-* [Basic_Linux_Skills](https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/basic_linux_skills)
+* [Basic_Linux_Skills](https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/basic_linux_skills_expanse)
 * [Interactive Computing](https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/interactive_computing)
 * [Using GitHub on Expanse](https://github.com/sdsc-hpc-training-org/basic_skills/tree/master/using_github)
 
