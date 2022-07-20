@@ -1,4 +1,4 @@
-## Session 4.3b Scalable Machine Learning (Breakout Room) ##
+# Session 4.3b Scalable Machine Learning (Breakout Room) #
 
 **Date: Wednesday, August 3, 2022** 
 
