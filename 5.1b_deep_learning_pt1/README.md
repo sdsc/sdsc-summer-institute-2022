@@ -1,4 +1,4 @@
-## Session 5.1b Deep Learning - Part 1 (Breakout Room) ##
+# Session 5.1b Deep Learning - Part 1 (Breakout Room) #
 
 **Date: Thursday, August 4, 2022**
 
