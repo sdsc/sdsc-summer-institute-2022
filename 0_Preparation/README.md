@@ -66,9 +66,9 @@ Connection details were sent as a calendar invite to all HPC/DS participants. Yo
 
 [Back to Top](#top)
 
-## Software Requirements: (PENDING- links to 2021) <a name="software"></a>
+## Software Requirements: <a name="software"></a>
 The document below contains a list of software being used at the institute and installation instructions:
-* [Software_Requirements](https://github.com/sdsc/sdsc-summer-institute-2021/blob/main/0_Preparation/software_requirements.md)
+* [Software_Requirements](https://github.com/sdsc/sdsc-summer-institute-2022/blob/main/0_Preparation/software_requirements.md)
 
 [Back to Top](#top)
 <hr>
