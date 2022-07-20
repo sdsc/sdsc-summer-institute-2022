@@ -27,8 +27,8 @@ Please read the Expanse user guide and familiarize yourself with the hardware, f
 
 ##  HPC Systems Accounts: <a name="accounts"></a>
 * For the CIML Institute, we have created TWO types of **Training** accounts for you: 
-  * **(1) XSEDE and Expanse portal ID** (trainXX)
-  * **(2) Local Expanse user account** (xdtrXX)
+  * **(1) XSEDE and Expanse portal ID** (train##)
+  * **(2) Local Expanse user account** (xdtr##)
 * Note: The two topics below will be covered on the Preparation day (1.2 Accounts, Login, Environment, Running Jobs and Logging into Expanse User Portal).
 
 ### Logging onto the Expanse Portal (portal.expanse.sdsc.edu): <a name="logon-portal"></a>
