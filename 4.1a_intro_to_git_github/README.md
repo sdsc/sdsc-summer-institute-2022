@@ -1,4 +1,4 @@
-## 4.1a Intro to Git & GitHub ##
+# 4.1a Intro to Git & GitHub #
 
 **Date: Wednesday, August 3, 2022**
 
