@@ -33,7 +33,7 @@ Please read the Expanse user guide and familiarize yourself with the hardware, f
 
 ### Logging onto the Expanse Portal (portal.expanse.sdsc.edu): <a name="logon-portal"></a>
 * XSEDE training accounts to access the Expanse portal have already been created for you. Please do not create a new one on your own. See email sent from cwong@sdsc.edu for your XSEDE & Expanse acount with the subject link "SDSC 2022 Summer Institute: Account Set-Up". 
-* Use username "train##" and password provided via link sent
+* Use username "train##"
 * Once you have received your XSEDE and Expanse portal ID information, go to https://portal.expanse.sdsc.edu, to confirm your login.
 * For a short (18 min) video on using the Expanse portal, see [here](https://education.sdsc.edu/training/interactive/sdsc_si21/1.3_Expanse_User_Portal/).
 
