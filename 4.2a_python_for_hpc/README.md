@@ -1,4 +1,4 @@
-## Session 4.2a Pythona for HPC (Main Room) ##
+# Session 4.2a Pythona for HPC (Main Room) #
 
 **Date: Wednesday, August 3, 2022** 
 
