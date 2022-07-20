@@ -26,20 +26,20 @@ Please read the Expanse user guide and familiarize yourself with the hardware, f
 <hr>
 
 ##  HPC Systems Accounts: <a name="accounts"></a>
-* For the Summer Institute, we have created TWO types of **training** accounts for you: 
-  * **(1) XSEDE and Expanse portal ID** (train##)
-  * **(2) Local Expanse user account** (xdtr##)
+* For the Summer Institute, we have created **training** accounts for you: 
+  * **(1) For access for the Expanse portal,  use your  XSEDE portal username:  trainXX**
+  * **(2) For direct access to the system via ssh, use your SDSC local username:  xdtrXX**
 * Note: The two topics below will be covered on the Preparation day (1.2 Accounts, Login, Environment, Running Jobs and Logging into Expanse User Portal).
 
 ### Logging onto the Expanse Portal (portal.expanse.sdsc.edu): <a name="logon-portal"></a>
 * XSEDE training accounts to access the Expanse portal have already been created for you. Please do not create a new one on your own. See email sent from cwong@sdsc.edu for your XSEDE & Expanse acount with the subject link "SDSC 2022 Summer Institute: Account Set-Up". 
-* Use username "train##"
+* Use username "trainXX"
 * Once you have received your XSEDE and Expanse portal ID information, go to https://portal.expanse.sdsc.edu, to confirm your login.
 * For a short (18 min) video on using the Expanse portal, see [here](https://education.sdsc.edu/training/interactive/sdsc_si21/1.3_Expanse_User_Portal/).
 
 ### Logging onto Expanse using your "Local Expanse user account" (SSH/terminal): <a name="logon-expanse"></a>
 * You will be given an account on the SDSC Expanse computer. Information on the account will be sent to you via email. Please complete the process of activating your account before the institute begins. To log onto the Expase cluster, see these instructions: https://github.com/sdsc-hpc-training-org/hpc-security/blob/master/connecting-to-hpc-systems/connect-to-expanse.md
-* Use username "xdtr##"
+* Use username "xdtrXX"
 
 [Back to Top](#top)
 <hr>
