@@ -26,7 +26,7 @@ Please read the Expanse user guide and familiarize yourself with the hardware, f
 <hr>
 
 ##  HPC Systems Accounts: <a name="accounts"></a>
-* For the CIML Institute, we have created TWO types of **Training** accounts for you: 
+* For the Summer Institute, we have created TWO types of **training** accounts for you: 
   * **(1) XSEDE and Expanse portal ID** (train##)
   * **(2) Local Expanse user account** (xdtr##)
 * Note: The two topics below will be covered on the Preparation day (1.2 Accounts, Login, Environment, Running Jobs and Logging into Expanse User Portal).
@@ -39,7 +39,7 @@ Please read the Expanse user guide and familiarize yourself with the hardware, f
 
 ### Logging onto Expanse using your "Local Expanse user account" (SSH/terminal): <a name="logon-expanse"></a>
 * You will be given an account on the SDSC Expanse computer. Information on the account will be sent to you via email. Please complete the process of activating your account before the institute begins. To log onto the Expase cluster, see these instructions: https://github.com/sdsc-hpc-training-org/hpc-security/blob/master/connecting-to-hpc-systems/connect-to-expanse.md
-* Use username "xdtr##" and password provided via link sent
+* Use username "xdtr##"
 
 [Back to Top](#top)
 <hr>
