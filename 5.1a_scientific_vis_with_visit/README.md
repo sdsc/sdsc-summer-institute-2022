@@ -1,4 +1,4 @@
-## Session 5.1a Scientific Visualization for mesh based data with Visit  (Main Room) ##
+# Session 5.1a Scientific Visualization for mesh based data with Visit  (Main Room) #
 
 **Date: Thursday, August 4, 2022**
 
