@@ -7,8 +7,9 @@ This section contains a set of detailed start-up instructions for setting up you
 
 <a name="top">Contents
 * [Expanse User Guide](#expanse-guide)
-* [Account Requirements](#accounts)
-   * [Configuring your Training Account](https://github.com/sdsc/sdsc-summer-institute-2021/blob/main/0_Preparation/training_account_configurations.md)
+* [HPC Systems Accounts](#accounts)
+   * [Logging onto the Expanse Portal](#logon-portal)
+   * [Logging onto Expanse HPC Cluster](#logon-expanse)
 * [Computer Requirements](#computer-req)
 * [Remote access via GitHub, Zoom, and Slack](#remote)
 * [Software Requirements](#software)
@@ -24,10 +25,21 @@ Please read the Expanse user guide and familiarize yourself with the hardware, f
 [Back to Top](#top)
 <hr>
 
-##  Account Requirements: <a name="accounts"></a>
-* You will be given an XSEDE training account to access the Expanse portal. Information on the account will be sent to you via email. Please complete the process of activating your account before the prep day begins. 
-* Go to https://portal.expanse.sdsc.edu, to confirm you are able to acess and login. 
-* As a reminder, we are asking all attendees to use the training accounts that we are providing, even if you already have your own account. This will minimize problems related to custom configurations (e.g., environment variables, choice of shell, etc.) that may cause some of the hands-on examples to break. This also gives participants access to the Expanse reservation created for the workshop.
+##  HPC Systems Accounts: <a name="accounts"></a>
+* For the CIML Institute, we have created TWO types of **Training** accounts for you: 
+  * **(1) XSEDE and Expanse portal ID** (trainXX)
+  * **(2) Local Expanse user account** (xdtrXX)
+* Note: The two topics below will be covered on the Preparation day (1.2 Accounts, Login, Environment, Running Jobs and Logging into Expanse User Portal).
+
+### Logging onto the Expanse Portal (portal.expanse.sdsc.edu): <a name="logon-portal"></a>
+* XSEDE training accounts to access the Expanse portal have already been created for you. Please do not create a new one on your own. See email sent from cwong@sdsc.edu for your XSEDE & Expanse acount with the subject link "SDSC 2022 Summer Institute: Account Set-Up". 
+* Use username "train##" and password provided via link sent
+* Once you have received your XSEDE and Expanse portal ID information, go to https://portal.expanse.sdsc.edu, to confirm your login.
+* For a short (18 min) video on using the Expanse portal, see [here](https://education.sdsc.edu/training/interactive/sdsc_si21/1.3_Expanse_User_Portal/).
+
+### Logging onto Expanse using your "Local Expanse user account" (SSH/terminal): <a name="logon-expanse"></a>
+* You will be given an account on the SDSC Expanse computer. Information on the account will be sent to you via email. Please complete the process of activating your account before the institute begins. To log onto the Expase cluster, see these instructions: https://github.com/sdsc-hpc-training-org/hpc-security/blob/master/connecting-to-hpc-systems/connect-to-expanse.md
+* Use username "xdtr##" and password provided via link sent
 
 [Back to Top](#top)
 <hr>
