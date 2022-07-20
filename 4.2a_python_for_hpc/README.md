@@ -1,5 +1,7 @@
 ## Session 4.2a Pythona for HPC (Main Room) ##
 
+**Date: Wednesday, August 3, 2022** 
+
 [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) (mtatineni at ucsd.edu)
 
 In this session we will introduce four key technologies in the Python ecosystem that provide significant benefits for scientific applications run in supercomputing environments. Previous Python experience is recommended but not required. 
