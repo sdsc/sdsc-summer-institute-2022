@@ -12,7 +12,7 @@ HPC and advanced CI run on Linux. If you don't believe me, then look no further 
 
 *Recommendation for Windows users*: Install the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl) on your personal computer.
 
-## Easy access: Or how to setup SSH keys and your SSH config
+## Easy access: Setting up SSH keys
 
 Provide instructions on how to setup SSH keys to make logins to XSEDE training accounts simpler during SI22. Use modifided version of Digital Ocean documentation to create this section. Recommend windows users try setting up putty, if necessary. Or simply use Expanse User Portal to access the interactive terminal application --- may not get full experience using only Expanse Portal though. 
 
