@@ -37,7 +37,7 @@ Today, many systems also require two-factor authentication.
 ### Step 1 - Generate an SSH key pair (with a passphrase) on your personal computer
 
 ```
-ssh-keygen -t rsa -b 4096 -a 128 -f "${HOME}/.ssh/sdsc-si22"
+ssh-keygen -t rsa -b 4096 -a 128 -f ~/.ssh/sdsc-si22
 ```
 
 ```
@@ -82,7 +82,7 @@ config  id_rsa  id_rsa.pub  known_hosts  sdsc-si22  sdsc-si22.pub
 ### Step 2 - Copy your public SSH key to Expanse
 
 ```
-ssh-copy-id -i "${HOME}/.ssh/sdsc-si22" xdtr#@login.expanse.sdsc.edu
+ssh-copy-id -i ~/.ssh/sdsc-si22 xdtr#@login.expanse.sdsc.edu
 ```
 
 ```
@@ -112,7 +112,7 @@ Verification code:
 ### Step 3 - Login to Expanse using your SSH keys
 
 ```
-ssh xdtr#@login.expanse.sdsc.edu
+ssh -i ~/.ssh/sdsc-si22 xdtr#@login.expanse.sdsc.edu
 ```
 
 ```
@@ -164,6 +164,24 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjZ/DRrsFmb6GOBrxBo+QuFpN4r2lf8ZnXxe1YZUR/
 ```
 
 ### Step 4 - Simplify your local SSH configuration file
+
+```
+$ touch ~/.ssh/config
+```
+
+```
+$ chmod u+rw ~/.ssh/config
+$ chmod go-rwx ~/.ssh/config
+$ ls -lahtr ~/.ssh/config 
+-rw------- 1 your_local_username your_local_groupname 398 Jun 27 05:33 /home/your_local_username/.ssh/config
+```
+
+```
+Host expanse
+Hostname login.expanse.sdsc.edu
+User xdtr#
+IdentityFile ~/.ssh/sdsc-si22
+```
 
 ## CIFAR through the tubes: Downloading data from the internet
 
