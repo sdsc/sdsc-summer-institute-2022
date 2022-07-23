@@ -248,11 +248,21 @@ md5sum cifar-10-matlab.tar.gz
 ```
 
 ```
-md5sum cifar-10-matlab.tgz
+md5sum cifar-10-matlab.tgz > cifar-10-matlab.md5
 ```
 
 ```
-70270af85842c9e89bb428ec9976c926  cifar-10-matlab.tgz
+[xdtr#@login02 ~]$ md5sum -c cifar-10-matlab.md5
+cifar-10-matlab.tgz: OK
+```
+
+```
+wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/2.5_data_management/cifar-10-matlab.sha256
+```
+
+```
+[xdtr#@login02 ~]$ sha256sum -c cifar-10-matlab.sha256
+cifar-10-matlab.tgz: OK
 ```
 
 ## More files, more problems: Advantages and limitations of different filesystems
