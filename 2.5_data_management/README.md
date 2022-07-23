@@ -26,3 +26,11 @@ Provide instructions on how to setup `ssh` keys to make logins to XSEDE training
 
 - https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
 - https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/putty/
+
+## CIFAR through the tubes: Downloading data from the internet
+
+## Mo' files, mo' problems: Understanding the advantages and limitations of different filesystems
+
+## Data transfer
+
+## Backuping up data
