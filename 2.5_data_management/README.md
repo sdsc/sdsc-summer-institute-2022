@@ -34,6 +34,16 @@ Today, many systems also require two-factor authentication.
 - https://www.golinuxcloud.com/openssh-authentication-methods-sshd-config/
 - https://bytexd.com/ssh-authentication-methods/
 
+### Step 1 - Generate an SSH key pair (with a passphrase)
+
+```
+ssh-keygen -t rsa -b 4096 -a 128 -f "${HOME}/.ssh/sdsc-si22"
+```
+### Step 2 - Copy public SSH key to remote machine
+
+### Step 3 - Login to remote machine using SSH key-based authentication
+
+### Step 4 - Simplify your local SSH configuration file
 
 ## CIFAR through the tubes: Downloading data from the internet
 
