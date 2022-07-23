@@ -137,6 +137,11 @@ Last login: Fri Jul 22 07:09:42 2022 from 208.58.214.56
 [xdtr#@login01 ~]$
 ```
 
+```
+$ ssh-add -l
+4096 SHA256:/iHtGRpQcUxruOgLj3YRlM09BfajnN7Ai1DkzMaBjG8 your_local_username@your_local_hostname (RSA)
+```
+
 ### Step 4 - Simplify your local SSH configuration file
 
 ## CIFAR through the tubes: Downloading data from the internet
