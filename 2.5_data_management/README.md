@@ -213,7 +213,7 @@ sys 0.23
 ```
 
 ```
-time -p https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz
+time -p wget https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz
 ```
 ```
 time -p wget https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz
