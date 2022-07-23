@@ -20,12 +20,19 @@ HPC and advanced CI run on Linux. If you don't believe me, then look no further 
 
 [Image Credit: Harvard Biomedical Data Management](https://datamanagement.hms.harvard.edu)
 
-## Easy access: Setting up SSH keys
+## Easy (remote) access: Setting up SSH keys
 
-SSH, or [Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell), is an encrypted network protocol used to administer and communicate with remote computer systems over an unsecured network like the public internet. The protocol is based on a [client–server](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) architecture, where an [SSH client](https://en.wikipedia.org/wiki/Comparison_of_SSH_clients) instance is used to connect to a running [SSH server](https://en.wikipedia.org/wiki/Comparison_of_SSH_servers). The most popular application is logging into and executing commands on a remote machine like Expanse from your personal computer.
+SSH, or [Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell), is an encrypted network protocol used to administer and communicate with remote computer systems distributed over an unsecured network like the public internet. The protocol is based on a [client–server](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) architecture, where an [SSH client](https://en.wikipedia.org/wiki/Comparison_of_SSH_clients) instance is used to connect to a running [SSH server](https://en.wikipedia.org/wiki/Comparison_of_SSH_servers). The most popular application is logging into and executing commands on a remote machine like Expanse from your personal computer.
+
+In general, password-based authentication is the default authentication mechanism used to establish trust and open an SSH connection between a client and server. This is true of Expanse. However, SSH supports 
+
+Today, many systems also require two-factor authentication.
 
 - https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
 - https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/putty/
+- https://www.appviewx.com/education-center/ssh-authentication-methods
+- https://www.golinuxcloud.com/openssh-authentication-methods-sshd-config/
+- https://bytexd.com/ssh-authentication-methods/
 
 
 ## CIFAR through the tubes: Downloading data from the internet
