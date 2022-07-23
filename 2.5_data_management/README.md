@@ -53,18 +53,18 @@ Enter same passphrase again:
 Your identification has been saved in /home/your_local_username/.ssh/sdsc-si22
 Your public key has been saved in /home/your_local_username/.ssh/sdsc-si22.pub
 The key fingerprint is:
-SHA256:/iHtGRpQcUxruOgLj3YRlM09BfajnN7Ai1DkzMaBjG8 your_local_username@your_local_hostname
+SHA256:doNjZ99n+cFG7DBeMtBIdDroNkQF7C70Rd9yxysgCH4 myour_local_username@your_local_hostname
 The key's randomart image is:
 +---[RSA 4096]----+
-|     o =++=o.    |
-|    . =*o*+o     |
-|     o  X o.o    |
-|      E= = o .   |
-|     .+.S *      |
-|     ..+ + +     |
-|    . ..= * .    |
-|    .+.. * +     |
-|   ...o . +      |
+|        .o++ .   |
+|     .  ..o.=    |
+|    . . oo.=.... |
+|     . Eo+ ooo.oo|
+|      o S+B .=o+o|
+|       +.B.o.oX..|
+|        .   ..o*o|
+|              .oo|
+|                .|
 +----[SHA256]-----+
 ```
 
