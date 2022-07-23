@@ -267,6 +267,19 @@ cifar-10-matlab.tgz: OK
 
 ## More files, more problems: Advantages and limitations of different filesystems
 
+```
+git clone https://github.com/YoongiKim/CIFAR-10-images.git
+```
+
+```
+Cloning into 'CIFAR-10-images'...
+remote: Enumerating objects: 60027, done.
+remote: Total 60027 (delta 0), reused 0 (delta 0), pack-reused 60027
+Receiving objects: 100% (60027/60027), 19.94 MiB | 26.94 MiB/s, done.
+Resolving deltas: 100% (59990/59990), done.
+...
+```
+
 ## Data transfer
 
 ## Backuping up data
