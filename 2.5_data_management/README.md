@@ -22,10 +22,11 @@ HPC and advanced CI run on Linux. If you don't believe me, then look no further 
 
 ## Easy access: Setting up SSH keys
 
-Provide instructions on how to setup `ssh` keys to make logins to XSEDE training accounts simpler during SI22. Use modifided version of Digital Ocean documentation to create this section. Recommend windows users try setting up putty, if necessary. Or simply use Expanse User Portal to access the interactive terminal application --- may not get full experience using only Expanse Portal though. 
+SSH, or [Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell), is an encrypted network protocol used to administer and communicate with remote computer systems over an unsecured network like the public internet. The protocol is based on a [client–server](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) architecture, where an [SSH client](https://en.wikipedia.org/wiki/Comparison_of_SSH_clients) instance is used to connect to a running [SSH server](https://en.wikipedia.org/wiki/Comparison_of_SSH_servers). The most popular application is logging into and executing commands on a remote machine like Expanse from your personal computer.
 
 - https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
 - https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/putty/
+
 
 ## CIFAR through the tubes: Downloading data from the internet
 
