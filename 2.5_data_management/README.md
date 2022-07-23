@@ -37,31 +37,23 @@ Today, many systems also require two-factor authentication.
 ### Step 1 - Generate an SSH key pair (with a passphrase) on your personal computer
 
 ```
-ssh-keygen -t rsa -b 4096 -a 128 -f "${HOME}/.ssh/sdsc-si22"
+$ ssh-keygen -t rsa -b 4096 -a 128 -f "${HOME}/.ssh/sdsc-si22"
 ```
 
 ```
-$ ssh-keygen -t rsa -b 4096 -a 128 -f "${HOME}/.ssh/sdsc-si22"
 Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase):
 ```
 
 ```
-$ ssh-keygen -t rsa -b 4096 -a 128 -f "${HOME}/.ssh/sdsc-si22"
-Generating public/private rsa key pair.
-Enter passphrase (empty for no passphrase): 
 Enter same passphrase again:
 ```
 
 ```
-$ ssh-keygen -t rsa -b 4096 -a 128 -f "${HOME}/.ssh/sdsc-si22"
-Generating public/private rsa key pair.
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
-Your identification has been saved in /home/mkandes/.ssh/sdsc-si22
-Your public key has been saved in /home/mkandes/.ssh/sdsc-si22.pub
+Your identification has been saved in /home/your_username/.ssh/sdsc-si22
+Your public key has been saved in /home/your_username/.ssh/sdsc-si22.pub
 The key fingerprint is:
-SHA256:/iHtGRpQcUxruOgLj3YRlM09BfajnN7Ai1DkzMaBjG8 mkandes@hardtack
+SHA256:/iHtGRpQcUxruOgLj3YRlM09BfajnN7Ai1DkzMaBjG8 your_username@hostname_of_your_computer
 The key's randomart image is:
 +---[RSA 4096]----+
 |     o =++=o.    |
@@ -75,6 +67,12 @@ The key's randomart image is:
 |   ...o . +      |
 +----[SHA256]-----+
 ```
+
+```
+$ ls ~/.ssh
+config  id_rsa  id_rsa.pub  known_hosts  sdsc-si22  sdsc-si22.pub
+```
+
 ### Step 2 - Copy your public SSH key to Expanse
 
 ### Step 3 - Login to Expanse using your SSH keys
