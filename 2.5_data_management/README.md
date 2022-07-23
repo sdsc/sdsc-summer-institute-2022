@@ -29,7 +29,7 @@ Provide instructions on how to setup `ssh` keys to make logins to XSEDE training
 
 ## CIFAR through the tubes: Downloading data from the internet
 
-## Mo' files, mo' problems: Understanding the advantages and limitations of different filesystems
+## More files, more problems: Advantages and limitations of different filesystems
 
 ## Data transfer
 
