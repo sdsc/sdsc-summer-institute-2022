@@ -22,7 +22,7 @@ HPC and advanced CI run on Linux. If you don't believe me, then look no further 
 
 ## Easy (remote) access: Setting up SSH keys
 
-SSH, or [Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell), is an encrypted network protocol used to administer and communicate with remote computer systems distributed over an unsecured network like the public internet. The protocol is based on a [client–server](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) architecture, where an [SSH client](https://en.wikipedia.org/wiki/Comparison_of_SSH_clients) instance is used to connect to a running [SSH server](https://en.wikipedia.org/wiki/Comparison_of_SSH_servers). The most popular application is logging into and executing commands on a remote machine like Expanse from your personal computer.
+SSH, or [Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell), is an cryptographically secure network protocol used to administer and communicate with remote computer systems distributed over an unsecured network like the public internet. Based on a [client–server](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) architecture, the protocol supports several different types of authentication methods to establish trust between client and server and uses strong encryption to protect the data exhanged between them. The most popular application is logging into and executing commands on a remote machine like Expanse from your personal computer.
 
 In general, password-based authentication is the default authentication mechanism used to establish trust and open an SSH connection between a client and server. This is true of Expanse. However, SSH supports 
 
