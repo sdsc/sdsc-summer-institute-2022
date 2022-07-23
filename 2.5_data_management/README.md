@@ -71,7 +71,7 @@ The key's randomart image is:
 ```
 Generating public/private rsa key pair.
 /home/your_local_username/.ssh/sdsc-si22 already exists.
-Overwrite (y/n)?
+Overwrite (y/n)? n
 ```
 
 ```
