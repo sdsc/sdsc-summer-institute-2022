@@ -159,8 +159,8 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjZ/DRrsFmb6GOBrxBo+QuFpN4r2lf8ZnXxe1YZUR/
 ```
 
 ```
-[xdtr108@login02 ~]$ ssh-keygen -l -f ~/.ssh/authorized_keys 
-4096 SHA256:doNjZ99n+cFG7DBeMtBIdDroNkQF7C70Rd9yxysgCH4 mkandes@hardtack (RSA)
+[xdtr#@login02 ~]$ ssh-keygen -l -f ~/.ssh/authorized_keys 
+4096 SHA256:doNjZ99n+cFG7DBeMtBIdDroNkQF7C70Rd9yxysgCH4 your_local_username@your_local_hostname (RSA)
 ```
 
 ### Step 4 - Simplify your local SSH configuration file
