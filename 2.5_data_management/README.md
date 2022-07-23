@@ -183,6 +183,10 @@ User xdtr#
 IdentityFile ~/.ssh/sdsc-si22
 ```
 
+```
+$ ssh expanse
+```
+
 ## CIFAR through the tubes: Downloading data from the internet
 
 [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html)
@@ -192,7 +196,7 @@ $ ssh expanse
 ```
 
 ```
-time -p wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
 ```
 
 ```
@@ -207,29 +211,23 @@ cifar-10-python.tar 100%[===================>] 162.60M  33.9MB/s    in 5.4s
 
 2022-07-23 14:19:52 (30.3 MB/s) - ‘cifar-10-python.tar.gz’ saved [170498071/170498071]
 
-real 6.27
-user 0.12
-sys 0.23
 ```
 
 ```
-time -p wget https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz
+wget https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz
 ```
 ```
-time -p wget https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz
+wget https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz
 ```
 
 ```
-time -p curl https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz -o cifar-10-matlab.tgz
+curl https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz -o cifar-10-matlab.tgz
 ```
 
 ```
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  174M  100  174M    0     0  24.4M      0  0:00:07  0:00:07 --:--:-- 31.6M
-real 7.51
-user 0.11
-sys 0.29
 ```
 
 ```
@@ -239,6 +237,22 @@ total 676M
 -rw-r--r-- 1 xdtr108 uic157 175M Apr 22  2010 cifar-10-matlab.tar.gz
 -rw-r--r-- 1 xdtr108 uic157 175M Jul 23 14:35 cifar-10-matlab.tgz
 -rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-python.tar.gz
+```
+
+```
+md5sum cifar-10-matlab.tar.gz
+```
+
+```
+70270af85842c9e89bb428ec9976c926  cifar-10-matlab.tar.gz
+```
+
+```
+md5sum cifar-10-matlab.tgz
+```
+
+```
+70270af85842c9e89bb428ec9976c926  cifar-10-matlab.tgz
 ```
 
 ## More files, more problems: Advantages and limitations of different filesystems
