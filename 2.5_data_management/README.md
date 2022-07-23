@@ -34,14 +34,15 @@ Today, many systems also require two-factor authentication.
 - https://www.golinuxcloud.com/openssh-authentication-methods-sshd-config/
 - https://bytexd.com/ssh-authentication-methods/
 
-### Step 1 - Generate an SSH key pair (with a passphrase)
+### Step 1 - Generate an SSH key pair (with a passphrase) on your personal computer
 
 ```
 ssh-keygen -t rsa -b 4096 -a 128 -f "${HOME}/.ssh/sdsc-si22"
 ```
-### Step 2 - Copy public SSH key to remote machine
 
-### Step 3 - Login to remote machine using SSH key-based authentication
+### Step 2 - Copy your public SSH key to Expanse
+
+### Step 3 - Login to Expanse using your SSH keys
 
 ### Step 4 - Simplify your local SSH configuration file
 
