@@ -233,10 +233,12 @@ sys 0.29
 ```
 
 ```
-[xdtr108@login01 ~]$ ls -lh
-total 163M
+[xdtr#@login02 ~]$ ls -lh
+total 676M
+-rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-binary.tar.gz
+-rw-r--r-- 1 xdtr108 uic157 175M Apr 22  2010 cifar-10-matlab.tar.gz
+-rw-r--r-- 1 xdtr108 uic157 175M Jul 23 14:35 cifar-10-matlab.tgz
 -rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-python.tar.gz
-[xdtr108@login01 ~]$
 ```
 
 ## More files, more problems: Advantages and limitations of different filesystems
