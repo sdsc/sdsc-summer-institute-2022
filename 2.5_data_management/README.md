@@ -172,7 +172,7 @@ $ touch ~/.ssh/config
 ```
 $ chmod u+rw ~/.ssh/config
 $ chmod go-rwx ~/.ssh/config
-$ ls -lahtr ~/.ssh/config 
+$ ls -lh ~/.ssh/config 
 -rw------- 1 your_local_username your_local_groupname 398 Jun 27 05:33 /home/your_local_username/.ssh/config
 ```
 
@@ -184,6 +184,60 @@ IdentityFile ~/.ssh/sdsc-si22
 ```
 
 ## CIFAR through the tubes: Downloading data from the internet
+
+[CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html)
+
+```
+$ ssh expanse
+```
+
+```
+time -p wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+```
+
+```
+--2022-07-23 14:19:46--  https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+Resolving www.cs.toronto.edu (www.cs.toronto.edu)... 128.100.3.30
+Connecting to www.cs.toronto.edu (www.cs.toronto.edu)|128.100.3.30|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 170498071 (163M) [application/x-gzip]
+Saving to: ‘cifar-10-python.tar.gz’
+
+cifar-10-python.tar 100%[===================>] 162.60M  33.9MB/s    in 5.4s    
+
+2022-07-23 14:19:52 (30.3 MB/s) - ‘cifar-10-python.tar.gz’ saved [170498071/170498071]
+
+real 6.27
+user 0.12
+sys 0.23
+```
+
+```
+time -p https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz
+```
+```
+time -p wget https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz
+```
+
+```
+time -p curl https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz -o cifar-10-matlab.tgz
+```
+
+```
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  174M  100  174M    0     0  24.4M      0  0:00:07  0:00:07 --:--:-- 31.6M
+real 7.51
+user 0.11
+sys 0.29
+```
+
+```
+[xdtr108@login01 ~]$ ls -lh
+total 163M
+-rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-python.tar.gz
+[xdtr108@login01 ~]$
+```
 
 ## More files, more problems: Advantages and limitations of different filesystems
 
