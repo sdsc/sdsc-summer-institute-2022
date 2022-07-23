@@ -37,7 +37,7 @@ Today, many systems also require two-factor authentication.
 ### Step 1 - Generate an SSH key pair (with a passphrase) on your personal computer
 
 ```
-$ ssh-keygen -t rsa -b 4096 -a 128 -f "${HOME}/.ssh/sdsc-si22"
+ssh-keygen -t rsa -b 4096 -a 128 -f "${HOME}/.ssh/sdsc-si22"
 ```
 
 ```
@@ -50,10 +50,10 @@ Enter same passphrase again:
 ```
 
 ```
-Your identification has been saved in /home/your_username/.ssh/sdsc-si22
-Your public key has been saved in /home/your_username/.ssh/sdsc-si22.pub
+Your identification has been saved in /home/your_local_username/.ssh/sdsc-si22
+Your public key has been saved in /home/your_local_username/.ssh/sdsc-si22.pub
 The key fingerprint is:
-SHA256:/iHtGRpQcUxruOgLj3YRlM09BfajnN7Ai1DkzMaBjG8 your_username@hostname_of_your_computer
+SHA256:/iHtGRpQcUxruOgLj3YRlM09BfajnN7Ai1DkzMaBjG8 your_local_username@your_local_hostname
 The key's randomart image is:
 +---[RSA 4096]----+
 |     o =++=o.    |
@@ -69,13 +69,73 @@ The key's randomart image is:
 ```
 
 ```
+Generating public/private rsa key pair.
+/home/your_local_username/.ssh/sdsc-si22 already exists.
+Overwrite (y/n)?
+```
+
+```
 $ ls ~/.ssh
 config  id_rsa  id_rsa.pub  known_hosts  sdsc-si22  sdsc-si22.pub
 ```
 
 ### Step 2 - Copy your public SSH key to Expanse
 
+```
+ssh-copy-id -i "${HOME}/.ssh/sdsc-si22" xdtr#@login.expanse.sdsc.edu
+```
+
+```
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/local_username/.ssh/sdsc-si22.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+Password:
+```
+
+```
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'xdtr#@login.expanse.sdsc.edu'"
+and check to make sure that only the key(s) you wanted were added.
+```
+
+```
+Verification code:
+```
+
 ### Step 3 - Login to Expanse using your SSH keys
+
+```
+ssh xdtr#@login.expanse.sdsc.edu
+```
+
+```
+Welcome to Bright release         9.0
+
+                                                         Based on Rocky Linux 8
+                                                                    ID: #000002
+
+--------------------------------------------------------------------------------
+
+                                 WELCOME TO
+                  _______  __ ____  ___    _   _______ ______
+                 / ____/ |/ // __ \/   |  / | / / ___// ____/
+                / __/  |   // /_/ / /| | /  |/ /\__ \/ __/
+               / /___ /   |/ ____/ ___ |/ /|  /___/ / /___
+              /_____//_/|_/_/   /_/  |_/_/ |_//____/_____/
+
+--------------------------------------------------------------------------------
+
+Use the following commands to adjust your environment:
+
+'module avail'            - show available modules
+'module add <module>'     - adds a module to your environment for this session
+'module initadd <module>' - configure module to be loaded at every login
+
+-------------------------------------------------------------------------------
+Last login: Fri Jul 22 07:09:42 2022 from 208.58.214.56
+[xdtr#@login01 ~]$
+```
 
 ### Step 4 - Simplify your local SSH configuration file
 
