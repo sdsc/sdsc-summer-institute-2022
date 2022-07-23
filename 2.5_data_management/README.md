@@ -20,7 +20,7 @@ HPC and advanced CI run on Linux. If you don't believe me, then look no further 
 
 [Image Credit: Harvard Biomedical Data Management](https://datamanagement.hms.harvard.edu)
 
-## Easy access: Setting up SSH keys :closed_lock_with_key:
+## Easy access: Setting up `ssh` keys
 
 Provide instructions on how to setup SSH keys to make logins to XSEDE training accounts simpler during SI22. Use modifided version of Digital Ocean documentation to create this section. Recommend windows users try setting up putty, if necessary. Or simply use Expanse User Portal to access the interactive terminal application --- may not get full experience using only Expanse Portal though. 
 
