@@ -499,11 +499,27 @@ drwxr-xr-x 5 xdtr108 uic157 4.0K Jul 24 12:37 CIFAR-10-images
 ```
 
 ```
-rm -rf "/scratch/${USER}/job_${SLURM_JOB_ID}/CIFAR-10-images"
+rm -r "/scratch/${USER}/job_${SLURM_JOB_ID}/CIFAR-10-images"
 ```
 
 ```
 unzip CIFAR-10-images.zip 'CIFAR-10-images/test/dog/*'
+```
+
+```
+[xdtr108@exp-1-31 job_14729913]$ cp CIFAR-10-images.zip ~/
+[xdtr108@exp-1-31 job_14729913]$ cd ~/
+[xdtr108@exp-1-31 ~]$ ls -lh
+total 373M
+drwxr-xr-x 2 xdtr108 uic157   10 Jun  4  2009 cifar-10-batches-py
+-rw-r--r-- 1 xdtr108 uic157  78M Jul 24 12:54 CIFAR-10-images.zip
+-rw-r--r-- 1 xdtr108 uic157   57 Jul 24 11:39 cifar-10-python.md5
+-rw-r--r-- 1 xdtr108 uic157   86 Jul 24 11:51 cifar-10-python.sha256
+-rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-python.tar.gz
+-rw-r--r-- 1 xdtr108 uic157 163M Jul 24 11:47 cifar-10-python.tgz
+[xdtr108@exp-1-31 ~]$ exit
+exit
+[xdtr108@login01 ~]$
 ```
 
 ## Data transfer
