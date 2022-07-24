@@ -324,6 +324,22 @@ user 0.79
 sys 1.08
 ```
 
+```
+cat /etc/auto.home | grep "${USER}"
+```
+
+```
+xdtr###       -fstype=bind :/expanse/nfs/home#/xdtr###
+```
+
+```
+df -Th | grep "${USER}"
+```
+
+```
+10.22.100.113:/pool#/home/xdtr###                       nfs       194T  9.3T  185T   5% /home/xdtr###
+```
+
 ## Data transfer
 
 ## Backuping up data
