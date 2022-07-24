@@ -5,7 +5,7 @@
 - [CIFAR through the tubes: Downloading data from the internet](DOWNLOADING.md)
 - [More files, more problems: Advantages and limitations of different filesystems](FILESYSTEMS.md)
 
-## CIFAR through the tubes: Downloading data from the internet [:notes:](https://www.youtube.com/watch?v=_cZC67wXUTs)
+## CIFAR through the tubes: Downloading data from the internet [:notes:](https://www.youtube.com/watch?v=_cZC67wXUTs) [:microphone:](https://en.wikipedia.org/wiki/Series_of_tubes)
 
 [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html)
 
