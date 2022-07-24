@@ -8,5 +8,5 @@ Proper data management is essential to make effective use of high-performance co
 
 - [DISCLAIMERS](DISCLAIMERS.md)
 - [SSH](SSH.md)
-- DOWNLOAD](DOWNLOADING.md)
+- [DOWNLOAD](DOWNLOADING.md)
 - [FILESYSTEMS](FILESYSTEMS.md)
