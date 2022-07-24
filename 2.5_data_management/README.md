@@ -189,7 +189,7 @@ $ ssh expanse
 
 
 
-## CIFAR through the tubes: Downloading data from the internet [🎼](https://www.youtube.com/watch?v=_cZC67wXUTs)
+## CIFAR through the tubes [🎼](https://www.youtube.com/watch?v=_cZC67wXUTs): Downloading data from the internet 
 
 [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html)
 
