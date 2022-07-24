@@ -11,3 +11,10 @@
 https://en.wikipedia.org/wiki/Clustered_file_system
 
 https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz
+
+```
+[xdtr108@login02 ~]$ cd /expanse/lustre/scratch/xdtr108/temp_project/
+[xdtr108@login02 temp_project]$ ls -lh
+total 40M
+-rw-r--r-- 1 xdtr108 uic157 42M Jul 24 13:05 CIFAR-10-images.tar.gz
+```
