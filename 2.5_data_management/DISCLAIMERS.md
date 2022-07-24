@@ -1,4 +1,4 @@
-# Session 2.5 - Data Management: Or how (not) to handle your data in an HPC environment
+# Data Management: Or how (not) to handle your data in an HPC environment
 
 **Date: Monday, August 1st, 2022**
 
@@ -6,7 +6,7 @@
 
 Proper data management is essential to make effective use of high-performance computing (HPC) systems and other advanced cyberinfrastructure (CI) resources. This session will cover an overview of filesystems, data compression, archives (tar files), checksums and MD5 digests, downloading data using wget and curl, data transfer and long-term storage solutions.
 
-- [DISCLAIMERS](DISCLAIMERS.md)
+- [Before we begin: A few disclaimers](DISCLAIMERS.md)
 - [SSH](SSH.md)
 - [DOWNLOAD](DOWNLOADING.md)
 - [FILESYSTEMS](FILESYSTEMS.md)
