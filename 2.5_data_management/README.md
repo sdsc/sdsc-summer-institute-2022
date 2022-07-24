@@ -20,7 +20,7 @@ HPC and advanced CI run on Linux. If you don't believe me, then look no further 
 
 [Image Credit: Harvard Biomedical Data Management](https://datamanagement.hms.harvard.edu)
 
-## Easy (remote) access: Setting up SSH keys
+## Easy (remote) access: Setting up SSH keys :key:
 
 SSH, or [Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell), is a cryptographically secure network protocol used to administer and communicate with remote computer systems distributed over an unsecured network like the public internet. Based on a [client–server](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) architecture, the protocol supports several different methods of [authentication](https://en.wikipedia.org/wiki/Authentication) to establish trust between client and server and uses strong encryption to protect the data they exhange. The most popular application of SSH is logging into and executing commands on a remote machine like Expanse from your personal computer.
 
@@ -187,7 +187,9 @@ IdentityFile ~/.ssh/sdsc-si22
 $ ssh expanse
 ```
 
-## CIFAR through the tubes: Downloading data from the internet
+
+
+## CIFAR through the tubes: Downloading data from the internet [🎼](https://www.youtube.com/watch?v=_cZC67wXUTs)
 
 [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html)
 
@@ -284,6 +286,12 @@ Updating files: 100% (60001/60001), done.
 real 1724.19
 user 1.01
 sys 3.36
+```
+
+```
+real 1.87
+user 0.79
+sys 1.08
 ```
 
 ## Data transfer
