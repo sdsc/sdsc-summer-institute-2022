@@ -1,8 +1,6 @@
 
 # Data Management: Or how (not) to handle your data in an HPC environment
 
-[Marty Kandes](https://github.com/mkandes), Computational and Data Science Research Specialist, HPC User Services Group, SDSC
-
 - [Before we begin: A few disclaimers](DISCLAIMERS.md)
 - [Easy (remote) access: Setting up SSH keys](SSH.md)
 - [CIFAR through the tubes: Downloading data from the internet](DOWNLOADING.md)
