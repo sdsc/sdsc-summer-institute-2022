@@ -277,7 +277,13 @@ remote: Enumerating objects: 60027, done.
 remote: Total 60027 (delta 0), reused 0 (delta 0), pack-reused 60027
 Receiving objects: 100% (60027/60027), 19.94 MiB | 26.94 MiB/s, done.
 Resolving deltas: 100% (59990/59990), done.
-...
+Updating files: 100% (60001/60001), done.
+```
+
+```
+real 1724.19
+user 1.01
+sys 3.36
 ```
 
 ## Data transfer
