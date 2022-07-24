@@ -522,6 +522,9 @@ exit
 [xdtr108@login01 ~]$
 ```
 
+
+https://www.nas.nasa.gov/hecc/support/kb/Lustre_Basics_224.html
+
 ## Data transfer
 
 ## Backuping up data
