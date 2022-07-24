@@ -498,7 +498,13 @@ drwxr-xr-x 5 xdtr108 uic157 4.0K Jul 24 12:37 CIFAR-10-images
 [xdtr108@exp-1-31 job_14729913]$
 ```
 
+```
+rm -rf "/scratch/${USER}/job_${SLURM_JOB_ID}/CIFAR-10-images"
+```
 
+```
+unzip CIFAR-10-images.zip 'CIFAR-10-images/test/dog/*'
+```
 
 ## Data transfer
 
