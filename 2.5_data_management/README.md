@@ -288,59 +288,13 @@ drwxr-xr-x 2 xdtr### abc###   10 Jun  4  2009 cifar-10-batches-py
 -rw-r--r-- 1 xdtr### abc### 163M Jul 24 11:47 cifar-10-python.tgz
 ```
 
-
-
-
 ```
-wget https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz
-```
-```
-wget https://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz
+wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/2.5_data_management/cifar-10-python.sha256
 ```
 
 ```
-curl https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz -o cifar-10-matlab.tgz
-```
-
-```
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100  174M  100  174M    0     0  24.4M      0  0:00:07  0:00:07 --:--:-- 31.6M
-```
-
-```
-[xdtr#@login02 ~]$ ls -lh
-total 676M
--rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-binary.tar.gz
--rw-r--r-- 1 xdtr108 uic157 175M Apr 22  2010 cifar-10-matlab.tar.gz
--rw-r--r-- 1 xdtr108 uic157 175M Jul 23 14:35 cifar-10-matlab.tgz
--rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-python.tar.gz
-```
-
-```
-md5sum cifar-10-matlab.tar.gz
-```
-
-```
-70270af85842c9e89bb428ec9976c926  cifar-10-matlab.tar.gz
-```
-
-```
-md5sum cifar-10-matlab.tgz > cifar-10-matlab.md5
-```
-
-```
-[xdtr#@login02 ~]$ md5sum -c cifar-10-matlab.md5
-cifar-10-matlab.tgz: OK
-```
-
-```
-wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/2.5_data_management/cifar-10-matlab.sha256
-```
-
-```
-[xdtr#@login02 ~]$ sha256sum -c cifar-10-matlab.sha256
-cifar-10-matlab.tgz: OK
+[xdtr###@login02 ~]$ sha256sum -c cifar-10-python.sha256 
+cifar-10-python.tgz: OK
 ```
 
 ## More files, more problems: Advantages and limitations of different filesystems
