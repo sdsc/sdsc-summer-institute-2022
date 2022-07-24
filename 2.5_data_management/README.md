@@ -333,11 +333,27 @@ xdtr###       -fstype=bind :/expanse/nfs/home#/xdtr###
 ```
 
 ```
+cat: /etc/auto.home: No such file or directory
+```
+
+```
 df -Th | grep "${USER}"
 ```
 
 ```
 10.22.100.113:/pool#/home/xdtr###                       nfs       194T  9.3T  185T   5% /home/xdtr###
+```
+
+```
+$ df -Th
+Filesystem     Type      Size  Used Avail Use% Mounted on
+udev           devtmpfs   16G     0   16G   0% /dev
+tmpfs          tmpfs     3.2G  2.3M  3.2G   1% /run
+/dev/nvme0n1p3 ext4      1.9T  217G  1.6T  13% /
+tmpfs          tmpfs      16G  172K   16G   1% /dev/shm
+tmpfs          tmpfs     5.0M  4.0K  5.0M   1% /run/lock
+tmpfs          tmpfs      16G     0   16G   0% /sys/fs/cgroup
+...
 ```
 
 ## Data transfer
