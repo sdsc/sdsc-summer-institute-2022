@@ -7,7 +7,6 @@
 
 ## CIFAR through the tubes: Downloading data from the internet [:notes:](https://www.youtube.com/watch?v=_cZC67wXUTs) [:microphone:](https://en.wikipedia.org/wiki/Series_of_tubes)
 
-<img src='https://techgenix.com/tgwordpress/wp-content/uploads/2016/12/image32-e1482537824353.jpg' wdith='100%' height='100%' />
 
 [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html)
 
@@ -114,3 +113,8 @@ wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/2.5_
 [xdtr###@login02 ~]$ sha256sum -c cifar-10-python.sha256 
 cifar-10-python.tgz: OK
 ```
+
+<img src='https://techgenix.com/tgwordpress/wp-content/uploads/2016/12/image32-e1482537824353.jpg' wdith='100%' height='100%' />
+
+[Image Credit: Amazon Web Services](https://aws.amazon.com/snowmobile)
+
