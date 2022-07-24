@@ -140,7 +140,7 @@ Use the following commands to adjust your environment:
 
 -------------------------------------------------------------------------------
 Last login: Fri Jul 22 07:09:42 2022 from 208.58.214.56
-[xdtr#@login01 ~]$
+[xdtr###@login01 ~]$
 ```
 
 ```
@@ -154,12 +154,12 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjZ/DRrsFmb6GOBrxBo+QuFpN4r2lf8ZnXxe1YZUR/
 ```
 
 ```
-[xdtr#@login01 ~]$ cat ~/.ssh/authorized_keys 
+[xdtr###@login01 ~]$ cat ~/.ssh/authorized_keys 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjZ/DRrsFmb6GOBrxBo+QuFpN4r2lf8ZnXxe1YZUR/jo210Vu2IAbjg0Uj4TVMGg8YdqV11RUGIuoMt4qRsbh9xArt2pabgaAdirVELe8ieOTii0V58uq48fku8Kvpi0lIyfRX/6YO+65oIUexdiLrNyDx2NkRefwsDUVAa3tSZZsTzOMqFKjxCVtMxZ5oBjrSra3Ns2dvSld77Nf1aRZ1ls42OXjsqne2BavtHr/rvMbTIAZKbDeaK60vxfX4EpkOGvG1RqDEWIL3RBjQIS+77fNsB56Df+zqz509duSi81YgeZC5UA9UOVhceBW9hk8UwL8uWPwN+wmUOxVdvlvwEAMHv1J/kDANLLYMNDmy9TcCrH0LYISGe70BdQwSZrXTO5UzrgrXtfGdNSp9Jh468s2qv1ufcCs5xFUgIT8t1dUuBUZNt1Lv3oFUvKVmBZK5hTDehiKj2KBw+X/ADa/d1Xb3ohtQdOQv5Vi/rKRnwTAkkq7a2i5QxLw66GBmmS9tC9fEGqoeuTdps2et5tZWszzze/8LYs3S+3pTOH3eyZEL0WFntxOj5A7L8CqnBbKbMwCiGyhinnt8+Q5JkU6NLMOCf6f5i/CJvY0dhFX7WIikgqJJfIhqUeZ1KWhNNmuIb5bTKq64MAA7fcMagIVm07GVyDDPjE+oTwBUD8tLpQ== your_local_username@your_local_hostname
 ```
 
 ```
-[xdtr#@login02 ~]$ ssh-keygen -l -f ~/.ssh/authorized_keys 
+[xdtr###@login02 ~]$ ssh-keygen -l -f ~/.ssh/authorized_keys 
 4096 SHA256:doNjZ99n+cFG7DBeMtBIdDroNkQF7C70Rd9yxysgCH4 your_local_username@your_local_hostname (RSA)
 ```
 
@@ -179,7 +179,7 @@ $ ls -lh ~/.ssh/config
 ```
 Host expanse
 Hostname login.expanse.sdsc.edu
-User xdtr#
+User xdtr###
 IdentityFile ~/.ssh/sdsc-si22
 ```
 
@@ -189,7 +189,7 @@ $ ssh expanse
 
 
 
-## CIFAR through the tubes: Downloading data from the internet   [🎼](https://www.youtube.com/watch?v=_cZC67wXUTs)
+## CIFAR through the tubes: Downloading data from the internet [:notes:](https://www.youtube.com/watch?v=_cZC67wXUTs)
 
 [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html)
 
@@ -202,18 +202,94 @@ wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
 ```
 
 ```
---2022-07-23 14:19:46--  https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+--2022-07-24 11:32:04--  https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
 Resolving www.cs.toronto.edu (www.cs.toronto.edu)... 128.100.3.30
 Connecting to www.cs.toronto.edu (www.cs.toronto.edu)|128.100.3.30|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 170498071 (163M) [application/x-gzip]
 Saving to: ‘cifar-10-python.tar.gz’
 
-cifar-10-python.tar 100%[===================>] 162.60M  33.9MB/s    in 5.4s    
+cifar-10-python.tar 100%[===================>] 162.60M  33.4MB/s    in 5.4s    
 
-2022-07-23 14:19:52 (30.3 MB/s) - ‘cifar-10-python.tar.gz’ saved [170498071/170498071]
+2022-07-24 11:32:10 (30.1 MB/s) - ‘cifar-10-python.tar.gz’ saved [170498071/170498071]
+```
 
 ```
+[xdtr###@login02 ~]$ ls -lh
+total 163M
+-rw-r--r-- 1 xdtr### abc### 163M Jun  4  2009 cifar-10-python.tar.gz
+```
+
+```
+tar -xf cifar-10-python.tar.gz
+```
+
+```
+[xdtr###@login02 ~]$ ls -lh
+total 163M
+drwxr-xr-x 2 xdtr### abc###   10 Jun  4  2009 cifar-10-batches-py
+-rw-r--r-- 1 xdtr### abc### 163M Jun  4  2009 cifar-10-python.tar.gz
+```
+
+```
+[xdtr#@login02 ~]$ ls -lh cifar-10-batches-py/
+total 177M
+-rw-r--r-- 1 xdtr### abc### 158 Mar 30  2009 batches.meta
+-rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 data_batch_1
+-rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 data_batch_2
+-rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 data_batch_3
+-rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 data_batch_4
+-rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 data_batch_5
+-rw-r--r-- 1 xdtr### abc###  88 Jun  4  2009 readme.html
+-rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 test_batch
+```
+
+```
+md5sum cifar-10-python.tar.gz
+```
+
+```
+c58f30108f718f92721af3b95e74349a  cifar-10-python.tar.gz
+```
+
+```
+md5sum cifar-10-python.tar.gz > cifar-10-python.md5
+```
+
+```
+[xdtr###@login02 ~]$ ls -lh
+total 163M
+drwxr-xr-x 2 xdtr### abc###   10 Jun  4  2009 cifar-10-batches-py
+-rw-r--r-- 1 xdtr### abc###   57 Jul 24 11:39 cifar-10-python.md5
+-rw-r--r-- 1 xdtr### abc### 163M Jun  4  2009 cifar-10-python.tar.gz
+```
+
+```
+[xdtr###@login02 ~]$ md5sum -c cifar-10-python.md5 
+cifar-10-python.tar.gz: OK
+```
+
+```
+curl https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz -o cifar-10-python.tgz
+```
+
+```
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  162M  100  162M    0     0  28.1M      0  0:00:05  0:00:05 --:--:-- 33.3M
+```
+
+```
+[xdtr###@login02 ~]$ ls -lh
+total 326M
+drwxr-xr-x 2 xdtr### abc###   10 Jun  4  2009 cifar-10-batches-py
+-rw-r--r-- 1 xdtr### abc###   57 Jul 24 11:39 cifar-10-python.md5
+-rw-r--r-- 1 xdtr### abc### 163M Jun  4  2009 cifar-10-python.tar.gz
+-rw-r--r-- 1 xdtr### abc### 163M Jul 24 11:47 cifar-10-python.tgz
+```
+
+
+
 
 ```
 wget https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz
