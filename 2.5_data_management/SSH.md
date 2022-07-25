@@ -1,11 +1,13 @@
 # Data Management: Or how (not) to handle your data in an HPC environment
 
 - [Before we begin: A few disclaimers](DISCLAIMERS.md)
-- [Easy (remote) access: Setting up SSH keys](SSH.md)
+- [Easy access: Setting up SSH keys](SSH.md)
 - [CIFAR through the tubes: Downloading data from the internet](DOWNLOADING.md)
 - [More files, more problems: Advantages and limitations of different filesystems](FILESYSTEMS.md)
+- [Going parallel: Lustre basics](LUSTRE.md)
+- [Back that data up: Data transfer tools](TRANSFER.md)
 
-## Easy (remote) access: Setting up SSH keys :key:
+## Easy access: Setting up SSH keys :key:
 
 SSH, or [Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell), is a cryptographically secure network protocol used to administer and communicate with remote computer systems distributed over an unsecured network like the public internet. Based on a [client–server](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) architecture, the protocol supports several different methods of [authentication](https://en.wikipedia.org/wiki/Authentication) to establish trust between client and server and uses strong encryption to protect the data they exhange. The most popular application of SSH is logging into and executing commands on a remote machine like Expanse from your personal computer.
 
