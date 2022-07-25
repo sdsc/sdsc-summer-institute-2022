@@ -158,5 +158,30 @@ expanse-OST0022_UUID
 expanse-OST0047_UUID
                      0k       -      0k       -       -       -       -       -
 Total allocated inode limit: 7, total allocated block limit: 0k
-[xdtr108@login01 temp_project]$
+```
+
+
+```
+[xdtr108@login01 temp_project]$ lfs getstripe striped/
+striped/
+stripe_count:  1 stripe_size:   1048576 pattern:       0 stripe_offset: -1
+
+[xdtr108@login01 temp_project]$ lfs setstripe -c 4 striped/
+[xdtr108@login01 temp_project]$ lfs getstripe striped/
+striped/
+stripe_count:  4 stripe_size:   1048576 pattern:       raid0 stripe_offset: -1
+
+[xdtr108@login01 temp_project]$ cp ILSVRC2012_img_train.tar striped/
+[xdtr108@login01 temp_project]$ lfs getstripe striped/ILSVRC2012_img_train.tar 
+striped/ILSVRC2012_img_train.tar
+lmm_stripe_count:  4
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 52
+	obdidx		 objid		 objid		 group
+	    52	      19080069	    0x1232385	  0x1380000400
+	    15	      18905972	    0x1207b74	  0x1200000402
+	     5	      19135437	    0x123fbcd	   0x800000401
+	    53	      19134651	    0x123f8bb	  0x1480000402
 ```
