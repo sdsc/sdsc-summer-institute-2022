@@ -73,3 +73,90 @@ Disk quotas for grp sds184 (gid 11905):
              ./   5.95G      0k     50T       -   60751       0       0       -
 gid 11905 is using default file quota setting
 ```
+
+```
+lfs getstripe CIFAR-10-images.tar.gz
+```
+
+```
+CIFAR-10-images.tar.gz
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 5
+	obdidx		 objid		 objid		 group
+	     5	      19156534	    0x1244e36	   0x800000400
+```
+
+```
+lfs getstripe -d ../
+```
+
+```
+stripe_count:  1 stripe_size:   1048576 pattern:       0 stripe_offset: -1
+```
+
+```
+lfs getstripe: cannot get lov name: Inappropriate ioctl for device (25)
+error: getstripe failed for ../.
+```
+
+
+```
+[xdtr108@login01 temp_project]$ lfs df -h /expanse/lustre/scratch 
+UUID                       bytes        Used   Available Use% Mounted on
+expanse-MDT0000_UUID       26.0T        3.8T       22.2T  15% /expanse/lustre/scratch[MDT:0]
+expanse-MDT0001_UUID       29.7T        1.6T       28.1T   6% /expanse/lustre/scratch[MDT:1]
+expanse-MDT0002_UUID       29.7T        1.6T       28.1T   6% /expanse/lustre/scratch[MDT:2]
+expanse-MDT0003_UUID       29.7T        1.6T       28.1T   6% /expanse/lustre/scratch[MDT:3]
+expanse-OST0000_UUID      143.5T       32.3T      111.2T  23% /expanse/lustre/scratch[OST:0]
+expanse-OST0001_UUID      143.7T       34.9T      108.8T  25% /expanse/lustre/scratch[OST:1]
+expanse-OST0002_UUID      144.0T       32.1T      111.9T  23% /expanse/lustre/scratch[OST:2]
+...
+expanse-OST0046_UUID      143.4T       34.6T      108.9T  25% /expanse/lustre/scratch[OST:70]
+expanse-OST0047_UUID      144.2T       33.1T      111.1T  23% /expanse/lustre/scratch[OST:71]
+
+filesystem_summary:         9.8P        2.3P        7.5P  24% /expanse/lustre/scratch
+```
+
+
+```
+[xdtr108@login01 temp_project]$ lfs quota -h -v -u "${USER}" ./
+Disk quotas for usr xdtr108 (uid 514559):
+     Filesystem    used   quota   limit   grace   files   quota   limit   grace
+             ./  792.3M      0k  9.537T       -       9       0 2000000       -
+expanse-MDT0000_UUID
+                   167k*      -    167k       -       3*      -       3       -
+expanse-MDT0001_UUID
+                    56k*      -     56k       -       2*      -       1       -
+expanse-MDT0002_UUID
+                    56k*      -     56k       -       1*      -       1       -
+expanse-MDT0003_UUID
+                   112k*      -    111k       -       3*      -       2       -
+expanse-OST0000_UUID
+                     0k       -      0k       -       -       -       -       -
+expanse-OST0001_UUID
+                     0k       -      0k       -       -       -       -       -
+expanse-OST0002_UUID
+                     0k       -      0k       -       -       -       -       -
+...
+expanse-OST0005_UUID
+                 39.72M       -      0k       -       -       -       -       -
+expanse-OST0006_UUID
+                     0k       -      0k       -       -       -       -       -
+expanse-OST0007_UUID
+                     0k       -      0k       -       -       -       -       -
+...
+expanse-OST0020_UUID
+                 752.2M       -      0k       -       -       -       -       -
+expanse-OST0021_UUID
+                     0k       -      0k       -       -       -       -       -
+expanse-OST0022_UUID
+                     0k       -      0k       -       -       -       -       -
+...
+expanse-OST0047_UUID
+                     0k       -      0k       -       -       -       -       -
+Total allocated inode limit: 7, total allocated block limit: 0k
+[xdtr108@login01 temp_project]$
+```
