@@ -5,7 +5,7 @@
 - [CIFAR through the tubes: Downloading data from the internet](DOWNLOADING.md)
 - [More files, more problems: Advantages and limitations of different filesystems](FILESYSTEMS.md)
 - [Going parallel: Lustre basics](LUSTRE.md)
-- [Back that data up]: 
+- [Back that data up: Data transfer tools](TRANSFER.md)
 
 ## Going parallel: Lustre basics
 
