@@ -92,7 +92,7 @@ Password:
 ```
 Number of key(s) added: 1
 
-Now try logging into the machine, with:   "ssh 'xdtr108@login.expanse.sdsc.edu'"
+Now try logging into the machine, with:   "ssh 'xdtr@login.expanse.sdsc.edu'"
 and check to make sure that only the key(s) you wanted were added.
 ```
 
@@ -130,8 +130,15 @@ Use the following commands to adjust your environment:
 'module initadd <module>' - configure module to be loaded at every login
 
 -------------------------------------------------------------------------------
-Last login: Fri Jul 22 07:09:42 2022 from 208.58.214.56
-[xdtr108@login01 ~]$
+Last login: Mon Jul 25 15:05:09 2022 from 208.58.214.56
+[xdtr@login02 ~]$
+```
+
+```
+[xdtr@login02 ~]$ exit
+logout
+Connection to login.expanse.sdsc.edu closed.
+$
 ```
 
 ```
@@ -145,16 +152,16 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjZ/DRrsFmb6GOBrxBo+QuFpN4r2lf8ZnXxe1YZUR/
 ```
 
 ```
-[xdtr###@login01 ~]$ cat ~/.ssh/authorized_keys 
+[xdtr@login01 ~]$ cat ~/.ssh/authorized_keys 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjZ/DRrsFmb6GOBrxBo+QuFpN4r2lf8ZnXxe1YZUR/jo210Vu2IAbjg0Uj4TVMGg8YdqV11RUGIuoMt4qRsbh9xArt2pabgaAdirVELe8ieOTii0V58uq48fku8Kvpi0lIyfRX/6YO+65oIUexdiLrNyDx2NkRefwsDUVAa3tSZZsTzOMqFKjxCVtMxZ5oBjrSra3Ns2dvSld77Nf1aRZ1ls42OXjsqne2BavtHr/rvMbTIAZKbDeaK60vxfX4EpkOGvG1RqDEWIL3RBjQIS+77fNsB56Df+zqz509duSi81YgeZC5UA9UOVhceBW9hk8UwL8uWPwN+wmUOxVdvlvwEAMHv1J/kDANLLYMNDmy9TcCrH0LYISGe70BdQwSZrXTO5UzrgrXtfGdNSp9Jh468s2qv1ufcCs5xFUgIT8t1dUuBUZNt1Lv3oFUvKVmBZK5hTDehiKj2KBw+X/ADa/d1Xb3ohtQdOQv5Vi/rKRnwTAkkq7a2i5QxLw66GBmmS9tC9fEGqoeuTdps2et5tZWszzze/8LYs3S+3pTOH3eyZEL0WFntxOj5A7L8CqnBbKbMwCiGyhinnt8+Q5JkU6NLMOCf6f5i/CJvY0dhFX7WIikgqJJfIhqUeZ1KWhNNmuIb5bTKq64MAA7fcMagIVm07GVyDDPjE+oTwBUD8tLpQ== your_local_username@your_local_hostname
 ```
 
 ```
-[xdtr###@login02 ~]$ ssh-keygen -l -f ~/.ssh/authorized_keys 
+[xdtr@login02 ~]$ ssh-keygen -l -f ~/.ssh/authorized_keys 
 4096 SHA256:doNjZ99n+cFG7DBeMtBIdDroNkQF7C70Rd9yxysgCH4 your_local_username@your_local_hostname (RSA)
 ```
 
-### Step 4 - Simplify things by creating a local SSH configuration file
+### Step 4 - Simplify your login by creating a local SSH configuration file
 
 ```
 $ touch ~/.ssh/config
@@ -170,7 +177,7 @@ $ ls -lh ~/.ssh/config
 ```
 Host expanse
 Hostname login.expanse.sdsc.edu
-User xdtr###
+User xdtr
 IdentityFile ~/.ssh/sdsc-si22
 ```
 
