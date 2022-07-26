@@ -9,7 +9,7 @@
 
 ## Easy access: Setting up SSH keys :key:
 
-SSH, or [Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell), is a cryptographically secure network protocol used to administer and communicate with remote computer systems distributed over an unsecured network like the public internet. Based on a [client–server](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) architecture, the protocol supports several different methods of [authentication](https://en.wikipedia.org/wiki/Authentication) to establish trust between client and server and uses strong encryption to protect the data they exhange. The most popular application of SSH is logging into and executing commands on a remote machine like Expanse from your personal computer.
+SSH, or [Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell), is a cryptographically secure network protocol used to administer and communicate with remote computer systems distributed over an unsecured network like the public internet. Based on a [client–server](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) architecture, the protocol supports several different methods of [authentication](https://en.wikipedia.org/wiki/Authentication) to establish trust between client and server and uses [strong encryption](https://en.wikipedia.org/wiki/Strong_cryptography) to protect the data they exhange with one another. The most popular application of SSH is logging into and executing commands on a remote machine like Expanse from your personal computer.
 
 <img src='https://upload.wikimedia.org/wikipedia/en/6/65/OpenSSH_logo.png' width='25%' height='25%' />
 
