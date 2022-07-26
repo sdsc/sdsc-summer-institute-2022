@@ -92,7 +92,7 @@ Password:
 ```
 Number of key(s) added: 1
 
-Now try logging into the machine, with:   "ssh 'xdtr#@login.expanse.sdsc.edu'"
+Now try logging into the machine, with:   "ssh 'xdtr108@login.expanse.sdsc.edu'"
 and check to make sure that only the key(s) you wanted were added.
 ```
 
