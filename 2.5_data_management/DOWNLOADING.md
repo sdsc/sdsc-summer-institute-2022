@@ -21,22 +21,22 @@ wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
 ```
 
 ```
---2022-07-24 11:32:04--  https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+--2022-07-26 08:50:09--  https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
 Resolving www.cs.toronto.edu (www.cs.toronto.edu)... 128.100.3.30
 Connecting to www.cs.toronto.edu (www.cs.toronto.edu)|128.100.3.30|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 170498071 (163M) [application/x-gzip]
 Saving to: ‘cifar-10-python.tar.gz’
 
-cifar-10-python.tar 100%[===================>] 162.60M  33.4MB/s    in 5.4s    
+cifar-10-python.tar 100%[===================>] 162.60M  34.0MB/s    in 5.3s    
 
-2022-07-24 11:32:10 (30.1 MB/s) - ‘cifar-10-python.tar.gz’ saved [170498071/170498071]
+2022-07-26 08:50:15 (30.4 MB/s) - ‘cifar-10-python.tar.gz’ saved [170498071/170498071]
 ```
 
 ```
-[xdtr###@login02 ~]$ ls -lh
+[xdtr@login02 ~]$ ls -lh
 total 163M
--rw-r--r-- 1 xdtr### abc### 163M Jun  4  2009 cifar-10-python.tar.gz
+-rw-r--r-- 1 xdtr abc123 163M Jun  4  2009 cifar-10-python.tar.gz
 ```
 
 ```
@@ -44,23 +44,23 @@ tar -xf cifar-10-python.tar.gz
 ```
 
 ```
-[xdtr###@login02 ~]$ ls -lh
+[xdtr@login02 ~]$ ls -lh
 total 163M
-drwxr-xr-x 2 xdtr### abc###   10 Jun  4  2009 cifar-10-batches-py
--rw-r--r-- 1 xdtr### abc### 163M Jun  4  2009 cifar-10-python.tar.gz
+drwxr-xr-x 2 xdtr abc123   10 Jun  4  2009 cifar-10-batches-py
+-rw-r--r-- 1 xdtr abc123 163M Jun  4  2009 cifar-10-python.tar.gz
 ```
 
 ```
-[xdtr#@login02 ~]$ ls -lh cifar-10-batches-py/
+[xdtr@login02 ~]$ ls -lh cifar-10-batches-py/
 total 177M
--rw-r--r-- 1 xdtr### abc### 158 Mar 30  2009 batches.meta
--rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 data_batch_1
--rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 data_batch_2
--rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 data_batch_3
--rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 data_batch_4
--rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 data_batch_5
--rw-r--r-- 1 xdtr### abc###  88 Jun  4  2009 readme.html
--rw-r--r-- 1 xdtr### abc### 30M Mar 30  2009 test_batch
+-rw-r--r-- 1 xdtr abc123 158 Mar 30  2009 batches.meta
+-rw-r--r-- 1 xdtr abc123 30M Mar 30  2009 data_batch_1
+-rw-r--r-- 1 xdtr abc123 30M Mar 30  2009 data_batch_2
+-rw-r--r-- 1 xdtr abc123 30M Mar 30  2009 data_batch_3
+-rw-r--r-- 1 xdtr abc123 30M Mar 30  2009 data_batch_4
+-rw-r--r-- 1 xdtr abc123 30M Mar 30  2009 data_batch_5
+-rw-r--r-- 1 xdtr abc123  88 Jun  4  2009 readme.html
+-rw-r--r-- 1 xdtr abc123 30M Mar 30  2009 test_batch
 ```
 
 ```
@@ -76,11 +76,11 @@ md5sum cifar-10-python.tar.gz > cifar-10-python.md5
 ```
 
 ```
-[xdtr###@login02 ~]$ ls -lh
+[xdtr@login02 ~]$ ls -lh
 total 163M
-drwxr-xr-x 2 xdtr### abc###   10 Jun  4  2009 cifar-10-batches-py
--rw-r--r-- 1 xdtr### abc###   57 Jul 24 11:39 cifar-10-python.md5
--rw-r--r-- 1 xdtr### abc### 163M Jun  4  2009 cifar-10-python.tar.gz
+drwxr-xr-x 2 xdtr108 uic157   10 Jun  4  2009 cifar-10-batches-py
+-rw-r--r-- 1 xdtr108 uic157   57 Jul 26 08:53 cifar-10-python.md5
+-rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-python.tar.gz
 ```
 
 ```
@@ -99,12 +99,12 @@ curl https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz -o cifar-10-python.
 ```
 
 ```
-[xdtr###@login02 ~]$ ls -lh
+[xdtr@login02 ~]$ ls -lh
 total 326M
-drwxr-xr-x 2 xdtr### abc###   10 Jun  4  2009 cifar-10-batches-py
--rw-r--r-- 1 xdtr### abc###   57 Jul 24 11:39 cifar-10-python.md5
--rw-r--r-- 1 xdtr### abc### 163M Jun  4  2009 cifar-10-python.tar.gz
--rw-r--r-- 1 xdtr### abc### 163M Jul 24 11:47 cifar-10-python.tgz
+drwxr-xr-x 2 xdtr108 uic157   10 Jun  4  2009 cifar-10-batches-py
+-rw-r--r-- 1 xdtr108 uic157   57 Jul 26 08:53 cifar-10-python.md5
+-rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-python.tar.gz
+-rw-r--r-- 1 xdtr108 uic157 163M Jul 26 08:54 cifar-10-python.tgz
 ```
 
 ```
@@ -112,13 +112,9 @@ wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/2.5_
 ```
 
 ```
-[xdtr###@login02 ~]$ sha256sum -c cifar-10-python.sha256 
+[xdtr@login02 ~]$ sha256sum -c cifar-10-python.sha256 
 cifar-10-python.tgz: OK
 ```
-
-<img src='https://techgenix.com/tgwordpress/wp-content/uploads/2016/12/image32-e1482537824353.jpg' wdith='100%' height='100%' />
-
-[Image Credit: Amazon Web Services](https://aws.amazon.com/snowmobile)
 
 #
 
