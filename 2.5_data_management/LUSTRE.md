@@ -18,10 +18,11 @@ cd "/expanse/lustre/scratch/${USER}/temp_project"
 ```
 
 ```
-[xdtr108@login02 ~]$ cd "/expanse/lustre/scratch/${USER}/temp_project"
-[xdtr108@login02 temp_project]$ ls -lh
+[xdtr108@login01 temp_project]$ pwd
+/expanse/lustre/scratch/xdtr108/temp_project
+[xdtr108@login01 temp_project]$ ls -lh
 total 40M
--rw-r--r-- 1 xdtr108 uic157 42M Jul 24 13:05 CIFAR-10-images.tar.gz
+-rw-r--r-- 1 xdtr108 uic157 42M Jul 26 09:41 CIFAR-10-images.tar.gz
 ```
 
 ```
@@ -29,23 +30,26 @@ wget https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz
 ```
 
 ```
---2022-07-24 14:56:30--  https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz
-Resolving ftp.ncbi.nlm.nih.gov (ftp.ncbi.nlm.nih.gov)... 165.112.9.228, 165.112.9.230, 2607:f220:41e:250::10, ...
-Connecting to ftp.ncbi.nlm.nih.gov (ftp.ncbi.nlm.nih.gov)|165.112.9.228|:443... connected.
+total 40M
+-rw-r--r-- 1 xdtr108 uic157 42M Jul 26 09:41 CIFAR-10-images.tar.gz
+[xdtr108@login01 temp_project]$ wget https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz
+--2022-07-26 09:45:16--  https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz
+Resolving ftp.ncbi.nlm.nih.gov (ftp.ncbi.nlm.nih.gov)... 165.112.9.230, 130.14.250.7, 2607:f220:41e:250::13, ...
+Connecting to ftp.ncbi.nlm.nih.gov (ftp.ncbi.nlm.nih.gov)|165.112.9.230|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 828637027 (790M) [application/x-gzip]
+Length: 829161809 (791M) [application/x-gzip]
 Saving to: ‘gene_info.gz’
 
-gene_info.gz        100%[===================>] 790.25M  48.0MB/s    in 17s     
+gene_info.gz                  100%[================================================>] 790.75M  47.0MB/s    in 17s     
 
-2022-07-24 14:56:48 (46.5 MB/s) - ‘gene_info.gz’ saved [828637027/828637027]
+2022-07-26 09:45:33 (46.0 MB/s) - ‘gene_info.gz’ saved [829161809/829161809]
 ```
 
 ```
-[xdtr108@login02 temp_project]$ ls -lh
-total 792M
--rw-r--r-- 1 xdtr108 uic157  42M Jul 24 13:05 CIFAR-10-images.tar.gz
--rw-r--r-- 1 xdtr108 uic157 791M Jul 23 20:35 gene_info.gz
+[xdtr108@login01 temp_project]$ ls -lh
+total 793M
+-rw-r--r-- 1 xdtr108 uic157  42M Jul 26 09:41 CIFAR-10-images.tar.gz
+-rw-r--r-- 1 xdtr108 uic157 791M Jul 25 20:25 gene_info.gz
 ```
 
 ```
@@ -63,9 +67,9 @@ Disk quotas for usr xdtr108 (uid 514559):
 ```
 
 ```
-[xdtr108@login02 temp_project]$ ls -lh ../
+[xdtr108@login01 temp_project]$ ls -lh ../
 total 224K
-drwxr-x--T 2 xdtr108 uic157 224K Jul 24 14:56 temp_project
+drwxr-x--T 2 xdtr108 uic157 224K Jul 26 09:45 temp_project
 ```
 
 ```
