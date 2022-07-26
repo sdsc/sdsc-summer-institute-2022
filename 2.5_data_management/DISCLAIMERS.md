@@ -23,4 +23,4 @@ HPC and advanced CI run on Linux. If you don't believe me, then look no further 
 
 #
 
-NEXT - [Easy access: Setting up SSH keys](SSH.md)
+Next - [Easy access: Setting up SSH keys](SSH.md)
