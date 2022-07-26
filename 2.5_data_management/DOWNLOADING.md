@@ -78,9 +78,9 @@ md5sum cifar-10-python.tar.gz > cifar-10-python.md5
 ```
 [xdtr@login02 ~]$ ls -lh
 total 163M
-drwxr-xr-x 2 xdtr108 uic157   10 Jun  4  2009 cifar-10-batches-py
--rw-r--r-- 1 xdtr108 uic157   57 Jul 26 08:53 cifar-10-python.md5
--rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-python.tar.gz
+drwxr-xr-x 2 xdtr abc123   10 Jun  4  2009 cifar-10-batches-py
+-rw-r--r-- 1 xdtr abc123   57 Jul 26 08:53 cifar-10-python.md5
+-rw-r--r-- 1 xdtr abc123 163M Jun  4  2009 cifar-10-python.tar.gz
 ```
 
 ```
@@ -101,10 +101,10 @@ curl https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz -o cifar-10-python.
 ```
 [xdtr@login02 ~]$ ls -lh
 total 326M
-drwxr-xr-x 2 xdtr108 uic157   10 Jun  4  2009 cifar-10-batches-py
--rw-r--r-- 1 xdtr108 uic157   57 Jul 26 08:53 cifar-10-python.md5
--rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-python.tar.gz
--rw-r--r-- 1 xdtr108 uic157 163M Jul 26 08:54 cifar-10-python.tgz
+drwxr-xr-x 2 xdtr abc123   10 Jun  4  2009 cifar-10-batches-py
+-rw-r--r-- 1 xdtr abc123   57 Jul 26 08:53 cifar-10-python.md5
+-rw-r--r-- 1 xdtr abc123 163M Jun  4  2009 cifar-10-python.tar.gz
+-rw-r--r-- 1 xdtr abc123 163M Jul 26 08:54 cifar-10-python.tgz
 ```
 
 ```
