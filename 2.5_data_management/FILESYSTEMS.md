@@ -210,8 +210,6 @@ drwxr-xr-x 4 xdtr108 uic157    5 Jul 26 09:01 CIFAR-10-images
 exit
 ```
 
-https://www.nas.nasa.gov/hecc/support/kb/Lustre_Basics_224.html
-
 #
 
 Next - [Going parallel: Lustre basics](LUSTRE.md)
