@@ -40,7 +40,7 @@ cat /etc/auto.home | grep "${USER}"
 ```
 
 ```
-xdtr###       -fstype=bind :/expanse/nfs/home#/xdtr###
+xdtr108       -fstype=bind :/expanse/nfs/home3/xdtr108
 ```
 
 ```
@@ -52,7 +52,7 @@ df -Th | grep "${USER}"
 ```
 
 ```
-10.22.100.113:/pool#/home/xdtr###                       nfs       194T  9.3T  185T   5% /home/xdtr###
+10.22.100.113:/pool3/home/xdtr108                       nfs       194T  9.3T  185T   5% /home/xdtr108
 ```
 
 ```
@@ -102,11 +102,11 @@ srun --job-name=interactive --account=sds184 --partition=shared --nodes=1 --ntas
 ```
 srun: job 14729913 queued and waiting for resources
 srun: job 14729913 has been allocated resources
-[xdtr###@exp-#-## ~]$
+[xdtr108@exp-1-31 ~]$
 ```
 
 ```
-[xdtr###@exp-1-31 ~]$ df -Th | grep nvme
+[xdtr108@exp-1-31 ~]$ df -Th | grep nvme
 /dev/nvme0n1p1                                          ext4      916G  3.2G  867G   1% /scratch
 ```
 
