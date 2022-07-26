@@ -20,7 +20,3 @@ HPC and advanced CI run on Linux. If you don't believe me, then look no further 
 <img src='https://datamanagement.hms.harvard.edu/sites/g/files/mcu941/files/assets/Images/Lifecycle-wheel-2tier.png' width='50%' height='50%'/>
 
 [Image Credit: Harvard Biomedical Data Management](https://datamanagement.hms.harvard.edu)
-
-
-
-<div style="text-align: right"> [Easy access: Setting up SSH keys](SSH.md) </div>
