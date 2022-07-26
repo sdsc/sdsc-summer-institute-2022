@@ -11,7 +11,7 @@
 
 ### :running: on :penguin:
 
-HPC and advanced CI run on Linux. If you don't believe me, then look no further than [the latest statistics from the TOP500](https://www.top500.org/statistics/list) --- a list of the most powerful supercomputers in the world. Therefore, in this session we will use --- *almost exclusively* --- standard command-line tools and applications that are available for [Unix-like](https://en.wikipedia.org/wiki/Unix-like) operating systems such as Linux and macOS. While you will have remote access to Linux on Expanse today via the training account you were provided for the Summer Institute this week, you will also need access to a \*nix environment on your personal computer to complete some of the exercies we'll work through during this session. 
+HPC and advanced CI run on Linux. If you don't believe me, then look no further than [the latest statistics from the TOP500](https://www.top500.org/statistics/list) --- a list of the most powerful supercomputers in the world. Therefore, in this session we will use --- *almost exclusively* --- standard command-line tools and applications that are available for [Unix-like](https://en.wikipedia.org/wiki/Unix-like) operating systems such as Linux and macOS. While you will have remote access to a Linux environment on Expanse today via the training account you were provided for the Summer Institute, you will also need access to a \*nix environment on your personal computer to complete some of the exercies we'll work through during this session. 
 
 *Recommendation for Windows users*: Install the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl) on your personal computer.
 
