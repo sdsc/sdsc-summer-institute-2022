@@ -100,14 +100,18 @@ srun --job-name=interactive --account=sds184 --partition=shared --nodes=1 --ntas
 ```
 
 ```
-srun: job 14729913 queued and waiting for resources
-srun: job 14729913 has been allocated resources
-[xdtr108@exp-1-31 ~]$
+srun: job 14751425 queued and waiting for resources
+srun: job 14751425 has been allocated resources
+[xdtr108@exp-1-17 ~]$
 ```
 
 ```
-[xdtr108@exp-1-31 ~]$ df -Th | grep nvme
-/dev/nvme0n1p1                                          ext4      916G  3.2G  867G   1% /scratch
+[xdtr108@exp-1-17 ~]$ df -Th | grep nvme
+/dev/nvme0n1p1                                          ext4      916G   67G  804G   8% /scratch                                          ext4      916G  3.2G  867G   1% /scratch
+```
+
+```
+df -Th | less
 ```
 
 ```
@@ -138,19 +142,18 @@ tmpfs                                                   tmpfs      26G     0   2
 ```
 
 ```
-xdtr108@exp-1-31 ~]$ cd /scratch/xdtr108/job_14729913/
-[xdtr108@exp-1-31 job_14729913]$ time -p git clone https://github.com/YoongiKim/CIFAR-10-images.git
+[xdtr108@exp-1-17 job_14751425]$ time -p git clone https://github.com/YoongiKim/CIFAR-10-images.git
 Cloning into 'CIFAR-10-images'...
 remote: Enumerating objects: 60027, done.
 remote: Total 60027 (delta 0), reused 0 (delta 0), pack-reused 60027
-Receiving objects: 100% (60027/60027), 19.94 MiB | 4.53 MiB/s, done.
+Receiving objects: 100% (60027/60027), 19.94 MiB | 3.97 MiB/s, done.
 Resolving deltas: 100% (59990/59990), done.
-real 6.11
-user 0.62
-sys 0.83
-[xdtr108@exp-1-31 job_14729913]$ ls -lh
+real 6.94
+user 0.75
+sys 0.97
+[xdtr108@exp-1-17 job_14751425]$ ls -lh
 total 4.0K
-drwxr-xr-x 5 xdtr108 uic157 4.0K Jul 24 12:37 CIFAR-10-images
+drwxr-xr-x 5 xdtr108 uic157 4.0K Jul 26 09:11 CIFAR-10-images
 ```
 
 ```
@@ -158,59 +161,33 @@ zip -r CIFAR-10-images.zip CIFAR-10-images
 ```
 
 ```
-[xdtr108@exp-1-31 job_14729913]$ ls -lh
+[xdtr108@exp-1-17 job_14751425]$ ls -lh
 total 78M
-drwxr-xr-x 5 xdtr108 uic157 4.0K Jul 24 12:37 CIFAR-10-images
--rw-r--r-- 1 xdtr108 uic157  78M Jul 24 12:40 CIFAR-10-images.zip
+drwxr-xr-x 5 xdtr108 uic157 4.0K Jul 26 09:11 CIFAR-10-images
+-rw-r--r-- 1 xdtr108 uic157  78M Jul 26 09:11 CIFAR-10-images.zip
 ```
 
 ```
-[xdtr108@exp-1-31 job_14729913]$ du -h CIFAR-10-images
-20M	CIFAR-10-images/train/truck
-20M	CIFAR-10-images/train/deer
-20M	CIFAR-10-images/train/frog
-20M	CIFAR-10-images/train/bird
-20M	CIFAR-10-images/train/ship
-20M	CIFAR-10-images/train/automobile
-20M	CIFAR-10-images/train/dog
-20M	CIFAR-10-images/train/airplane
-20M	CIFAR-10-images/train/horse
-20M	CIFAR-10-images/train/cat
-197M	CIFAR-10-images/train
-4.0M	CIFAR-10-images/test/truck
-4.0M	CIFAR-10-images/test/deer
-4.0M	CIFAR-10-images/test/frog
-4.0M	CIFAR-10-images/test/bird
-4.0M	CIFAR-10-images/test/ship
-4.0M	CIFAR-10-images/test/automobile
-4.0M	CIFAR-10-images/test/dog
-4.0M	CIFAR-10-images/test/airplane
-4.0M	CIFAR-10-images/test/horse
-4.0M	CIFAR-10-images/test/cat
-40M	CIFAR-10-images/test
-22M	CIFAR-10-images/.git/objects/pack
-4.0K	CIFAR-10-images/.git/objects/info
-22M	CIFAR-10-images/.git/objects
-8.0K	CIFAR-10-images/.git/info
-4.0K	CIFAR-10-images/.git/branches
+[xdtr108@exp-1-17 job_14751425]$ du -h CIFAR-10-images
 60K	CIFAR-10-images/.git/hooks
-8.0K	CIFAR-10-images/.git/logs/refs/heads
-8.0K	CIFAR-10-images/.git/logs/refs/remotes/origin
-12K	CIFAR-10-images/.git/logs/refs/remotes
-24K	CIFAR-10-images/.git/logs/refs
-32K	CIFAR-10-images/.git/logs
-8.0K	CIFAR-10-images/.git/refs/heads
+4.0K	CIFAR-10-images/.git/branches
 8.0K	CIFAR-10-images/.git/refs/remotes/origin
-12K	CIFAR-10-images/.git/refs/remotes
-4.0K	CIFAR-10-images/.git/refs/tags
-28K	CIFAR-10-images/.git/refs
-27M	CIFAR-10-images/.git
+...
+4.0M	CIFAR-10-images/test/frog
+4.0M	CIFAR-10-images/test/dog
+4.0M	CIFAR-10-images/test/ship
+...
+20M	CIFAR-10-images/train/frog
+20M	CIFAR-10-images/train/dog
+20M	CIFAR-10-images/train/ship
+...
+197M	CIFAR-10-images/train
 263M	CIFAR-10-images
-[xdtr108@exp-1-31 job_14729913]$
+[xdtr108@exp-1-17 job_14751425]$
 ```
 
 ```
-rm -r "/scratch/${USER}/job_${SLURM_JOB_ID}/CIFAR-10-images"
+rm -rf CIFAR-10-images/
 ```
 
 ```
@@ -218,21 +195,20 @@ unzip CIFAR-10-images.zip 'CIFAR-10-images/test/dog/*'
 ```
 
 ```
-[xdtr108@exp-1-31 job_14729913]$ cp CIFAR-10-images.zip ~/
-[xdtr108@exp-1-31 job_14729913]$ cd ~/
-[xdtr108@exp-1-31 ~]$ ls -lh
+[xdtr108@exp-1-17 job_14751425]$ cp CIFAR-10-images.zip ~/
+[xdtr108@exp-1-17 job_14751425]$ cd ~/
+[xdtr108@exp-1-17 ~]$ ls -lh
 total 373M
 drwxr-xr-x 2 xdtr108 uic157   10 Jun  4  2009 cifar-10-batches-py
--rw-r--r-- 1 xdtr108 uic157  78M Jul 24 12:54 CIFAR-10-images.zip
--rw-r--r-- 1 xdtr108 uic157   57 Jul 24 11:39 cifar-10-python.md5
--rw-r--r-- 1 xdtr108 uic157   86 Jul 24 11:51 cifar-10-python.sha256
+drwxr-xr-x 4 xdtr108 uic157    5 Jul 26 09:01 CIFAR-10-images
+-rw-r--r-- 1 xdtr108 uic157  78M Jul 26 09:15 CIFAR-10-images.zip
+-rw-r--r-- 1 xdtr108 uic157   57 Jul 26 08:53 cifar-10-python.md5
+-rw-r--r-- 1 xdtr108 uic157   86 Jul 26 08:55 cifar-10-python.sha256
 -rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-python.tar.gz
--rw-r--r-- 1 xdtr108 uic157 163M Jul 24 11:47 cifar-10-python.tgz
-[xdtr108@exp-1-31 ~]$ exit
+-rw-r--r-- 1 xdtr108 uic157 163M Jul 26 08:54 cifar-10-python.tgz
+[xdtr108@exp-1-17 ~]$ exit
 exit
-[xdtr108@login01 ~]$
 ```
-
 
 https://www.nas.nasa.gov/hecc/support/kb/Lustre_Basics_224.html
 
