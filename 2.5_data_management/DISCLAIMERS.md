@@ -21,6 +21,6 @@ HPC and advanced CI run on Linux. If you don't believe me, then look no further 
 
 [Image Credit: Harvard Biomedical Data Management](https://datamanagement.hms.harvard.edu)
 
-#### NEXT
 
-[Easy access: Setting up SSH keys](SSH.md)
+
+:arrow_forward: [Easy access: Setting up SSH keys](SSH.md)
