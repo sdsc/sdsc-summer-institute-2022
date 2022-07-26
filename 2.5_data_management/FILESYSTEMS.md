@@ -211,6 +211,65 @@ exit
 [xdtr108@login01 ~]$
 ```
 
+```
+wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/2.5_data_management/download-cifar-images.sh
+```
+
+```
+#!/usr/bin/env bash
+
+#SBATCH --job-name=download-cifar-images
+#SBATCH --account=sds184
+#SBATCH --partition=shared
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=2G
+#SBATCH --time=00:05:00
+#SBATCH --output=%x.o%j.%N
+
+declare -xr LUSTRE_PROJECTS_DIR="/expanse/lustre/projects/${SLURM_JOB_ACCOUNT}/${USER}"
+declare -xr LUSTRE_SCRATCH_DIR="/expanse/lustre/scratch/${USER}/temp_project"
+
+declare -xr LOCAL_SCRATCH_DIR="/scratch/${USER}/job_${SLURM_JOB_ID}"
+
+module purge
+module list
+printenv
+
+cd "${LOCAL_SCRATCH_DIR}"
+git clone https://github.com/YoongiKim/CIFAR-10-images.git
+tar -czf CIFAR-10-images.tar.gz CIFAR-10-images/
+cp CIFAR-10-images.tar.gz "${HOME}"
+cp CIFAR-10-images.tar.gz "${LUSTRE_SCRATCH_DIR}"
+```
+
+```
+[xdtr108@login01 ~]$ sbatch download-cifar-images.sh 
+Submitted batch job 14751956
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          14751956     shared download  xdtr108  R       0:02      1 exp-9-55
+```
+
+```
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[xdtr108@login01 ~]$ ls -lh
+total 415M
+drwxr-xr-x 2 xdtr108 uic157   10 Jun  4  2009 cifar-10-batches-py
+drwxr-xr-x 3 xdtr108 uic157    3 Jul 26 09:17 CIFAR-10-images
+-rw-r--r-- 1 xdtr108 uic157  42M Jul 26 09:41 CIFAR-10-images.tar.gz
+-rw-r--r-- 1 xdtr108 uic157  78M Jul 26 09:15 CIFAR-10-images.zip
+-rw-r--r-- 1 xdtr108 uic157   57 Jul 26 08:53 cifar-10-python.md5
+-rw-r--r-- 1 xdtr108 uic157   86 Jul 26 08:55 cifar-10-python.sha256
+-rw-r--r-- 1 xdtr108 uic157 163M Jun  4  2009 cifar-10-python.tar.gz
+-rw-r--r-- 1 xdtr108 uic157 163M Jul 26 08:54 cifar-10-python.tgz
+-rw-r--r-- 1 xdtr108 uic157 6.3K Jul 26 09:41 download-cifar-images.o14751956.exp-9-55
+-rw-r--r-- 1 xdtr108 uic157  746 Jul 26 09:41 download-cifar-images.sh
+[xdtr108@login01 ~]$
+```
+
 #
 
 Next - [Going parallel: Lustre basics](LUSTRE.md)
