@@ -177,3 +177,7 @@ IdentityFile ~/.ssh/sdsc-si22
 ```
 $ ssh expanse
 ```
+
+#
+
+- [CIFAR through the tubes: Downloading data from the internet](DOWNLOADING.md)
