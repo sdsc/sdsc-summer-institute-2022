@@ -167,31 +167,123 @@ expanse-OST0047_UUID
 Total allocated inode limit: 7, total allocated block limit: 0k
 ```
 
+```
+cp /cm/shared/examples/sdsc/si/2022/ILSVRC2012_img_val.tar ./
+```
 
 ```
-[xdtr108@login01 temp_project]$ lfs getstripe striped/
-striped/
-stripe_count:  1 stripe_size:   1048576 pattern:       0 stripe_offset: -1
+[xdtr108@login01 temp_project]$ ls -lh
+total 6.4G
+-rw-r--r-- 1 xdtr108 uic157  42M Jul 26 09:41 CIFAR-10-images.tar.gz
+-rw-r--r-- 1 xdtr108 uic157 791M Jul 25 20:25 gene_info.gz
+-rw-r--r-- 1 xdtr108 uic157 6.3G Jul 26 11:40 ILSVRC2012_img_val.tar
+```
 
+```
+[xdtr108@login01 temp_project]$ lfs getstripe ILSVRC2012_img_val.tar 
+ILSVRC2012_img_val.tar
+lmm_stripe_count:  1
+lmm_stripe_size:   1048576
+lmm_pattern:       raid0
+lmm_layout_gen:    0
+lmm_stripe_offset: 50
+	obdidx		 objid		 objid		 group
+	    50	      18850755	    0x11fa3c3	  0x1180000400
+
+[xdtr108@login01 temp_project]$ mkdir striped
+[xdtr108@login01 temp_project]$ ls -lh
+total 6.8G
+-rw-r--r-- 1 xdtr108 uic157  42M Jul 26 09:41 CIFAR-10-images.tar.gz
+-rw-r--r-- 1 xdtr108 uic157 791M Jul 25 20:25 gene_info.gz
+-rw-r--r-- 1 xdtr108 uic157 6.3G Jul 26 11:40 ILSVRC2012_img_val.tar
+drwxr-xr-x 2 xdtr108 uic157 224K Jul 26 11:41 striped
+[xdtr108@login01 temp_project]$ lfs getstripe striped
+striped
+stripe_count:  1 stripe_size:   1048576 pattern:       0 stripe_offset: -1
+```
+
+```
 [xdtr108@login01 temp_project]$ lfs setstripe -c 4 striped/
 [xdtr108@login01 temp_project]$ lfs getstripe striped/
 striped/
 stripe_count:  4 stripe_size:   1048576 pattern:       raid0 stripe_offset: -1
 
-[xdtr108@login01 temp_project]$ cp ILSVRC2012_img_train.tar striped/
-[xdtr108@login01 temp_project]$ lfs getstripe striped/ILSVRC2012_img_train.tar 
-striped/ILSVRC2012_img_train.tar
+[xdtr108@login01 temp_project]$ cp ILSVRC2012_img_val.tar striped/
+[xdtr108@login01 temp_project]$ ls -lh ILSVRC2012_img_val.tar striped/
+-rw-r--r-- 1 xdtr108 uic157 6.3G Jul 26 11:40 ILSVRC2012_img_val.tar
+
+striped/:
+total 5.7G
+-rw-r--r-- 1 xdtr108 uic157 6.3G Jul 26 11:44 ILSVRC2012_img_val.tar
+[xdtr108@login01 temp_project]$ lfs getstripe striped/ILSVRC2012_img_val.tar 
+striped/ILSVRC2012_img_val.tar
 lmm_stripe_count:  4
 lmm_stripe_size:   1048576
 lmm_pattern:       raid0
 lmm_layout_gen:    0
-lmm_stripe_offset: 52
+lmm_stripe_offset: 65
 	obdidx		 objid		 objid		 group
-	    52	      19080069	    0x1232385	  0x1380000400
-	    15	      18905972	    0x1207b74	  0x1200000402
-	     5	      19135437	    0x123fbcd	   0x800000401
-	    53	      19134651	    0x123f8bb	  0x1480000402
+	    65	      17358232	    0x108dd98	   0xec0000400
+	    18	      19165212	    0x124701c	   0x340000400
+	    61	      19238165	    0x1258d15	   0xac0000401
+	    11	      19141033	    0x12411a9	   0xe00000401
 ```
+
+```
+[xdtr108@login01 temp_project]$ lfs quota -h -v -u "${USER}" ./
+Disk quotas for usr xdtr108 (uid 514559):
+     Filesystem    used   quota   limit   grace   files   quota   limit   grace
+             ./  12.73G      0k  9.537T       -      16       0 2000000       -
+expanse-MDT0000_UUID
+                   222k*      -    167k       -       4*      -       3       -
+expanse-MDT0001_UUID
+                   112k*      -     56k       -       4*      -       1       -
+expanse-MDT0002_UUID
+                   112k*      -     56k       -       3*      -       1       -
+expanse-MDT0003_UUID
+                   222k*      -    111k       -       5*      -       2       -
+expanse-OST0000_UUID
+                     0k       -      0k       -       -       -       -       -
+...
+expanse-OST000b_UUID
+                 1.495G       -      0k       -       -       -       -       -
+expanse-OST000c_UUID
+                     0k       -      0k       -       -       -       -       -
+...
+expanse-OST0012_UUID
+                 1.495G       -      0k       -       -       -       -       -
+expanse-OST0013_UUID
+                     0k       -      0k       -       -       -       -       -
+expanse-OST0014_UUID
+                 752.7M       -      0k       -       -       -       -       -
+expanse-OST0015_UUID
+                     0k       -      0k       -       -       -       -       -
+...
+expanse-OST0021_UUID
+                 39.75M       -      0k       -       -       -       -       -
+expanse-OST0022_UUID
+                     0k       -      0k       -       -       -       -       -
+...
+expanse-OST0032_UUID
+                 5.979G       -      0k       -       -       -       -       -
+expanse-OST0033_UUID
+                     0k       -      0k       -       -       -       -       -
+...
+expanse-OST003d_UUID
+                 1.495G       -      0k       -       -       -       -       -
+expanse-OST003e_UUID
+                     0k       -      0k       -       -       -       -       -
+...
+expanse-OST0041_UUID
+                 1.495G       -      0k       -       -       -       -       -
+expanse-OST0042_UUID
+                     0k       -      0k       -       -       -       -       -
+...
+expanse-OST0047_UUID
+                     0k       -      0k       -       -       -       -       -
+Total allocated inode limit: 7, total allocated block limit: 0k
+```
+
 
 #
 
