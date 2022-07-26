@@ -157,7 +157,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjZ/DRrsFmb6GOBrxBo+QuFpN4r2lf8ZnXxe1YZUR/
 ```
 
 ```
-[xdtr@login02 ~]$ ssh-keygen -l -f ~/.ssh/authorized_keys 
+[xdtr@login01 ~]$ ssh-keygen -l -f ~/.ssh/authorized_keys 
 4096 SHA256:doNjZ99n+cFG7DBeMtBIdDroNkQF7C70Rd9yxysgCH4 your_local_username@your_local_hostname (RSA)
 ```
 
