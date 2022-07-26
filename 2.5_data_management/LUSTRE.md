@@ -14,6 +14,10 @@ https://en.wikipedia.org/wiki/Clustered_file_system
 https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz
 
 ```
+cd "/expanse/lustre/scratch/${USER}/temp_project"
+```
+
+```
 [xdtr108@login02 ~]$ cd "/expanse/lustre/scratch/${USER}/temp_project"
 [xdtr108@login02 temp_project]$ ls -lh
 total 40M
