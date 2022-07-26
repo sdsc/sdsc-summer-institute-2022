@@ -103,7 +103,7 @@ Verification code:
 ### Step 3 - Login to Expanse using your SSH keys
 
 ```
-ssh -i ~/.ssh/sdsc-si22 xdtr#@login.expanse.sdsc.edu
+ssh -i ~/.ssh/sdsc-si22 xdtr@login.expanse.sdsc.edu
 ```
 
 ```
@@ -131,7 +131,7 @@ Use the following commands to adjust your environment:
 
 -------------------------------------------------------------------------------
 Last login: Fri Jul 22 07:09:42 2022 from 208.58.214.56
-[xdtr###@login01 ~]$
+[xdtr108@login01 ~]$
 ```
 
 ```
