@@ -120,3 +120,6 @@ cifar-10-python.tgz: OK
 
 [Image Credit: Amazon Web Services](https://aws.amazon.com/snowmobile)
 
+#
+
+Next - [More files, more problems: Advantages and limitations of different filesystems](FILESYSTEMS.md)
