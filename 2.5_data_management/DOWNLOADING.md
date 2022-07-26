@@ -84,7 +84,7 @@ drwxr-xr-x 2 xdtr abc123   10 Jun  4  2009 cifar-10-batches-py
 ```
 
 ```
-[xdtr###@login02 ~]$ md5sum -c cifar-10-python.md5 
+[xdtr@login02 ~]$ md5sum -c cifar-10-python.md5 
 cifar-10-python.tar.gz: OK
 ```
 
