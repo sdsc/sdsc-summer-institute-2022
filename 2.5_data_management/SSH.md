@@ -180,4 +180,4 @@ $ ssh expanse
 
 #
 
-- [CIFAR through the tubes: Downloading data from the internet](DOWNLOADING.md)
+Next - [CIFAR through the tubes: Downloading data from the internet](DOWNLOADING.md)
