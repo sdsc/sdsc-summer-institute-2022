@@ -73,7 +73,7 @@ config  id_rsa  id_rsa.pub  known_hosts  sdsc-si22  sdsc-si22.pub
 ### Step 2 - Copy your public SSH key to Expanse
 
 ```
-ssh-copy-id -i ~/.ssh/sdsc-si22 xdtr_username@login.expanse.sdsc.edu
+ssh-copy-id -i ~/.ssh/sdsc-si22 xdtr@login.expanse.sdsc.edu
 ```
 
 ```
