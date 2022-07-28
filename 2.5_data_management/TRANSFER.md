@@ -74,6 +74,15 @@ sftp> exit
 $
 ```
 
+```
+$ lftp sftp://xdtr108@oasis-dm-interactive.sdsc.edu
+Password: 
+lftp xdtr108@oasis-dm-interactive.sdsc.edu:~> pget -n 8 /expanse/lustre/scratch/xdtr108/temp_project/striped/ILSVRC2012_img_val.tar
+6744924160 bytes transferred in 153 seconds (42.16 MiB/s)                      
+lftp xdtr108@oasis-dm-interactive.sdsc.edu:~> exit                             
+$
+```
+
 
 <img src='https://techgenix.com/tgwordpress/wp-content/uploads/2016/12/image32-e1482537824353.jpg' wdith='100%' height='100%' />
 
