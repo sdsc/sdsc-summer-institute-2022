@@ -64,6 +64,15 @@ $ ls
  Desktop               Dropbox     Pictures       Templates
 ```
 
+```
+$ sftp xdtr108@oasis-dm-interactive.sdsc.edu
+Connected to oasis-dm-interactive.sdsc.edu.
+sftp> get /expanse/lustre/scratch/xdtr108/temp_project/striped/ILSVRC2012_img_val.tar
+Fetching /expanse/lustre/scratch/xdtr108/temp_project/striped/ILSVRC2012_img_val.tar to ILSVRC2012_img_val.tar
+/expanse/lustre/scratch/xdtr108/temp_project/ 100% 6432MB  24.1MB/s   04:26    
+sftp> exit
+$
+```
 
 
 <img src='https://techgenix.com/tgwordpress/wp-content/uploads/2016/12/image32-e1482537824353.jpg' wdith='100%' height='100%' />
