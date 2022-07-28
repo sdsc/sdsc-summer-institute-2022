@@ -1,7 +1,10 @@
-# Session 3.5 High Throughput Computing #
+# High Throughput Computing
 
-**Date: Tuesday, August 2, 2022**
+[Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
 
-[Marty Kandes]() (mkandes at ucsd.edu)
+High-throughput computing (HTC) workloads are characterized by large numbers of small jobs. These frequently involve parameter sweeps where the same type of calculation is done repeatedly with different input values or data processing pipelines where an identical set of operations is applied to many files. This session covers the characteristics and potential pitfalls of HTC, job bundling, the Open Science Grid and the resources available through the Partnership to Advance Throughput Computing (PATh).
 
-High-throughput computing (HTC) workloads are characterized by large numbers of small jobs [28]. These frequently involve parameter sweeps where the same type of calculation is done repeatedly with different input values or data processing pipelines where an identical set of operations is applied to many files. This session covers the characteristics and potential pitfalls of HTC, job bundling, the Open Science Grid and the resources available through the Partnership to Advance Throughput Computing (PATh).
+- [HPC vs. HTC](HTC.md)
+- [Batch job arrays and dependencies](ARRAYS.md)
+- [Ad-hoc job/task bundling](BUNDLING.md)
+- [Distributed high-throughput computing](DHTC.md)
