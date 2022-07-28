@@ -317,9 +317,74 @@ printenv
 cd "${LUSTRE_SCRATCH_DIR}"
 
 time -p singularity exec --bind /expanse "${SINGULARITY_CONTAINER_DIR}/ior.sif" \
-  mpirun -n "${SLURM_NTASKS}" ior -a MPIIO -i 1 -t 2m -b 32m -s 1024 -C -e
+  mpirun -n "${SLURM_NTASKS}" --mca btl self,vader --map-by l3cache \ 
+    ior -a MPIIO -i 1 -t 2m -b 32m -s 1024 -C -e
 ```
 
+```
+[xdtr108@login02 ~]$ sbatch run-ior-benchmark.sh 
+Submitted batch job 14773448
+[xdtr108@login02 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          14773448     debug run-ior-  xdtr108  R       1:35      1 exp-9-55
+[xdtr108@login02 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[xdtr108@login02 ~]$ ls 
+cifar-10-batches-py     cifar-10-python.tar.gz
+CIFAR-10-images         cifar-10-python.tgz
+CIFAR-10-images.tar.gz  download-cifar-images.o14751956.exp-9-55
+CIFAR-10-images.zip     download-cifar-images.sh
+cifar-10-python.md5     run-ior-benchmark.o14773448.exp-9-55
+cifar-10-python.sha256  run-ior-benchmark.sh
+```
+
+```
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Thu Jul 28 08:12:41 2022
+Command line        : ior -a MPIIO -i 1 -t 2m -b 32m -s 1024 -C -e
+Machine             : Linux exp-9-55
+TestID              : 0
+StartTime           : Thu Jul 28 08:12:41 2022
+Path                : /expanse/lustre/scratch/xdtr108/temp_project
+FS                  : 9980.5 TiB   Used FS: 23.1%   Inodes: 8657.9 Mi   Used Inodes: 11.3%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.1)
+test filename       : testFile
+access              : single-shared-file
+type                : independent
+segments            : 1024
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 1
+tasks               : 4
+clients per node    : 4
+repetitions         : 1
+xfersize            : 2 MiB
+blocksize           : 32 MiB
+aggregate filesize  : 128 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     2069.94    1034.99    3.95        32768      2048.00    0.000886   63.32      0.143442   63.32      0   
+read      2784.22    1392.15    2.64        32768      2048.00    0.001064   47.08      4.83       47.08      0   
+remove    -          -          -           -          -          -          -          -          14.15      0   
+Max Write: 2069.94 MiB/sec (2170.49 MB/sec)
+Max Read:  2784.22 MiB/sec (2919.47 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2069.94    2069.94    2069.94       0.00    1034.97    1034.97    1034.97       0.00   63.32164         NA            NA     0      4   4    1   0     1        1         0    0   1024 33554432  2097152  131072.0 MPIIO      0
+read         2784.22    2784.22    2784.22       0.00    1392.11    1392.11    1392.11       0.00   47.07669         NA            NA     0      4   4    1   0     1        1         0    0   1024 33554432  2097152  131072.0 MPIIO      0
+Finished            : Thu Jul 28 08:14:46 2022
+real 125.27
+user 50.90
+sys 359.36
+```
 
 #
 
