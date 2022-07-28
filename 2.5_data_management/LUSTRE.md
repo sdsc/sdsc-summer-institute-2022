@@ -15,6 +15,10 @@ https://hpc-uit.readthedocs.io/en/latest/storage/lustre-performance.html
 
 https://ior.readthedocs.io/en/latest/index.html
 
+https://www.nas.nasa.gov/hecc/support/kb/Lustre_Basics_224.html
+
+https://www.nas.nasa.gov/hecc/support/kb/lustre-best-practices_226.html
+
 ```
 cd "/expanse/lustre/scratch/${USER}/temp_project"
 ```
