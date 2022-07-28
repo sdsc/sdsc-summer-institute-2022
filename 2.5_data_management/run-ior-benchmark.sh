@@ -26,4 +26,5 @@ printenv
 cd "${LUSTRE_SCRATCH_DIR}"
 
 time -p singularity exec --bind /expanse "${SINGULARITY_CONTAINER_DIR}/ior.sif" \
-  mpirun -n "${SLURM_NTASKS}" ior -a MPIIO -i 1 -t 2m -b 32m -s 1024 -C -e
+  mpirun -n "${SLURM_NTASKS}" --mca btl self,vader --map-by l3cache \ 
+    ior -a MPIIO -i 1 -t 2m -b 32m -s 1024 -C -e
