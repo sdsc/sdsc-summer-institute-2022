@@ -67,8 +67,8 @@ $ ls
 ```
 $ sftp xdtr108@oasis-dm-interactive.sdsc.edu
 Connected to oasis-dm-interactive.sdsc.edu.
-sftp> get /expanse/lustre/scratch/xdtr108/temp_project/striped/ILSVRC2012_img_val.tar
-Fetching /expanse/lustre/scratch/xdtr108/temp_project/striped/ILSVRC2012_img_val.tar to ILSVRC2012_img_val.tar
+sftp> get /expanse/lustre/scratch/xdtr108/temp_project/ILSVRC2012_img_val.tar
+Fetching /expanse/lustre/scratch/xdtr108/temp_project/ILSVRC2012_img_val.tar to ILSVRC2012_img_val.tar
 /expanse/lustre/scratch/xdtr108/temp_project/ 100% 6432MB  24.1MB/s   04:26    
 sftp> exit
 $
@@ -77,7 +77,7 @@ $
 ```
 $ lftp sftp://xdtr108@oasis-dm-interactive.sdsc.edu
 Password: 
-lftp xdtr108@oasis-dm-interactive.sdsc.edu:~> pget -n 8 /expanse/lustre/scratch/xdtr108/temp_project/striped/ILSVRC2012_img_val.tar
+lftp xdtr108@oasis-dm-interactive.sdsc.edu:~> pget -n 8 /expanse/lustre/scratch/xdtr108/temp_project/ILSVRC2012_img_val.tar
 6744924160 bytes transferred in 153 seconds (42.16 MiB/s)                      
 lftp xdtr108@oasis-dm-interactive.sdsc.edu:~> exit                             
 $
