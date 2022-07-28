@@ -17,13 +17,17 @@ Why go parallel?
 
 Speed
 
-![Katrina - Low Resolution](https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png)
+![Katrina - Low Resolution Simulation - 50-km - 2005](https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png)
 
 Scale
 
-![Katrina - High Resolution](https://www.nasa.gov/sites/default/files/geos-5_wspd_6_katrina_0.png)
+![Katrina - High Resolution Simulation - 6.25-km - 2015](https://www.nasa.gov/sites/default/files/geos-5_wspd_6_katrina_0.png)
 
 https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science
 
 
 Throughput
+
+![IceCube - Glashow Event](https://www.sdsc.edu/assets/images/news_items/PR20210414_IceCube_antineutrino_1280x800.jpg)
+
+https://www.sdsc.edu/News%20Items/PR20210414_IceCube_antineutrino.html
