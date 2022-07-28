@@ -375,16 +375,76 @@ read      2784.22    1392.15    2.64        32768      2048.00    0.001064   47.
 remove    -          -          -           -          -          -          -          -          14.15      0   
 Max Write: 2069.94 MiB/sec (2170.49 MB/sec)
 Max Read:  2784.22 MiB/sec (2919.47 MB/sec)
-
-Summary of all tests:
-Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
-write        2069.94    2069.94    2069.94       0.00    1034.97    1034.97    1034.97       0.00   63.32164         NA            NA     0      4   4    1   0     1        1         0    0   1024 33554432  2097152  131072.0 MPIIO      0
-read         2784.22    2784.22    2784.22       0.00    1392.11    1392.11    1392.11       0.00   47.07669         NA            NA     0      4   4    1   0     1        1         0    0   1024 33554432  2097152  131072.0 MPIIO      0
-Finished            : Thu Jul 28 08:14:46 2022
+...
 real 125.27
 user 50.90
 sys 359.36
 ```
+
+```
+cd "${LUSTRE_SCRATCH_DIR}/striped"
+```
+
+```
+Results:
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     2096.46    1048.25    3.91        32768      2048.00    0.000754   62.52      0.200967   62.52      0   
+read      3028.44    1514.24    2.29        32768      2048.00    0.000364   43.28      22.06      43.28      0   
+remove    -          -          -           -          -          -          -          -          0.000802   0   
+Max Write: 2096.46 MiB/sec (2198.30 MB/sec)
+Max Read:  3028.44 MiB/sec (3175.54 MB/sec)
+...
+real 106.80
+user 34.31
+sys 338.16
+```
+
+```
+ior -a MPIIO -i 1 -t 2m -b 32m -s 1024 -C -e -F
+```
+
+```
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     4995       2497.39    1.63        32768      2048.00    0.002395   26.24      0.520821   26.24      0   
+read      6713       3356.81    1.22        32768      2048.00    0.000745   19.52      0.444355   19.52      0   
+remove    -          -          -           -          -          -          -          -          10.83      0   
+Max Write: 4994.59 MiB/sec (5237.20 MB/sec)
+Max Read:  6713.41 MiB/sec (7039.52 MB/sec)
+...
+real 57.31
+user 2.59
+sys 219.07
+```
+
+```
+#SBATCH --ntasks-per-node=32
+```
+
+```
+ior -a MPIIO -i 1 -t 2m -b 32m -s 128 -C -e -F
+```
+
+```
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     11123      5564       0.680397    32768      2048.00    0.027420   11.78      4.48       11.78      0   
+read      13579      6790       0.352953    32768      2048.00    0.014636   9.65       7.95       9.65       0   
+remove    -          -          -           -          -          -          -          -          14.90      0   
+Max Write: 11123.42 MiB/sec (11663.75 MB/sec)
+Max Read:  13579.44 MiB/sec (14239.07 MB/sec)
+...
+real 37.72
+user 186.76
+sys 572.30
+```
+
 
 #
 
