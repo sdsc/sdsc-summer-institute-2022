@@ -31,3 +31,7 @@ Throughput
 ![IceCube - Glashow Event](https://www.sdsc.edu/assets/images/news_items/PR20210414_IceCube_antineutrino_1280x800.jpg)
 
 https://www.sdsc.edu/News%20Items/PR20210414_IceCube_antineutrino.html
+
+![IceCube - GPU Cloud Burst](https://www.sdsc.edu/assets/images/news_items/PR20191119_GPU_Cloudburst.jpg)
+
+https://www.sdsc.edu/News%20Items/PR20191119_GPU_Cloudburst.html
