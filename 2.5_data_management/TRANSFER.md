@@ -83,6 +83,124 @@ lftp xdtr108@oasis-dm-interactive.sdsc.edu:~> exit
 $
 ```
 
+```
+$ globus endpoint search 'XSEDE Expanse'
+ID                                   | Owner              | Display Name                                              
+------------------------------------ | ------------------ | ----------------------------------------------------------
+b256c034-1578-11eb-893e-0a5521ff3f4b | xsede@globusid.org | XSEDE Expanse                                             
+9ca935c8-2deb-11ec-95dc-853490a236f9 | cosmic2@xsede.org  | COSMIC2 Science Gateway storage on XSEDE Expanse          
+2552f468-2dec-11ec-95dc-853490a236f9 | cosmic2@xsede.org  | COSMIC2 Science Gateway storage on XSEDE Expanse (staging)
+d74d0ede-4402-11ec-a9c7-91e0e7641750 | sivagnan@xsede.org | NSG private share for Simon on Expanse                    
+0d0ad3e4-4403-11ec-a6bf-9b4f84e67de8 | sivagnan@xsede.org | NSG public share for Simon on Expanse
+```
+
+```
+$ globus endpoint search 'hardtack'
+ID                                   | Owner              | Display Name
+------------------------------------ | ------------------ | ------------
+6d66770e-0e95-11ed-8dae-9f359c660fbd | mckandes@xsede.org | hardtack
+```
+
+```
+$ export SOURCE_ENDPOINT_ID='b256c034-1578-11eb-893e-0a5521ff3f4b'
+mkandes@hardtack:~$ export DEST_ENDPOINT_ID='6d66770e-0e95-11ed-8dae-9f359c660fbd'
+mkandes@hardtack:~$ globus transfer "${SOURCE_ENDPOINT_ID}:/expanse/lustre/scratch/mkandes/temp_project/ILSVRC2012_img_val.tar" "${DEST_ENDPOINT_ID}:~/ILSVRC2012_img_val.tar"
+Message: The transfer has been accepted and a task has been created and queued for execution
+Task ID: 551a8ecc-0eab-11ed-8dae-9f359c660fbd
+```
+
+```
+$ globus task show 551a8ecc-0eab-11ed-8dae-9f359c660fbd
+Label:                        None
+Task ID:                      551a8ecc-0eab-11ed-8dae-9f359c660fbd
+Is Paused:                    False
+Type:                         TRANSFER
+Directories:                  0
+Files:                        1
+Status:                       ACTIVE
+Request Time:                 2022-07-28T19:27:35+00:00
+Faults:                       0
+Total Subtasks:               2
+Subtasks Succeeded:           1
+Subtasks Pending:             1
+Subtasks Retrying:            0
+Subtasks Failed:              0
+Subtasks Canceled:            0
+Subtasks Expired:             0
+Subtasks with Skipped Errors: 0
+Deadline:                     2022-07-29T19:27:35+00:00
+Details:                      OK
+Source Endpoint:              XSEDE Expanse
+Source Endpoint ID:           b256c034-1578-11eb-893e-0a5521ff3f4b
+Destination Endpoint:         hardtack
+Destination Endpoint ID:      6d66770e-0e95-11ed-8dae-9f359c660fbd
+Bytes Transferred:            0
+Bytes Per Second:             0
+```
+
+```
+$ globus task show 551a8ecc-0eab-11ed-8dae-9f359c660fbd
+Label:                        None
+Task ID:                      551a8ecc-0eab-11ed-8dae-9f359c660fbd
+Is Paused:                    False
+Type:                         TRANSFER
+Directories:                  0
+Files:                        1
+Status:                       SUCCEEDED
+Request Time:                 2022-07-28T19:27:35+00:00
+Faults:                       0
+Total Subtasks:               2
+Subtasks Succeeded:           2
+Subtasks Pending:             0
+Subtasks Retrying:            0
+Subtasks Failed:              0
+Subtasks Canceled:            0
+Subtasks Expired:             0
+Subtasks with Skipped Errors: 0
+Completion Time:              2022-07-28T19:30:59+00:00
+Source Endpoint:              XSEDE Expanse
+Source Endpoint ID:           b256c034-1578-11eb-893e-0a5521ff3f4b
+Destination Endpoint:         hardtack
+Destination Endpoint ID:      6d66770e-0e95-11ed-8dae-9f359c660fbd
+Bytes Transferred:            6744924160
+Bytes Per Second:             33060759
+```
+
+```
+$ globus endpoint search 'XSEDE TACC Stampede2'
+ID                                   | Owner              | Display Name        
+------------------------------------ | ------------------ | --------------------
+ceea5ca0-89a9-11e7-a97f-22000a92523b | xsede@globusid.org | XSEDE TACC stampede2
+$ export DEST_ENDPOINT_ID='ceea5ca0-89a9-11e7-a97f-22000a92523b'
+$ globus transfer "${SOURCE_ENDPOINT_ID}:/expanse/lustre/scratch/mkandes/temp_project/ILSVRC2012_img_val.tar" "${DEST_ENDPOINT_ID}:/work2/03216/mckandes/stampede2/ILSVRC2012_img_val.tar"
+Message: The transfer has been accepted and a task has been created and queued for execution
+Task ID: 1b4546a0-0eac-11ed-8dae-9f359c660fbd
+$ globus task show 1b4546a0-0eac-11ed-8dae-9f359c660fbd
+Label:                        None
+Task ID:                      1b4546a0-0eac-11ed-8dae-9f359c660fbd
+Is Paused:                    False
+Type:                         TRANSFER
+Directories:                  0
+Files:                        1
+Status:                       SUCCEEDED
+Request Time:                 2022-07-28T19:33:07+00:00
+Faults:                       0
+Total Subtasks:               2
+Subtasks Succeeded:           2
+Subtasks Pending:             0
+Subtasks Retrying:            0
+Subtasks Failed:              0
+Subtasks Canceled:            0
+Subtasks Expired:             0
+Subtasks with Skipped Errors: 0
+Completion Time:              2022-07-28T19:33:34+00:00
+Source Endpoint:              XSEDE Expanse
+Source Endpoint ID:           b256c034-1578-11eb-893e-0a5521ff3f4b
+Destination Endpoint:         XSEDE TACC stampede2
+Destination Endpoint ID:      ceea5ca0-89a9-11e7-a97f-22000a92523b
+Bytes Transferred:            6744924160
+Bytes Per Second:             255829087
+```
 
 <img src='https://techgenix.com/tgwordpress/wp-content/uploads/2016/12/image32-e1482537824353.jpg' wdith='100%' height='100%' />
 
