@@ -60,7 +60,7 @@ pi.py
 [xdtr108@login01 ~]$
 ```
 
-Download the example batch job script.
+Next, download the example batch job script.
 
 ```
 wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/3.5_high_throughput_computing/estimate-pi.sh
