@@ -25,7 +25,11 @@ https://cdn.vanderbilt.edu/vu-wp0/wp-content/uploads/sites/157/2017/10/26210640/
 https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial##ExamplesPI
 
 
-### Example job: Estimating Pi
+### Estimating Pi
+
+```
+$ ssh expanse
+```
 
 [4pi](https://github.com/mkandes/4pi)
 
@@ -43,9 +47,11 @@ remote: Counting objects: 100% (14/14), done.
 remote: Compressing objects: 100% (8/8), done.
 remote: Total 14 (delta 1), reused 14 (delta 1), pack-reused 0
 Unpacking objects: 100% (14/14), 4.64 KiB | 8.00 KiB/s, done.
-[xdtr108@login01 ~]$ cd 4pi/
-[xdtr108@login01 4pi]$ ls
+[xdtr108@login01 ~]$ ls 4pi/
 bash  c  fortran  LICENSE.md  python  README.md
+[xdtr108@login01 ~]$ ls 4pi/python/
+pi.py
+[xdtr108@login01 ~]$
 ```
 
 #
