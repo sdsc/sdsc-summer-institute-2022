@@ -51,3 +51,7 @@ https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tut
 <img src='https://www.sdsc.edu/assets/images/news_items/PR20191119_GPU_Cloudburst.jpg' width='50%' height='50%'/>
 
 [Image Credit: IceCube, SDSC/UCSD - GPU Cloud Burst Experiment](https://www.sdsc.edu/News%20Items/PR20191119_GPU_Cloudburst.html)
+
+#
+
+Next - [Batch job arrays and dependencies](ARRAYS.md)
