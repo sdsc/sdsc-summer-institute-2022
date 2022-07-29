@@ -1,11 +1,12 @@
 # High Throughput Computing
 
 - [Parallel paradigms: HPC vs. HTC](PARALLEL.md)
-- [Batch job arrays and dependencies](ARRAYS.md)
-- [Ad-hoc job/task bundling](BUNDLING.md)
+- [Job arrays](ARRAYS.md)
+- [Job dependencies](DEPENDENCIES.md)
+- [Job bundling](BUNDLING.md)
 - [Distributed high-throughput computing](DHTC.md)
 
-## Batch job arrays and dependencies
+## Job arrays
 
 https://slurm.schedmd.com/job_array.html
 
@@ -97,4 +98,4 @@ time -p python3 pi.py 100000
 
 #
 
-Next - [Ad-hoc job/task bundling](BUNDLING.md)
+Next - [Job dependencies](DEPENDENCIES.md)
