@@ -7,3 +7,6 @@
 
 ## Batch job arrays and dependencies
 
+#
+
+Next - [Ad-hoc job/task bundling](BUNDLING.md)
