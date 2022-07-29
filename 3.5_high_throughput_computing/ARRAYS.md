@@ -67,6 +67,73 @@ Next, download the example batch job script.
 wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/3.5_high_throughput_computing/estimate-pi.sh
 ```
 
+Inspect the job script.
+
+```
+[xdtr108@login01 ~]$ cat estimate-pi.sh 
+#!/usr/bin/env bash
+
+#SBATCH --job-name=estimate-pi
+#SBATCH --account=sds184
+#SBATCH --partition=debug
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=1G
+#SBATCH --time=00:30:00
+#SBATCH --output=%x.o%j.%N
+
+module purge
+
+time -p "${HOME}/4pi/bash/pi.sh" -b 8 -r 5 -s 10000
+```
+
+Investigate what variables the different command-line options are used to control in the problem. 
+
+```
+[xdtr108@login01 ~]$ head -n 15 "${HOME}/4pi/bash/pi.sh"
+#!/usr/bin/env bash
+#
+# Estimate the value of Pi via Monte Carlo
+
+# Read in and parse input variables from command-line arguments
+if (( "${#}" > 0 )); then
+  while (( "${#}" > 0 )); do
+    case "${1}" in
+      -b | --bytes ) bytes="${2}" ;;
+      -r | --round ) round="${2}" ;;
+      -s | --samples ) samples="${2}" ;;
+    esac
+    shift 2
+  done
+fi
+```
+
+Submit the batch job to the scheduler. 
+
+```
+[xdtr108@login01 ~]$ sbatch estimate-pi.sh 
+Submitted batch job 14791638
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          14791638     debug estimate  xdtr108  R       0:05      1 exp-9-55
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          14791638     debug estimate  xdtr108 CG       0:51      1 exp-9-55
+[xdtr108@login01 ~]$ ls
+4pi  estimate-pi.o14791638.exp-9-55  estimate-pi.sh
+```
+
+Check the standard output file.
+
+```
+[xdtr108@login01 ~]$ cat estimate-pi.o14791638.exp-9-55 
+3.12160
+real 50.12
+user 32.41
+sys 17.21
+```
+
 #
 
 Next - [Batch job dependencies](DEPENDENCIES.md)
