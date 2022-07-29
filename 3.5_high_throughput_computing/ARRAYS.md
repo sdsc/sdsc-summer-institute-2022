@@ -20,7 +20,7 @@ https://researchit.las.iastate.edu/how-create-slurm-job-array-script
 https://cdn.vanderbilt.edu/vu-wp0/wp-content/uploads/sites/157/2017/10/26210640/UsingArrayJobs.pdf
 
 
-### Computing PI
+### Computing $\pi$
 
 #
 
