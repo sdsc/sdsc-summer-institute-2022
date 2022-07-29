@@ -7,9 +7,11 @@
 
 ## Parallel paradigms: HPC vs. HTC
 
-### Serial computation
-
 https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial
+
+</br>
+
+### Serial computation
 
 ![Serial computation](https://hpc.llnl.gov/sites/default/files/styles/with_sidebar_1_up/public/serialProblem.gif)
 
@@ -30,7 +32,7 @@ https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tut
 
 [Image Credit: NASA - Hurricane Katrina @ 50-km (2005) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
 
-</br></br>
+</br>
 
 **Scale** - Solve a larger, more complex problem with higher fidelity
 
@@ -38,7 +40,6 @@ https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tut
 
 [Image Credit: NASA - Hurricane Katrina @ 6.25-km (2015) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
 
-</br>
 </br>
 
 **Throughput** - Solve many (simple) problems more quickly
