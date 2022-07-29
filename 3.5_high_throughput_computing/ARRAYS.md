@@ -169,17 +169,36 @@ time -p "${HOME}/4pi/bash/pi.sh" -b 8 -r 5 -s 10000
 Submitted batch job 14791898
 [xdtr108@login01 ~]$ squeue -u $USER
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-        14791898_9    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14791898_8    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14791898_7    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14791898_6    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14791898_5    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14791898_4    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14791898_3    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14791898_2    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14791898_1    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14791898_0    shared estimate  xdtr108 PD       0:00      1 (Priority)
-[xdtr108@login01 ~]$
+        14791898_8    shared estimate  xdtr108  R       0:00      1 exp-1-06
+        14791898_9    shared estimate  xdtr108  R       0:00      1 exp-1-06
+        14791898_0    shared estimate  xdtr108  R       0:01      1 exp-1-06
+        14791898_1    shared estimate  xdtr108  R       0:01      1 exp-1-06
+        14791898_2    shared estimate  xdtr108  R       0:01      1 exp-1-06
+        14791898_3    shared estimate  xdtr108  R       0:01      1 exp-1-06
+        14791898_4    shared estimate  xdtr108  R       0:01      1 exp-1-06
+        14791898_5    shared estimate  xdtr108  R       0:01      1 exp-1-06
+        14791898_6    shared estimate  xdtr108  R       0:01      1 exp-1-06
+        14791898_7    shared estimate  xdtr108  R       0:01      1 exp-1-06
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+        14791898_7    shared estimate  xdtr108 CG       1:27      1 exp-1-06
+        14791898_8    shared estimate  xdtr108  R       1:26      1 exp-1-06
+        14791898_9    shared estimate  xdtr108  R       1:26      1 exp-1-06
+        14791898_0    shared estimate  xdtr108  R       1:27      1 exp-1-06
+        14791898_1    shared estimate  xdtr108  R       1:27      1 exp-1-06
+        14791898_2    shared estimate  xdtr108  R       1:27      1 exp-1-06
+        14791898_3    shared estimate  xdtr108  R       1:27      1 exp-1-06
+        14791898_4    shared estimate  xdtr108  R       1:27      1 exp-1-06
+        14791898_5    shared estimate  xdtr108  R       1:27      1 exp-1-06
+        14791898_6    shared estimate  xdtr108  R       1:27      1 exp-1-06
+[xdtr108@login01 ~]$ ls
+4pi                               estimate-pi.o14791898.5.exp-1-06
+estimate-pi.o14791638.exp-9-55    estimate-pi.o14791898.6.exp-1-06
+estimate-pi.o14791898.0.exp-1-06  estimate-pi.o14791898.7.exp-1-06
+estimate-pi.o14791898.1.exp-1-06  estimate-pi.o14791898.8.exp-1-06
+estimate-pi.o14791898.2.exp-1-06  estimate-pi.o14791898.9.exp-1-06
+estimate-pi.o14791898.3.exp-1-06  estimate-pi.sh
+estimate-pi.o14791898.4.exp-1-06
 ```
 
 #
