@@ -199,7 +199,40 @@ estimate-pi.o14791898.1.exp-1-06  estimate-pi.o14791898.8.exp-1-06
 estimate-pi.o14791898.2.exp-1-06  estimate-pi.o14791898.9.exp-1-06
 estimate-pi.o14791898.3.exp-1-06  estimate-pi.sh
 estimate-pi.o14791898.4.exp-1-06
+
+Check the results from the job array ... 
+
 ```
+[xdtr108@login01 ~]$ head -n 1 estimate-pi.o14791898.* -q
+3.14480
+3.16840
+3.15480
+3.17200
+3.13480
+3.15480
+3.17840
+3.12800
+3.14080
+3.16000
+```
+
+... and the runtimes of each array task.
+
+```
+[xdtr108@login01 ~]$ grep 'real' estimate-pi.o14791898.*
+estimate-pi.o14791898.0.exp-1-06:real 85.82
+estimate-pi.o14791898.1.exp-1-06:real 86.05
+estimate-pi.o14791898.2.exp-1-06:real 85.94
+estimate-pi.o14791898.3.exp-1-06:real 86.17
+estimate-pi.o14791898.4.exp-1-06:real 85.80
+estimate-pi.o14791898.5.exp-1-06:real 85.80
+estimate-pi.o14791898.6.exp-1-06:real 85.82
+estimate-pi.o14791898.7.exp-1-06:real 85.79
+estimate-pi.o14791898.8.exp-1-06:real 86.55
+estimate-pi.o14791898.9.exp-1-06:real 86.43
+```
+
+
 
 #
 
