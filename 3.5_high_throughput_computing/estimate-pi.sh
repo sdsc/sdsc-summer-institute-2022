@@ -12,4 +12,4 @@
 
 module purge
 
-time -p python3 "${HOME}/4pi/python/pi.py" 100000000
+time -p "${HOME}/4pi/bash/pi.sh" -b 8 -r 5 -s 10000
