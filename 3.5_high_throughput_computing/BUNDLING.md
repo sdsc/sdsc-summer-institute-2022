@@ -13,6 +13,8 @@ https://dl.acm.org/doi/fullHtml/10.1145/3437359.3465569
 
 https://docs.pace.gatech.edu/software/launcher/
 
+https://hpc.nih.gov/apps/swarm.html
+
 ### Linux-native scheduling
 
 ### GNU parallel
