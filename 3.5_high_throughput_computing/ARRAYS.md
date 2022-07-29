@@ -233,7 +233,7 @@ estimate-pi.o14791898.8.exp-1-06:real 86.55
 estimate-pi.o14791898.9.exp-1-06:real 86.43
 ```
 
-### Using job arrays to create a parameter sweep
+### Using a job array to create a parameter sweep
 
 Modify the array job script to create a parameter sweep over the `-b | --bytes` size variable using non-consecutive array index values and the `SLURM_ARRAY_TASK_ID` environment variable.
 
@@ -249,24 +249,56 @@ Submit the modified array job script to the scheduler.
 
 ```
 [xdtr108@login01 ~]$ sbatch estimate-pi.sh 
-Submitted batch job 14792245
+Submitted batch job 14792416
 [xdtr108@login01 ~]$ squeue -u $USER
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-       14792245_16    shared estimate  xdtr108 PD       0:00      1 (None)
-        14792245_8    shared estimate  xdtr108 PD       0:00      1 (None)
-        14792245_4    shared estimate  xdtr108 PD       0:00      1 (None)
-        14792245_2    shared estimate  xdtr108 PD       0:00      1 (None)
-        14792245_1    shared estimate  xdtr108 PD       0:00      1 (None)
-        14792245_0    shared estimate  xdtr108 PD       0:00      1 (None)
+        14792416_8    shared estimate  xdtr108 PD       0:00      1 (None)
+        14792416_4    shared estimate  xdtr108 PD       0:00      1 (None)
+        14792416_2    shared estimate  xdtr108 PD       0:00      1 (None)
+        14792416_1    shared estimate  xdtr108 PD       0:00      1 (None)
 [xdtr108@login01 ~]$ squeue -u $USER
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-       14792245_16    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14792245_8    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14792245_4    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14792245_2    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14792245_1    shared estimate  xdtr108 PD       0:00      1 (Priority)
-        14792245_0    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14792416_1    shared estimate  xdtr108  R       0:08      1 exp-1-06
+        14792416_2    shared estimate  xdtr108  R       0:08      1 exp-1-06
+        14792416_4    shared estimate  xdtr108  R       0:08      1 exp-1-06
+        14792416_8    shared estimate  xdtr108  R       0:08      1 exp-1-06
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+        14792416_1    shared estimate  xdtr108  R       1:22      1 exp-1-06
+[xdtr108@login01 ~]$ ls
+4pi                               estimate-pi.o14791898.7.exp-1-06
+estimate-pi.o14791638.exp-9-55    estimate-pi.o14791898.8.exp-1-06
+estimate-pi.o14791898.0.exp-1-06  estimate-pi.o14791898.9.exp-1-06
+estimate-pi.o14791898.1.exp-1-06  estimate-pi.o14792416.1.exp-1-06
+estimate-pi.o14791898.2.exp-1-06  estimate-pi.o14792416.2.exp-1-06
+estimate-pi.o14791898.3.exp-1-06  estimate-pi.o14792416.4.exp-1-06
+estimate-pi.o14791898.4.exp-1-06  estimate-pi.o14792416.8.exp-1-06
+estimate-pi.o14791898.5.exp-1-06  estimate-pi.sh
+estimate-pi.o14791898.6.exp-1-06
 ```
+
+Check the results. 
+
+```
+[xdtr108@login01 ~]$ head -n 2 estimate-pi.o14792416.*
+==> estimate-pi.o14792416.1.exp-1-06 <==
+3.13840
+real 88.80
+
+==> estimate-pi.o14792416.2.exp-1-06 <==
+3.12880
+real 70.73
+
+==> estimate-pi.o14792416.4.exp-1-06 <==
+3.16040
+real 70.61
+
+==> estimate-pi.o14792416.8.exp-1-06 <==
+3.15280
+real 70.82
+```
+
+Next, reset the `-b | --bytes` parameter to `8` and then rewrite the batch job script to create a parameter sweep over `-s | --samples` variable. However, in this case, use the `SLURM_ARRAY_TASK_ID` to logarithmically scale the number of samples.
 
 #
 
