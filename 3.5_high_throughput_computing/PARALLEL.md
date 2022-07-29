@@ -17,32 +17,27 @@ https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tut
 
 ### Why go parallel?
 
-**Speed**
+**Speed** - Solve a problem more quickly
 
-<img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png' width='40%' height='40%'/>
+<img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png' width='50%' height='50%'/>
 
-Solve a problem more quickly
-
-
-**Scale** 
-
-<img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_6_katrina_0.png' width='40%' height='40%'/>
-[Image Credit: NASA](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
-
-Solve a larger, more complex problem with higher fidelity
+[Image Credit: NASA - Katrina (50-km (2005) resolution)](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
 
 
-**Throughput**
+**Scale** - Solve a larger, more complex problem with higher fidelity
+
+<img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_6_katrina_0.png' width='50%' height='50%'/>
+
+[Image Credit: NASA - Katrina (6.25-km (2015) resolution)](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
+
+
+**Throughput** - Solve many (simple) problems more quickly
 
 <img src='https://www.sdsc.edu/assets/images/news_items/PR20210414_IceCube_antineutrino_1280x800.jpg' width='50%' height='50%'/>
 
-Solve many (simple) problems more quickly
+[Image Credit: IceCube- Glashow Event](https://www.sdsc.edu/News%20Items/PR20210414_IceCube_antineutrino.html)
 
-[IceCube - Glashow Event](https://www.sdsc.edu/assets/images/news_items/PR20210414_IceCube_antineutrino_1280x800.jpg)
-
-https://www.sdsc.edu/News%20Items/PR20210414_IceCube_antineutrino.html
 
 <img src='https://www.sdsc.edu/assets/images/news_items/PR20191119_GPU_Cloudburst.jpg' width='50%' height='50%'/>
 
-[IceCube - GPU Cloud Burst Experiment](https://www.sdsc.edu/News%20Items/PR20191119_GPU_Cloudburst.html)
-
+[Image Credit: IceCube - GPU Cloud Burst Experiment](https://www.sdsc.edu/News%20Items/PR20191119_GPU_Cloudburst.html)
