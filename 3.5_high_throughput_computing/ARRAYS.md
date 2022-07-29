@@ -27,6 +27,8 @@ https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tut
 
 ### Example job: Estimating Pi
 
+[4pi](https://github.com/mkandes/4pi)
+
 ```
 git clone https://github.com/mkandes/4pi.git
 ```
