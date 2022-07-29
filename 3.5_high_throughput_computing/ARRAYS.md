@@ -233,7 +233,17 @@ estimate-pi.o14791898.8.exp-1-06:real 86.55
 estimate-pi.o14791898.9.exp-1-06:real 86.43
 ```
 
+### Using job arrays to create a parameter sweep
 
+Modify the array job script to create a parameter sweep over the `--bytes` size variable using non-consecutive array indicies and the `SLURM_ARRAY_TASK_ID` environment variable.
+
+```
+#SBATCH --array=2,4,8
+
+module purge
+
+time -p "${HOME}/4pi/bash/pi.sh" -b "${SLURM_ARRAY_TASK_ID}" -r 5 -s 10000
+```
 
 #
 
