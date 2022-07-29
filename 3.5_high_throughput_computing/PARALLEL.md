@@ -5,19 +5,19 @@
 - [Ad-hoc job/task bundling](BUNDLING.md)
 - [Distributed high-throughput computing](DHTC.md)
 
-## Parallel paradigms: HPC vs. HTC
+# Parallel paradigms: HPC vs. HTC
 
 https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial
 
-### Serial computation
+## Serial computation
 ![Serial computation](https://hpc.llnl.gov/sites/default/files/styles/with_sidebar_1_up/public/serialProblem.gif)
 
-### Parallel computation
+## Parallel computation
 ![Parallel computation](https://hpc.llnl.gov/sites/default/files/styles/with_sidebar_1_up/public/parallelProblem.gif)
 
-### Why go parallel?
+## Why go parallel?
 
-**Speed** - Solve a problem more quickly
+### Speed - Solve a problem more quickly
 
 <img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png' width='100%' height='100%'/>
 
