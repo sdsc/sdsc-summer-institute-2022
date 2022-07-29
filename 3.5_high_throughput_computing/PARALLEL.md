@@ -13,12 +13,9 @@
 ### Parallel computation
 ![Parallel computation](https://hpc.llnl.gov/sites/default/files/styles/with_sidebar_1_up/public/parallelProblem.gif)
 
-### Why go parallel?
+### Advantages of parallel computing
 
-#### Speed
-
-
-<img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png' width='50%' height='50%'/>
+- Speed <img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png' width='50%' height='50%'/>
 
 [Katrina - Low Resolution Simulation - 50-km - 2005](https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png)
 
