@@ -238,7 +238,7 @@ estimate-pi.o14791898.9.exp-1-06:real 86.43
 Modify the array job script to create a parameter sweep over the `-b | --bytes` size variable using non-consecutive array index values and the `SLURM_ARRAY_TASK_ID` environment variable.
 
 ```
-#SBATCH --array=2,4,8
+#SBATCH --array=1,2,4,8
 
 module purge
 
@@ -249,34 +249,23 @@ Submit the modified array job script to the scheduler.
 
 ```
 [xdtr108@login01 ~]$ sbatch estimate-pi.sh 
-Submitted batch job 14791969
+Submitted batch job 14792245
 [xdtr108@login01 ~]$ squeue -u $USER
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-        14791969_8    shared estimate  xdtr108 PD       0:00      1 (None)
-        14791969_4    shared estimate  xdtr108 PD       0:00      1 (None)
-        14791969_2    shared estimate  xdtr108 PD       0:00      1 (None)
+       14792245_16    shared estimate  xdtr108 PD       0:00      1 (None)
+        14792245_8    shared estimate  xdtr108 PD       0:00      1 (None)
+        14792245_4    shared estimate  xdtr108 PD       0:00      1 (None)
+        14792245_2    shared estimate  xdtr108 PD       0:00      1 (None)
+        14792245_1    shared estimate  xdtr108 PD       0:00      1 (None)
+        14792245_0    shared estimate  xdtr108 PD       0:00      1 (None)
 [xdtr108@login01 ~]$ squeue -u $USER
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-        14791969_2    shared estimate  xdtr108  R       0:01      1 exp-1-06
-        14791969_4    shared estimate  xdtr108  R       0:01      1 exp-1-06
-        14791969_8    shared estimate  xdtr108  R       0:01      1 exp-1-06
-[xdtr108@login01 ~]$ squeue -u $USER
-             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-        14791969_2    shared estimate  xdtr108  R       1:08      1 exp-1-06
-        14791969_4    shared estimate  xdtr108  R       1:08      1 exp-1-06
-        14791969_8    shared estimate  xdtr108  R       1:08      1 exp-1-06
-[xdtr108@login01 ~]$ squeue -u $USER
-             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-[xdtr108@login01 ~]$ ls
-4pi                               estimate-pi.o14791898.6.exp-1-06
-estimate-pi.o14791638.exp-9-55    estimate-pi.o14791898.7.exp-1-06
-estimate-pi.o14791898.0.exp-1-06  estimate-pi.o14791898.8.exp-1-06
-estimate-pi.o14791898.1.exp-1-06  estimate-pi.o14791898.9.exp-1-06
-estimate-pi.o14791898.2.exp-1-06  estimate-pi.o14791969.2.exp-1-06
-estimate-pi.o14791898.3.exp-1-06  estimate-pi.o14791969.4.exp-1-06
-estimate-pi.o14791898.4.exp-1-06  estimate-pi.o14791969.8.exp-1-06
-estimate-pi.o14791898.5.exp-1-06  estimate-pi.sh
-[xdtr108@login01 ~]$
+       14792245_16    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14792245_8    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14792245_4    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14792245_2    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14792245_1    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14792245_0    shared estimate  xdtr108 PD       0:00      1 (Priority)
 ```
 
 #
