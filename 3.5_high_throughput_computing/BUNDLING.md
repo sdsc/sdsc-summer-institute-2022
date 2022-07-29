@@ -1,9 +1,9 @@
 # High Throughput Computing
 
 - [Parallel paradigms: HPC vs. HTC](PARALLEL.md)
-- [Job arrays](ARRAYS.md)
-- [Job dependencies](DEPENDENCIES.md)
-- [Job bundling](BUNDLING.md)
+- [Batch job arrays](ARRAYS.md)
+- [Batch job dependencies](DEPENDENCIES.md)
+- [Batch job bundling](BUNDLING.md)
 - [Distributed high-throughput computing](DHTC.md)
 
 ## Ad-hoc job/task bundling
