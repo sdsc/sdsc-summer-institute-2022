@@ -12,4 +12,4 @@
 
 module purge
 
-time -p python3 pi.py 100000
+time -p python3 4pi/python/pi.py 100000000
