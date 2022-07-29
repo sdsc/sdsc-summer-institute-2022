@@ -109,7 +109,7 @@ if (( "${#}" > 0 )); then
 fi
 ```
 
-Submit the batch job to the scheduler. 
+Submit the batch job to the scheduler with the default settings. 
 
 ```
 [xdtr108@login01 ~]$ sbatch estimate-pi.sh 
