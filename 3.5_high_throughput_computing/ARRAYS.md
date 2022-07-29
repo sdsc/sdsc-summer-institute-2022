@@ -33,7 +33,7 @@ Login to Expanse.
 $ ssh expanse
 ```
 
-Clone the [4pi](https://github.com/mkandes/4pi.git) GitHub repository to your HOME directory on Expanse.
+Clone the [4pi](https://github.com/mkandes/4pi.git) git repository from GitHub to your HOME directory on Expanse.
 
 ```
 git clone https://github.com/mkandes/4pi.git
@@ -52,50 +52,19 @@ remote: Enumerating objects: 14, done.
 remote: Counting objects: 100% (14/14), done.
 remote: Compressing objects: 100% (8/8), done.
 remote: Total 14 (delta 1), reused 14 (delta 1), pack-reused 0
-Unpacking objects: 100% (14/14), 4.64 KiB | 8.00 KiB/s, done.
+Unpacking objects: 100% (14/14), 4.64 KiB | 9.00 KiB/s, done.
 [xdtr108@login01 ~]$ ls 4pi/
 bash  c  fortran  LICENSE.md  python  README.md
+[xdtr108@login01 ~]$ ls 4pi/bash/
+pi.sh
 [xdtr108@login01 ~]$ ls 4pi/python/
 pi.py
-[xdtr108@login01 ~]$
 ```
 
 Next, download the example batch job script.
 
 ```
 wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/3.5_high_throughput_computing/estimate-pi.sh
-```
-
-```
-[xdtr108@login01 ~]$ wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/3.5_high_throughput_computing/estimate-pi.sh
---2022-07-29 13:48:19--  https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/3.5_high_throughput_computing/estimate-pi.sh
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.111.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 311 [text/plain]
-Saving to: ‘estimate-pi.sh’
-
-estimate-pi.sh      100%[===================>]     311  --.-KB/s    in 0s      
-
-2022-07-29 13:48:19 (36.4 MB/s) - ‘estimate-pi.sh’ saved [311/311]
-
-[xdtr108@login01 ~]$ cat estimate-pi.sh 
-#!/usr/bin/env bash
-
-#SBATCH --job-name=estimate-pi
-#SBATCH --account=sds184
-#SBATCH --partition=debug
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=1G
-#SBATCH --time=00:30:00
-#SBATCH --output=%x.o%j.%N
-
-module purge
-
-time -p python3 "${HOME}/4pi/python/pi.py" 100000000
-[xdtr108@login01 ~]$
 ```
 
 #
