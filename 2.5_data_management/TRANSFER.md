@@ -86,6 +86,10 @@ $
 ```
 
 ```
+![Globus - Home](globus-homepage.png)
+```
+
+```
 $ globus endpoint search 'XSEDE Expanse'
 ID                                   | Owner              | Display Name                                              
 ------------------------------------ | ------------------ | ----------------------------------------------------------
