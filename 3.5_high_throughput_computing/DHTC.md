@@ -7,4 +7,4 @@
 
 ## Distributed high-throughput computing
 
-https://support.opensciencegrid.org/support/solutions
+https://support.opensciencegrid.org/support/home
