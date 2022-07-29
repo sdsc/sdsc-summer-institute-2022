@@ -6,6 +6,7 @@ High-throughput computing (HTC) workloads are characterized by large numbers of 
 - [Batch job arrays](ARRAYS.md)
 - [Batch job dependencies](DEPENDENCIES.md)
 - [Batch job bundling](BUNDLING.md)
+- [Preemptible batch jobs](PREEMPTIBLE.md)
 - [Distributed high-throughput computing](DHTC.md)
 
 #
