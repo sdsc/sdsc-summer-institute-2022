@@ -245,6 +245,40 @@ module purge
 time -p "${HOME}/4pi/bash/pi.sh" -b "${SLURM_ARRAY_TASK_ID}" -r 5 -s 10000
 ```
 
+Submit the modified array job script to the scheduler.
+
+```
+[xdtr108@login01 ~]$ sbatch estimate-pi.sh 
+Submitted batch job 14791969
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+        14791969_8    shared estimate  xdtr108 PD       0:00      1 (None)
+        14791969_4    shared estimate  xdtr108 PD       0:00      1 (None)
+        14791969_2    shared estimate  xdtr108 PD       0:00      1 (None)
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+        14791969_2    shared estimate  xdtr108  R       0:01      1 exp-1-06
+        14791969_4    shared estimate  xdtr108  R       0:01      1 exp-1-06
+        14791969_8    shared estimate  xdtr108  R       0:01      1 exp-1-06
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+        14791969_2    shared estimate  xdtr108  R       1:08      1 exp-1-06
+        14791969_4    shared estimate  xdtr108  R       1:08      1 exp-1-06
+        14791969_8    shared estimate  xdtr108  R       1:08      1 exp-1-06
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[xdtr108@login01 ~]$ ls
+4pi                               estimate-pi.o14791898.6.exp-1-06
+estimate-pi.o14791638.exp-9-55    estimate-pi.o14791898.7.exp-1-06
+estimate-pi.o14791898.0.exp-1-06  estimate-pi.o14791898.8.exp-1-06
+estimate-pi.o14791898.1.exp-1-06  estimate-pi.o14791898.9.exp-1-06
+estimate-pi.o14791898.2.exp-1-06  estimate-pi.o14791969.2.exp-1-06
+estimate-pi.o14791898.3.exp-1-06  estimate-pi.o14791969.4.exp-1-06
+estimate-pi.o14791898.4.exp-1-06  estimate-pi.o14791969.8.exp-1-06
+estimate-pi.o14791898.5.exp-1-06  estimate-pi.sh
+[xdtr108@login01 ~]$
+```
+
 #
 
 Next - [Batch job dependencies](DEPENDENCIES.md)
