@@ -9,6 +9,8 @@
 
 ## Batch job arrays
 
+Batch job arrays offer a mechanism for submitting and managing large collections of similar jobs quickly and easily.
+
 https://slurm.schedmd.com/job_array.html
 
 https://crc.ku.edu/hpc/how-to/arrays
@@ -25,7 +27,7 @@ https://cdn.vanderbilt.edu/vu-wp0/wp-content/uploads/sites/157/2017/10/26210640/
 https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial##ExamplesPI
 
 
-### Example problem: Estimating Pi
+### Setting up an example problem: Estimating Pi
 
 Login to Expanse.
 
@@ -132,6 +134,52 @@ Check the standard output file for the results.
 real 50.12
 user 32.41
 sys 17.21
+```
+
+### Creating your first job array
+
+Modify the batch job script to create your first array job (of 10 array tasks). 
+
+```
+#SBATCH --output=%x.o%A.%a.%N
+#SBATCH --array=0-9
+```
+
+Submit the modified batch job script to the scheduler.
+
+```
+[xdtr108@login01 ~]$ cat estimate-pi.sh 
+#!/usr/bin/env bash
+
+#SBATCH --job-name=estimate-pi
+#SBATCH --account=sds184
+#SBATCH --partition=debug
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=1G
+#SBATCH --time=00:30:00
+#SBATCH --output=%x.o%A.%a.%N
+#SBATCH --array=0-9
+
+module purge
+
+time -p "${HOME}/4pi/bash/pi.sh" -b 8 -r 5 -s 10000
+[xdtr108@login01 ~]$ sbatch estimate-pi.sh 
+Submitted batch job 14791898
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+        14791898_9    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14791898_8    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14791898_7    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14791898_6    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14791898_5    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14791898_4    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14791898_3    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14791898_2    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14791898_1    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14791898_0    shared estimate  xdtr108 PD       0:00      1 (Priority)
+[xdtr108@login01 ~]$
 ```
 
 #
