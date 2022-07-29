@@ -25,17 +25,23 @@ https://cdn.vanderbilt.edu/vu-wp0/wp-content/uploads/sites/157/2017/10/26210640/
 https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial##ExamplesPI
 
 
-### Estimating Pi
+### Starting with an example problem: Estimating Pi
+
+Login to Expanse.
 
 ```
 $ ssh expanse
 ```
 
-[4pi](https://github.com/mkandes/4pi)
+Clone the [4pi](https://github.com/mkandes/4pi.git) GitHub repository to your HOME directory on Expanse.
 
 ```
 git clone https://github.com/mkandes/4pi.git
 ```
+
+4pi is a collection of simple computer programs that estimate the value of Pi, the mathematical constant defined as the ratio of a circle's circumference to its diameter. Each program in the collection differs only in the programming language it was written in, the set of features of the language it utilized, and/or the fundamental underlying mathematical algorithm it implemented to approximate the value of Pi.
+
+The principal aim of the 4pi project is to explore different aspects of each programming language and their feature sets from a scientific and high-performance computing perspective. For example, the first set of programs included in this initial commit to the project estimate the value of Pi via the Monte Carlo method. This solution is particularly useful for exploring different parallel programming models, languages, libraries, and APIs as it is an embarrassingly parallel (albeit inefficient) solution to the problem.
 
 ![Estimate the value of Pi via Monte Carlo](https://hpc.llnl.gov/sites/default/files/styles/no_sidebar_3_up/public/pi1.gif)
 
