@@ -321,7 +321,7 @@ total 0
 /cm/shared/apps/slurm/var/etc/expanse/slurm.conf
 [xdtr108@login01 ~]$ cat $SLURM_CONF | grep MaxArraySize
 MaxArraySize=1000
-``
+```
 
 #
 
