@@ -124,7 +124,7 @@ Submitted batch job 14791638
 4pi  estimate-pi.o14791638.exp-9-55  estimate-pi.sh
 ```
 
-Check the standard output file.
+Check the standard output file for the results.
 
 ```
 [xdtr108@login01 ~]$ cat estimate-pi.o14791638.exp-9-55 
