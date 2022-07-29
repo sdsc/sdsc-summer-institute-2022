@@ -45,6 +45,6 @@
 
 [Image Credit: IceCube, SDSC/UCSD - GPU Cloud Burst Experiment](https://www.sdsc.edu/News%20Items/PR20191119_GPU_Cloudburst.html)
 
-## References
+## Additional References
 
 https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial
