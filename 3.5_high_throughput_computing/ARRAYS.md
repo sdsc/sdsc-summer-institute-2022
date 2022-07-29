@@ -138,7 +138,7 @@ sys 17.21
 
 ### Creating your first job array
 
-Modify the batch job script to create your first array job (of 10 array tasks). 
+Modify the example batch job script to create your first array job (of 10 array tasks). 
 
 ```
 #SBATCH --output=%x.o%A.%a.%N
