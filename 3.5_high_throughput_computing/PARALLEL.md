@@ -21,14 +21,14 @@ https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tut
 
 <img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png' width='50%' height='50%'/>
 
-[Image Credit: NASA - Katrina - 50-km (2005) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
+[Image Credit: NASA - Hurricane Katrina @ 50-km (2005) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
 
 
 **Scale** - Solve a larger, more complex problem with higher fidelity
 
 <img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_6_katrina_0.png' width='50%' height='50%'/>
 
-[Image Credit: NASA - Katrina - 6.25-km (2015) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
+[Image Credit: NASA - Hurricane Katrina @ 6.25-km (2015) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
 
 
 **Throughput** - Solve many (simple) problems more quickly
