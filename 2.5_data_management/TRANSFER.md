@@ -12,6 +12,8 @@
 https://www.nas.nasa.gov/hecc/support/kb/remote-file-transfer-commands_142.html
 
 
+### scp - OpenSSH secure file copy
+
 ```
 $ scp expanse:~/CIFAR-10-images.zip ./
 CIFAR-10-images.zip                           100%   77MB  20.8MB/s   00:03    
@@ -38,6 +40,8 @@ $ ls
  CIFAR-10-images.zip   Downloads   Pictures   Templates
  Desktop               Dropbox     Public     Videos
 ```
+
+### sftp - OpenSSH secure file transfer
 
 ```
 $ sftp expanse
@@ -76,6 +80,9 @@ sftp> exit
 $
 ```
 
+
+### lftp - Another (sophisticated) file transfer program
+
 ```
 $ lftp sftp://xdtr108@oasis-dm-interactive.sdsc.edu
 Password: 
@@ -85,6 +92,7 @@ lftp xdtr108@oasis-dm-interactive.sdsc.edu:~> exit
 $
 ```
 
+### Globus - Secure, reliable research data management
 
 ![Globus - Home](globus-homepage.png)
 
