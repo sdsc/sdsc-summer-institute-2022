@@ -25,7 +25,7 @@ https://cdn.vanderbilt.edu/vu-wp0/wp-content/uploads/sites/157/2017/10/26210640/
 https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial##ExamplesPI
 
 
-### Starting with an example problem: Estimating Pi
+### Example problem: Estimating Pi
 
 Login to Expanse.
 
