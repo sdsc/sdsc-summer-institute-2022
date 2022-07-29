@@ -96,6 +96,8 @@ d74d0ede-4402-11ec-a9c7-91e0e7641750 | sivagnan@xsede.org | NSG private share fo
 0d0ad3e4-4403-11ec-a6bf-9b4f84e67de8 | sivagnan@xsede.org | NSG public share for Simon on Expanse
 ```
 
+![Globus Personal Connect](globus-connect-personal.png)
+
 ```
 $ globus endpoint search 'hardtack'
 ID                                   | Owner              | Display Name
