@@ -8,6 +8,9 @@
 ## Parallel paradigms: HPC vs. HTC
 
 ### Serial computation
+
+https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial
+
 ![Serial computation](https://hpc.llnl.gov/sites/default/files/styles/with_sidebar_1_up/public/serialProblem.gif)
 
 ### Parallel computation
@@ -44,7 +47,3 @@
 <img src='https://www.sdsc.edu/assets/images/news_items/PR20191119_GPU_Cloudburst.jpg' width='75%' height='75%'/>
 
 [Image Credit: IceCube, SDSC/UCSD - GPU Cloud Burst Experiment](https://www.sdsc.edu/News%20Items/PR20191119_GPU_Cloudburst.html)
-
-## Additional References
-
-https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial
