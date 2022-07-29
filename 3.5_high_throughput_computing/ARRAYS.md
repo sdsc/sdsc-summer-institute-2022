@@ -323,6 +323,16 @@ total 0
 MaxArraySize=1000
 ```
 
+```
+#SBATCH --array=1-5
+
+declare -xir NUMBER_OF_SAMPLES="10**${SLURM_ARRAY_TASK_ID}"
+
+module purge
+
+time -p "${HOME}/4pi/bash/pi.sh" -b 8 -r 5 -s "${NUMBER_OF_SAMPLES}"
+```
+
 #
 
 Next - [Batch job dependencies](DEPENDENCIES.md)
