@@ -33,71 +33,17 @@ git clone https://github.com/mkandes/4pi.git
 
 ![Estimate the value of Pi via Monte Carlo](https://hpc.llnl.gov/sites/default/files/styles/no_sidebar_3_up/public/pi1.gif)
 
-
 ```
-#!/usr/bin/env python3
-#
-# Estimate the value of Pi via Monte Carlo
-
-import argparse
-import math
-import random
-
-# Read in and parse input variables from command-line arguments
-parser = argparse.ArgumentParser(description='Estimate the value of Pi via Monte Carlo')
-parser.add_argument('samples', type=int,
-                    help='number of Monte Carlo samples')
-parser.add_argument('-v', '--verbose', action='store_true')
-args = parser.parse_args()
-
-# Initialize sample counts; inside will count the number of samples 
-# that are located 'inside' the radius of a unit circle, while outside
-# will count the number of samples that are located 'outside' the radius
-# of a unit circle.
-inside = 0
-outside = 0
-
-for i in range(1, args.samples):
-    # Obtain two uniformly distributed random real numbers on unit interval
-    x = random.random()
-    y = random.random()
-
-    # Compute radial distance of (x,y) from the origin of the unit circle
-    z = math.sqrt(x**2 + y**2)
-
-    # Increment sample count
-    if z <= 1.0:
-        inside += 1
-    else:
-        outside += 1
-
-    # Compute intermediate estimate of Pi on the fly while the samples
-    # are being collected
-    if args.verbose:
-        pi = 4 * inside / (inside + outside)
-        print(pi)
-else:
-    # Compute final estimate of Pi once all samples have been collected
-    pi = 4 * inside / (inside + outside)
-    print(pi)
-```
-
-```
-!/usr/bin/env bash
-
-#SBATCH --job-name=estimate-pi
-#SBATCH --account=sds184
-#SBATCH --partition=debug
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=1G
-#SBATCH --time=00:30:00
-#SBATCH --output=%x.o%j.%N
-
-module purge
-
-time -p python3 pi.py 100000
+[xdtr108@login01 ~]$ git clone https://github.com/mkandes/4pi.git
+Cloning into '4pi'...
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 14 (delta 1), reused 14 (delta 1), pack-reused 0
+Unpacking objects: 100% (14/14), 4.64 KiB | 8.00 KiB/s, done.
+[xdtr108@login01 ~]$ cd 4pi/
+[xdtr108@login01 4pi]$ ls
+bash  c  fortran  LICENSE.md  python  README.md
 ```
 
 #
