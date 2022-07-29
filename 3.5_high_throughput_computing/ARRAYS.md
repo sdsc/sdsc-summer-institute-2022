@@ -22,6 +22,13 @@ https://cdn.vanderbilt.edu/vu-wp0/wp-content/uploads/sites/157/2017/10/26210640/
 
 ### Computing Pi
 
+https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial##ExamplesPI
+
+
+```
+wget https://raw.githubusercontent.com/mkandes/4pi/master/python/pi.py
+```
+
 #
 
 Next - [Ad-hoc job/task bundling](BUNDLING.md)
