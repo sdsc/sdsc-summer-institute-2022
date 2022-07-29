@@ -26,12 +26,12 @@ https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tut
 
 ### Example job: Estimating Pi
 
-![Estimate the value of Pi via Monte Carlo](https://hpc.llnl.gov/sites/default/files/styles/no_sidebar_3_up/public/pi1.gif)
-
-
 ```
 git clone https://github.com/mkandes/4pi.git
 ```
+
+![Estimate the value of Pi via Monte Carlo](https://hpc.llnl.gov/sites/default/files/styles/no_sidebar_3_up/public/pi1.gif)
+
 
 ```
 #!/usr/bin/env python3
