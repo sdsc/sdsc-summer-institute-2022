@@ -314,6 +314,15 @@ sbatch: error: Batch job submission failed: Invalid job array specification
 [xdtr108@login01 ~]$
 ```
 
+```
+[xdtr108@login01 ~]$ ls -l /etc/slurm/
+total 0
+[xdtr108@login01 ~]$ echo $SLURM_CONF
+/cm/shared/apps/slurm/var/etc/expanse/slurm.conf
+[xdtr108@login01 ~]$ cat $SLURM_CONF | grep MaxArraySize
+MaxArraySize=1000
+``
+
 #
 
 Next - [Batch job dependencies](DEPENDENCIES.md)
