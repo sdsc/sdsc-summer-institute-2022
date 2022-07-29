@@ -343,7 +343,13 @@ Submitted batch job 14792680
         14792680_3    shared estimate  xdtr108 PD       0:00      1 (None)
         14792680_2    shared estimate  xdtr108 PD       0:00      1 (None)
         14792680_1    shared estimate  xdtr108 PD       0:00      1 (None)
-[xdtr108@login01 ~]$
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+        14792680_5    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14792680_4    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14792680_3    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14792680_2    shared estimate  xdtr108 PD       0:00      1 (Priority)
+        14792680_1    shared estimate  xdtr108 PD       0:00      1 (Priority)
 ```
 
 #
