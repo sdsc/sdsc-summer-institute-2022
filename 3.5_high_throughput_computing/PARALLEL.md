@@ -28,7 +28,7 @@ https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tut
 
 **Speed** - Solve a problem more quickly
 
-<img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png' width='75%' height='75%'/>
+<img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png' width='60%' height='60%'/>
 
 [Image Credit: NASA - Hurricane Katrina @ 50-km (2005) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
 
@@ -44,7 +44,7 @@ https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tut
 
 **Throughput** - Solve many (simple) problems more quickly
 
-<img src='https://www.sdsc.edu/assets/images/news_items/PR20210414_IceCube_antineutrino_1280x800.jpg' width='75%' height='75%'/>
+<img src='https://www.sdsc.edu/assets/images/news_items/PR20210414_IceCube_antineutrino_1280x800.jpg' width='60%' height='60%'/>
 
 [Image Credit: IceCube- Glashow Event](https://www.sdsc.edu/News%20Items/PR20210414_IceCube_antineutrino.html)  
 
