@@ -300,6 +300,20 @@ real 70.82
 
 Next, reset the `-b | --bytes` parameter to `8` and then rewrite the batch job script to create a parameter sweep over `-s | --samples` variable. However, in this case, use the `SLURM_ARRAY_TASK_ID` to logarithmically scale the number of samples.
 
+```
+#SBATCH --array=1,10,100,1000,10000
+
+module purge
+
+time -p "${HOME}/4pi/bash/pi.sh" -b 8 -r 5 -s "${SLURM_ARRAY_TASK_ID}"
+```
+
+```
+[xdtr108@login01 ~]$ sbatch estimate-pi.sh 
+sbatch: error: Batch job submission failed: Invalid job array specification
+[xdtr108@login01 ~]$
+```
+
 #
 
 Next - [Batch job dependencies](DEPENDENCIES.md)
