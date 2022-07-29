@@ -232,3 +232,9 @@ https://github.com/mlcommons/hpc/tree/main/deepcam#dataset
 ![AWS Snowmobile](https://techgenix.com/tgwordpress/wp-content/uploads/2016/12/image32-e1482537824353.jpg')
 
 [Image Credit: Amazon Web Services](https://aws.amazon.com/snowmobile)
+
+### Long-term, archival data storage
+
+
+
+
