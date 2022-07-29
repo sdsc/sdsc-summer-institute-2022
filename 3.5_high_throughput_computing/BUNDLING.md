@@ -4,6 +4,7 @@
 - [Batch job arrays](ARRAYS.md)
 - [Batch job dependencies](DEPENDENCIES.md)
 - [Batch job bundling](BUNDLING.md)
+- [Preemptible batch jobs](PREEMPTIBLE.md)
 - [Distributed high-throughput computing](DHTC.md)
 
 ## Ad-hoc job/task bundling
@@ -28,4 +29,4 @@ https://github.com/TACC/launcher
 
 #
 
-Next - [Distributed high-throughput computing](DHTC.md)
+Next - [Preemptible batch jobs](PREEMPTIBLE.md)
