@@ -21,21 +21,20 @@ https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tut
 
 <img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png' width='100%' height='100%'/>
 
-[Image Credit: NASA - Hurricane Katrina @ 50-km (2005) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
-
+[Image Credit: NASA - Hurricane Katrina @ 50-km (2005) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)  
 
 **Scale** - Solve a larger, more complex problem with higher fidelity
 
 <img src='https://www.nasa.gov/sites/default/files/geos-5_wspd_6_katrina_0.png' width='100%' height='100%'/>
 
-[Image Credit: NASA - Hurricane Katrina @ 6.25-km (2015) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)
+[Image Credit: NASA - Hurricane Katrina @ 6.25-km (2015) resolution](https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science)  
 
 
 **Throughput** - Solve many (simple) problems more quickly
 
 <img src='https://www.sdsc.edu/assets/images/news_items/PR20210414_IceCube_antineutrino_1280x800.jpg' width='100%' height='100%'/>
 
-[Image Credit: IceCube- Glashow Event](https://www.sdsc.edu/News%20Items/PR20210414_IceCube_antineutrino.html)
+[Image Credit: IceCube- Glashow Event](https://www.sdsc.edu/News%20Items/PR20210414_IceCube_antineutrino.html)  
 
 
 <img src='https://www.sdsc.edu/assets/images/news_items/PR20191119_GPU_Cloudburst.jpg' width='100%' height='100%'/>
