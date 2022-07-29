@@ -214,7 +214,9 @@ https://github.com/mlcommons/training_policies/blob/master/hpc_training_rules.ad
 https://github.com/mlcommons/hpc/tree/main/deepcam#dataset
 ```
 
+![DeepCam - Climate Segmentation Dataset - Globus Transfer](globus-web-app-climate-seg-data-transfer-complete.png)
 
-<img src='https://techgenix.com/tgwordpress/wp-content/uploads/2016/12/image32-e1482537824353.jpg' wdith='100%' height='100%' />
+
+![AWS Snowmobile](https://techgenix.com/tgwordpress/wp-content/uploads/2016/12/image32-e1482537824353.jpg')
 
 [Image Credit: Amazon Web Services](https://aws.amazon.com/snowmobile)
