@@ -9,24 +9,26 @@ High-throughput computing (HTC) workloads are characterized by large numbers of 
 
 ## Parallel paradigms: HPC vs. HTC
 
+### Serial computation
 ![Serial computation](https://hpc.llnl.gov/sites/default/files/styles/with_sidebar_1_up/public/serialProblem.gif)
 
+### Parallel computation
 ![Parallel computation](https://hpc.llnl.gov/sites/default/files/styles/with_sidebar_1_up/public/parallelProblem.gif)
 
-Why go parallel?
+### Why go parallel?
 
-Speed
+#### Speed
 
 ![Katrina - Low Resolution Simulation - 50-km - 2005](https://www.nasa.gov/sites/default/files/geos-5_wspd_2_katrina_0.png)
 
-Scale
+#### Scale
 
 ![Katrina - High Resolution Simulation - 6.25-km - 2015](https://www.nasa.gov/sites/default/files/geos-5_wspd_6_katrina_0.png)
 
 https://www.nasa.gov/feature/goddard/since-katrina-nasa-advances-storm-models-science
 
 
-Throughput
+#### Throughput
 
 ![IceCube - Glashow Event](https://www.sdsc.edu/assets/images/news_items/PR20210414_IceCube_antineutrino_1280x800.jpg)
 
