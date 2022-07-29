@@ -26,7 +26,7 @@ https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tut
 
 
 ```
-wget https://raw.githubusercontent.com/mkandes/4pi/master/python/pi.py
+git clone https://github.com/mkandes/4pi.git
 ```
 
 ```
