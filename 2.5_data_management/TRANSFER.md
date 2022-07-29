@@ -85,9 +85,9 @@ lftp xdtr108@oasis-dm-interactive.sdsc.edu:~> exit
 $
 ```
 
-```
+
 ![Globus - Home](globus-homepage.png)
-```
+
 
 ```
 $ globus endpoint search 'XSEDE Expanse'
