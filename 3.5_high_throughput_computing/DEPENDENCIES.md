@@ -19,7 +19,8 @@ sbatch --dependency=<dependency_list>
 
 The format of the `<dependency_list>` is of the form  `<type:job_id[:job_id][,type:job_id[:job_id]]>` or `<type:job_id[:job_id][?type:job_id[:job_id]]>`. Note that all dependencies must be satisfied if the `,` separator is used. In contrast, any dependency may be satisfied if the `?` separator is used. Only one separator may be used. Many jobs can share the same dependency and these jobs may even belong to different users. Once a job dependency fails due to the termination state of a preceding job, *the dependent job will never be run.*
 
-Dependency `type`s include:
+Dependency types:
+
 - **after** - This job can begin execution after the specified jobs have begun execution. 
 - **afterany** - This job can begin execution after the specified jobs have terminated.
 - **aftercorr** - A task of this job array can begin execution after the corresponding task ID in the specified job has completed successfully (ran to completion with an exit code of zero).
