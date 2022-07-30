@@ -19,21 +19,36 @@ sbatch --dependency=<dependency_list>
 
 The format of the `<dependency_list>` is of the form  `<type:job_id[:job_id][,type:job_id[:job_id]]>` or `<type:job_id[:job_id][?type:job_id[:job_id]]>`. Note that all dependencies must be satisfied if the `,` separator is used. In contrast, any dependency may be satisfied if the `?` separator is used. Only one separator may be used. Many jobs can share the same dependency and these jobs may even belong to different users. Once a job dependency fails due to the termination state of a preceding job, *the dependent job will never be run.*
 
-Dependency types:
+The job dependency types supported by SLURM are:
 
-- **after** - This job can begin execution after the specified jobs have begun execution. 
-- **afterany** - This job can begin execution after the specified jobs have terminated.
+- **after** - This job can begin execution after the specified job(s) have begun execution. 
+- **afterany** - This job can begin execution after the specified job(s) have terminated.
 - **aftercorr** - A task of this job array can begin execution after the corresponding task ID in the specified job has completed successfully (ran to completion with an exit code of zero).
-- **afternotok** - This job can begin execution after the specified jobs have terminated in some failed state (non-zero exit code, node failure, timed out, etc). 
+- **afternotok** - This job can begin execution after the specified job(s) have terminated in some failed state (non-zero exit code, node failure, timed out, etc). 
 - **afterok** - This job can begin execution after the specified jobs have successfully executed (ran to completion with an exit code of zero).
 - **singleton** - This job can begin execution after any previously launched jobs sharing the same job name and user have terminated.  In other words, only one job by that name and owned by that user can be running or suspended at any point in time.
 
-
 ### Manually create your first job dependency
 
-Let's start by first cleaning up our HOME directory, deleting all of the standard output files from t
+First, let's clean up your HOME direcotry by deleting all of the standard output files from the array job exercies completed in the previous section.
 
-shrinking our large array job down to size and simplifying it a bit.
+```
+[xdtr108@login02 ~]$ rm *.exp-*
+[xdtr108@login02 ~]$ ls
+4pi  estimate-pi.sh
+```
+
+Next, shrink the large array job down to size and simplify it a bit.
+
+```
+#SBATCH --array=1-20%10
+
+module purge
+
+python3 "${HOME}/4pi/python/pi.py" 100000000
+```
+
+Now create (or download) a new batch job script that will be used to combine the results from each individual eastimate of Pi. 
 
 ```
 job_id="$(sbatch ${job_name}.sh | grep -o '[[:digit:]]*')"
