@@ -180,13 +180,15 @@ Resetting modules to system default. Reseting $MODULEPATH back to system default
 3.14160875541609 0.000150270406253624
 ```
 
-### Pull it together into a simple workflow (PIpeline)
+### Pi-peline it: Creating a simple workflow
 
-Finally, create (or download) another batch job script that will setup the workflow we ran above. 
+Finally, download the following batch job script. It setups up the simple workflow we ran above manually in a single batch job. 
 
 ```
-wget run-pi-workflow.sh
+wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/3.5_high_throughput_computing/run-pi-workflow.sh
 ```
+
+Once you've downloaded the script, launch the workflow. 
 
 ```
 [xdtr108@login02 ~]$ sbatch run-pi-workflow.sh 
