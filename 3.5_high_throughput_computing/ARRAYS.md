@@ -353,7 +353,43 @@ Submitted batch job 14792680
 [xdtr108@login01 ~]$ squeue -u $USER
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
         14792680_5    shared estimate  xdtr108  R       3:03      1 exp-1-06
-[xdtr108@login01 ~]$
+[xdtr108@login02 ~]$ ls
+4pi                               estimate-pi.o14791898.9.exp-1-06
+estimate-pi.o14791638.exp-9-55    estimate-pi.o14792416.1.exp-1-06
+estimate-pi.o14791898.0.exp-1-06  estimate-pi.o14792416.2.exp-1-06
+estimate-pi.o14791898.1.exp-1-06  estimate-pi.o14792416.4.exp-1-06
+estimate-pi.o14791898.2.exp-1-06  estimate-pi.o14792416.8.exp-1-06
+estimate-pi.o14791898.3.exp-1-06  estimate-pi.o14792680.1.exp-1-06
+estimate-pi.o14791898.4.exp-1-06  estimate-pi.o14792680.2.exp-1-06
+estimate-pi.o14791898.5.exp-1-06  estimate-pi.o14792680.3.exp-1-06
+estimate-pi.o14791898.6.exp-1-06  estimate-pi.o14792680.4.exp-1-06
+estimate-pi.o14791898.7.exp-1-06  estimate-pi.o14792680.5.exp-1-06
+estimate-pi.o14791898.8.exp-1-06  estimate-pi.sh
+[xdtr108@login02 ~]$
+```
+
+```
+[xdtr108@login02 ~]$ head -n 2 estimate-pi.o14792680.*
+==> estimate-pi.o14792680.1.exp-1-06 <==
+2.80000
+real 0.08
+
+==> estimate-pi.o14792680.2.exp-1-06 <==
+3.08000
+real 0.54
+
+==> estimate-pi.o14792680.3.exp-1-06 <==
+3.20400
+real 5.57
+
+==> estimate-pi.o14792680.4.exp-1-06 <==
+3.11880
+real 50.96
+
+==> estimate-pi.o14792680.5.exp-1-06 <==
+3.14632
+real 535.73
+[xdtr108@login02 ~]$
 ```
 
 #
