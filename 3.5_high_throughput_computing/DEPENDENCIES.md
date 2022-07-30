@@ -38,7 +38,7 @@ First, let's clean up your HOME direcotry by deleting all of the standard output
 4pi  estimate-pi.sh
 ```
 
-Next, shrink the large array job down to size and simplify it a bit.
+Next, shrink the large array job down to size and simplify it a bit ...
 
 ```
 #SBATCH --array=1-20%10
@@ -48,8 +48,11 @@ module purge
 python3 "${HOME}/4pi/python/pi.py" 100000000
 ```
 
-Now create (or download) a new batch job script that will be used to combine the results from each individual job's estimate of Pi and compute a summary of the statistics.
+... then download the following batch job script to your HOME directory. It will be used to combine the results from each individual estimate of Pi from the batch job array into a summary of statistics.
 
+```
+wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/3.5_high_throughput_computing/compute-pi-stats.sh
+```
 
 
 
