@@ -30,7 +30,7 @@ The job dependency types supported by SLURM are:
 
 ### Manually create your first job dependency
 
-First, let's clean up your HOME direcotry by deleting all of the standard output files from the array job exercies completed in the previous section.
+Before we begin, let's first clean up your HOME direcotry by deleting all of the standard output files from the array job exercies we completed in the previous section. 
 
 ```
 [xdtr108@login02 ~]$ rm *.exp-*
@@ -38,7 +38,7 @@ First, let's clean up your HOME direcotry by deleting all of the standard output
 4pi  estimate-pi.sh
 ```
 
-Next, shrink the large array job down to size and simplify it a bit ...
+Next, shrink the large array job down and simplify it a bit ...
 
 ```
 #SBATCH --array=1-20%10
@@ -48,13 +48,124 @@ module purge
 python3 "${HOME}/4pi/python/pi.py" 100000000
 ```
 
-... then download the following batch job script to your HOME directory. It will be used to combine the results from each individual estimate of Pi from the batch job array into a summary of statistics.
+... then download the following batch job script to your HOME directory. It will combine the results from each individual estimate of Pi from the batch job array into a summary of statistics.
 
 ```
 wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/3.5_high_throughput_computing/compute-pi-stats.sh
 ```
 
+With both batch job scripts in place, 
 
+```
+[xdtr108@login02 ~]$ ls
+4pi  compute-pi-stats.sh  estimate-pi.sh
+```
+
+launch the array job ...
+
+```
+[xdtr108@login02 ~]$ sbatch estimate-pi.sh 
+Submitted batch job 14806584
+[xdtr108@login02 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+       14806584_20    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_19    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_18    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_17    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_16    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_15    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_14    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_13    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_12    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_11    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+        14806584_1    shared estimate  xdtr108  R       0:04      1 exp-1-08
+        14806584_2    shared estimate  xdtr108  R       0:04      1 exp-1-08
+        14806584_3    shared estimate  xdtr108  R       0:04      1 exp-1-08
+        14806584_4    shared estimate  xdtr108  R       0:04      1 exp-1-08
+        14806584_5    shared estimate  xdtr108  R       0:04      1 exp-1-08
+        14806584_6    shared estimate  xdtr108  R       0:04      1 exp-1-08
+        14806584_7    shared estimate  xdtr108  R       0:04      1 exp-1-08
+        14806584_8    shared estimate  xdtr108  R       0:04      1 exp-1-08
+        14806584_9    shared estimate  xdtr108  R       0:04      1 exp-1-08
+       14806584_10    shared estimate  xdtr108  R       0:04      1 exp-1-08
+[xdtr108@login02 ~]$
+```
+
+... and then submit the stats job to run after all of the array tasks complete successfully. 
+
+```
+[xdtr108@login02 ~]$ sbatch --dependency=afterok:14806584 compute-pi-stats.sh 14806584
+Submitted batch job 14806656
+[xdtr108@login02 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          14806656    shared compute-  xdtr108 PD       0:00      1 (Dependency)
+       14806584_20    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_19    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_18    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_17    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_16    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_15    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_14    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_13    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_12    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14806584_11    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+        14806584_1    shared estimate  xdtr108  R       0:25      1 exp-1-08
+        14806584_2    shared estimate  xdtr108  R       0:25      1 exp-1-08
+        14806584_3    shared estimate  xdtr108  R       0:25      1 exp-1-08
+        14806584_4    shared estimate  xdtr108  R       0:25      1 exp-1-08
+        14806584_5    shared estimate  xdtr108  R       0:25      1 exp-1-08
+        14806584_6    shared estimate  xdtr108  R       0:25      1 exp-1-08
+        14806584_7    shared estimate  xdtr108  R       0:25      1 exp-1-08
+        14806584_8    shared estimate  xdtr108  R       0:25      1 exp-1-08
+        14806584_9    shared estimate  xdtr108  R       0:25      1 exp-1-08
+       14806584_10    shared estimate  xdtr108  R       0:25      1 exp-1-08
+[xdtr108@login02 ~]$
+```
+
+Check the summary statistics once the job completes. 
+
+```
+[xdtr108@login02 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+       14806584_18    shared estimate  xdtr108 CG       1:00      1 exp-1-08
+          14806656    shared compute-  xdtr108 PD       0:00      1 (Dependency)
+       14806584_11    shared estimate  xdtr108  R       1:01      1 exp-1-08
+[xdtr108@login02 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[xdtr108@login02 ~]$ cat compute-pi-stats.o14806656.exp-1-08
+Resetting modules to system default. Reseting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+
+* FILE: 
+  Records:           20
+  Out of range:       0
+  Invalid:            0
+  Column headers:     0
+  Blank:              0
+  Data Blocks:        1
+
+* COLUMN: 
+  Mean:               3.1416
+  Std Dev:            0.0002
+  Sample StdDev:      0.0002
+  Skewness:          -1.0556
+  Kurtosis:           3.7261
+  Avg Dev:            0.0001
+  Sum:               62.8322
+  Sum Sq.:          197.3941
+
+  Mean Err.:          0.0000
+  Std Dev Err.:       0.0000
+  Skewness Err.:      0.5477
+  Kurtosis Err.:      1.0954
+
+  Minimum:            3.1412 [ 4]
+  Maximum:            3.1418 [13]
+  Quartile:           3.1415 
+  Median:             3.1416 
+  Quartile:           3.1417 
+
+3.14160875541609 0.000150270406253624
+```
 
 ```
 job_id="$(sbatch ${job_name}.sh | grep -o '[[:digit:]]*')"
