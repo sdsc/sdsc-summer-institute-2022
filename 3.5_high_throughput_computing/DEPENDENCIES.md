@@ -188,7 +188,7 @@ Finally, download the following batch job script. It setups up the simple workfl
 wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/3.5_high_throughput_computing/run-pi-workflow.sh
 ```
 
-Once you've downloaded the script, launch the workflow. 
+Once you've downloaded the script, go ahead and launch the workflow. 
 
 ```
 [xdtr108@login02 ~]$ sbatch run-pi-workflow.sh 
