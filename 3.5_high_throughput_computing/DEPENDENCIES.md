@@ -189,7 +189,71 @@ wget run-pi-workflow.sh
 ```
 
 ```
-job_id="$(sbatch ${job_name}.sh | grep -o '[[:digit:]]*')"
+[xdtr108@login02 ~]$ sbatch run-pi-workflow.sh 
+Submitted batch job 14807605
+[xdtr108@login02 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          14807605    shared run-pi-w  xdtr108  R       0:02      1 exp-1-06
+[xdtr108@login02 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+       14807628_20    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14807628_19    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14807628_18    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14807628_17    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14807628_16    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14807628_15    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14807628_14    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14807628_13    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14807628_12    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+       14807628_11    shared estimate  xdtr108 PD       0:00      1 (JobArrayTaskLimit)
+          14807629    shared compute-  xdtr108 PD       0:00      1 (Dependency)
+        14807628_1    shared estimate  xdtr108  R       0:41      1 exp-1-06
+        14807628_2    shared estimate  xdtr108  R       0:41      1 exp-1-08
+        14807628_3    shared estimate  xdtr108  R       0:41      1 exp-1-08
+        14807628_4    shared estimate  xdtr108  R       0:41      1 exp-1-12
+        14807628_5    shared estimate  xdtr108  R       0:41      1 exp-1-12
+        14807628_6    shared estimate  xdtr108  R       0:41      1 exp-1-12
+        14807628_7    shared estimate  xdtr108  R       0:41      1 exp-1-12
+        14807628_8    shared estimate  xdtr108  R       0:41      1 exp-1-12
+        14807628_9    shared estimate  xdtr108  R       0:41      1 exp-1-27
+       14807628_10    shared estimate  xdtr108  R       0:41      1 exp-1-27
+[xdtr108@login02 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          14807629    shared compute-  xdtr108 PD       0:00      1 (Dependency)
+       14807628_11    shared estimate  xdtr108  R       0:15      1 exp-1-06
+       14807628_12    shared estimate  xdtr108  R       0:15      1 exp-1-06
+       14807628_13    shared estimate  xdtr108  R       0:15      1 exp-1-06
+       14807628_14    shared estimate  xdtr108  R       0:15      1 exp-1-06
+       14807628_15    shared estimate  xdtr108  R       0:15      1 exp-1-06
+       14807628_16    shared estimate  xdtr108  R       0:15      1 exp-1-08
+       14807628_17    shared estimate  xdtr108  R       0:15      1 exp-1-08
+       14807628_18    shared estimate  xdtr108  R       0:15      1 exp-1-08
+       14807628_19    shared estimate  xdtr108  R       0:15      1 exp-1-08
+       14807628_20    shared estimate  xdtr108  R       0:15      1 exp-1-08
+[xdtr108@login02 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          14807629    shared compute-  xdtr108 PD       0:00      1 (Dependency)
+       14807628_11    shared estimate  xdtr108  R       0:58      1 exp-1-06
+       14807628_12    shared estimate  xdtr108  R       0:58      1 exp-1-06
+       14807628_17    shared estimate  xdtr108  R       0:58      1 exp-1-08
+       14807628_18    shared estimate  xdtr108  R       0:58      1 exp-1-08
+       14807628_20    shared estimate  xdtr108  R       0:58      1 exp-1-08
+[xdtr108@login02 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[xdtr108@login02 ~]$ ls
+4pi                                  estimate-pi.o14807628.10.exp-1-27
+compute-pi-stats.o14806656.exp-1-08  estimate-pi.o14807628.11.exp-1-06
+compute-pi-stats.o14807629.exp-1-06  estimate-pi.o14807628.12.exp-1-06
+compute-pi-stats.sh                  estimate-pi.o14807628.13.exp-1-06
+estimate-pi.o14806584.10.exp-1-08    estimate-pi.o14807628.14.exp-1-06
+estimate-pi.o14806584.11.exp-1-08    estimate-pi.o14807628.15.exp-1-06
+...
+estimate-pi.o14806584.5.exp-1-08     estimate-pi.o14807628.9.exp-1-27
+estimate-pi.o14806584.6.exp-1-08     estimate-pi.sh
+estimate-pi.o14806584.7.exp-1-08     run-pi-workflow.o14807605.exp-1-06
+estimate-pi.o14806584.8.exp-1-08     run-pi-workflow.sh
+estimate-pi.o14806584.9.exp-1-08
+[xdtr108@login02 ~]$
 ```
 
 #
