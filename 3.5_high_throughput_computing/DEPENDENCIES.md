@@ -182,7 +182,7 @@ Resetting modules to system default. Reseting $MODULEPATH back to system default
 
 ### Pi-peline it: Creating a simple workflow
 
-Finally, download the following batch job script. It setups up the simple workflow we ran above manually in a single batch job. 
+Finally, download the following batch job script. It recreates the simple workflow we ran above manually in a single batch job. Workflow jobs like this can be used to write (and launch) more complex job dependencies than you might do so directly from the command-line.
 
 ```
 wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/3.5_high_throughput_computing/run-pi-workflow.sh
