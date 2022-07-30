@@ -28,7 +28,7 @@ The job dependency types supported by SLURM are:
 - **afterok** - This job can begin execution after the specified jobs have successfully executed (ran to completion with an exit code of zero).
 - **singleton** - This job can begin execution after any previously launched jobs sharing the same job name and user have terminated.  In other words, only one job by that name and owned by that user can be running or suspended at any point in time.
 
-### Manually create your first job dependency
+### Create your first job dependency
 
 Before we begin, let's first clean up your HOME direcotry by deleting all of the standard output files from the array job exercies we completed in the previous section. 
 
@@ -132,6 +132,19 @@ Check the summary statistics once the job completes.
        14806584_11    shared estimate  xdtr108  R       1:01      1 exp-1-08
 [xdtr108@login02 ~]$ squeue -u $USER
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[xdtr108@login02 ~]$ ls
+4pi                                  estimate-pi.o14806584.19.exp-1-08
+compute-pi-stats.o14806656.exp-1-08  estimate-pi.o14806584.1.exp-1-08
+compute-pi-stats.sh                  estimate-pi.o14806584.20.exp-1-08
+estimate-pi.o14806584.10.exp-1-08    estimate-pi.o14806584.2.exp-1-08
+estimate-pi.o14806584.11.exp-1-08    estimate-pi.o14806584.3.exp-1-08
+estimate-pi.o14806584.12.exp-1-08    estimate-pi.o14806584.4.exp-1-08
+estimate-pi.o14806584.13.exp-1-08    estimate-pi.o14806584.5.exp-1-08
+estimate-pi.o14806584.14.exp-1-08    estimate-pi.o14806584.6.exp-1-08
+estimate-pi.o14806584.15.exp-1-08    estimate-pi.o14806584.7.exp-1-08
+estimate-pi.o14806584.16.exp-1-08    estimate-pi.o14806584.8.exp-1-08
+estimate-pi.o14806584.17.exp-1-08    estimate-pi.o14806584.9.exp-1-08
+estimate-pi.o14806584.18.exp-1-08    estimate-pi.sh
 [xdtr108@login02 ~]$ cat compute-pi-stats.o14806656.exp-1-08
 Resetting modules to system default. Reseting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
 
@@ -165,6 +178,14 @@ Resetting modules to system default. Reseting $MODULEPATH back to system default
   Quartile:           3.1417 
 
 3.14160875541609 0.000150270406253624
+```
+
+### Pull it together into a simple workflow (PIpeline)
+
+Finally, create (or download) another batch job script that will setup the workflow we ran above. 
+
+```
+wget run-pi-workflow.sh
 ```
 
 ```
