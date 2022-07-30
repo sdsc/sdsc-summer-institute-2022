@@ -48,7 +48,10 @@ module purge
 python3 "${HOME}/4pi/python/pi.py" 100000000
 ```
 
-Now create (or download) a new batch job script that will be used to combine the results from each individual eastimate of Pi. 
+Now create (or download) a new batch job script that will be used to combine the results from each individual job's estimate of Pi and compute a summary of the statistics.
+
+
+
 
 ```
 job_id="$(sbatch ${job_name}.sh | grep -o '[[:digit:]]*')"
