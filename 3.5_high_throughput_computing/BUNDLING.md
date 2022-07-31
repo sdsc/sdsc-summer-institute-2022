@@ -13,7 +13,7 @@ While Expanse was designed to be supportive of HTC-like workflows, many HPC syst
 
 ### Linux-native scheduling
 
-The simplest and most straightforward approach to bundling jobs is with the [Linux scheduler](https://en.wikipedia.org/wiki/Completely_Fair_Scheduler). When you execute a command in a batch job script, you can force the processes that is started into the *background* to run independently of other processes that may be created by the job later. The Linux scheduler will (automagically) distribute the processes across the compute resources available to run the job. 
+The simplest and most straightforward approach to bundling jobs is with the [Linux scheduler](https://en.wikipedia.org/wiki/Completely_Fair_Scheduler). When you execute a command in a batch job script, you can force the processes that is started into the *background* to run independently of other processes that may also be created as part of the job. The Linux scheduler will (automagically) distribute the processes across the compute resources available to run the job. 
 
 ```
 #!/usr/bin/env bash
@@ -34,7 +34,9 @@ python3 "${HOME}/4pi/python/pi.py" 100000000 &
 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 python3 "${HOME}/4pi/python/pi.py" 100000000 &
+```
 
+```
 wait
 ```
 
