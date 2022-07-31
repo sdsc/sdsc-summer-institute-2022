@@ -42,9 +42,39 @@ wait
 
 The Linux scheduler works well for simple workflows with a limited core count. However, for a large number of jobs running with multiple processes, its performance may be unsatisfying, due to unbalanced workloads from different running jobs, improper process/thread affinity settings, etc.
 
-`taskset`
+```
+[xdtr108@login02 ~]$ ls
+4pi  compute-pi-stats.sh  estimate-pi.sh  run-pi-workflow.sh
+[xdtr108@login02 ~]$ cd 4pi/
+[xdtr108@login02 4pi]$ ls
+bash  c  fortran  LICENSE.md  python  README.md
+[xdtr108@login02 4pi]$ cd fortran/
+[xdtr108@login02 fortran]$ ls
+Makefile  pi.f90  pi_omp.f90
+[xdtr108@login02 fortran]$ cat Makefile 
+COMPILER := gfortran
+COMPILER_OPTIONS := -ffree-form -ffree-line-length-none -fimplicit-none \
+                    -O3 -mtune=native -fdefault-integer-8 -fdefault-real-8
 
-`numactl`
+all: pi.x pi_omp.x
+
+pi.x: pi.o
+	$(COMPILER) $(COMPILER_OPTIONS) -o pi.x pi.o
+
+pi.o: pi.f90
+	$(COMPILER) $(COMPILER_OPTIONS) -c pi.f90
+
+pi_omp.x: pi_omp.o
+	$(COMPILER) $(COMPILER_OPTIONS) -fopenmp -o pi_omp.x pi_omp.o
+
+pi_omp.o: pi_omp.f90
+	$(COMPILER) $(COMPILER_OPTIONS) -fopenmp -c pi_omp.f90
+
+.PHONY: clean
+clean:
+	rm *.x *.o
+```
+
 
 http://www.hpc.acad.bg/numactl/
 
