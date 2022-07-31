@@ -38,8 +38,17 @@ python3 "${HOME}/4pi/python/pi.py" 100000000 &
 wait
 ```
 
-The Linux scheduelr works well for simple workflows with a limited core count. However, for a large number of jobs running with multiple processes, its performance may be unsatisfying, due to unbalanced workloads from different running jobs, improper process/thread affinity settings, etc.
+The Linux scheduler works well for simple workflows with a limited core count. However, for a large number of jobs running with multiple processes, its performance may be unsatisfying, due to unbalanced workloads from different running jobs, improper process/thread affinity settings, etc.
 
+`taskset`
+
+`numactl`
+
+http://www.hpc.acad.bg/numactl/
+
+https://cvw.cac.cornell.edu/hybrid/numactl
+
+https://www.glennklockwood.com/hpc-howtos/process-affinity.html
 
 ### GNU parallel
 
