@@ -38,6 +38,8 @@ python3 "${HOME}/4pi/python/pi.py" 100000000 &
 wait
 ```
 
+The Linux scheduelr works well for simple workflows with a limited core count. However, for a large number of jobs running with multiple processes, its performance may be unsatisfying, due to unbalanced workloads from different running jobs, improper process/thread affinity settings, etc.
+
 
 ### GNU parallel
 
