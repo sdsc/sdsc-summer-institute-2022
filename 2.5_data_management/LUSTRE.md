@@ -92,10 +92,10 @@ gid 11905 is using default file quota setting
 
 The main components of a Lustre filesystem are:
 
-- **Metadata Server (MDS)** - Service nodes that manage all metadata operations, such as assigning and tracking the names and storage locations of directories and files on the OSTs. There is 1 MDS per filesystem.
-- **Metadata Target (MDT)** - A storage device where the metadata (name, ownership, permissions and file type) are stored. There is 1 MDT per filesystem.
+- **Metadata Server (MDS)** - Service nodes that manage all metadata operations, such as assigning and tracking the names and storage locations of directories and files on the OSTs. *There is 1 MDS per filesystem.*
+- **Metadata Target (MDT)** - A storage device where the metadata (name, ownership, permissions and file type) are stored. *There is 1 MDT per filesystem.*
 - **Object Storage Server (OSS)** - Service nodes that run the Lustre software stack, provide the actual I/O service and network request handling for the OSTs, and coordinate file locking with the MDS. Each OSS can serve multiple OSTs. The aggregate bandwidth of a Lustre filesystem can approach the sum of bandwidths provided by the OSSes. There can be 1 or multiple OSSes per filesystem.
-- **Object Storage Target (OST)** - Storage devices where users' file data is stored. The size of each OST varies from approximately 7 terabytes (TB) to approximately 22 TB, depending on the Lustre filesystem. The capacity of a Lustre filesystem is the sum of the sizes of all OSTs. There are multiple OSTs per filesystem.
+- **Object Storage Target (OST)** - Storage devices where users' file data is stored. The size of each OST can vary depending on the Lustre filesystem. The capacity of a Lustre filesystem is the sum of the sizes of all OSTs. There are typically multiple OSTs per filesystem.
 - **Lustre Clients** - Compute nodes that mount the Lustre filesystem, and access/use data in the filesystem. There are commonly thousands of Lustre clients per filesystem. 
 
 ![Lustre operations](https://cvw.cac.cornell.edu/parallelio/images/lustreints.jpg)
