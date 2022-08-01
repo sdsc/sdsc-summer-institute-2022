@@ -9,6 +9,8 @@ Proper data management is essential to make effective use of high-performance co
 - [Going parallel: Lustre basics](LUSTRE.md)
 - [Back that data up: Data transfer tools](TRANSFER.md)
 
+https://github.com/sdsc-hpc-training-org/hpc-training-2022/blob/main/week03_jobsub_datamgmt/DataManagement_HPCTraining_2022.pdf
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
