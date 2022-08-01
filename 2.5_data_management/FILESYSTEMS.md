@@ -215,6 +215,8 @@ exit
 [xdtr108@login01 ~]$
 ```
 
+Download the batch job script. It provides an example of how to use the local scratch disk in a job. 
+
 ```
 wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/2.5_data_management/download-cifar-images.sh
 ```
@@ -248,6 +250,8 @@ cp CIFAR-10-images.tar.gz "${HOME}"
 cp CIFAR-10-images.tar.gz "${LUSTRE_SCRATCH_DIR}"
 ```
 
+Submit the job to the scheduler.
+
 ```
 [xdtr108@login01 ~]$ sbatch download-cifar-images.sh 
 Submitted batch job 14751956
@@ -271,7 +275,6 @@ drwxr-xr-x 3 xdtr108 uic157    3 Jul 26 09:17 CIFAR-10-images
 -rw-r--r-- 1 xdtr108 uic157 163M Jul 26 08:54 cifar-10-python.tgz
 -rw-r--r-- 1 xdtr108 uic157 6.3K Jul 26 09:41 download-cifar-images.o14751956.exp-9-55
 -rw-r--r-- 1 xdtr108 uic157  746 Jul 26 09:41 download-cifar-images.sh
-[xdtr108@login01 ~]$
 ```
 
 #
