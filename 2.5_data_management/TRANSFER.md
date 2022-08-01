@@ -11,6 +11,8 @@
 
 ![Expanse Storage and External Networks](expanse-storage-external-networks.png)
 
+![Research and Education Networks](xsede_access_point_map.jpg)
+
 
 ### scp - OpenSSH secure file copy
 
