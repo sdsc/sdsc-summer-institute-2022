@@ -1,0 +1,6 @@
+Line 1 of file3.txt
+Line 2 of file3.txt
+Line 3 of file3.txt
+Line 4 of file3.txt
+Line 5 of file3.txt
+Line 6 of file3.txt

@@ -1,0 +1,5 @@
+Line 1 of file2.txt
+Line 2 of file2.txt
+Line 3 of file2.txt
+Line 4 of file2.txt
+Line 5 of file2.txt
