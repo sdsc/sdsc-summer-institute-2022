@@ -9,15 +9,12 @@
 
 ## Going parallel: Lustre basics
 
-https://en.wikipedia.org/wiki/Clustered_file_system
+![Lustre logo](https://upload.wikimedia.org/wikipedia/en/8/8a/Lustre_file_system_logo.gif)
 
-https://hpc-uit.readthedocs.io/en/latest/storage/lustre-performance.html
-
-https://ior.readthedocs.io/en/latest/index.html
-
-https://www.nas.nasa.gov/hecc/support/kb/Lustre_Basics_224.html
-
-https://www.nas.nasa.gov/hecc/support/kb/lustre-best-practices_226.html
+- https://en.wikipedia.org/wiki/Lustre_(file_system)
+- https://www.lustre.org/
+- https://www.nas.nasa.gov/hecc/support/kb/Lustre_Basics_224.html
+- https://www.nas.nasa.gov/hecc/support/kb/lustre-best-practices_226.html
 
 ```
 cd "/expanse/lustre/scratch/${USER}/temp_project"
@@ -291,6 +288,10 @@ expanse-OST0047_UUID
                      0k       -      0k       -       -       -       -       -
 Total allocated inode limit: 7, total allocated block limit: 0k
 ```
+
+
+- https://ior.readthedocs.io/en/latest/index.html
+- https://hpc-uit.readthedocs.io/en/latest/storage/lustre-performance.html
 
 ```
 wget https://raw.githubusercontent.com/sdsc/sdsc-summer-institute-2022/main/2.5_data_management/run-ior-benchmark.sh
