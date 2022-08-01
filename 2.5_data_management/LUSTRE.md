@@ -86,6 +86,8 @@ Disk quotas for grp sds184 (gid 11905):
 gid 11905 is using default file quota setting
 ```
 
+![Lustre architecture](https://wiki.lustre.org/File:Lustre_File_System_Overview_(DNE)_lowres_v1.png)
+
 ```
 lfs getstripe CIFAR-10-images.tar.gz
 ```
