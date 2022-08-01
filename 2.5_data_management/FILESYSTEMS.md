@@ -99,9 +99,13 @@ tmpfs          tmpfs     3.2G  2.4M  3.2G   1% /run/user/1001
 - https://en.wikipedia.org/wiki/Ext4
 
 
+Let's start an interactive job.
+
 ```
 srun --job-name=interactive --account=sds184 --partition=shared --nodes=1 --ntasks-per-node=1 --cpus-per-task=1 --mem=2G --time=00:30:00 --wait=0 --pty /bin/bash
 ```
+
+Once the scheduler has assigned you compute resources, your interactive session on the compute node will open. 
 
 ```
 srun: job 14751425 queued and waiting for resources
@@ -109,10 +113,14 @@ srun: job 14751425 has been allocated resources
 [xdtr108@exp-1-17 ~]$
 ```
 
+Let's see if there are any other NVMe drives on the compute nodes. 
+
 ```
 [xdtr108@exp-1-17 ~]$ df -Th | grep nvme
 /dev/nvme0n1p1                                          ext4      916G   67G  804G   8% /scratch
 ```
+
+What other filesystems are available?
 
 ```
 df -Th | less
@@ -147,6 +155,9 @@ tmpfs                                                   tmpfs      26G     0   2
 
 ![Expanse System Architecture](expanse-system-architecture.png)
 
+
+Change to the local `/scratch` disk and download the CIFAR image repository. 
+
 ```
 [xdtr108@exp-1-17 job_14751425]$ time -p git clone https://github.com/YoongiKim/CIFAR-10-images.git
 Cloning into 'CIFAR-10-images'...
@@ -162,9 +173,13 @@ total 4.0K
 drwxr-xr-x 5 xdtr108 uic157 4.0K Jul 26 09:11 CIFAR-10-images
 ```
 
+Create a zip archive of the CIFAR image repository. 
+
 ```
 zip -r CIFAR-10-images.zip CIFAR-10-images
 ```
+
+Check the size of the zip archive. 
 
 ```
 [xdtr108@exp-1-17 job_14751425]$ ls -lh
@@ -172,6 +187,8 @@ total 78M
 drwxr-xr-x 5 xdtr108 uic157 4.0K Jul 26 09:11 CIFAR-10-images
 -rw-r--r-- 1 xdtr108 uic157  78M Jul 26 09:11 CIFAR-10-images.zip
 ```
+
+What is the size of the original image repository?
 
 ```
 [xdtr108@exp-1-17 job_14751425]$ du -h CIFAR-10-images
@@ -192,13 +209,19 @@ drwxr-xr-x 5 xdtr108 uic157 4.0K Jul 26 09:11 CIFAR-10-images
 [xdtr108@exp-1-17 job_14751425]$
 ```
 
+Remove the original repository from the local `/scratch` disk. 
+
 ```
 rm -rf CIFAR-10-images/
 ```
 
+Unzip only the test dogs. 
+
 ```
 unzip CIFAR-10-images.zip 'CIFAR-10-images/test/dog/*'
 ```
+
+Copy the zip archive back to your HOME (NFS) directory. 
 
 ```
 [xdtr108@exp-1-17 job_14751425]$ cp CIFAR-10-images.zip ~/
@@ -261,6 +284,8 @@ Submitted batch job 14751956
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
           14751956     shared download  xdtr108  R       0:02      1 exp-9-55
 ```
+
+Check that the new tarball is located in your HOME directory. 
 
 ```
 [xdtr108@login01 ~]$ squeue -u $USER
