@@ -237,6 +237,14 @@ https://github.com/mlcommons/hpc/tree/main/deepcam#dataset
 
 ### Long-term, archival data storage
 
+[TACC Ranch](https://portal.xsede.org/tacc-ranch)
+
+Ranch is fundamentally implemented using long-term tape storage and as such is designed for archiving data that is in a state wherein the data will not likely change, and will not likely need to be accessed very often.
+
+[Jetstream2 (S3-like) Object Storage](https://portal.xsede.org/jetstream2#storage:objectstore)
+
+Run your own NAS. 
+
 ![Western Digital My Cloud](https://www.westerndigital.com/content/dam/store/en-us/assets/products/desktop/my-cloud-expert-series-ex4100/gallery/my-cloud-ex4100-Hero.png)
 
 
