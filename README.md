@@ -18,6 +18,23 @@ For your convenience, we’ve create aliases and symlinks for the Summer Institu
 * data – symlink to staged data
 In the event that you need to explicitly use the reservation, training accounts will have access to SI2021RES for duration of SI
 
+## Additional SDSC Resources
+### Voyager
+The [Voyager](https://www.sdsc.edu/support/user_guides/voyager.html#tech_summary) supercomputer is an innovative AI system designed specifically for science and engineering research at scale. Funded by the National Science Foundation, Voyager represents a collaboration with the San Diego Supercomputer Center at UC San Diego, Supermicro, and Intel’s Habana Lab focused on supporting research in science and engineering that is increasingly dependent upon artificial intelligence and deep learning as a critical element in the experimental and/or computational work.
+
+* Voyager: Exploring Habana processor-based AI focused hardware for Science and Engineering [Training Session](https://www.youtube.com/watch?v=RK46aCjOoKI)
+* Voyager User Guide [HERE](https://www.sdsc.edu/support/user_guides/voyager.html). 
+* Voyager video [HERE](https://youtu.be/TmX4wm4J8Jk). 
+
+### CloudBank
+[CoudBank](https://www.cloudbank.org/) is a managed service to simplify cloud access for computer science research. 
+CloudBank overview video [HERE](https://www.youtube.com/watch?v=5YEflIwdjxY). 
+DCL funding opportunity for PIs who have existing CISE awards, details [HERE](https://www.cloudbank.org/request).
+
+### SeedMe
+[SeedMe](https://seedmelab.org/) is a scientific data management framework for teams struggling with intractable data.  
+SeedMeLab overview talk [HERE](https://youtu.be/eVqzNbI1EAo). 
+
 ## License
 
 All the teaching material in this repository is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
