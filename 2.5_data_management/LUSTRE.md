@@ -12,7 +12,8 @@
 ![Lustre logo](https://upload.wikimedia.org/wikipedia/en/8/8a/Lustre_file_system_logo.gif)
 
 - https://en.wikipedia.org/wiki/Lustre_(file_system)
-- https://www.lustre.org/
+- https://www.lustre.org
+- https://wiki.lustre.org/Introduction_to_Lustre
 - https://www.nas.nasa.gov/hecc/support/kb/Lustre_Basics_224.html
 - https://www.nas.nasa.gov/hecc/support/kb/lustre-best-practices_226.html
 
