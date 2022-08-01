@@ -237,11 +237,14 @@ https://github.com/mlcommons/hpc/tree/main/deepcam#dataset
 
 ### Long-term, archival data storage
 
-[TACC Ranch](https://portal.xsede.org/tacc-ranch)
+Magnetic tape is still a thing. 
 
-Ranch is fundamentally implemented using long-term tape storage and as such is designed for archiving data that is in a state wherein the data will not likely change, and will not likely need to be accessed very often.
+- [TACC Ranch](https://portal.xsede.org/tacc-ranch): Ranch is fundamentally implemented using long-term tape storage and as such is designed for archiving data that is in a state wherein the data will not likely change, and will not likely need to be accessed very often.
 
-[Jetstream2 (S3-like) Object Storage](https://portal.xsede.org/jetstream2#storage:objectstore)
+Send your data to the cloud!
+
+- [Amazon S3](https://en.wikipedia.org/wiki/Amazon_S3)
+- [Jetstream2 (S3-like) Object Storage](https://portal.xsede.org/jetstream2#storage:objectstore)
 
 Run your own NAS. 
 
