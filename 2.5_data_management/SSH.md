@@ -15,7 +15,7 @@ SSH, or [Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell), is a cryptog
 
 [Image Credit: OpenSSH | Wikipedia](https://en.wikipedia.org/wiki/OpenSSH)
 
-In general, password-based authentication is the default authentication mechanism used to establish trust and open an SSH connection between a client and server. This is true on Expanse. However, SSH supports a number of different authentication mechanisms
+In general, password-based authentication is the default authentication mechanism used to establish trust and open an SSH connection between a client and server. This is true on Expanse. However, SSH supports a number of different authentication mechanisms like [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography).
 
 Today, many systems also require two-factor authentication.
 
