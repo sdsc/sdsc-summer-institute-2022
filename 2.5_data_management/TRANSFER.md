@@ -9,7 +9,7 @@
 
 ## Back that data up: Data transfer tools
 
-https://www.nas.nasa.gov/hecc/support/kb/remote-file-transfer-commands_142.html
+![Expanse Storage and External Networks](expanse-storage-external-networks.png)
 
 
 ### scp - OpenSSH secure file copy
