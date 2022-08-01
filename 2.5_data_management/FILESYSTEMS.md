@@ -102,7 +102,7 @@ tmpfs          tmpfs     3.2G  2.4M  3.2G   1% /run/user/1001
 Let's start an interactive job.
 
 ```
-srun --job-name=interactive --account=sds184 --partition=shared --nodes=1 --ntasks-per-node=1 --cpus-per-task=1 --mem=2G --time=00:30:00 --wait=0 --pty /bin/bash
+srun --job-name=interactive --account=crl155 --partition=shared --reservation=SI2022DAY1--nodes=1 --ntasks-per-node=1 --cpus-per-task=1 --mem=2G --time=00:30:00 --wait=0 --pty /bin/bash
 ```
 
 Once the scheduler has assigned you compute resources, your interactive session on the compute node will open. 
