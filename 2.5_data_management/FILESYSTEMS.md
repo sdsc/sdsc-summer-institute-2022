@@ -25,11 +25,15 @@ Resolving deltas: 100% (59990/59990), done.
 Updating files: 4% (2723/60001)
 ```
 
+Runtime to download on one of Expanse's login nodes.
+
 ```
 real 1724.19
 user 1.01
 sys 3.36
 ```
+
+Runtime to download on my laptop's local disk.
 
 ```
 real 1.87
