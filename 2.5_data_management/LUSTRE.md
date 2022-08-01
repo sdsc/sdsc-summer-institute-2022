@@ -89,6 +89,8 @@ gid 11905 is using default file quota setting
 
 ![Lustre architecture](https://wiki.lustre.org/images/a/a3/Lustre_File_System_Overview_%28DNE%29_lowres_v1.png)
 
+![Lustre operations](https://cvw.cac.cornell.edu/parallelio/images/lustreints.jpg)
+
 ```
 lfs getstripe CIFAR-10-images.tar.gz
 ```
