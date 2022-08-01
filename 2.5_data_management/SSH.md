@@ -15,15 +15,9 @@ SSH, or [Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell), is a cryptog
 
 [Image Credit: OpenSSH | Wikipedia](https://en.wikipedia.org/wiki/OpenSSH)
 
-In general, password-based authentication is the default authentication mechanism used to establish trust and open an SSH connection between a client and server. This is true of Expanse. However, SSH supports 
+In general, password-based authentication is the default authentication mechanism used to establish trust and open an SSH connection between a client and server. This is true on Expanse. However, SSH supports a number of different authentication mechanisms
 
 Today, many systems also require two-factor authentication.
-
-- https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
-- https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/putty/
-- https://www.appviewx.com/education-center/ssh-authentication-methods
-- https://www.golinuxcloud.com/openssh-authentication-methods-sshd-config/
-- https://bytexd.com/ssh-authentication-methods/
 
 ### Step 1 - Generate an SSH key pair (with a passphrase) on your personal computer
 
