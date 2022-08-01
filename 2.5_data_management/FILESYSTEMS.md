@@ -35,7 +35,7 @@ user 0.79
 sys 1.08
 ```
 
-![NFS Architecture](https://www.researchgate.net/profile/Jonathan-Smith-26/publication/228615651/figure/fig2/AS:669405000245273@1536609997654/NFS-architecture-from-Sandberg-et-al-1985.ppm)
+![NFS Architecture](https://ars.els-cdn.com/content/image/3-s2.0-B9780124201583000186-f18-01-9780124201583.jpg)
 
 ```
 cat /etc/auto.home | grep "${USER}"
