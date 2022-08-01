@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 #SBATCH --job-name=run-ior-benchmark
-#SBATCH --account=sds184
-#SBATCH --partition=debug
+#SBATCH --account=crl155
+#SBATCH --reservation=SI2022DAY1
+#SBATCH --partition=compute
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=4
 #SBATCH --cpus-per-task=1
