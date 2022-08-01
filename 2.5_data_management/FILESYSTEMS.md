@@ -10,6 +10,8 @@
 
 ## More files, more problems: Advantages and limitations of different filesystems
 
+- https://en.wikipedia.org/wiki/File_system
+
 ```
 git clone https://github.com/YoongiKim/CIFAR-10-images.git
 ```
@@ -36,6 +38,9 @@ sys 1.08
 ```
 
 ![NFS Architecture](https://ars.els-cdn.com/content/image/3-s2.0-B9780124201583000186-f18-01-9780124201583.jpg)
+
+- https://en.wikipedia.org/wiki/Clustered_file_system
+- https://en.wikipedia.org/wiki/Network_File_System
 
 ```
 cat /etc/auto.home | grep "${USER}"
@@ -86,15 +91,8 @@ tmpfs          tmpfs      16G     0   16G   0% /sys/fs/cgroup
 tmpfs          tmpfs     3.2G  2.4M  3.2G   1% /run/user/1001
 ```
 
-https://en.wikipedia.org/wiki/File_system
-
-https://en.wikipedia.org/wiki/Network_File_System
-
-https://en.wikipedia.org/wiki/Tmpfs
-
-https://en.wikipedia.org/wiki/Ext4
-
-https://en.wikipedia.org/wiki/NVM_Express
+- https://en.wikipedia.org/wiki/NVM_Express
+- https://en.wikipedia.org/wiki/Ext4
 
 
 ```
