@@ -145,7 +145,7 @@ tmpfs                                                   tmpfs      26G     0   2
 ...
 ```
 
-![Expanse System Architecture]()
+![Expanse System Architecture](expanse-system-architecture.png)
 
 ```
 [xdtr108@exp-1-17 job_14751425]$ time -p git clone https://github.com/YoongiKim/CIFAR-10-images.git
