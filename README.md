@@ -18,7 +18,7 @@ For your convenience, we’ve create aliases and symlinks for the Summer Institu
 * data – symlink to staged data
 In the event that you need to explicitly use the reservation, training accounts will have access to SI2021RES for duration of SI
 
-## Additional Resources
+## Additional SDSC Resources
 ### Voyager
 The [Voyager](https://www.sdsc.edu/support/user_guides/voyager.html#tech_summary) supercomputer is an innovative AI system designed specifically for science and engineering research at scale. Funded by the National Science Foundation, Voyager represents a collaboration with the San Diego Supercomputer Center at UC San Diego, Supermicro, and Intel’s Habana Lab focused on supporting research in science and engineering that is increasingly dependent upon artificial intelligence and deep learning as a critical element in the experimental and/or computational work.
 
