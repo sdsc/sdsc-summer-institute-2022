@@ -1,0 +1,6141 @@
+vgr-10-01
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              96
+On-line CPU(s) list: 0-95
+Thread(s) per core:  2
+Core(s) per socket:  24
+Socket(s):           2
+NUMA node(s):        2
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               85
+Model name:          Intel(R) Xeon(R) Gold 6240R CPU @ 2.40GHz
+Stepping:            7
+CPU MHz:             1000.000
+CPU max MHz:         4000.0000
+CPU min MHz:         1000.0000
+BogoMIPS:            4800.00
+Virtualization:      VT-x
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            1024K
+L3 cache:            36608K
+NUMA node0 CPU(s):   0-23,48-71
+NUMA node1 CPU(s):   24-47,72-95
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+              total        used        free      shared  buff/cache   available
+Mem:           376G        105G        160G        216M        110G        267G
+Swap:            0B          0B          0B
+[1;1H[2J
+================ HL-SMI LOG ================
+
+Timestamp				: Fri Mar 11 02:15:58 UTC 2022
+
+Driver Version				: 5.13.0-27-generic
+
+HL-SMI Version				: hl-0.9.15-rc-fw-19.0.0-4-gb0a1b8c (Oct 22 2021 - 15:59:03)
+
+Attached AIPs				: 1
+
+[5] AIP (hl5) 0000:89:00.0
+	Product Name			: HL-100
+	Model Number			: F08GL0AIG009A
+	Serial Number			: AK29017002
+	Module ID			: 0
+	PCB Assembly Version		: V0A
+	PCB Version			: R02
+	HL Revision			: 7
+	AIP UUID			: 00P7-HL1000DA1-14-PNCU84-14-01-08
+	Firmware [FIT] Version		: Linux goya 5.4.24-hl-goya-0.8.3-fw-17.5.4 #1 SMP PREEMPT Sun Jul 12 20:18:39 IDT 2020 aarch64 GNU/Linux
+	Firmware [SPI] Version		: U-Boot 2020.01-hl-goya-0.8.3-fw-17.5.4 (Jul 12 2020 - 20:18:04 +0300) build#: 1161
+	PCI
+		Bus			: 0x89
+		Device			: 0x00
+		Domain			: 0x0000
+		Device Id		: 0x1da30001
+		Bus Id			: 0000:89:00.0
+		Sub System Id		: 0x1da30001
+		AIP Link Info
+			Link Speed
+				Max	: 16GT/s
+				Current	: N/A
+			Link Width
+				Max	: x16
+				Current	: N/A
+	Fan Speed
+					: N/A
+	Memory Usage
+		Total			: 16384 MB
+		Used			: 512 MB
+		Free			: 15872 MB
+	Temperature
+		[1] onboard		: 0 C
+		[2] onboard		: 0 C
+		[3] onboard		: 0 C
+		[4] onboard		: 0 C
+		[5] onboard		: 0 C
+		[6] onboard		: 0 C
+		[7] onchip		: 0 C
+		[8] onchip		: 0 C
+		[9] onchip		: 0 C
+	Power Readings
+		Power Management	: auto
+		Power Draw		: 0 W
+		Power Max		: 200 W
+		Power Limit		: 200 W
+	Clocks
+		[1] ic			: 50 MHz
+		[2] mme			: 50 MHz
+		[3] tpc			: 50 MHz
+	Clocks Max
+		[1] ic			: 50 MHz
+		[2] mme			: 50 MHz
+		[3] tpc			: 50 MHz
+	Clocks Limit 			: 1575 MHz
+	Network Information
+		[ 1] MAC		: N/A
+VGR_POD_ID=goya-bert-25pqr.1646964876.4656.vgr-10-01
+LC_ALL=en_US.UTF-8
+LANG=en_US.UTF-8
+HOSTNAME=goya-bert-25pqr
+OLDPWD=/scratch
+HABANA_LOGS=/tmp/habana_logs/
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+KUBERNETES_PORT_443_TCP_ADDR=10.15.0.1
+POD_NAME_ID=goya-bert-25pqr
+HABANA_VISIBLE_DEVICES=5
+KUBERNETES_PORT=tcp://10.15.0.1:443
+GC_KERNEL_PATH=/usr/lib/habanalabs/libtpc_kernels.so
+PWD=/home/sinkovit/projects/voyager/acceptance-testing/BERT.SynapseAPI/goya-bert-25pqr.1646964876.4656.vgr-10-01
+HL_VISIBLE_DEVICES=/dev/hl5
+HOME=/
+LC_CTYPE=en_US.UTF-8
+https_proxy=
+KUBERNETES_SERVICE_PORT_HTTPS=443
+DEBIAN_FRONTEND=noninteractive
+KUBERNETES_PORT_443_TCP_PORT=443
+NEW_PYTHON_CMD=python3.7
+http_proxy=
+VER=3.7.7
+no_proxy=
+KUBERNETES_PORT_443_TCP=tcp://10.15.0.1:443
+HL_VISIBLE_DEVICES_UUID=AK29017002
+socks_proxy=
+RESULTS_DIR=/home/sinkovit/projects/voyager/acceptance-testing/BERT.SynapseAPI/goya-bert-25pqr.1646964876.4656.vgr-10-01
+SHLVL=1
+LANGUAGE=en_US.UTF-8
+POD_NODE_HOSTNAME=vgr-10-01
+KUBERNETES_SERVICE_PORT=443
+Python_VER=Python-3.7.7
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+KUBERNETES_SERVICE_HOST=10.15.0.1
+_=/usr/bin/printenv
+TBEFORE 1646964958
+File: /scratch/demos/mxnet/models/BERT/mrpc/mrpc16_quant_params.csv
+B=12
+Compilation starts
+Compilation done
+Running...
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0368 per sample - 0.000601395
+Achieved sentences/sec: 1662.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03541 per sample - 0.000600586
+Achieved sentences/sec: 1665.04
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03409 per sample - 0.000599818
+Achieved sentences/sec: 1667.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03364 per sample - 0.000599559
+Achieved sentences/sec: 1667.89
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03378 per sample - 0.000599639
+Achieved sentences/sec: 1667.67
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03132 per sample - 0.000598214
+Achieved sentences/sec: 1671.64
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03432 per sample - 0.000599956
+Achieved sentences/sec: 1666.79
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03389 per sample - 0.000599704
+Achieved sentences/sec: 1667.49
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03522 per sample - 0.000600476
+Achieved sentences/sec: 1665.35
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03414 per sample - 0.000599849
+Achieved sentences/sec: 1667.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03644 per sample - 0.000601186
+Achieved sentences/sec: 1663.38
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03707 per sample - 0.000601546
+Achieved sentences/sec: 1662.38
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03552 per sample - 0.000600648
+Achieved sentences/sec: 1664.87
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03081 per sample - 0.00059792
+Achieved sentences/sec: 1672.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03362 per sample - 0.00059955
+Achieved sentences/sec: 1667.92
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03317 per sample - 0.000599286
+Achieved sentences/sec: 1668.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03344 per sample - 0.000599445
+Achieved sentences/sec: 1668.21
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03415 per sample - 0.000599854
+Achieved sentences/sec: 1667.07
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03504 per sample - 0.000600372
+Achieved sentences/sec: 1665.64
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03474 per sample - 0.000600196
+Achieved sentences/sec: 1666.12
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03333 per sample - 0.000599379
+Achieved sentences/sec: 1668.39
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03086 per sample - 0.000597946
+Achieved sentences/sec: 1672.39
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03405 per sample - 0.0005998
+Achieved sentences/sec: 1667.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03353 per sample - 0.000599495
+Achieved sentences/sec: 1668.07
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03865 per sample - 0.000602464
+Achieved sentences/sec: 1659.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03721 per sample - 0.000601628
+Achieved sentences/sec: 1662.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03241 per sample - 0.000598845
+Achieved sentences/sec: 1669.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03375 per sample - 0.000599625
+Achieved sentences/sec: 1667.71
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03204 per sample - 0.000598629
+Achieved sentences/sec: 1670.48
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03149 per sample - 0.000598313
+Achieved sentences/sec: 1671.37
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03442 per sample - 0.000600011
+Achieved sentences/sec: 1666.64
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03198 per sample - 0.000598598
+Achieved sentences/sec: 1670.57
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.035 per sample - 0.00060035
+Achieved sentences/sec: 1665.69
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03388 per sample - 0.000599699
+Achieved sentences/sec: 1667.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03409 per sample - 0.000599823
+Achieved sentences/sec: 1667.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.036 per sample - 0.000600928
+Achieved sentences/sec: 1664.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03471 per sample - 0.000600177
+Achieved sentences/sec: 1666.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03422 per sample - 0.000599898
+Achieved sentences/sec: 1666.95
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03265 per sample - 0.000598982
+Achieved sentences/sec: 1669.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03769 per sample - 0.000601907
+Achieved sentences/sec: 1661.39
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03282 per sample - 0.000599083
+Achieved sentences/sec: 1669.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03487 per sample - 0.000600271
+Achieved sentences/sec: 1665.91
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03378 per sample - 0.000599643
+Achieved sentences/sec: 1667.66
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04253 per sample - 0.000604714
+Achieved sentences/sec: 1653.67
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04329 per sample - 0.000605156
+Achieved sentences/sec: 1652.47
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03414 per sample - 0.000599847
+Achieved sentences/sec: 1667.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03648 per sample - 0.000601206
+Achieved sentences/sec: 1663.32
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03806 per sample - 0.000602122
+Achieved sentences/sec: 1660.79
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0321 per sample - 0.000598664
+Achieved sentences/sec: 1670.39
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03213 per sample - 0.000598682
+Achieved sentences/sec: 1670.34
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03413 per sample - 0.000599843
+Achieved sentences/sec: 1667.1
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03352 per sample - 0.00059949
+Achieved sentences/sec: 1668.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04049 per sample - 0.000603535
+Achieved sentences/sec: 1656.91
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03245 per sample - 0.00059887
+Achieved sentences/sec: 1669.81
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04391 per sample - 0.000605514
+Achieved sentences/sec: 1651.49
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03362 per sample - 0.00059955
+Achieved sentences/sec: 1667.92
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03267 per sample - 0.000598997
+Achieved sentences/sec: 1669.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03489 per sample - 0.000600282
+Achieved sentences/sec: 1665.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03989 per sample - 0.000603187
+Achieved sentences/sec: 1657.86
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03681 per sample - 0.000601399
+Achieved sentences/sec: 1662.79
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03722 per sample - 0.000601637
+Achieved sentences/sec: 1662.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03795 per sample - 0.000602061
+Achieved sentences/sec: 1660.96
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03783 per sample - 0.000601992
+Achieved sentences/sec: 1661.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04163 per sample - 0.000604195
+Achieved sentences/sec: 1655.1
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03743 per sample - 0.000601755
+Achieved sentences/sec: 1661.81
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03288 per sample - 0.000599116
+Achieved sentences/sec: 1669.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03271 per sample - 0.000599018
+Achieved sentences/sec: 1669.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03908 per sample - 0.000602717
+Achieved sentences/sec: 1659.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03749 per sample - 0.00060179
+Achieved sentences/sec: 1661.71
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03362 per sample - 0.000599548
+Achieved sentences/sec: 1667.92
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03281 per sample - 0.00059908
+Achieved sentences/sec: 1669.23
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0354 per sample - 0.00060058
+Achieved sentences/sec: 1665.06
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03675 per sample - 0.000601363
+Achieved sentences/sec: 1662.89
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03409 per sample - 0.000599822
+Achieved sentences/sec: 1667.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03277 per sample - 0.000599053
+Achieved sentences/sec: 1669.3
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04396 per sample - 0.000605546
+Achieved sentences/sec: 1651.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03773 per sample - 0.000601932
+Achieved sentences/sec: 1661.32
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03517 per sample - 0.000600447
+Achieved sentences/sec: 1665.43
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03424 per sample - 0.000599905
+Achieved sentences/sec: 1666.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03356 per sample - 0.000599514
+Achieved sentences/sec: 1668.02
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03488 per sample - 0.000600279
+Achieved sentences/sec: 1665.89
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03313 per sample - 0.000599261
+Achieved sentences/sec: 1668.72
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03824 per sample - 0.000602225
+Achieved sentences/sec: 1660.51
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03358 per sample - 0.000599523
+Achieved sentences/sec: 1667.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03659 per sample - 0.000601272
+Achieved sentences/sec: 1663.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03509 per sample - 0.0006004
+Achieved sentences/sec: 1665.56
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0323 per sample - 0.000598784
+Achieved sentences/sec: 1670.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03743 per sample - 0.000601756
+Achieved sentences/sec: 1661.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03413 per sample - 0.000599844
+Achieved sentences/sec: 1667.1
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0402 per sample - 0.000603363
+Achieved sentences/sec: 1657.38
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04314 per sample - 0.000605068
+Achieved sentences/sec: 1652.71
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03965 per sample - 0.000603048
+Achieved sentences/sec: 1658.24
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03602 per sample - 0.00060094
+Achieved sentences/sec: 1664.06
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03537 per sample - 0.000600563
+Achieved sentences/sec: 1665.11
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0333 per sample - 0.000599361
+Achieved sentences/sec: 1668.44
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04181 per sample - 0.000604297
+Achieved sentences/sec: 1654.82
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03345 per sample - 0.00059945
+Achieved sentences/sec: 1668.2
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0406 per sample - 0.000603596
+Achieved sentences/sec: 1656.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03668 per sample - 0.000601321
+Achieved sentences/sec: 1663.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03621 per sample - 0.000601052
+Achieved sentences/sec: 1663.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03418 per sample - 0.000599871
+Achieved sentences/sec: 1667.03
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03318 per sample - 0.000599293
+Achieved sentences/sec: 1668.63
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03622 per sample - 0.000601055
+Achieved sentences/sec: 1663.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03592 per sample - 0.000600883
+Achieved sentences/sec: 1664.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03523 per sample - 0.000600479
+Achieved sentences/sec: 1665.34
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03765 per sample - 0.000601885
+Achieved sentences/sec: 1661.45
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03549 per sample - 0.000600634
+Achieved sentences/sec: 1664.91
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03158 per sample - 0.000598364
+Achieved sentences/sec: 1671.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03504 per sample - 0.000600372
+Achieved sentences/sec: 1665.63
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03721 per sample - 0.00060163
+Achieved sentences/sec: 1662.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0455 per sample - 0.00060644
+Achieved sentences/sec: 1648.97
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03994 per sample - 0.000603211
+Achieved sentences/sec: 1657.79
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03307 per sample - 0.000599227
+Achieved sentences/sec: 1668.82
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03554 per sample - 0.000600662
+Achieved sentences/sec: 1664.83
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03579 per sample - 0.000600804
+Achieved sentences/sec: 1664.44
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0352 per sample - 0.000600461
+Achieved sentences/sec: 1665.39
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03304 per sample - 0.000599211
+Achieved sentences/sec: 1668.86
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03463 per sample - 0.000600135
+Achieved sentences/sec: 1666.29
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03506 per sample - 0.000600382
+Achieved sentences/sec: 1665.61
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0428 per sample - 0.000604873
+Achieved sentences/sec: 1653.24
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03507 per sample - 0.000600388
+Achieved sentences/sec: 1665.59
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04333 per sample - 0.000605182
+Achieved sentences/sec: 1652.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03595 per sample - 0.0006009
+Achieved sentences/sec: 1664.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03944 per sample - 0.000602926
+Achieved sentences/sec: 1658.58
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0377 per sample - 0.000601916
+Achieved sentences/sec: 1661.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03908 per sample - 0.000602712
+Achieved sentences/sec: 1659.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0439 per sample - 0.00060551
+Achieved sentences/sec: 1651.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03368 per sample - 0.000599581
+Achieved sentences/sec: 1667.83
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03455 per sample - 0.000600086
+Achieved sentences/sec: 1666.43
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03536 per sample - 0.000600558
+Achieved sentences/sec: 1665.12
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03533 per sample - 0.000600539
+Achieved sentences/sec: 1665.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03582 per sample - 0.000600823
+Achieved sentences/sec: 1664.38
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03444 per sample - 0.000600022
+Achieved sentences/sec: 1666.61
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03608 per sample - 0.000600976
+Achieved sentences/sec: 1663.96
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03597 per sample - 0.000600909
+Achieved sentences/sec: 1664.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03169 per sample - 0.000598426
+Achieved sentences/sec: 1671.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03149 per sample - 0.000598311
+Achieved sentences/sec: 1671.37
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03667 per sample - 0.000601314
+Achieved sentences/sec: 1663.02
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03508 per sample - 0.000600396
+Achieved sentences/sec: 1665.57
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03534 per sample - 0.000600545
+Achieved sentences/sec: 1665.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03102 per sample - 0.000598042
+Achieved sentences/sec: 1672.12
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03621 per sample - 0.000601052
+Achieved sentences/sec: 1663.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03653 per sample - 0.000601233
+Achieved sentences/sec: 1663.25
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03264 per sample - 0.000598977
+Achieved sentences/sec: 1669.51
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03409 per sample - 0.000599822
+Achieved sentences/sec: 1667.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03599 per sample - 0.00060092
+Achieved sentences/sec: 1664.12
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03476 per sample - 0.000600207
+Achieved sentences/sec: 1666.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03297 per sample - 0.000599168
+Achieved sentences/sec: 1668.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03472 per sample - 0.000600183
+Achieved sentences/sec: 1666.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03573 per sample - 0.000600773
+Achieved sentences/sec: 1664.52
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04029 per sample - 0.000603419
+Achieved sentences/sec: 1657.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04143 per sample - 0.000604077
+Achieved sentences/sec: 1655.42
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03686 per sample - 0.000601427
+Achieved sentences/sec: 1662.71
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03213 per sample - 0.000598682
+Achieved sentences/sec: 1670.34
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03435 per sample - 0.00059997
+Achieved sentences/sec: 1666.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03169 per sample - 0.000598428
+Achieved sentences/sec: 1671.04
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0353 per sample - 0.000600525
+Achieved sentences/sec: 1665.21
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03575 per sample - 0.000600786
+Achieved sentences/sec: 1664.49
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03412 per sample - 0.000599836
+Achieved sentences/sec: 1667.12
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03243 per sample - 0.000598856
+Achieved sentences/sec: 1669.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0324 per sample - 0.000598839
+Achieved sentences/sec: 1669.9
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03478 per sample - 0.00060022
+Achieved sentences/sec: 1666.06
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03594 per sample - 0.000600895
+Achieved sentences/sec: 1664.18
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03345 per sample - 0.000599448
+Achieved sentences/sec: 1668.2
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0322 per sample - 0.000598722
+Achieved sentences/sec: 1670.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03684 per sample - 0.000601413
+Achieved sentences/sec: 1662.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03413 per sample - 0.000599843
+Achieved sentences/sec: 1667.1
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03256 per sample - 0.00059893
+Achieved sentences/sec: 1669.64
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04093 per sample - 0.000603787
+Achieved sentences/sec: 1656.21
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03808 per sample - 0.000602137
+Achieved sentences/sec: 1660.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03435 per sample - 0.000599973
+Achieved sentences/sec: 1666.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03776 per sample - 0.000601947
+Achieved sentences/sec: 1661.28
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03597 per sample - 0.000600912
+Achieved sentences/sec: 1664.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03152 per sample - 0.000598329
+Achieved sentences/sec: 1671.32
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03386 per sample - 0.000599687
+Achieved sentences/sec: 1667.54
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03434 per sample - 0.000599968
+Achieved sentences/sec: 1666.76
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03631 per sample - 0.000601108
+Achieved sentences/sec: 1663.59
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03761 per sample - 0.00060186
+Achieved sentences/sec: 1661.52
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03808 per sample - 0.000602132
+Achieved sentences/sec: 1660.76
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03599 per sample - 0.00060092
+Achieved sentences/sec: 1664.11
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04037 per sample - 0.000603466
+Achieved sentences/sec: 1657.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03354 per sample - 0.000599503
+Achieved sentences/sec: 1668.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03719 per sample - 0.000601618
+Achieved sentences/sec: 1662.18
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03613 per sample - 0.000601001
+Achieved sentences/sec: 1663.89
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03542 per sample - 0.000600591
+Achieved sentences/sec: 1665.03
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03357 per sample - 0.00059952
+Achieved sentences/sec: 1668
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03676 per sample - 0.000601366
+Achieved sentences/sec: 1662.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03469 per sample - 0.000600168
+Achieved sentences/sec: 1666.2
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03344 per sample - 0.000599443
+Achieved sentences/sec: 1668.21
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03164 per sample - 0.000598399
+Achieved sentences/sec: 1671.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03502 per sample - 0.000600357
+Achieved sentences/sec: 1665.68
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03285 per sample - 0.0005991
+Achieved sentences/sec: 1669.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03003 per sample - 0.000597466
+Achieved sentences/sec: 1673.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02608 per sample - 0.000595174
+Achieved sentences/sec: 1680.18
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0262 per sample - 0.000595244
+Achieved sentences/sec: 1679.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03154 per sample - 0.000598343
+Achieved sentences/sec: 1671.28
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.034 per sample - 0.000599769
+Achieved sentences/sec: 1667.31
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03019 per sample - 0.000597559
+Achieved sentences/sec: 1673.48
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03354 per sample - 0.000599503
+Achieved sentences/sec: 1668.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02564 per sample - 0.000594917
+Achieved sentences/sec: 1680.91
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.01883 per sample - 0.000590967
+Achieved sentences/sec: 1692.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.01993 per sample - 0.000591609
+Achieved sentences/sec: 1690.31
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02243 per sample - 0.000593059
+Achieved sentences/sec: 1686.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02442 per sample - 0.000594212
+Achieved sentences/sec: 1682.9
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02233 per sample - 0.000592997
+Achieved sentences/sec: 1686.35
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02371 per sample - 0.000593799
+Achieved sentences/sec: 1684.07
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02334 per sample - 0.000593584
+Achieved sentences/sec: 1684.68
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02258 per sample - 0.000593147
+Achieved sentences/sec: 1685.92
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.01924 per sample - 0.000591204
+Achieved sentences/sec: 1691.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.01586 per sample - 0.000589244
+Achieved sentences/sec: 1697.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02067 per sample - 0.000592038
+Achieved sentences/sec: 1689.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.01996 per sample - 0.000591627
+Achieved sentences/sec: 1690.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02255 per sample - 0.000593129
+Achieved sentences/sec: 1685.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02335 per sample - 0.000593591
+Achieved sentences/sec: 1684.66
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02461 per sample - 0.000594323
+Achieved sentences/sec: 1682.59
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02472 per sample - 0.000594387
+Achieved sentences/sec: 1682.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02444 per sample - 0.000594222
+Achieved sentences/sec: 1682.87
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02127 per sample - 0.000592385
+Achieved sentences/sec: 1688.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02233 per sample - 0.000592999
+Achieved sentences/sec: 1686.34
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02351 per sample - 0.000593685
+Achieved sentences/sec: 1684.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02336 per sample - 0.000593597
+Achieved sentences/sec: 1684.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02164 per sample - 0.0005926
+Achieved sentences/sec: 1687.48
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02222 per sample - 0.000592936
+Achieved sentences/sec: 1686.52
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02335 per sample - 0.00059359
+Achieved sentences/sec: 1684.66
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02524 per sample - 0.000594688
+Achieved sentences/sec: 1681.55
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02515 per sample - 0.000594637
+Achieved sentences/sec: 1681.7
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02241 per sample - 0.000593044
+Achieved sentences/sec: 1686.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02206 per sample - 0.000592844
+Achieved sentences/sec: 1686.78
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02324 per sample - 0.000593525
+Achieved sentences/sec: 1684.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02702 per sample - 0.000595719
+Achieved sentences/sec: 1678.64
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02854 per sample - 0.000596603
+Achieved sentences/sec: 1676.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02974 per sample - 0.000597296
+Achieved sentences/sec: 1674.21
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0304 per sample - 0.000597679
+Achieved sentences/sec: 1673.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03037 per sample - 0.000597663
+Achieved sentences/sec: 1673.18
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03422 per sample - 0.000599896
+Achieved sentences/sec: 1666.96
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02627 per sample - 0.000595285
+Achieved sentences/sec: 1679.87
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03139 per sample - 0.000598252
+Achieved sentences/sec: 1671.54
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03108 per sample - 0.000598076
+Achieved sentences/sec: 1672.03
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03469 per sample - 0.000600167
+Achieved sentences/sec: 1666.2
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03718 per sample - 0.000601615
+Achieved sentences/sec: 1662.19
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03247 per sample - 0.000598879
+Achieved sentences/sec: 1669.79
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02913 per sample - 0.000596945
+Achieved sentences/sec: 1675.2
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02991 per sample - 0.000597398
+Achieved sentences/sec: 1673.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02827 per sample - 0.000596443
+Achieved sentences/sec: 1676.61
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03382 per sample - 0.000599666
+Achieved sentences/sec: 1667.6
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03154 per sample - 0.000598339
+Achieved sentences/sec: 1671.29
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03095 per sample - 0.000597996
+Achieved sentences/sec: 1672.25
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03188 per sample - 0.000598538
+Achieved sentences/sec: 1670.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03048 per sample - 0.000597726
+Achieved sentences/sec: 1673.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02757 per sample - 0.000596039
+Achieved sentences/sec: 1677.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0315 per sample - 0.000598316
+Achieved sentences/sec: 1671.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02322 per sample - 0.000593515
+Achieved sentences/sec: 1684.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03061 per sample - 0.0005978
+Achieved sentences/sec: 1672.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02629 per sample - 0.000595295
+Achieved sentences/sec: 1679.84
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03229 per sample - 0.000598773
+Achieved sentences/sec: 1670.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02678 per sample - 0.000595578
+Achieved sentences/sec: 1679.04
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02433 per sample - 0.000594157
+Achieved sentences/sec: 1683.06
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0251 per sample - 0.000594608
+Achieved sentences/sec: 1681.78
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02499 per sample - 0.000594543
+Achieved sentences/sec: 1681.96
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03002 per sample - 0.00059746
+Achieved sentences/sec: 1673.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02542 per sample - 0.00059479
+Achieved sentences/sec: 1681.27
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02706 per sample - 0.000595743
+Achieved sentences/sec: 1678.58
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03101 per sample - 0.000598034
+Achieved sentences/sec: 1672.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02637 per sample - 0.000595344
+Achieved sentences/sec: 1679.7
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02761 per sample - 0.000596063
+Achieved sentences/sec: 1677.68
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03643 per sample - 0.000601175
+Achieved sentences/sec: 1663.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03465 per sample - 0.000600145
+Achieved sentences/sec: 1666.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0292 per sample - 0.000596983
+Achieved sentences/sec: 1675.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03363 per sample - 0.000599556
+Achieved sentences/sec: 1667.9
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0366 per sample - 0.000601274
+Achieved sentences/sec: 1663.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03653 per sample - 0.000601233
+Achieved sentences/sec: 1663.25
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03621 per sample - 0.000601051
+Achieved sentences/sec: 1663.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03493 per sample - 0.000600306
+Achieved sentences/sec: 1665.82
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03343 per sample - 0.000599435
+Achieved sentences/sec: 1668.24
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03657 per sample - 0.000601261
+Achieved sentences/sec: 1663.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03561 per sample - 0.000600703
+Achieved sentences/sec: 1664.72
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03969 per sample - 0.000603068
+Achieved sentences/sec: 1658.19
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03418 per sample - 0.000599875
+Achieved sentences/sec: 1667.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03488 per sample - 0.000600278
+Achieved sentences/sec: 1665.9
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03434 per sample - 0.000599967
+Achieved sentences/sec: 1666.76
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03727 per sample - 0.000601663
+Achieved sentences/sec: 1662.06
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03507 per sample - 0.000600391
+Achieved sentences/sec: 1665.58
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03901 per sample - 0.000602676
+Achieved sentences/sec: 1659.27
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03895 per sample - 0.000602638
+Achieved sentences/sec: 1659.37
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03702 per sample - 0.000601517
+Achieved sentences/sec: 1662.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03707 per sample - 0.000601547
+Achieved sentences/sec: 1662.38
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03519 per sample - 0.000600456
+Achieved sentences/sec: 1665.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03725 per sample - 0.000601656
+Achieved sentences/sec: 1662.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03531 per sample - 0.000600528
+Achieved sentences/sec: 1665.2
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03209 per sample - 0.00059866
+Achieved sentences/sec: 1670.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03317 per sample - 0.000599287
+Achieved sentences/sec: 1668.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03633 per sample - 0.000601119
+Achieved sentences/sec: 1663.57
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.036 per sample - 0.000600929
+Achieved sentences/sec: 1664.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03658 per sample - 0.000601265
+Achieved sentences/sec: 1663.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03634 per sample - 0.000601123
+Achieved sentences/sec: 1663.55
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03338 per sample - 0.000599407
+Achieved sentences/sec: 1668.32
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04147 per sample - 0.000604098
+Achieved sentences/sec: 1655.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03607 per sample - 0.000600967
+Achieved sentences/sec: 1663.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03459 per sample - 0.000600109
+Achieved sentences/sec: 1666.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03895 per sample - 0.000602638
+Achieved sentences/sec: 1659.37
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0344 per sample - 0.000599998
+Achieved sentences/sec: 1666.67
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03662 per sample - 0.00060129
+Achieved sentences/sec: 1663.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03878 per sample - 0.000602538
+Achieved sentences/sec: 1659.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03703 per sample - 0.000601523
+Achieved sentences/sec: 1662.45
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03675 per sample - 0.000601365
+Achieved sentences/sec: 1662.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03788 per sample - 0.000602017
+Achieved sentences/sec: 1661.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03387 per sample - 0.000599694
+Achieved sentences/sec: 1667.52
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03588 per sample - 0.000600857
+Achieved sentences/sec: 1664.29
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03523 per sample - 0.00060048
+Achieved sentences/sec: 1665.34
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03761 per sample - 0.000601859
+Achieved sentences/sec: 1661.52
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0335 per sample - 0.00059948
+Achieved sentences/sec: 1668.11
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03256 per sample - 0.00059893
+Achieved sentences/sec: 1669.64
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03447 per sample - 0.00060004
+Achieved sentences/sec: 1666.56
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03778 per sample - 0.000601959
+Achieved sentences/sec: 1661.24
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03531 per sample - 0.000600526
+Achieved sentences/sec: 1665.21
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03361 per sample - 0.00059954
+Achieved sentences/sec: 1667.95
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03255 per sample - 0.000598924
+Achieved sentences/sec: 1669.66
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03826 per sample - 0.000602238
+Achieved sentences/sec: 1660.47
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03722 per sample - 0.000601635
+Achieved sentences/sec: 1662.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03905 per sample - 0.000602695
+Achieved sentences/sec: 1659.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03762 per sample - 0.00060187
+Achieved sentences/sec: 1661.49
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03365 per sample - 0.000599567
+Achieved sentences/sec: 1667.87
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03457 per sample - 0.000600101
+Achieved sentences/sec: 1666.39
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03646 per sample - 0.000601192
+Achieved sentences/sec: 1663.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03369 per sample - 0.000599588
+Achieved sentences/sec: 1667.81
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03679 per sample - 0.000601388
+Achieved sentences/sec: 1662.82
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03665 per sample - 0.000601304
+Achieved sentences/sec: 1663.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03402 per sample - 0.000599782
+Achieved sentences/sec: 1667.27
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03853 per sample - 0.000602398
+Achieved sentences/sec: 1660.03
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03465 per sample - 0.000600144
+Achieved sentences/sec: 1666.27
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03884 per sample - 0.000602575
+Achieved sentences/sec: 1659.55
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03585 per sample - 0.000600843
+Achieved sentences/sec: 1664.33
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03453 per sample - 0.000600073
+Achieved sentences/sec: 1666.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03587 per sample - 0.000600855
+Achieved sentences/sec: 1664.29
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03704 per sample - 0.000601534
+Achieved sentences/sec: 1662.42
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03142 per sample - 0.000598269
+Achieved sentences/sec: 1671.49
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03895 per sample - 0.000602642
+Achieved sentences/sec: 1659.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04245 per sample - 0.000604667
+Achieved sentences/sec: 1653.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03329 per sample - 0.000599358
+Achieved sentences/sec: 1668.45
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03331 per sample - 0.000599365
+Achieved sentences/sec: 1668.43
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04065 per sample - 0.000603625
+Achieved sentences/sec: 1656.66
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03489 per sample - 0.000600286
+Achieved sentences/sec: 1665.87
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0358 per sample - 0.000600814
+Achieved sentences/sec: 1664.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03516 per sample - 0.000600441
+Achieved sentences/sec: 1665.44
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03805 per sample - 0.000602118
+Achieved sentences/sec: 1660.81
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03647 per sample - 0.000601203
+Achieved sentences/sec: 1663.33
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0361 per sample - 0.000600988
+Achieved sentences/sec: 1663.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03891 per sample - 0.000602619
+Achieved sentences/sec: 1659.42
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03769 per sample - 0.00060191
+Achieved sentences/sec: 1661.38
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04068 per sample - 0.000603645
+Achieved sentences/sec: 1656.6
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03475 per sample - 0.000600201
+Achieved sentences/sec: 1666.11
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03405 per sample - 0.000599796
+Achieved sentences/sec: 1667.23
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.05177 per sample - 0.000610073
+Achieved sentences/sec: 1639.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03866 per sample - 0.000602473
+Achieved sentences/sec: 1659.82
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03654 per sample - 0.000601244
+Achieved sentences/sec: 1663.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03632 per sample - 0.000601112
+Achieved sentences/sec: 1663.58
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03426 per sample - 0.000599918
+Achieved sentences/sec: 1666.9
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04209 per sample - 0.000604461
+Achieved sentences/sec: 1654.37
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04177 per sample - 0.000604275
+Achieved sentences/sec: 1654.87
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03307 per sample - 0.000599228
+Achieved sentences/sec: 1668.82
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03553 per sample - 0.000600654
+Achieved sentences/sec: 1664.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03381 per sample - 0.000599656
+Achieved sentences/sec: 1667.62
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03725 per sample - 0.000601655
+Achieved sentences/sec: 1662.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03589 per sample - 0.000600866
+Achieved sentences/sec: 1664.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03247 per sample - 0.000598881
+Achieved sentences/sec: 1669.78
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03717 per sample - 0.000601606
+Achieved sentences/sec: 1662.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04222 per sample - 0.000604536
+Achieved sentences/sec: 1654.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03512 per sample - 0.000600418
+Achieved sentences/sec: 1665.51
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03213 per sample - 0.000598683
+Achieved sentences/sec: 1670.33
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03472 per sample - 0.000600185
+Achieved sentences/sec: 1666.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03434 per sample - 0.000599963
+Achieved sentences/sec: 1666.77
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03377 per sample - 0.000599637
+Achieved sentences/sec: 1667.68
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03374 per sample - 0.000599616
+Achieved sentences/sec: 1667.73
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03148 per sample - 0.000598304
+Achieved sentences/sec: 1671.39
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02918 per sample - 0.000596972
+Achieved sentences/sec: 1675.12
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03741 per sample - 0.000601747
+Achieved sentences/sec: 1661.83
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03624 per sample - 0.00060107
+Achieved sentences/sec: 1663.7
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03895 per sample - 0.000602637
+Achieved sentences/sec: 1659.37
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03429 per sample - 0.000599935
+Achieved sentences/sec: 1666.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03482 per sample - 0.000600241
+Achieved sentences/sec: 1666
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03773 per sample - 0.000601932
+Achieved sentences/sec: 1661.32
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04112 per sample - 0.000603898
+Achieved sentences/sec: 1655.91
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04241 per sample - 0.000604648
+Achieved sentences/sec: 1653.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0347 per sample - 0.000600176
+Achieved sentences/sec: 1666.18
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03631 per sample - 0.00060111
+Achieved sentences/sec: 1663.59
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03669 per sample - 0.000601326
+Achieved sentences/sec: 1662.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03342 per sample - 0.000599431
+Achieved sentences/sec: 1668.25
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03455 per sample - 0.000600088
+Achieved sentences/sec: 1666.42
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03424 per sample - 0.000599905
+Achieved sentences/sec: 1666.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04097 per sample - 0.000603811
+Achieved sentences/sec: 1656.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03891 per sample - 0.000602614
+Achieved sentences/sec: 1659.44
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03512 per sample - 0.000600417
+Achieved sentences/sec: 1665.51
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03521 per sample - 0.000600469
+Achieved sentences/sec: 1665.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03614 per sample - 0.000601007
+Achieved sentences/sec: 1663.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03552 per sample - 0.000600649
+Achieved sentences/sec: 1664.87
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03827 per sample - 0.000602242
+Achieved sentences/sec: 1660.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0393 per sample - 0.000602844
+Achieved sentences/sec: 1658.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03385 per sample - 0.000599684
+Achieved sentences/sec: 1667.55
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03345 per sample - 0.000599448
+Achieved sentences/sec: 1668.2
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04399 per sample - 0.000605564
+Achieved sentences/sec: 1651.35
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03459 per sample - 0.00060011
+Achieved sentences/sec: 1666.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03372 per sample - 0.000599606
+Achieved sentences/sec: 1667.76
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02759 per sample - 0.000596047
+Achieved sentences/sec: 1677.72
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02816 per sample - 0.000596383
+Achieved sentences/sec: 1676.78
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02985 per sample - 0.000597364
+Achieved sentences/sec: 1674.02
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03 per sample - 0.000597448
+Achieved sentences/sec: 1673.79
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03137 per sample - 0.000598242
+Achieved sentences/sec: 1671.56
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02625 per sample - 0.000595271
+Achieved sentences/sec: 1679.91
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02679 per sample - 0.000595586
+Achieved sentences/sec: 1679.02
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03323 per sample - 0.000599319
+Achieved sentences/sec: 1668.56
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03321 per sample - 0.000599307
+Achieved sentences/sec: 1668.59
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02914 per sample - 0.000596951
+Achieved sentences/sec: 1675.18
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03099 per sample - 0.000598023
+Achieved sentences/sec: 1672.18
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02751 per sample - 0.000596002
+Achieved sentences/sec: 1677.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03038 per sample - 0.000597666
+Achieved sentences/sec: 1673.18
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03431 per sample - 0.00059995
+Achieved sentences/sec: 1666.81
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03061 per sample - 0.000597801
+Achieved sentences/sec: 1672.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02708 per sample - 0.000595755
+Achieved sentences/sec: 1678.54
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02768 per sample - 0.000596104
+Achieved sentences/sec: 1677.56
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02826 per sample - 0.000596439
+Achieved sentences/sec: 1676.62
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02965 per sample - 0.000597245
+Achieved sentences/sec: 1674.35
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02484 per sample - 0.000594456
+Achieved sentences/sec: 1682.21
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0327 per sample - 0.000599012
+Achieved sentences/sec: 1669.42
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02781 per sample - 0.00059618
+Achieved sentences/sec: 1677.35
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02766 per sample - 0.000596089
+Achieved sentences/sec: 1677.6
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02376 per sample - 0.00059383
+Achieved sentences/sec: 1683.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02275 per sample - 0.00059324
+Achieved sentences/sec: 1685.66
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02779 per sample - 0.000596165
+Achieved sentences/sec: 1677.39
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02888 per sample - 0.0005968
+Achieved sentences/sec: 1675.6
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03003 per sample - 0.000597465
+Achieved sentences/sec: 1673.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03448 per sample - 0.000600048
+Achieved sentences/sec: 1666.53
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02997 per sample - 0.000597431
+Achieved sentences/sec: 1673.83
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.029 per sample - 0.000596868
+Achieved sentences/sec: 1675.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03967 per sample - 0.000603057
+Achieved sentences/sec: 1658.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02866 per sample - 0.000596668
+Achieved sentences/sec: 1675.97
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02717 per sample - 0.000595803
+Achieved sentences/sec: 1678.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02852 per sample - 0.000596586
+Achieved sentences/sec: 1676.2
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03 per sample - 0.000597446
+Achieved sentences/sec: 1673.79
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02947 per sample - 0.000597141
+Achieved sentences/sec: 1674.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03187 per sample - 0.000598532
+Achieved sentences/sec: 1670.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03044 per sample - 0.000597702
+Achieved sentences/sec: 1673.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0285 per sample - 0.000596576
+Achieved sentences/sec: 1676.23
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03043 per sample - 0.000597694
+Achieved sentences/sec: 1673.1
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0363 per sample - 0.0006011
+Achieved sentences/sec: 1663.62
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02788 per sample - 0.000596218
+Achieved sentences/sec: 1677.24
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02993 per sample - 0.000597408
+Achieved sentences/sec: 1673.9
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02942 per sample - 0.000597109
+Achieved sentences/sec: 1674.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02372 per sample - 0.000593806
+Achieved sentences/sec: 1684.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02553 per sample - 0.000594854
+Achieved sentences/sec: 1681.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03691 per sample - 0.000601458
+Achieved sentences/sec: 1662.63
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03137 per sample - 0.000598241
+Achieved sentences/sec: 1671.57
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02885 per sample - 0.000596782
+Achieved sentences/sec: 1675.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02756 per sample - 0.000596031
+Achieved sentences/sec: 1677.76
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02923 per sample - 0.000597002
+Achieved sentences/sec: 1675.04
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03055 per sample - 0.000597767
+Achieved sentences/sec: 1672.89
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03546 per sample - 0.000600618
+Achieved sentences/sec: 1664.95
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03024 per sample - 0.000597585
+Achieved sentences/sec: 1673.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02968 per sample - 0.000597261
+Achieved sentences/sec: 1674.31
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02954 per sample - 0.000597182
+Achieved sentences/sec: 1674.53
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03209 per sample - 0.000598662
+Achieved sentences/sec: 1670.39
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02445 per sample - 0.000594227
+Achieved sentences/sec: 1682.86
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02565 per sample - 0.000594923
+Achieved sentences/sec: 1680.89
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03623 per sample - 0.00060106
+Achieved sentences/sec: 1663.73
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0303 per sample - 0.000597624
+Achieved sentences/sec: 1673.29
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02823 per sample - 0.000596421
+Achieved sentences/sec: 1676.67
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03014 per sample - 0.000597528
+Achieved sentences/sec: 1673.56
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02905 per sample - 0.000596899
+Achieved sentences/sec: 1675.33
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0296 per sample - 0.000597213
+Achieved sentences/sec: 1674.44
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03488 per sample - 0.000600279
+Achieved sentences/sec: 1665.89
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0336 per sample - 0.000599534
+Achieved sentences/sec: 1667.96
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03082 per sample - 0.000597921
+Achieved sentences/sec: 1672.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03457 per sample - 0.000600099
+Achieved sentences/sec: 1666.39
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03527 per sample - 0.000600505
+Achieved sentences/sec: 1665.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03733 per sample - 0.000601701
+Achieved sentences/sec: 1661.96
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04042 per sample - 0.000603491
+Achieved sentences/sec: 1657.02
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03561 per sample - 0.000600704
+Achieved sentences/sec: 1664.71
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03494 per sample - 0.000600316
+Achieved sentences/sec: 1665.79
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03416 per sample - 0.000599861
+Achieved sentences/sec: 1667.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03714 per sample - 0.000601591
+Achieved sentences/sec: 1662.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0373 per sample - 0.00060168
+Achieved sentences/sec: 1662.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03771 per sample - 0.000601918
+Achieved sentences/sec: 1661.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03094 per sample - 0.000597996
+Achieved sentences/sec: 1672.25
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03802 per sample - 0.000602101
+Achieved sentences/sec: 1660.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0334 per sample - 0.00059942
+Achieved sentences/sec: 1668.28
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03783 per sample - 0.000601989
+Achieved sentences/sec: 1661.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0342 per sample - 0.000599881
+Achieved sentences/sec: 1667
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03683 per sample - 0.000601409
+Achieved sentences/sec: 1662.76
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03077 per sample - 0.000597892
+Achieved sentences/sec: 1672.54
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03276 per sample - 0.000599046
+Achieved sentences/sec: 1669.32
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03176 per sample - 0.000598467
+Achieved sentences/sec: 1670.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04049 per sample - 0.000603535
+Achieved sentences/sec: 1656.91
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03704 per sample - 0.000601533
+Achieved sentences/sec: 1662.42
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03698 per sample - 0.000601496
+Achieved sentences/sec: 1662.52
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03855 per sample - 0.000602407
+Achieved sentences/sec: 1660.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0354 per sample - 0.000600582
+Achieved sentences/sec: 1665.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03463 per sample - 0.000600132
+Achieved sentences/sec: 1666.3
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03746 per sample - 0.000601773
+Achieved sentences/sec: 1661.76
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03979 per sample - 0.000603127
+Achieved sentences/sec: 1658.03
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03863 per sample - 0.000602454
+Achieved sentences/sec: 1659.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03349 per sample - 0.000599473
+Achieved sentences/sec: 1668.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03595 per sample - 0.000600901
+Achieved sentences/sec: 1664.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04078 per sample - 0.000603702
+Achieved sentences/sec: 1656.45
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03881 per sample - 0.00060256
+Achieved sentences/sec: 1659.59
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03288 per sample - 0.000599116
+Achieved sentences/sec: 1669.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0381 per sample - 0.000602144
+Achieved sentences/sec: 1660.73
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04535 per sample - 0.00060635
+Achieved sentences/sec: 1649.21
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03983 per sample - 0.000603149
+Achieved sentences/sec: 1657.96
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03871 per sample - 0.000602501
+Achieved sentences/sec: 1659.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03631 per sample - 0.000601106
+Achieved sentences/sec: 1663.6
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03319 per sample - 0.0005993
+Achieved sentences/sec: 1668.61
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03926 per sample - 0.000602822
+Achieved sentences/sec: 1658.87
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03879 per sample - 0.000602544
+Achieved sentences/sec: 1659.63
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03756 per sample - 0.000601835
+Achieved sentences/sec: 1661.58
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03392 per sample - 0.000599719
+Achieved sentences/sec: 1667.45
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0342 per sample - 0.000599885
+Achieved sentences/sec: 1666.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03379 per sample - 0.000599645
+Achieved sentences/sec: 1667.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0415 per sample - 0.000604116
+Achieved sentences/sec: 1655.31
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03228 per sample - 0.000598771
+Achieved sentences/sec: 1670.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03848 per sample - 0.000602369
+Achieved sentences/sec: 1660.11
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03398 per sample - 0.000599754
+Achieved sentences/sec: 1667.35
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0374 per sample - 0.000601743
+Achieved sentences/sec: 1661.84
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03757 per sample - 0.000601838
+Achieved sentences/sec: 1661.58
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0367 per sample - 0.000601334
+Achieved sentences/sec: 1662.97
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03538 per sample - 0.000600569
+Achieved sentences/sec: 1665.09
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03409 per sample - 0.000599822
+Achieved sentences/sec: 1667.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03405 per sample - 0.000599796
+Achieved sentences/sec: 1667.23
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04088 per sample - 0.000603758
+Achieved sentences/sec: 1656.29
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03826 per sample - 0.000602238
+Achieved sentences/sec: 1660.47
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03656 per sample - 0.000601255
+Achieved sentences/sec: 1663.19
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0409 per sample - 0.000603768
+Achieved sentences/sec: 1656.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03699 per sample - 0.000601503
+Achieved sentences/sec: 1662.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03915 per sample - 0.000602757
+Achieved sentences/sec: 1659.04
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04328 per sample - 0.000605151
+Achieved sentences/sec: 1652.48
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03627 per sample - 0.000601084
+Achieved sentences/sec: 1663.66
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03305 per sample - 0.000599217
+Achieved sentences/sec: 1668.84
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03332 per sample - 0.000599373
+Achieved sentences/sec: 1668.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0364 per sample - 0.000601158
+Achieved sentences/sec: 1663.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04381 per sample - 0.000605456
+Achieved sentences/sec: 1651.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03578 per sample - 0.000600801
+Achieved sentences/sec: 1664.44
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04109 per sample - 0.000603879
+Achieved sentences/sec: 1655.96
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03607 per sample - 0.000600966
+Achieved sentences/sec: 1663.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03317 per sample - 0.000599285
+Achieved sentences/sec: 1668.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04097 per sample - 0.000603813
+Achieved sentences/sec: 1656.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03484 per sample - 0.000600257
+Achieved sentences/sec: 1665.95
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03602 per sample - 0.00060094
+Achieved sentences/sec: 1664.06
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03753 per sample - 0.000601817
+Achieved sentences/sec: 1661.63
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03559 per sample - 0.00060069
+Achieved sentences/sec: 1664.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03115 per sample - 0.000598115
+Achieved sentences/sec: 1671.92
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03107 per sample - 0.000598069
+Achieved sentences/sec: 1672.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03429 per sample - 0.000599938
+Achieved sentences/sec: 1666.84
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03959 per sample - 0.000603011
+Achieved sentences/sec: 1658.35
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0391 per sample - 0.000602725
+Achieved sentences/sec: 1659.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03973 per sample - 0.000603094
+Achieved sentences/sec: 1658.12
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03559 per sample - 0.00060069
+Achieved sentences/sec: 1664.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03576 per sample - 0.000600791
+Achieved sentences/sec: 1664.47
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03543 per sample - 0.000600595
+Achieved sentences/sec: 1665.02
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03543 per sample - 0.000600597
+Achieved sentences/sec: 1665.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03529 per sample - 0.000600516
+Achieved sentences/sec: 1665.23
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03083 per sample - 0.000597932
+Achieved sentences/sec: 1672.43
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0368 per sample - 0.00060139
+Achieved sentences/sec: 1662.81
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03598 per sample - 0.000600919
+Achieved sentences/sec: 1664.12
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03335 per sample - 0.000599393
+Achieved sentences/sec: 1668.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03808 per sample - 0.000602136
+Achieved sentences/sec: 1660.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04014 per sample - 0.000603329
+Achieved sentences/sec: 1657.47
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0471 per sample - 0.000607364
+Achieved sentences/sec: 1646.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03914 per sample - 0.000602748
+Achieved sentences/sec: 1659.07
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03164 per sample - 0.000598398
+Achieved sentences/sec: 1671.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03414 per sample - 0.000599852
+Achieved sentences/sec: 1667.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03722 per sample - 0.000601635
+Achieved sentences/sec: 1662.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03684 per sample - 0.000601416
+Achieved sentences/sec: 1662.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04391 per sample - 0.000605517
+Achieved sentences/sec: 1651.48
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04178 per sample - 0.000604283
+Achieved sentences/sec: 1654.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03857 per sample - 0.000602417
+Achieved sentences/sec: 1659.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03819 per sample - 0.000602198
+Achieved sentences/sec: 1660.58
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04025 per sample - 0.000603392
+Achieved sentences/sec: 1657.3
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0328 per sample - 0.000599069
+Achieved sentences/sec: 1669.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03526 per sample - 0.000600501
+Achieved sentences/sec: 1665.28
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03745 per sample - 0.000601771
+Achieved sentences/sec: 1661.76
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03346 per sample - 0.000599457
+Achieved sentences/sec: 1668.18
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03368 per sample - 0.000599581
+Achieved sentences/sec: 1667.83
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03448 per sample - 0.000600048
+Achieved sentences/sec: 1666.53
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03201 per sample - 0.000598613
+Achieved sentences/sec: 1670.53
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03475 per sample - 0.0006002
+Achieved sentences/sec: 1666.11
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03609 per sample - 0.000600978
+Achieved sentences/sec: 1663.95
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03867 per sample - 0.000602474
+Achieved sentences/sec: 1659.82
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04054 per sample - 0.000603563
+Achieved sentences/sec: 1656.83
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03345 per sample - 0.00059945
+Achieved sentences/sec: 1668.2
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04293 per sample - 0.000604945
+Achieved sentences/sec: 1653.04
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04115 per sample - 0.000603914
+Achieved sentences/sec: 1655.86
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03305 per sample - 0.000599216
+Achieved sentences/sec: 1668.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03359 per sample - 0.000599533
+Achieved sentences/sec: 1667.97
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03273 per sample - 0.000599031
+Achieved sentences/sec: 1669.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02747 per sample - 0.000595978
+Achieved sentences/sec: 1677.91
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0332 per sample - 0.000599303
+Achieved sentences/sec: 1668.6
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03825 per sample - 0.000602231
+Achieved sentences/sec: 1660.49
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03288 per sample - 0.000599117
+Achieved sentences/sec: 1669.12
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03541 per sample - 0.000600585
+Achieved sentences/sec: 1665.04
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03635 per sample - 0.000601134
+Achieved sentences/sec: 1663.52
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03699 per sample - 0.000601502
+Achieved sentences/sec: 1662.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.05221 per sample - 0.00061033
+Achieved sentences/sec: 1638.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03837 per sample - 0.000602305
+Achieved sentences/sec: 1660.29
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03224 per sample - 0.000598746
+Achieved sentences/sec: 1670.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03198 per sample - 0.000598598
+Achieved sentences/sec: 1670.57
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02924 per sample - 0.000597005
+Achieved sentences/sec: 1675.03
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02966 per sample - 0.000597251
+Achieved sentences/sec: 1674.34
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03171 per sample - 0.000598438
+Achieved sentences/sec: 1671.02
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02838 per sample - 0.000596505
+Achieved sentences/sec: 1676.43
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02851 per sample - 0.000596581
+Achieved sentences/sec: 1676.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0311 per sample - 0.000598083
+Achieved sentences/sec: 1672.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03107 per sample - 0.000598066
+Achieved sentences/sec: 1672.06
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03213 per sample - 0.000598684
+Achieved sentences/sec: 1670.33
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03924 per sample - 0.000602809
+Achieved sentences/sec: 1658.9
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03091 per sample - 0.000597978
+Achieved sentences/sec: 1672.3
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02781 per sample - 0.00059618
+Achieved sentences/sec: 1677.35
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02711 per sample - 0.000595771
+Achieved sentences/sec: 1678.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03105 per sample - 0.000598058
+Achieved sentences/sec: 1672.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02789 per sample - 0.000596221
+Achieved sentences/sec: 1677.23
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03268 per sample - 0.000599001
+Achieved sentences/sec: 1669.45
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03616 per sample - 0.00060102
+Achieved sentences/sec: 1663.84
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02792 per sample - 0.000596242
+Achieved sentences/sec: 1677.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02719 per sample - 0.000595816
+Achieved sentences/sec: 1678.37
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02761 per sample - 0.000596063
+Achieved sentences/sec: 1677.68
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02781 per sample - 0.000596175
+Achieved sentences/sec: 1677.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03023 per sample - 0.000597579
+Achieved sentences/sec: 1673.42
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02911 per sample - 0.000596933
+Achieved sentences/sec: 1675.23
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03171 per sample - 0.00059844
+Achieved sentences/sec: 1671.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0294 per sample - 0.000597097
+Achieved sentences/sec: 1674.77
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02961 per sample - 0.00059722
+Achieved sentences/sec: 1674.43
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02655 per sample - 0.000595445
+Achieved sentences/sec: 1679.42
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03097 per sample - 0.000598011
+Achieved sentences/sec: 1672.21
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03126 per sample - 0.000598178
+Achieved sentences/sec: 1671.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03367 per sample - 0.000599574
+Achieved sentences/sec: 1667.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03637 per sample - 0.00060114
+Achieved sentences/sec: 1663.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03016 per sample - 0.000597538
+Achieved sentences/sec: 1673.53
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02635 per sample - 0.000595333
+Achieved sentences/sec: 1679.73
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02987 per sample - 0.000597375
+Achieved sentences/sec: 1673.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02909 per sample - 0.000596919
+Achieved sentences/sec: 1675.27
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02692 per sample - 0.000595664
+Achieved sentences/sec: 1678.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02953 per sample - 0.000597176
+Achieved sentences/sec: 1674.55
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02807 per sample - 0.000596328
+Achieved sentences/sec: 1676.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02872 per sample - 0.000596703
+Achieved sentences/sec: 1675.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02842 per sample - 0.000596529
+Achieved sentences/sec: 1676.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03156 per sample - 0.000598352
+Achieved sentences/sec: 1671.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03139 per sample - 0.000598253
+Achieved sentences/sec: 1671.53
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03138 per sample - 0.000598248
+Achieved sentences/sec: 1671.55
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03079 per sample - 0.000597907
+Achieved sentences/sec: 1672.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02804 per sample - 0.00059631
+Achieved sentences/sec: 1676.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0313 per sample - 0.000598202
+Achieved sentences/sec: 1671.68
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03229 per sample - 0.000598775
+Achieved sentences/sec: 1670.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0287 per sample - 0.000596694
+Achieved sentences/sec: 1675.9
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03119 per sample - 0.000598139
+Achieved sentences/sec: 1671.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03198 per sample - 0.000598596
+Achieved sentences/sec: 1670.58
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02994 per sample - 0.000597414
+Achieved sentences/sec: 1673.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03022 per sample - 0.000597574
+Achieved sentences/sec: 1673.43
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03051 per sample - 0.000597746
+Achieved sentences/sec: 1672.95
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02861 per sample - 0.000596642
+Achieved sentences/sec: 1676.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03084 per sample - 0.000597938
+Achieved sentences/sec: 1672.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02696 per sample - 0.000595686
+Achieved sentences/sec: 1678.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03169 per sample - 0.00059843
+Achieved sentences/sec: 1671.04
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02576 per sample - 0.000594986
+Achieved sentences/sec: 1680.71
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02474 per sample - 0.0005944
+Achieved sentences/sec: 1682.37
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02337 per sample - 0.000593602
+Achieved sentences/sec: 1684.63
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02739 per sample - 0.000595932
+Achieved sentences/sec: 1678.04
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02933 per sample - 0.000597058
+Achieved sentences/sec: 1674.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03022 per sample - 0.000597573
+Achieved sentences/sec: 1673.43
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03521 per sample - 0.000600468
+Achieved sentences/sec: 1665.37
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02701 per sample - 0.000595712
+Achieved sentences/sec: 1678.66
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02894 per sample - 0.000596832
+Achieved sentences/sec: 1675.51
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03552 per sample - 0.000600652
+Achieved sentences/sec: 1664.86
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03453 per sample - 0.000600074
+Achieved sentences/sec: 1666.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02992 per sample - 0.000597399
+Achieved sentences/sec: 1673.92
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03776 per sample - 0.000601952
+Achieved sentences/sec: 1661.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03587 per sample - 0.000600851
+Achieved sentences/sec: 1664.31
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03272 per sample - 0.000599027
+Achieved sentences/sec: 1669.38
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03126 per sample - 0.000598176
+Achieved sentences/sec: 1671.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03283 per sample - 0.000599087
+Achieved sentences/sec: 1669.21
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03468 per sample - 0.000600162
+Achieved sentences/sec: 1666.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0381 per sample - 0.000602146
+Achieved sentences/sec: 1660.73
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03857 per sample - 0.000602417
+Achieved sentences/sec: 1659.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04297 per sample - 0.000604969
+Achieved sentences/sec: 1652.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03637 per sample - 0.000601142
+Achieved sentences/sec: 1663.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03383 per sample - 0.000599669
+Achieved sentences/sec: 1667.59
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0406 per sample - 0.000603597
+Achieved sentences/sec: 1656.73
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03817 per sample - 0.000602186
+Achieved sentences/sec: 1660.62
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04198 per sample - 0.000604398
+Achieved sentences/sec: 1654.54
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03609 per sample - 0.000600981
+Achieved sentences/sec: 1663.95
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03347 per sample - 0.000599458
+Achieved sentences/sec: 1668.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03106 per sample - 0.000598065
+Achieved sentences/sec: 1672.06
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03236 per sample - 0.000598819
+Achieved sentences/sec: 1669.95
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03429 per sample - 0.000599936
+Achieved sentences/sec: 1666.84
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03348 per sample - 0.000599467
+Achieved sentences/sec: 1668.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03203 per sample - 0.000598625
+Achieved sentences/sec: 1670.49
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0375 per sample - 0.000601799
+Achieved sentences/sec: 1661.68
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03886 per sample - 0.00060259
+Achieved sentences/sec: 1659.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03935 per sample - 0.000602872
+Achieved sentences/sec: 1658.73
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03904 per sample - 0.000602692
+Achieved sentences/sec: 1659.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03557 per sample - 0.000600678
+Achieved sentences/sec: 1664.79
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0411 per sample - 0.000603886
+Achieved sentences/sec: 1655.94
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03744 per sample - 0.000601762
+Achieved sentences/sec: 1661.79
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03139 per sample - 0.000598253
+Achieved sentences/sec: 1671.53
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04365 per sample - 0.000605368
+Achieved sentences/sec: 1651.89
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03572 per sample - 0.000600764
+Achieved sentences/sec: 1664.55
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03385 per sample - 0.000599681
+Achieved sentences/sec: 1667.55
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04149 per sample - 0.00060411
+Achieved sentences/sec: 1655.33
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03647 per sample - 0.000601199
+Achieved sentences/sec: 1663.34
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03965 per sample - 0.000603046
+Achieved sentences/sec: 1658.25
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03447 per sample - 0.000600039
+Achieved sentences/sec: 1666.56
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03846 per sample - 0.000602357
+Achieved sentences/sec: 1660.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04137 per sample - 0.000604043
+Achieved sentences/sec: 1655.51
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03928 per sample - 0.000602832
+Achieved sentences/sec: 1658.84
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03438 per sample - 0.000599991
+Achieved sentences/sec: 1666.69
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03743 per sample - 0.000601758
+Achieved sentences/sec: 1661.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03514 per sample - 0.00060043
+Achieved sentences/sec: 1665.47
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04108 per sample - 0.000603875
+Achieved sentences/sec: 1655.97
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03884 per sample - 0.000602573
+Achieved sentences/sec: 1659.55
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03531 per sample - 0.000600528
+Achieved sentences/sec: 1665.2
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03546 per sample - 0.000600615
+Achieved sentences/sec: 1664.96
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04061 per sample - 0.000603602
+Achieved sentences/sec: 1656.72
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0427 per sample - 0.000604814
+Achieved sentences/sec: 1653.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03424 per sample - 0.000599906
+Achieved sentences/sec: 1666.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03078 per sample - 0.000597902
+Achieved sentences/sec: 1672.52
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03573 per sample - 0.000600774
+Achieved sentences/sec: 1664.52
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03876 per sample - 0.00060253
+Achieved sentences/sec: 1659.67
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03874 per sample - 0.000602517
+Achieved sentences/sec: 1659.7
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02863 per sample - 0.000596655
+Achieved sentences/sec: 1676.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03394 per sample - 0.000599736
+Achieved sentences/sec: 1667.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03997 per sample - 0.000603233
+Achieved sentences/sec: 1657.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03382 per sample - 0.000599661
+Achieved sentences/sec: 1667.61
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03776 per sample - 0.000601949
+Achieved sentences/sec: 1661.27
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04263 per sample - 0.000604774
+Achieved sentences/sec: 1653.51
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03594 per sample - 0.000600893
+Achieved sentences/sec: 1664.19
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03882 per sample - 0.000602564
+Achieved sentences/sec: 1659.57
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0339 per sample - 0.000599708
+Achieved sentences/sec: 1667.48
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03923 per sample - 0.000602804
+Achieved sentences/sec: 1658.91
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03176 per sample - 0.00059847
+Achieved sentences/sec: 1670.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03772 per sample - 0.000601925
+Achieved sentences/sec: 1661.34
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03936 per sample - 0.000602878
+Achieved sentences/sec: 1658.71
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04036 per sample - 0.000603458
+Achieved sentences/sec: 1657.12
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0342 per sample - 0.000599885
+Achieved sentences/sec: 1666.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03512 per sample - 0.000600419
+Achieved sentences/sec: 1665.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03639 per sample - 0.000601154
+Achieved sentences/sec: 1663.47
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03394 per sample - 0.000599734
+Achieved sentences/sec: 1667.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03814 per sample - 0.000602169
+Achieved sentences/sec: 1660.66
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03445 per sample - 0.000600027
+Achieved sentences/sec: 1666.59
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03612 per sample - 0.000601
+Achieved sentences/sec: 1663.89
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03474 per sample - 0.000600195
+Achieved sentences/sec: 1666.12
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03983 per sample - 0.000603148
+Achieved sentences/sec: 1657.97
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0378 per sample - 0.000601975
+Achieved sentences/sec: 1661.2
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03286 per sample - 0.000599108
+Achieved sentences/sec: 1669.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03426 per sample - 0.000599919
+Achieved sentences/sec: 1666.89
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03365 per sample - 0.000599564
+Achieved sentences/sec: 1667.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03348 per sample - 0.000599469
+Achieved sentences/sec: 1668.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03231 per sample - 0.000598786
+Achieved sentences/sec: 1670.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03558 per sample - 0.000600686
+Achieved sentences/sec: 1664.76
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03392 per sample - 0.000599722
+Achieved sentences/sec: 1667.44
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03218 per sample - 0.00059871
+Achieved sentences/sec: 1670.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03743 per sample - 0.00060176
+Achieved sentences/sec: 1661.79
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03394 per sample - 0.000599733
+Achieved sentences/sec: 1667.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03752 per sample - 0.000601811
+Achieved sentences/sec: 1661.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04006 per sample - 0.000603284
+Achieved sentences/sec: 1657.59
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04158 per sample - 0.000604164
+Achieved sentences/sec: 1655.18
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03877 per sample - 0.000602537
+Achieved sentences/sec: 1659.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03445 per sample - 0.000600027
+Achieved sentences/sec: 1666.59
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03044 per sample - 0.000597704
+Achieved sentences/sec: 1673.07
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03371 per sample - 0.000599602
+Achieved sentences/sec: 1667.77
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03471 per sample - 0.000600181
+Achieved sentences/sec: 1666.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03021 per sample - 0.00059757
+Achieved sentences/sec: 1673.44
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04226 per sample - 0.000604559
+Achieved sentences/sec: 1654.1
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03961 per sample - 0.000603023
+Achieved sentences/sec: 1658.31
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03409 per sample - 0.000599821
+Achieved sentences/sec: 1667.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03747 per sample - 0.000601782
+Achieved sentences/sec: 1661.73
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03889 per sample - 0.000602607
+Achieved sentences/sec: 1659.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03947 per sample - 0.000602942
+Achieved sentences/sec: 1658.54
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03807 per sample - 0.000602131
+Achieved sentences/sec: 1660.77
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03662 per sample - 0.000601285
+Achieved sentences/sec: 1663.1
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03504 per sample - 0.00060037
+Achieved sentences/sec: 1665.64
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0392 per sample - 0.000602784
+Achieved sentences/sec: 1658.97
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03674 per sample - 0.00060136
+Achieved sentences/sec: 1662.9
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03854 per sample - 0.000602401
+Achieved sentences/sec: 1660.02
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03329 per sample - 0.000599354
+Achieved sentences/sec: 1668.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03408 per sample - 0.000599813
+Achieved sentences/sec: 1667.19
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03674 per sample - 0.000601358
+Achieved sentences/sec: 1662.9
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03357 per sample - 0.000599517
+Achieved sentences/sec: 1668.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03089 per sample - 0.000597964
+Achieved sentences/sec: 1672.34
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04254 per sample - 0.000604721
+Achieved sentences/sec: 1653.66
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03981 per sample - 0.000603141
+Achieved sentences/sec: 1657.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03466 per sample - 0.00060015
+Achieved sentences/sec: 1666.25
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0398 per sample - 0.00060313
+Achieved sentences/sec: 1658.02
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03985 per sample - 0.000603159
+Achieved sentences/sec: 1657.94
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04081 per sample - 0.000603717
+Achieved sentences/sec: 1656.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03569 per sample - 0.000600751
+Achieved sentences/sec: 1664.58
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03215 per sample - 0.000598697
+Achieved sentences/sec: 1670.29
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03936 per sample - 0.000602877
+Achieved sentences/sec: 1658.71
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03374 per sample - 0.000599615
+Achieved sentences/sec: 1667.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04059 per sample - 0.000603592
+Achieved sentences/sec: 1656.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0316 per sample - 0.000598374
+Achieved sentences/sec: 1671.19
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03974 per sample - 0.0006031
+Achieved sentences/sec: 1658.1
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03697 per sample - 0.000601493
+Achieved sentences/sec: 1662.53
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03392 per sample - 0.000599723
+Achieved sentences/sec: 1667.44
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02196 per sample - 0.000592787
+Achieved sentences/sec: 1686.95
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03216 per sample - 0.000598703
+Achieved sentences/sec: 1670.28
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03105 per sample - 0.000598056
+Achieved sentences/sec: 1672.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03614 per sample - 0.000601011
+Achieved sentences/sec: 1663.86
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03668 per sample - 0.00060132
+Achieved sentences/sec: 1663.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03813 per sample - 0.000602166
+Achieved sentences/sec: 1660.67
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03549 per sample - 0.000600631
+Achieved sentences/sec: 1664.92
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03318 per sample - 0.000599291
+Achieved sentences/sec: 1668.64
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03457 per sample - 0.000600098
+Achieved sentences/sec: 1666.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03577 per sample - 0.000600794
+Achieved sentences/sec: 1664.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04432 per sample - 0.000605756
+Achieved sentences/sec: 1650.83
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04225 per sample - 0.000604556
+Achieved sentences/sec: 1654.11
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03645 per sample - 0.000601189
+Achieved sentences/sec: 1663.37
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03263 per sample - 0.000598971
+Achieved sentences/sec: 1669.53
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03456 per sample - 0.000600091
+Achieved sentences/sec: 1666.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03419 per sample - 0.000599875
+Achieved sentences/sec: 1667.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03797 per sample - 0.000602069
+Achieved sentences/sec: 1660.94
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03978 per sample - 0.00060312
+Achieved sentences/sec: 1658.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04461 per sample - 0.000605921
+Achieved sentences/sec: 1650.38
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03265 per sample - 0.000598983
+Achieved sentences/sec: 1669.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03497 per sample - 0.000600329
+Achieved sentences/sec: 1665.75
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03308 per sample - 0.000599232
+Achieved sentences/sec: 1668.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03451 per sample - 0.000600064
+Achieved sentences/sec: 1666.49
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03429 per sample - 0.000599935
+Achieved sentences/sec: 1666.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03494 per sample - 0.00060031
+Achieved sentences/sec: 1665.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03123 per sample - 0.000598159
+Achieved sentences/sec: 1671.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03209 per sample - 0.000598658
+Achieved sentences/sec: 1670.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03868 per sample - 0.000602481
+Achieved sentences/sec: 1659.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03424 per sample - 0.000599906
+Achieved sentences/sec: 1666.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03651 per sample - 0.000601223
+Achieved sentences/sec: 1663.28
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03465 per sample - 0.000600142
+Achieved sentences/sec: 1666.27
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03554 per sample - 0.000600664
+Achieved sentences/sec: 1664.83
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03157 per sample - 0.000598361
+Achieved sentences/sec: 1671.23
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03256 per sample - 0.000598934
+Achieved sentences/sec: 1669.63
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03301 per sample - 0.000599195
+Achieved sentences/sec: 1668.91
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03487 per sample - 0.000600271
+Achieved sentences/sec: 1665.91
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03614 per sample - 0.000601012
+Achieved sentences/sec: 1663.86
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03755 per sample - 0.000601826
+Achieved sentences/sec: 1661.61
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03518 per sample - 0.000600454
+Achieved sentences/sec: 1665.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04036 per sample - 0.000603459
+Achieved sentences/sec: 1657.11
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03354 per sample - 0.000599502
+Achieved sentences/sec: 1668.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03225 per sample - 0.000598755
+Achieved sentences/sec: 1670.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0307 per sample - 0.000597856
+Achieved sentences/sec: 1672.64
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03267 per sample - 0.000598996
+Achieved sentences/sec: 1669.46
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02651 per sample - 0.000595425
+Achieved sentences/sec: 1679.47
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02606 per sample - 0.00059516
+Achieved sentences/sec: 1680.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03462 per sample - 0.000600129
+Achieved sentences/sec: 1666.31
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02926 per sample - 0.000597016
+Achieved sentences/sec: 1675
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02762 per sample - 0.000596065
+Achieved sentences/sec: 1677.67
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02833 per sample - 0.000596481
+Achieved sentences/sec: 1676.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02497 per sample - 0.000594532
+Achieved sentences/sec: 1681.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02984 per sample - 0.000597355
+Achieved sentences/sec: 1674.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02556 per sample - 0.000594871
+Achieved sentences/sec: 1681.04
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.029 per sample - 0.000596869
+Achieved sentences/sec: 1675.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02926 per sample - 0.00059702
+Achieved sentences/sec: 1674.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02498 per sample - 0.000594536
+Achieved sentences/sec: 1681.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03431 per sample - 0.000599948
+Achieved sentences/sec: 1666.81
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03224 per sample - 0.000598747
+Achieved sentences/sec: 1670.15
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02843 per sample - 0.000596536
+Achieved sentences/sec: 1676.35
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02831 per sample - 0.000596468
+Achieved sentences/sec: 1676.54
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02738 per sample - 0.00059593
+Achieved sentences/sec: 1678.05
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02707 per sample - 0.000595748
+Achieved sentences/sec: 1678.56
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02774 per sample - 0.000596135
+Achieved sentences/sec: 1677.47
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02687 per sample - 0.000595632
+Achieved sentences/sec: 1678.89
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02255 per sample - 0.000593127
+Achieved sentences/sec: 1685.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02485 per sample - 0.000594463
+Achieved sentences/sec: 1682.19
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02534 per sample - 0.000594744
+Achieved sentences/sec: 1681.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03064 per sample - 0.000597822
+Achieved sentences/sec: 1672.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03078 per sample - 0.0005979
+Achieved sentences/sec: 1672.52
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02508 per sample - 0.000594592
+Achieved sentences/sec: 1681.83
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02635 per sample - 0.00059533
+Achieved sentences/sec: 1679.74
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02737 per sample - 0.000595921
+Achieved sentences/sec: 1678.07
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02639 per sample - 0.000595355
+Achieved sentences/sec: 1679.67
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02893 per sample - 0.000596827
+Achieved sentences/sec: 1675.53
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02492 per sample - 0.000594504
+Achieved sentences/sec: 1682.07
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02582 per sample - 0.000595025
+Achieved sentences/sec: 1680.6
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02685 per sample - 0.000595622
+Achieved sentences/sec: 1678.92
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02459 per sample - 0.000594308
+Achieved sentences/sec: 1682.63
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02749 per sample - 0.00059599
+Achieved sentences/sec: 1677.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02742 per sample - 0.000595952
+Achieved sentences/sec: 1677.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02634 per sample - 0.000595323
+Achieved sentences/sec: 1679.76
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02688 per sample - 0.000595637
+Achieved sentences/sec: 1678.87
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02588 per sample - 0.00059506
+Achieved sentences/sec: 1680.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0262 per sample - 0.000595241
+Achieved sentences/sec: 1679.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02559 per sample - 0.000594889
+Achieved sentences/sec: 1680.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02498 per sample - 0.000594539
+Achieved sentences/sec: 1681.98
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02912 per sample - 0.000596938
+Achieved sentences/sec: 1675.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02133 per sample - 0.000592421
+Achieved sentences/sec: 1687.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02509 per sample - 0.000594598
+Achieved sentences/sec: 1681.81
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02317 per sample - 0.000593486
+Achieved sentences/sec: 1684.96
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02414 per sample - 0.000594047
+Achieved sentences/sec: 1683.37
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02501 per sample - 0.000594554
+Achieved sentences/sec: 1681.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02285 per sample - 0.000593303
+Achieved sentences/sec: 1685.48
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02253 per sample - 0.000593117
+Achieved sentences/sec: 1686.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02894 per sample - 0.000596834
+Achieved sentences/sec: 1675.51
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02482 per sample - 0.000594443
+Achieved sentences/sec: 1682.25
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02174 per sample - 0.000592656
+Achieved sentences/sec: 1687.32
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02581 per sample - 0.000595015
+Achieved sentences/sec: 1680.63
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02557 per sample - 0.000594876
+Achieved sentences/sec: 1681.02
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02143 per sample - 0.000592478
+Achieved sentences/sec: 1687.83
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02627 per sample - 0.000595286
+Achieved sentences/sec: 1679.87
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02626 per sample - 0.000595281
+Achieved sentences/sec: 1679.88
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02739 per sample - 0.000595936
+Achieved sentences/sec: 1678.03
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02414 per sample - 0.000594049
+Achieved sentences/sec: 1683.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02431 per sample - 0.000594149
+Achieved sentences/sec: 1683.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0256 per sample - 0.000594896
+Achieved sentences/sec: 1680.97
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.023 per sample - 0.000593389
+Achieved sentences/sec: 1685.24
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02367 per sample - 0.000593777
+Achieved sentences/sec: 1684.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0267 per sample - 0.000595535
+Achieved sentences/sec: 1679.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02298 per sample - 0.000593377
+Achieved sentences/sec: 1685.27
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02384 per sample - 0.000593874
+Achieved sentences/sec: 1683.86
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02345 per sample - 0.000593647
+Achieved sentences/sec: 1684.5
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02772 per sample - 0.000596123
+Achieved sentences/sec: 1677.51
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02921 per sample - 0.000596988
+Achieved sentences/sec: 1675.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.01874 per sample - 0.000590918
+Achieved sentences/sec: 1692.28
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02643 per sample - 0.000595378
+Achieved sentences/sec: 1679.61
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02834 per sample - 0.000596487
+Achieved sentences/sec: 1676.48
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02826 per sample - 0.000596437
+Achieved sentences/sec: 1676.62
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02334 per sample - 0.000593584
+Achieved sentences/sec: 1684.68
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02376 per sample - 0.000593826
+Achieved sentences/sec: 1684
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02266 per sample - 0.000593189
+Achieved sentences/sec: 1685.8
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02281 per sample - 0.000593276
+Achieved sentences/sec: 1685.56
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02013 per sample - 0.000591725
+Achieved sentences/sec: 1689.97
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02249 per sample - 0.000593092
+Achieved sentences/sec: 1686.08
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02732 per sample - 0.000595891
+Achieved sentences/sec: 1678.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02936 per sample - 0.000597074
+Achieved sentences/sec: 1674.84
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0327 per sample - 0.000599016
+Achieved sentences/sec: 1669.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0229 per sample - 0.000593329
+Achieved sentences/sec: 1685.41
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02629 per sample - 0.000595297
+Achieved sentences/sec: 1679.83
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02261 per sample - 0.000593164
+Achieved sentences/sec: 1685.87
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02642 per sample - 0.000595369
+Achieved sentences/sec: 1679.63
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0249 per sample - 0.000594492
+Achieved sentences/sec: 1682.11
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03017 per sample - 0.000597546
+Achieved sentences/sec: 1673.51
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02909 per sample - 0.000596921
+Achieved sentences/sec: 1675.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02397 per sample - 0.00059395
+Achieved sentences/sec: 1683.64
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02873 per sample - 0.000596713
+Achieved sentences/sec: 1675.85
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.01855 per sample - 0.000590804
+Achieved sentences/sec: 1692.61
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02028 per sample - 0.00059181
+Achieved sentences/sec: 1689.73
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.01934 per sample - 0.000591263
+Achieved sentences/sec: 1691.29
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02793 per sample - 0.000596244
+Achieved sentences/sec: 1677.16
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02238 per sample - 0.000593029
+Achieved sentences/sec: 1686.26
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02267 per sample - 0.000593196
+Achieved sentences/sec: 1685.78
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02672 per sample - 0.000595542
+Achieved sentences/sec: 1679.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0222 per sample - 0.000592924
+Achieved sentences/sec: 1686.56
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02207 per sample - 0.000592848
+Achieved sentences/sec: 1686.77
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02432 per sample - 0.000594153
+Achieved sentences/sec: 1683.07
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02295 per sample - 0.000593359
+Achieved sentences/sec: 1685.32
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02136 per sample - 0.000592439
+Achieved sentences/sec: 1687.94
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02761 per sample - 0.000596063
+Achieved sentences/sec: 1677.67
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02795 per sample - 0.000596258
+Achieved sentences/sec: 1677.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02611 per sample - 0.000595193
+Achieved sentences/sec: 1680.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02484 per sample - 0.000594454
+Achieved sentences/sec: 1682.21
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03315 per sample - 0.000599276
+Achieved sentences/sec: 1668.68
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02826 per sample - 0.000596436
+Achieved sentences/sec: 1676.63
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02746 per sample - 0.000595973
+Achieved sentences/sec: 1677.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02481 per sample - 0.00059444
+Achieved sentences/sec: 1682.25
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02093 per sample - 0.000592189
+Achieved sentences/sec: 1688.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02226 per sample - 0.00059296
+Achieved sentences/sec: 1686.45
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.01913 per sample - 0.000591141
+Achieved sentences/sec: 1691.65
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02185 per sample - 0.000592719
+Achieved sentences/sec: 1687.14
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0164 per sample - 0.000589558
+Achieved sentences/sec: 1696.19
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03166 per sample - 0.000598408
+Achieved sentences/sec: 1671.1
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02419 per sample - 0.000594078
+Achieved sentences/sec: 1683.28
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03049 per sample - 0.000597732
+Achieved sentences/sec: 1672.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02137 per sample - 0.000592441
+Achieved sentences/sec: 1687.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.01804 per sample - 0.000590513
+Achieved sentences/sec: 1693.44
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02677 per sample - 0.000595577
+Achieved sentences/sec: 1679.04
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02238 per sample - 0.000593026
+Achieved sentences/sec: 1686.27
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0295 per sample - 0.000597159
+Achieved sentences/sec: 1674.6
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0209 per sample - 0.000592167
+Achieved sentences/sec: 1688.71
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02707 per sample - 0.00059575
+Achieved sentences/sec: 1678.56
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02147 per sample - 0.000592498
+Achieved sentences/sec: 1687.77
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03471 per sample - 0.000600181
+Achieved sentences/sec: 1666.17
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02953 per sample - 0.000597178
+Achieved sentences/sec: 1674.54
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.01776 per sample - 0.000590347
+Achieved sentences/sec: 1693.92
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03886 per sample - 0.000602588
+Achieved sentences/sec: 1659.51
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03295 per sample - 0.000599159
+Achieved sentences/sec: 1669.01
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03018 per sample - 0.000597553
+Achieved sentences/sec: 1673.49
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03325 per sample - 0.000599335
+Achieved sentences/sec: 1668.52
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.0322 per sample - 0.000598725
+Achieved sentences/sec: 1670.22
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03367 per sample - 0.000599576
+Achieved sentences/sec: 1667.84
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03149 per sample - 0.000598314
+Achieved sentences/sec: 1671.36
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03278 per sample - 0.00059906
+Achieved sentences/sec: 1669.28
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02832 per sample - 0.000596471
+Achieved sentences/sec: 1676.53
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02765 per sample - 0.000596087
+Achieved sentences/sec: 1677.61
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02672 per sample - 0.000595547
+Achieved sentences/sec: 1679.13
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03024 per sample - 0.000597586
+Achieved sentences/sec: 1673.4
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02937 per sample - 0.000597081
+Achieved sentences/sec: 1674.81
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03731 per sample - 0.000601689
+Achieved sentences/sec: 1661.99
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.02781 per sample - 0.000596179
+Achieved sentences/sec: 1677.35
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03408 per sample - 0.000599814
+Achieved sentences/sec: 1667.18
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03687 per sample - 0.000601434
+Achieved sentences/sec: 1662.69
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03486 per sample - 0.000600265
+Achieved sentences/sec: 1665.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.033 per sample - 0.000599186
+Achieved sentences/sec: 1668.93
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03123 per sample - 0.000598164
+Achieved sentences/sec: 1671.78
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.04032 per sample - 0.000603432
+Achieved sentences/sec: 1657.19
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03608 per sample - 0.000600972
+Achieved sentences/sec: 1663.97
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03086 per sample - 0.000597949
+Achieved sentences/sec: 1672.38
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03314 per sample - 0.000599267
+Achieved sentences/sec: 1668.7
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03245 per sample - 0.000598871
+Achieved sentences/sec: 1669.81
+
+Pushing 1728 sentences
+
+Correct answers: 1466 out of 1724 = 85.03 %
+Elapsed time (sec) including enqueue: total - 1.03603 per sample - 0.000600944
+Achieved sentences/sec: 1664.05
+
+TAFTER 1646966301

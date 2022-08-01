@@ -1,0 +1,5 @@
+California,Sacramento,Valley Quail,Poppy
+Texas,Austin,Mockingbird,Bluebonnet
+Florida,Tallahassee,Mockingbird,Orange Blossom
+New York,Albany,Eastern Bluebird,Rose
+Pennsylvania,Harrisburgh,Ruffed Grouse,Mountain Laurel

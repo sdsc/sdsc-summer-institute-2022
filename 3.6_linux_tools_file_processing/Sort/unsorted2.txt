@@ -1,0 +1,5 @@
+banana 17  taco
+apple   6  pizza
+grape  23  hotdog
+pear   35  pretzel
+peach  12  popcorn

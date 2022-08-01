@@ -1,0 +1,8 @@
+apple banana pear
+cherry banana peach
+orange lemon lime
+apple Banana pear
+cherry Banana peach
+pear kumquat grape
+grape guava lime
+pear peach kiwi

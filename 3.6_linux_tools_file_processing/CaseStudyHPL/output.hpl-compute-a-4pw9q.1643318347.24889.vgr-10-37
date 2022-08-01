@@ -1,0 +1,149 @@
+vgr-10-37
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   46 bits physical, 48 bits virtual
+CPU(s):                          104
+On-line CPU(s) list:             0-103
+Thread(s) per core:              2
+Core(s) per socket:              26
+Socket(s):                       2
+NUMA node(s):                    2
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           85
+Model name:                      Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz
+Stepping:                        7
+CPU MHz:                         1000.000
+CPU max MHz:                     4000.0000
+CPU min MHz:                     1000.0000
+BogoMIPS:                        4200.00
+Virtualization:                  VT-x
+L1d cache:                       1.6 MiB
+L1i cache:                       1.6 MiB
+L2 cache:                        52 MiB
+L3 cache:                        71.5 MiB
+NUMA node0 CPU(s):               0-25,52-77
+NUMA node1 CPU(s):               26-51,78-103
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerability L1tf:              Not affected
+Vulnerability Mds:               Not affected
+Vulnerability Meltdown:          Not affected
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Mitigation; TSX disabled
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+              total        used        free      shared  buff/cache   available
+Mem:          376Gi       1.7Gi       371Gi       215Mi       3.0Gi       372Gi
+Swap:            0B          0B          0B
+KUBERNETES_SERVICE_PORT_HTTPS=443
+SCRATCH_DIR=/scratch
+KUBERNETES_SERVICE_PORT=443
+OMPI_ROOT_DIR=/opt/openmpi
+POD_NAME_ID=hpl-compute-a-4pw9q
+HOSTNAME=hpl-compute-a-4pw9q
+HPL_ROOT_URL=http://www.netlib.org/benchmark/hpl
+OPENBLAS_TARGET_ARCH=HASWELL
+OPENBLAS_VERSION=0.3.14
+OPENBLAS_MAX_NUM_THREADS=256
+PWD=/scratch
+HPL_VERSION=2.3
+WORK_DIR=/home/sinkovit/projects/voyager/acceptance-testing/hpl
+HOME=/
+OPENBLAS_INSTALL_DIR=/opt/openblas/0.3.14
+KUBERNETES_PORT_443_TCP=tcp://10.15.0.1:443
+HPL_ARCH=linux64
+VGR_POD_ID=hpl-compute-a-4pw9q.1643318347.24889.vgr-10-37
+OMPI_ROOT_URL=https://download.open-mpi.org/release/open-mpi
+OMPI_INSTALL_DIR=/opt/openmpi/4.0.5
+HPL_ROOT_DIR=/opt/hpl
+HOME_DIR=/home/sinkovit
+OSVERSION=focal
+OMPI_MAJOR=4
+SHLVL=1
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+KUBERNETES_PORT_443_TCP_ADDR=10.15.0.1
+OPENBLAS_USE_OPENMP=1
+LD_LIBRARY_PATH=/opt/openblas/0.3.14/lib:/opt/openmpi/4.0.5/lib:
+OMPI_REVISION=5
+OMPI_VERSION=4.0.5
+OMPI_MINOR=0
+HPL_INSTALL_DIR=/opt/hpl/2.3
+OPENBLAS_ROOT_DIR=/opt/openblas
+KUBERNETES_SERVICE_HOST=10.15.0.1
+LC_ALL=C
+KUBERNETES_PORT=tcp://10.15.0.1:443
+KUBERNETES_PORT_443_TCP_PORT=443
+POD_NODE_HOSTNAME=vgr-10-37
+OPENBLAS_REPO_URL=https://github.com/xianyi/OpenBLAS.git
+PATH=/opt/hpl/2.3/bin:/opt/openmpi/4.0.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MIRRORURL=http://us.archive.ubuntu.com/ubuntu
+OPENBLAS_DYNAMIC_ARCH=0
+DEBIAN_FRONTEND=noninteractive
+_=/usr/bin/printenv
+OLDPWD=/home/sinkovit/projects/voyager/acceptance-testing/hpl
+================================================================================
+HPLinpack 2.3  --  High-Performance Linpack benchmark  --   December 2, 2018
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :  207800 
+NB     :     384 
+PMAP   : Row-major process mapping
+P      :       4 
+Q      :      13 
+PFACT  :   Right 
+NBMIN  :       4 
+NDIV   :       2 
+RFACT  :   Right 
+BCAST  :   2ring 
+DEPTH  :       1 
+SWAP   : Spread-roll (long)
+L1     : transposed form
+U      : transposed form
+EQUIL  : yes
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR12R2R4      207800   384     4    13            4851.29             1.2331e+03
+HPL_pdgesv() start time Thu Jan 27 21:19:41 2022
+
+HPL_pdgesv() end time   Thu Jan 27 22:40:32 2022
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   8.46061182e-04 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
