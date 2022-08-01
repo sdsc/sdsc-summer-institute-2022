@@ -16,6 +16,7 @@
 - https://wiki.lustre.org/Introduction_to_Lustre
 - https://www.nas.nasa.gov/hecc/support/kb/Lustre_Basics_224.html
 - https://www.nas.nasa.gov/hecc/support/kb/lustre-best-practices_226.html
+- https://cvw.cac.cornell.edu/parallelio/lustre
 
 ```
 cd "/expanse/lustre/scratch/${USER}/temp_project"
