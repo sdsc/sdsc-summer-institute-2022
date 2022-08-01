@@ -237,6 +237,6 @@ https://github.com/mlcommons/hpc/tree/main/deepcam#dataset
 
 ### Long-term, archival data storage
 
-
+![Western Digital My Cloud](https://www.westerndigital.com/content/dam/store/en-us/assets/products/desktop/my-cloud-expert-series-ex4100/gallery/my-cloud-ex4100-Hero.png)
 
 
