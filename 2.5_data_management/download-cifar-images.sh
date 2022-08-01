@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 #SBATCH --job-name=download-cifar-images
-#SBATCH --account=sds184
+#SBATCH --account=crl155
+#SBATCH --reservation=SI2022DAY1
 #SBATCH --partition=shared
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
