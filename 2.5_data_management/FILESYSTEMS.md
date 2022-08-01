@@ -111,7 +111,7 @@ srun: job 14751425 has been allocated resources
 
 ```
 [xdtr108@exp-1-17 ~]$ df -Th | grep nvme
-/dev/nvme0n1p1                                          ext4      916G   67G  804G   8% /scratch                                          ext4      916G  3.2G  867G   1% /scratch
+/dev/nvme0n1p1                                          ext4      916G   67G  804G   8% /scratch
 ```
 
 ```
