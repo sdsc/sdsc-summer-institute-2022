@@ -135,7 +135,7 @@ Last login: Tue Aug  2 09:28:42 2022 from 10.21.0.19
 
 #SBATCH --job-name=estimate-pi
 #SBATCH --account=crl155
-#SBATCH --reservation=si2022testing
+#SBATCH --reservation=SI2022DAY2
 #SBATCH --partition=compute
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=128
@@ -183,7 +183,35 @@ Makefile  pi.f90  pi.o  pi_omp.f90  pi_omp.o  pi_omp.x  pi.x
 
 Then we'll replace our 4pi python program with the OpenMP parallelized fortran program `pi_omp.x`. 
 
+```
+#!/usr/bin/env bash
 
+#SBATCH --job-name=estimate-pi
+#SBATCH --account=crl155
+#SBATCH --reservation=SI2022DAY2
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=128
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=243G
+#SBATCH --time=00:30:00
+#SBATCH --output=%x.o%j.%N
+
+module purge
+export PATH="${HOME}/4pi/fortran:${PATH}"
+export OMP_NUM_THREADS=1
+
+taskset -c 0 pi_omp.x -s 10000000000 &
+taskset -c 32 pi_omp.x -s 10000000000 &
+taskset -c 64 pi_omp.x -s 10000000000 &
+taskset -c 96 pi_omp.x -s 10000000000 &
+
+wait
+```
+
+
+
+https://hexus.net/tech/reviews/cpu/133244-amd-epyc-7742-2p-rome-server
 
 #### `numactl` - Control NUMA policy for processes or shared memory
 
