@@ -50,7 +50,6 @@ The Linux scheduler works well for simple workflows like the one above. However,
 `taskset`  is  used  to  set  or  retrieve  the CPU affinity of a running process given its pid, or to launch a new  command  with  a  given  CPU affinity.  CPU affinity is a scheduler property that "binds" a process to a given set of CPUs on the system.  The Linux scheduler  will  honor the  given CPU affinity and the process will not run on any other CPUs.
 
 ```
-...
 #SBATCH --output=%x.o%j.%N
 
 module purge
