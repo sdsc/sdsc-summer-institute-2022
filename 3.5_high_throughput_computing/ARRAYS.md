@@ -302,6 +302,8 @@ sbatch: error: Batch job submission failed: Invalid job array specification
 [xdtr108@login01 ~]$
 ```
 
+What went wrong?
+
 ```
 [xdtr108@login01 ~]$ ls -l /etc/slurm/
 total 0
