@@ -22,6 +22,9 @@
 ![HTCondor](https://htcondor.org/assets/images/HTCondor_red_blk_classic.png)
 
 - https://htcondor.org
+
+![GlideinWMS](https://glideinwms.fnal.gov/doc.prd/images/simple_animation.gif)
+
 - https://glideinwms.fnal.gov/doc.prd/index.html
 
 </br>
