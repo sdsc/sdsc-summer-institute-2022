@@ -271,12 +271,12 @@ node   0   1   2   3   4   5   6   7
 [xdtr108@exp-14-54 ~]$ 
 ```
 
-
-https://cvw.cac.cornell.edu/hybrid/numactl
-
-https://www.glennklockwood.com/hpc-howtos/process-affinity.html
+- https://cvw.cac.cornell.edu/hybrid/numactl
+- https://www.glennklockwood.com/hpc-howtos/process-affinity.html
 
 ### GNU parallel
+
+- https://en.wikipedia.org/wiki/GNU_parallel
 
 ### MPI-based scheduling
 
