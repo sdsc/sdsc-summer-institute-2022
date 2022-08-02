@@ -59,7 +59,7 @@ taskset -c 1 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 taskset -c 2 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 taskset -c 3 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 
-wait
+time -p wait
 ```
 
 ```
@@ -151,7 +151,7 @@ taskset -c 32 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 taskset -c 64 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 taskset -c 96 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 
-wait
+time -p wait
 ```
 
 Okay, let's now try bundling some multithreaded jobs. First, compile the 4pi fortran programs. 
@@ -206,7 +206,7 @@ taskset -c 32 pi_omp.x -s 10000000000 &
 taskset -c 64 pi_omp.x -s 10000000000 &
 taskset -c 96 pi_omp.x -s 10000000000 &
 
-wait
+time -p wait
 ```
 
 
