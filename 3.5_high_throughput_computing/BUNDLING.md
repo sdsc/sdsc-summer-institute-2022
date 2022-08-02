@@ -41,7 +41,7 @@ python3 "${HOME}/4pi/python/pi.py" 100000000 &
 wait
 ```
 
-The Linux scheduler works well for simple workflows. However, for a large number of jobs, especially when each may be running with multiple processes, its performance may be unsatisfying, due to unbalanced workloads from different running jobs, improper process/thread affinity settings, etc.
+The Linux scheduler works well for simple workflows like the one above. However, for workflows with a large number of jobs, especially when each job may be running with multiple processes, the performance of the Linux scheduler may be unsatisfying, due to unbalanced workloads from different running jobs, improper process/thread affinity settings, etc.
 
 ```
 [xdtr108@login02 ~]$ ls
