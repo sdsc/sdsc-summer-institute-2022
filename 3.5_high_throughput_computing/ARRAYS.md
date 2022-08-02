@@ -322,7 +322,8 @@ MaxJobCount=40000
 [xdtr108@login01 ~]$ sacctmgr show qos
 ```
 
-https://slurm.schedmd.com/high_throughput.html
+- https://slurm.schedmd.com/high_throughput.html
+- https://www.sdsc.edu/support/user_guides/expanse.html
 
 ```
 #SBATCH --array=1-5
