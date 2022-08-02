@@ -119,6 +119,7 @@ Let's go ahead and move the job from the **shared** to the **compute** partition
 
 ```
 #SBATCH --partition=compute
+#SBATCH --qos=normal-eot
 ```
 
 ```
@@ -139,6 +140,7 @@ Last login: Tue Aug  2 09:28:42 2022 from 10.21.0.19
 #SBATCH --account=crl155
 #SBATCH --reservation=SI2022DAY2
 #SBATCH --partition=compute
+#SBATCH --qos=normal-eot
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=128
 #SBATCH --cpus-per-task=1
@@ -192,6 +194,7 @@ Then we'll replace our 4pi python program with the OpenMP parallelized fortran p
 #SBATCH --account=crl155
 #SBATCH --reservation=SI2022DAY2
 #SBATCH --partition=compute
+#SBATCH --qos=normal-eot
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=128
 #SBATCH --cpus-per-task=1
@@ -288,6 +291,7 @@ node   0   1   2   3   4   5   6   7
 #SBATCH --account=crl155
 #SBATCH --reservation=SI2022DAY2
 #SBATCH --partition=compute
+#SBATCH --qos=normal-eot
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=4
 #SBATCH --cpus-per-task=4
