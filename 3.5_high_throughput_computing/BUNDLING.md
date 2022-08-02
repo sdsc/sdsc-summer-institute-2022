@@ -9,7 +9,7 @@
 
 ## Batch job bundling
 
-While Expanse was designed to be supportive of HTC-like workflows, many HPC systems cater specifically to large-scale, parallel jobs. On these systems, compute resources are often scheduled at the node-level and they either discourage or explicitly prohibit the queueing hundreds or thousands of jobs at a time in order to improve the scheduling performance of the system. Under these circumstances, the only way to run HTC workflows that consist of many serial (or small multi-core) jobs without being inherently wasteful and inefficient is to create *job bundles*, wherein a group of independent jobs or tasks are *packed* into and managed (usually in an ad-hoc way) by a single batch job. 
+While Expanse was designed to be supportive of HTC-like workflows, many HPC systems are built specifically to accomodate large-scale, parallel jobs. On these systems, compute resources are often scheduled at the node-level and they either discourage or explicitly prohibit the queueing hundreds or thousands of jobs at a time in order to improve the scheduling performance of the system. Under these circumstances, the only way to run HTC workflows that consist of many serial (or small multi-core) jobs without being inherently wasteful and inefficient is to create *job bundles*, wherein a group of independent jobs or tasks are *packed* into and managed (usually in an ad-hoc way) by a single batch job. 
 
 ### Linux-native scheduling
 
@@ -19,7 +19,8 @@ The simplest and most straightforward approach to bundling jobs is with the [Lin
 #!/usr/bin/env bash
 
 #SBATCH --job-name=estimate-pi
-#SBATCH --account=sds184
+#SBATCH --account=crl155
+#SBATCH --reservation=SI2022DAY2
 #SBATCH --partition=shared
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=4
@@ -40,7 +41,7 @@ python3 "${HOME}/4pi/python/pi.py" 100000000 &
 wait
 ```
 
-The Linux scheduler works well for simple workflows with a limited core count. However, for a large number of jobs running with multiple processes, its performance may be unsatisfying, due to unbalanced workloads from different running jobs, improper process/thread affinity settings, etc.
+The Linux scheduler works well for simple workflows. However, for a large number of jobs, especially when each may be running with multiple processes, its performance may be unsatisfying, due to unbalanced workloads from different running jobs, improper process/thread affinity settings, etc.
 
 ```
 [xdtr108@login02 ~]$ ls
