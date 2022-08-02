@@ -335,6 +335,8 @@ module purge
 time -p "${HOME}/4pi/bash/pi.sh" -b 8 -r 5 -s "${NUMBER_OF_SAMPLES}"
 ```
 
+- https://google.github.io/styleguide/shellguide.html
+
 ```
 [xdtr108@login01 ~]$ sbatch estimate-pi.sh 
 Submitted batch job 14792680
