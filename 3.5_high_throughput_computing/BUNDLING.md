@@ -13,6 +13,8 @@ While Expanse was designed to be supportive of HTC-like workflows, most HPC syst
 
 ### Linux-native scheduling
 
+#### `&`
+
 The simplest and most straightforward approach to bundling jobs is with the [Linux scheduler](https://en.wikipedia.org/wiki/Completely_Fair_Scheduler). When you execute a command in a batch job script, you can force the process that is started into the *background* to run independently of other processes that may also be created as part of the job. The Linux scheduler will (automagically) distribute the (child) processes across the compute resources available to run the job. 
 
 ```
@@ -42,6 +44,10 @@ wait
 ```
 
 The Linux scheduler works well for simple workflows like the one above. However, for workflows with a large number of jobs, especially when each job may be running with multiple processes, the performance of the Linux scheduler may be unsatisfying, due to unbalanced workloads from different running jobs, improper process/thread affinity settings, etc.
+
+#### `taskset`
+
+#### `numactl`
 
 ```
 [xdtr108@login02 ~]$ ls
