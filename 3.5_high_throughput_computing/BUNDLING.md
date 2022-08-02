@@ -211,9 +211,19 @@ taskset -c 96 pi_omp.x -s 10000000000 &
 time -p wait
 ```
 
-
-
 https://hexus.net/tech/reviews/cpu/133244-amd-epyc-7742-2p-rome-server
+
+
+```
+export OMP_NUM_THREADS=4
+
+taskset -c 0,1,2,3 pi_omp.x -s 10000000000 &
+taskset -c 32,33,34,35 pi_omp.x -s 10000000000 &
+taskset -c 64,65,66,67 pi_omp.x -s 10000000000 &
+taskset -c 96,97,98,99 pi_omp.x -s 10000000000 &
+
+time -p wait
+```
 
 </br>
 
