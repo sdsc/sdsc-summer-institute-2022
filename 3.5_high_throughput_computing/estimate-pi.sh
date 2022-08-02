@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 #SBATCH --job-name=estimate-pi
-#SBATCH --account=sds184
-#SBATCH --partition=debug
+#SBATCH --account=crl155
+#SBATCH --reservation=SI2022DAY2
+#SBATCH --partition=shared
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
