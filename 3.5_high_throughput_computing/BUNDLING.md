@@ -280,6 +280,29 @@ https://www.glennklockwood.com/hpc-howtos/process-affinity.html
 
 ### MPI-based scheduling
 
+```
+#!/usr/bin/env bash
+
+#SBATCH --job-name=estimate-pi
+#SBATCH --account=crl155
+#SBATCH --reservation=SI2022DAY2
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=243G
+#SBATCH --time=00:30:00
+#SBATCH --output=%x.o%j.%N
+
+module reset
+module load gcc
+module load openmpi
+export PATH="${HOME}/4pi/fortran:${PATH}"
+export OMP_NUM_THREADS=4
+
+time -p srun --mpi=pmi2 pi_omp.x -s 10000000000
+```
+
 ### Advanced job bundling tools and utilities
 
 Many HPC centers have also developed their own custom job bundling tools to provide more advanced capabilties than the methods discuess thus far. In general, you can use these bundling utilties on other systems. However, they may take some time to setup and deploy on a new system. For example, one popular job bundling tool is the [Texas Advanced Computing Center (TACC) launcher](https://github.com/TACC/launcher), which has been used at SDSC in the past and is also available on [Georgia Tech's PACE cluster](https://docs.pace.gatech.edu/software/launcher). Other examples of job bundling tools and utilities include [NCSA's scheduler.x](https://github.com/ncsa/Scheduler) and [NIH's Swarm](https://hpc.nih.gov/apps/swarm.html).
