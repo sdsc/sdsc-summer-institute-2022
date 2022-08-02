@@ -9,10 +9,6 @@
 
 ## Parallel paradigms: HPC vs. HTC
 
-https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial
-
-https://www.coursera.org/lecture/introduction-high-performance-computing/high-throughput-computing-oCrDF
-
 </br>
 
 ### Serial computation
