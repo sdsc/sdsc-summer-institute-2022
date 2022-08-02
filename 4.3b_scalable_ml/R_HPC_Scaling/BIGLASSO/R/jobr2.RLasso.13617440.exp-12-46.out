@@ -1,0 +1,13 @@
+Sat Jun 18 17:17:48 PDT 2022
+Sat Jun 18 17:20:07 PDT 2022
+Loading required package: bigmemory
+Loading required package: Matrix
+Loading required package: ncvreg
+Warning message:
+In read.big.matrix(inputYfile, sep = ",") :
+  Because type was not specified, we chose double based on the first line of data.
+   [[ suppressing 32 column names '37.0975', '34.5972', '32.2655' ... ]]
+   [[ suppressing 32 column names '37.0975', '34.5972', '32.2655' ... ]]
+   [[ suppressing 32 column names '37.0975', '34.5972', '32.2655' ... ]]
+Error in exit() : could not find function "exit"
+Execution halted

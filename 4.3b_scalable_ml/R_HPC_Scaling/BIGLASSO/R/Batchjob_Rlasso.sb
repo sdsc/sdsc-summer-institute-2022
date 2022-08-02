@@ -1,0 +1,37 @@
+#!/bin/bash
+#SBATCH --job-name="RLasso"
+#SBATCH --output="jobr2.RLasso.%j.%N.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=64  
+#SBATCH --export=ALL
+#SBATCH -t 24:00:00
+#SBATCH -A uic329
+
+#### THis is from cm share  examples 
+###     /cm/shared/examples/sdsc/mpi-openmp-hybrid/hybrid-slurm.sb
+export OMP_NUM_THREADS=64  #match to above specificy below also!!!
+
+#Environment
+module purge
+
+module load slurm
+module load cpu
+module load gcc/9.2.0
+module load r
+
+date
+#NOTE, to set this up change the paths below as appropriate
+
+#If you have a big dataset setup, copy it into SSD scratch space
+cp /expanse/lustre/scratch/p4rodrig/temp_project/WKSHOPS2/YXmatrix_100000_50000.csv /scratch/$USER/job_$SLURM_JOB_ID/Xinput.csv
+cp /expanse/lustre/scratch/p4rodrig/temp_project/WKSHOPS2/Y_100000_50000.csv /scratch/$USER/job_$SLURM_JOB_ID/Yinput.csv
+
+date
+cd /scratch/$USER/job_$SLURM_JOB_ID
+
+#True or False is to use biglass or glmnet
+Rscript --vanilla /expanse/lustre/scratch/p4rodrig/temp_project/WKSHOPS2/R2/rLassov2.R /scratch/$USER/job_$SLURM_JOB_ID/Xinput.csv /scratch/$USER/job_$SLURM_JOB_ID/Yinput.csv 64 TRUE > /expanse/lustre/scratch/p4rodrig/temp_project/WKSHOPS2/R2/lassobm.wyxmatrix.100x50k.stdoutput.64.txt
+
+

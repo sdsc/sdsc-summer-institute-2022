@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH --job-name="serial-hybrid"
+#SBATCH --output="serial-hybrid.%j.%N.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=2
+#  #SBATCH --ntasks-per-node=1
+#  #SBATCH --cpus-per-task=128  
+#SBATCH --ntasks-per-node=128
+#SBATCH --cpus-per-task=1  
+#SBATCH --export=ALL
+#SBATCH -t 0:30:00
+#SBATCH -A sds164
+
+#### THis is from cm share  examples 
+###     /cm/shared/examples/sdsc/mpi-openmp-hybrid/hybrid-slurm.sb
+
+#Environment
+module purge
+
+module load slurm
+module load cpu
+module load intel
+module load intel-mpi
+
+#Run
+export OMP_NUM_THREADS=128  
+mpirun -genv I_MPI_PIN_DOMAIN=omp:compact ./get_mpirank_runcmd.pl  #thiswkd
+
