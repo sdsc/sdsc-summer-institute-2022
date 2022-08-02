@@ -77,6 +77,10 @@ time -p "${HOME}/4pi/bash/pi.sh" -b 8 -r 5 -s 10000
 Investigate what variables the different command-line options are used to control in the problem. 
 
 ```
+head -n 15 "${HOME}/4pi/bash/pi.sh"
+```
+
+```
 [xdtr108@login01 ~]$ head -n 15 "${HOME}/4pi/bash/pi.sh"
 #!/usr/bin/env bash
 #
