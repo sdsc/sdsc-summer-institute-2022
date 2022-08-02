@@ -62,9 +62,12 @@ taskset -c 3 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 wait
 ```
 
-#### `numactl` - Control NUMA policy for processes or shared memory
-
-`numactl` runs processes with a specific NUMA scheduling or memory placement policy.  The policy is set for a command and is inherited by all of its children.  In addition it can set persistent policy for shared memory segments or files.
+```
+taskset: taskset: failed to set pid 1239682's affinity: failed to set pid 1239683's affinity: Invalid argument
+Invalid argument
+taskset: taskset: failed to set pid 1239685's affinity: failed to set pid 1239684's affinity: Invalid argument
+Invalid argument
+```
 
 ```
 [xdtr108@exp-14-54 ~]$ lscpu
@@ -99,6 +102,10 @@ NUMA node6 CPU(s):   96-111
 NUMA node7 CPU(s):   112-127
 Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sme sev sev_es
 ```
+
+#### `numactl` - Control NUMA policy for processes or shared memory
+
+`numactl` runs processes with a specific NUMA scheduling or memory placement policy.  The policy is set for a command and is inherited by all of its children.  In addition it can set persistent policy for shared memory segments or files.
 
 ```
 [xdtr108@exp-14-54 ~]$ numactl -H
