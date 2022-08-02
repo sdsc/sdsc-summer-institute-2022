@@ -68,8 +68,6 @@ wait
 `numactl` runs processes with a specific NUMA scheduling or memory placement policy.  The policy is set for a command and is inherited by all of its children.  In addition it can set persistent policy for shared memory segments or files.
 
 
-http://www.hpc.acad.bg/numactl/
-
 https://cvw.cac.cornell.edu/hybrid/numactl
 
 https://www.glennklockwood.com/hpc-howtos/process-affinity.html
@@ -80,10 +78,7 @@ https://www.glennklockwood.com/hpc-howtos/process-affinity.html
 
 ### Advanced job bundling tools and utilities
 
-Many HPC centers have developed their own custom job bundling tools to provide more advanced capabilties than the methods discuess thus far. In general, you can use these bundling utilties on other systems. However, they may take some time to setup and deploy on a new system. For example, one popular job bundling tool is the [Texas Advanced Computing Center (TACC) launcher](https://github.com/TACC/launcher), which has been used at SDSC in the past and is also available on [Georgia Tech's PACE cluster](https://docs.pace.gatech.edu/software/launcher). Other examples of job bundling tools and utilities include [NCSA's scheduler.x](https://github.com/ncsa/Scheduler) and [NIH's Swarm](https://hpc.nih.gov/apps/swarm.html).
-
-
-https://dl.acm.org/doi/fullHtml/10.1145/3437359.3465569
+Many HPC centers have also developed their own custom job bundling tools to provide more advanced capabilties than the methods discuess thus far. In general, you can use these bundling utilties on other systems. However, they may take some time to setup and deploy on a new system. For example, one popular job bundling tool is the [Texas Advanced Computing Center (TACC) launcher](https://github.com/TACC/launcher), which has been used at SDSC in the past and is also available on [Georgia Tech's PACE cluster](https://docs.pace.gatech.edu/software/launcher). Other examples of job bundling tools and utilities include [NCSA's scheduler.x](https://github.com/ncsa/Scheduler) and [NIH's Swarm](https://hpc.nih.gov/apps/swarm.html).
 
 #
 
