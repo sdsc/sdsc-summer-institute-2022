@@ -69,6 +69,8 @@ taskset: taskset: failed to set pid 1239685's affinity: failed to set pid 123968
 Invalid argument
 ```
 
+What went wrong?
+
 ```
 [xdtr108@exp-14-54 ~]$ lscpu
 Architecture:        x86_64
