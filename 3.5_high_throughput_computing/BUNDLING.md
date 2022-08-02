@@ -113,6 +113,24 @@ NUMA node7 CPU(s):   112-127
 Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sme sev sev_es
 ```
 
+Let's go ahead and move the job from the **shared** to the **compute** partition.
+
+```
+#SBATCH --partition=compute
+```
+
+```
+[xdtr108@login01 ~]$ sbatch estimate-pi.sh 
+Submitted batch job 14843082
+[xdtr108@login01 ~]$ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          14843082   compute estimate  xdtr108  R       0:04      1 exp-14-54
+[xdtr108@login01 ~]$ ssh exp-14-54
+Last login: Tue Aug  2 09:28:42 2022 from 10.21.0.19
+[xdtr108@exp-14-54 ~]$ htop -u $USER
+```
+
+```
 ```
 #!/usr/bin/env bash
 
@@ -136,22 +154,6 @@ taskset -c 96 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 
 wait
 ```
-
-Let's go ahead and move the job from the **shared** to the **compute** partition.
-
-```
-#SBATCH --partition=compute
-```
-
-```
-[xdtr108@login01 ~]$ sbatch estimate-pi.sh 
-Submitted batch job 14843082
-[xdtr108@login01 ~]$ squeue -u $USER
-             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-          14843082   compute estimate  xdtr108  R       0:04      1 exp-14-54
-[xdtr108@login01 ~]$ ssh exp-14-54
-Last login: Tue Aug  2 09:28:42 2022 from 10.21.0.19
-[xdtr108@exp-14-54 ~]$ htop -u $USER
 ```
 
 #### `numactl` - Control NUMA policy for processes or shared memory
