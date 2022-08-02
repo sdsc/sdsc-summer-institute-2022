@@ -9,10 +9,12 @@
 
 ## Distributed high-throughput computing
 
-https://support.opensciencegrid.org/support/home
+![OSG logo](https://osg-htc.org/assets/images/logos/OSG-logo.svg)
 
-https://raw.githubusercontent.com/CHTC/Articles/main/images/PATh-Facility-Map.jpg
+https://en.wikipedia.org/wiki/Open_Science_Grid_Consortium
 
 https://osg-htc.org/
+
+https://raw.githubusercontent.com/CHTC/Articles/main/images/PATh-Facility-Map.jpg
 
 https://path-cc.io/
