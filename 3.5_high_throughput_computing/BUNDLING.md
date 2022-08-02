@@ -154,6 +154,37 @@ taskset -c 96 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 wait
 ```
 
+Okay, let's now try bundling some multithreaded jobs. First, compile the 4pi fortran programs. 
+
+```
+[xdtr108@login02 ~]$ cd 4pi/fortran/
+[xdtr108@login02 fortran]$ ls
+Makefile  pi.f90  pi_omp.f90
+[xdtr108@login02 fortran]$ make
+gfortran -ffree-form -ffree-line-length-none -fimplicit-none -O3 -mtune=native -fdefault-integer-8 -fdefault-real-8 -c pi.f90
+pi.f90:4:23:
+
+       use, intrinsic :: iso_fortran_env
+                       1
+Warning: Use of the NUMERIC_STORAGE_SIZE named constant from intrinsic module ISO_FORTRAN_ENV at (1) is incompatible with option -fdefault-integer-8
+gfortran -ffree-form -ffree-line-length-none -fimplicit-none -O3 -mtune=native -fdefault-integer-8 -fdefault-real-8 -o pi.x pi.o
+gfortran -ffree-form -ffree-line-length-none -fimplicit-none -O3 -mtune=native -fdefault-integer-8 -fdefault-real-8 -fopenmp -c pi_omp.f90
+pi_omp.f90:4:23:
+
+       use, intrinsic :: iso_fortran_env
+                       1
+Warning: Use of the NUMERIC_STORAGE_SIZE named constant from intrinsic module ISO_FORTRAN_ENV at (1) is incompatible with option -fdefault-integer-8
+gfortran -ffree-form -ffree-line-length-none -fimplicit-none -O3 -mtune=native -fdefault-integer-8 -fdefault-real-8 -fopenmp -o pi_omp.x pi_omp.o
+[xdtr108@login02 fortran]$ ls
+Makefile  pi.f90  pi.o  pi_omp.f90  pi_omp.o  pi_omp.x  pi.x
+[xdtr108@login02 fortran]$ cd ~/
+[xdtr108@login02 ~]$
+```
+
+Then we'll replace our 4pi python program with the OpenMP parallelized fortran program `pi_omp.x`. 
+
+
+
 #### `numactl` - Control NUMA policy for processes or shared memory
 
 `numactl` runs processes with a specific NUMA scheduling or memory placement policy.  The policy is set for a command and is inherited by all of its children.  In addition it can set persistent policy for shared memory segments or files.
