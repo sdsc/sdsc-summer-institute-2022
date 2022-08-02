@@ -131,7 +131,6 @@ Last login: Tue Aug  2 09:28:42 2022 from 10.21.0.19
 ```
 
 ```
-```
 #!/usr/bin/env bash
 
 #SBATCH --job-name=estimate-pi
@@ -153,7 +152,6 @@ taskset -c 64 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 taskset -c 96 python3 "${HOME}/4pi/python/pi.py" 100000000 &
 
 wait
-```
 ```
 
 #### `numactl` - Control NUMA policy for processes or shared memory
