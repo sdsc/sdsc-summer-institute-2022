@@ -15,6 +15,8 @@ Expanse has two (non-refundabled) preemptible partitions that provide you with a
 - **preempt**
 - **gpu-preempt**
 
+https://www.sdsc.edu/support/user_guides/expanse.html
+
 #
 
 Next - [Distributed high-throughput computing](DHTC.md)
