@@ -45,6 +45,8 @@ wait
 
 The Linux scheduler works well for simple workflows like the one above. However, for workflows with a large number of jobs, especially when each job may be running with multiple processes, the performance of the Linux scheduler may be unsatisfying, due to unbalanced workloads from different running jobs, improper process/thread affinity settings, etc.
 
+</br>
+
 #### `taskset` - set or retrieve a process's CPU affinity
 
 `taskset`  is  used  to  set  or  retrieve  the CPU affinity of a running process given its pid, or to launch a new  command  with  a  given  CPU affinity.  CPU affinity is a scheduler property that "binds" a process to a given set of CPUs on the system.  The Linux scheduler  will  honor the  given CPU affinity and the process will not run on any other CPUs.
@@ -212,6 +214,8 @@ time -p wait
 
 
 https://hexus.net/tech/reviews/cpu/133244-amd-epyc-7742-2p-rome-server
+
+</br>
 
 #### `numactl` - Control NUMA policy for processes or shared memory
 
