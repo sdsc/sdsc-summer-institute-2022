@@ -9,12 +9,21 @@
 
 ## Distributed high-throughput computing
 
-<img src='https://osg-htc.org/assets/images/logos/OSG-logo.svg' width='50%' height='50%'/>
+</br>
+
+![OSG logo](osg_logo.png)
 
 - https://en.wikipedia.org/wiki/Open_Science_Grid_Consortium
 - https://osg-htc.org
 - https://indico.fnal.gov/event/47040/contributions/208066/attachments/140536/176648/2021OSGAHM_StateOfImpactedResearch.pdf
 
+</br>
+
+![HTCondor](https://htcondor.org/assets/images/HTCondor_red_blk_classic.png)
+
+- https://htcondor.org
+
+</br>
 
 ![PATh Facility Map](https://raw.githubusercontent.com/CHTC/Articles/main/images/PATh-Facility-Map.jpg)
 
