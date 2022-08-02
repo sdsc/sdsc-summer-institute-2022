@@ -13,7 +13,7 @@
 
 - https://en.wikipedia.org/wiki/Open_Science_Grid_Consortium
 - https://osg-htc.org
-
+- https://indico.fnal.gov/event/47040/contributions/208066/attachments/140536/176648/2021OSGAHM_StateOfImpactedResearch.pdf
 
 
 ![PATh Facility Map](https://raw.githubusercontent.com/CHTC/Articles/main/images/PATh-Facility-Map.jpg)
