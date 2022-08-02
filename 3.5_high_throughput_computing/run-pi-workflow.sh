@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 
 #SBATCH --job-name=run-pi-workflow
 #SBATCH --account=crl155
