@@ -314,6 +314,17 @@ MaxArraySize=1000
 ```
 
 ```
+[xdtr108@login01 ~]$ cat $SLURM_CONF | grep MaxJobCount
+MaxJobCount=40000
+```
+
+```
+[xdtr108@login01 ~]$ sacctmgr show qos
+```
+
+https://slurm.schedmd.com/high_throughput.html
+
+```
 #SBATCH --array=1-5
 
 declare -xir NUMBER_OF_SAMPLES="10**${SLURM_ARRAY_TASK_ID}"
