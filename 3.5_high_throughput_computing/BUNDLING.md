@@ -69,7 +69,15 @@ taskset: taskset: failed to set pid 1239685's affinity: failed to set pid 123968
 Invalid argument
 ```
 
-What went wrong?
+What went wrong? Are you the only person running on this node?
+
+```
+squeue -u $USER
+```
+
+```
+[xdtr108@login01 ~]$ squeue --nodelist=exp-14-54
+```
 
 ```
 [xdtr108@exp-14-54 ~]$ lscpu
