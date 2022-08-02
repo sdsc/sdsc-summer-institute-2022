@@ -14,7 +14,7 @@ Batch job dependencies are useful when you need to run multiple jobs in a partic
 SLURM's built-in job dependencies are used to defer the start of a job until the specified dependencies have been satisfied. They are specified with the `-d | --dependency` option to the `sbatch` command.
 
 ```
-sbatch --dependency=<dependency_list> example-batch-job.sh
+sbatch --dependency=<dependency_list> dependent-job.sh
 ```
 
 The format of the `<dependency_list>` is of the form  `<type:job_id[:job_id][,type:job_id[:job_id]]>` or `<type:job_id[:job_id][?type:job_id[:job_id]]>`. Note that all dependencies must be satisfied if the `,` separator is used. In contrast, any dependency may be satisfied if the `?` separator is used. Only one separator may be used. Many jobs can share the same dependency and these jobs may even belong to different users. Once a job dependency fails due to the termination state of a preceding job, *the dependent job will never be run.*
