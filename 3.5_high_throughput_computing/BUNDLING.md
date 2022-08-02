@@ -49,40 +49,23 @@ The Linux scheduler works well for simple workflows like the one above. However,
 
 `taskset`  is  used  to  set  or  retrieve  the CPU affinity of a running process given its pid, or to launch a new  command  with  a  given  CPU affinity.  CPU affinity is a scheduler property that "binds" a process to a given set of CPUs on the system.  The Linux scheduler  will  honor the  given CPU affinity and the process will not run on any other CPUs.
 
+```
+...
+#SBATCH --output=%x.o%j.%N
+
+module purge
+
+taskset -c 0 python3 "${HOME}/4pi/python/pi.py" 100000000 &
+taskset -c 1 python3 "${HOME}/4pi/python/pi.py" 100000000 &
+taskset -c 2 python3 "${HOME}/4pi/python/pi.py" 100000000 &
+taskset -c 3 python3 "${HOME}/4pi/python/pi.py" 100000000 &
+
+wait
+```
+
 #### `numactl` - Control NUMA policy for processes or shared memory
 
-```
-[xdtr108@login02 ~]$ ls
-4pi  compute-pi-stats.sh  estimate-pi.sh  run-pi-workflow.sh
-[xdtr108@login02 ~]$ cd 4pi/
-[xdtr108@login02 4pi]$ ls
-bash  c  fortran  LICENSE.md  python  README.md
-[xdtr108@login02 4pi]$ cd fortran/
-[xdtr108@login02 fortran]$ ls
-Makefile  pi.f90  pi_omp.f90
-[xdtr108@login02 fortran]$ cat Makefile 
-COMPILER := gfortran
-COMPILER_OPTIONS := -ffree-form -ffree-line-length-none -fimplicit-none \
-                    -O3 -mtune=native -fdefault-integer-8 -fdefault-real-8
-
-all: pi.x pi_omp.x
-
-pi.x: pi.o
-	$(COMPILER) $(COMPILER_OPTIONS) -o pi.x pi.o
-
-pi.o: pi.f90
-	$(COMPILER) $(COMPILER_OPTIONS) -c pi.f90
-
-pi_omp.x: pi_omp.o
-	$(COMPILER) $(COMPILER_OPTIONS) -fopenmp -o pi_omp.x pi_omp.o
-
-pi_omp.o: pi_omp.f90
-	$(COMPILER) $(COMPILER_OPTIONS) -fopenmp -c pi_omp.f90
-
-.PHONY: clean
-clean:
-	rm *.x *.o
-```
+`numactl` runs processes with a specific NUMA scheduling or memory placement policy.  The policy is set for a command and is inherited by all of its children.  In addition it can set persistent policy for shared memory segments or files.
 
 
 http://www.hpc.acad.bg/numactl/
