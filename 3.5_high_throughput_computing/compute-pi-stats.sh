@@ -11,11 +11,11 @@
 #SBATCH --time=00:30:00
 #SBATCH --output=%x.o%j.%N
 
-declare -xir ARRAY_JOB_ID="${1}"
+declare -xir DEPENDENT_SLURM_ARRAY_JOB_ID="$(echo ${SLURM_JOB_DEPENDENCY} | grep -o '[[:digit:]]*')"
 
 module reset
 module load gcc
 module load gnuplot
 
-echo "$(cat estimate-pi.o${ARRAY_JOB_ID}.*)" | \
+echo "$(cat estimate-pi.o${DEPENDENT_SLURM_ARRAY_JOB_ID}.*)" | \
   gnuplot -e 'stats "-"; print STATS_mean, STATS_stddev'
