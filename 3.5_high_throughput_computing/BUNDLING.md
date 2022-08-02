@@ -273,6 +273,7 @@ node   0   1   2   3   4   5   6   7
 
 - https://cvw.cac.cornell.edu/hybrid/numactl
 - https://www.glennklockwood.com/hpc-howtos/process-affinity.html
+- https://dl.acm.org/doi/fullHtml/10.1145/3437359.3465569
 
 ### GNU parallel
 
