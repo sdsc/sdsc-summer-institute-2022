@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 #SBATCH --job-name=compute-pi-stats
-#SBATCH --account=sds184
+#SBATCH --account=crl155
+#SBATCH --reservation=SI2022DAY2
 #SBATCH --partition=shared
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
