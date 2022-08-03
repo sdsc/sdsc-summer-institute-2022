@@ -7,7 +7,7 @@ You should be already familiar with creating Pull Requests, merging, and rebasin
 - https://www.youtube.com/playlist?list=PLSO-KmvudTTtQ19g7ATjnIJja2EsC2dQN
 
 
-## Step - 1
+## Step 0 - Preparation
 
 Login to Expanse.
 
@@ -33,7 +33,20 @@ Resetting modules to system default. Reseting $MODULEPATH back to system default
 [xdtr108@login01 ~]$
 ```
 
-Now that your default software environment is set. We'll take a quick look at the [GitHub CLI](https://cli.github.com), which we'll use today as part of the exercise. 
+Now that your default software environment is set. We'll take a quick look at the [GitHub CLI](https://cli.github.com), which we have installed on Expanse in a module ...
+
+```
+[xdtr108@login01 ~]$ module load gh
+[xdtr108@login01 ~]$ gh --version
+gh version 1.13.1 (2021-07-20)
+https://github.com/cli/cli/releases/tag/v1.13.1
+
+
+A new release of gh is available: 1.13.1 → v2.14.3
+https://github.com/cli/cli/releases/tag/v2.14.3
+```
+
+... and use today as part of the exercise. 
 
 #
 
