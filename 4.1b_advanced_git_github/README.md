@@ -322,6 +322,28 @@ Your branch is up to date with 'origin/main'.
 
 ... and resume where Andrea left off with trying to fix the bug now that we've found the commit with the problematic changes. 
 
+```
+[xdtr108@login01 conversion_tofix]$ git show 363a5723a33f65afa189ea643fa04a39327bf0c4
+commit 363a5723a33f65afa189ea643fa04a39327bf0c4
+Author: Andrea Zonca <code@andreazonca.com>
+Date:   Tue Aug 1 08:54:27 2017 -0700
+
+    remove extra digits
+
+diff --git a/conversion.py b/conversion.py
+index eb1e0a6..247f0f6 100644
+--- a/conversion.py
++++ b/conversion.py
+@@ -5,5 +5,5 @@ def dollars2cents(dollars):
+ 
+ def gallons2liters(gallons):
+     """Convert gallons to liters"""
+-    liters = gallons * 3.78541
++    liters = gallons * 3.785
+     return liters
+[xdtr108@login01 conversion_tofix]$
+```
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
