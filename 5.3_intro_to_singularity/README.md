@@ -14,4 +14,4 @@ We'll start the last session of today with a quick Zoom poll / survey.
 - Have you previously developed and run your own custom software containers? [ yes / no ]
 - What operating system do you use daily on your personal and/or work computer(s)? [ Linux / macOS / Windows / all of the above / none of the above ]
 - Have you ever run your own Linux (virtual) machine? [ yes / no ]
-- Have you ever seen [The Matrix](https://en.wikipedia.org/wiki/The_Matrix)?
+- Have you ever seen [The Matrix](https://en.wikipedia.org/wiki/The_Matrix)? [ yes / no / idk]
