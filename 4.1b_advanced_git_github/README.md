@@ -426,7 +426,9 @@ https://github.com/zonca/conversion_tofix/pull/70
 [xdtr108@login01 conversion_tofix]$
 ```
 
+You can then confirm your pull request was created and submitted to Andrea's original GitHub repository.
 
+- https://github.com/zonca/conversion_tofix/pulls
 
 #
 
