@@ -160,6 +160,43 @@ Traceback (most recent call last):
 AssertionError
 ```
 
+Yup! There is a bug! 
+
+As a quick check, let's roll back the code to the last commit and re-run the test to see if the bug is still there.
+
+```
+git checkout HEAD~1
+```
+
+```
+[xdtr108@login01 conversion_tofix]$ git checkout HEAD~1
+Note: switching to 'HEAD~1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at c4379b9 module load gh
+[xdtr108@login01 conversion_tofix]$ python3 test_conversion.py 
+Traceback (most recent call last):
+  File "test_conversion.py", line 7, in <module>
+    assert conversion.gallons2liters(1) == 3.78541
+AssertionError
+[xdtr108@login01 conversion_tofix]$
+```
+
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
