@@ -1,4 +1,4 @@
-# Session 4.1b Advanced Git & Github
+# Session 4.1b Advanced Git & GitHub
 
 You should be already familiar with creating pull requests, merging, and rebasing branches
 
