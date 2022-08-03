@@ -8,6 +8,7 @@ NOTEBOOK_FOLDER=$(pwd -P)
 cd 1_dask_tutorial
 rm -f data
 ln -s /expanse/lustre/projects/sds166/zonca/dask_tutorial_data data
+cd ../
 # Use the user home
 # NOTEBOOK_FOLDER=${HOME}
 RESERVATION=SI2022DAY3

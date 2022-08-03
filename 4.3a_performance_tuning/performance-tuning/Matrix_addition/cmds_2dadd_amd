@@ -1,0 +1,30 @@
+module load aocc
+
+flang -march=znver2        -o dmadd_good_df dmadd_good.f
+flang -march=znver2 -O0    -o dmadd_good_O0 dmadd_good.f
+flang -march=znver2 -O1    -o dmadd_good_O1 dmadd_good.f
+flang -march=znver2 -O2    -o dmadd_good_O2 dmadd_good.f
+flang -march=znver2 -O3    -o dmadd_good_O3 dmadd_good.f
+
+flang -march=znver2        -o dmadd_bad_df dmadd_bad.f
+flang -march=znver2 -O0    -o dmadd_bad_O0 dmadd_bad.f
+flang -march=znver2 -O1    -o dmadd_bad_O1 dmadd_bad.f
+flang -march=znver2 -O2    -o dmadd_bad_O2 dmadd_bad.f
+flang -march=znver2 -O3    -o dmadd_bad_O3 dmadd_bad.f
+
+echo 'PROPER'
+
+./dmadd_good_df 30000
+./dmadd_good_O0 30000
+./dmadd_good_O1 30000
+./dmadd_good_O2 30000
+./dmadd_good_O3 30000
+
+echo 'IMPROPER'
+
+./dmadd_bad_df 30000
+./dmadd_bad_O0 30000
+./dmadd_bad_O1 30000
+./dmadd_bad_O2 30000
+./dmadd_bad_O3 30000
+

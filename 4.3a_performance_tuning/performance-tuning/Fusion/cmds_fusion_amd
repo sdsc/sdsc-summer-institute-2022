@@ -1,0 +1,30 @@
+module load aocc
+
+flang -march=znver2        -o fused_loops_df fused_loops.f
+flang -march=znver2 -O0    -o fused_loops_O0 fused_loops.f
+flang -march=znver2 -O1    -o fused_loops_O1 fused_loops.f
+flang -march=znver2 -O2    -o fused_loops_O2 fused_loops.f
+flang -march=znver2 -O3    -o fused_loops_O3 fused_loops.f
+
+flang -march=znver2        -o unfused_loops_df unfused_loops.f
+flang -march=znver2 -O0    -o unfused_loops_O0 unfused_loops.f
+flang -march=znver2 -O1    -o unfused_loops_O1 unfused_loops.f
+flang -march=znver2 -O2    -o unfused_loops_O2 unfused_loops.f
+flang -march=znver2 -O3    -o unfused_loops_O3 unfused_loops.f
+
+echo 'FUSED'
+
+./fused_loops_df 30000
+./fused_loops_O0 30000
+./fused_loops_O1 30000
+./fused_loops_O2 30000
+./fused_loops_O3 30000
+
+echo 'UNFUSED'
+
+./unfused_loops_df 30000
+./unfused_loops_O0 30000
+./unfused_loops_O1 30000
+./unfused_loops_O2 30000
+./unfused_loops_O3 30000
+

@@ -1,0 +1,10 @@
+module load aocc
+
+clang -march=znver2 -O3 -o with_force_red    with_force_red.c
+clang -march=znver2 -O3 -o without_force_red without_force_red.c
+
+echo 'With force reduction'
+./with_force_red     100000 0.01
+echo
+echo 'Without force reduction'
+./without_force_red  100000 0.01
