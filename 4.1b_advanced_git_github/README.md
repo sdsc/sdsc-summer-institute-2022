@@ -381,6 +381,21 @@ Auto-merging conversion.py
 [xdtr108@login01 conversion_tofix]$
 ```
 
+Now re-run the test.
+
+```
+[xdtr108@login01 conversion_tofix]$ python3 test_conversion.py 
+Testing completed
+[xdtr108@login01 conversion_tofix]$ echo $?
+0
+[xdtr108@login01 conversion_tofix]$
+```
+
+It's fixed!
+
+## Step 4 - Create a pull request (with `gh`)
+
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
