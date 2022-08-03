@@ -344,6 +344,10 @@ index eb1e0a6..247f0f6 100644
 [xdtr108@login01 conversion_tofix]$
 ```
 
+## Step 3 - Fix the bug in a (new) branch
+
+
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
