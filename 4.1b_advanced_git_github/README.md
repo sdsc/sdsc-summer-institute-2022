@@ -9,8 +9,28 @@ You should be already familiar with creating Pull Requests, merging, and rebasin
 
 ## Step - 1
 
+Login to Expanse.
+
 ```
 $ ssh expanse
+```
+
+Check the (default) loaded modules.
+
+```
+[xdtr108@login01 ~]$ module list
+
+Currently Loaded Modules:
+  1) shared       3) slurm/expanse/21.08.8   5) DefaultModules
+  2) cpu/0.15.4   4) sdsc/1.0
+```
+
+If for whatever reason you don't see the above modules listed, then please reset your environment to the default set of modules.
+
+```
+[xdtr108@login01 ~]$ module reset
+Resetting modules to system default. Reseting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+[xdtr108@login01 ~]$
 ```
 
 #
