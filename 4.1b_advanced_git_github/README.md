@@ -46,7 +46,18 @@ A new release of gh is available: 1.13.1 → v2.14.3
 https://github.com/cli/cli/releases/tag/v2.14.3
 ```
 
-... and use today as part of the exercise. 
+... and use today as part of the exercise. With the `gh` module loaded, go ahead and run the following command to being the authentication process with GitHub.
+
+```
+[xdtr108@login01 ~]$ gh auth login
+? What account do you want to log into?  [Use arrows to move, type to filter]
+> GitHub.com
+  GitHub Enterprise Server
+```
+
+When you reach the time to enter your one-time code, here is the link to complete the authentication process. 
+
+- https://github.com/login/device
 
 #
 
