@@ -1,7 +1,155 @@
 # Session 4.1b Advanced Git & Github
 
-**Date: Wednesday, August 3, 2022**
+You should be already familiar with creating Pull Requests, merging, and rebasing branches
 
-[Marty Kandes]() (mkandes at ucsd.edu)
+- https://github.com/sdsc/sdsc-summer-institute-2021/tree/main/1.4b_Advanced_Github
+- https://github.com/zonca/conversion_tofix
+- https://www.youtube.com/playlist?list=PLSO-KmvudTTtQ19g7ATjnIJja2EsC2dQN
 
-You should be already familiar with creating Pull Requests, merging, and rebasing branches 
+
+## Step 0 - Preparation
+
+Login to Expanse.
+
+```
+$ ssh expanse
+```
+
+Check the (default) loaded modules.
+
+```
+[xdtr108@login01 ~]$ module list
+
+Currently Loaded Modules:
+  1) shared       3) slurm/expanse/21.08.8   5) DefaultModules
+  2) cpu/0.15.4   4) sdsc/1.0
+```
+
+If for whatever reason you don't see the above modules listed, then please reset your environment to the default set of modules.
+
+```
+[xdtr108@login01 ~]$ module reset
+Resetting modules to system default. Reseting $MODULEPATH back to system default. All extra directories will be removed from $MODULEPATH.
+[xdtr108@login01 ~]$
+```
+
+Now that your default software environment is set. We'll take a quick look at the [GitHub CLI](https://cli.github.com), which we have installed on Expanse in a module ...
+
+```
+[xdtr108@login01 ~]$ module load gh
+[xdtr108@login01 ~]$ gh --version
+gh version 1.13.1 (2021-07-20)
+https://github.com/cli/cli/releases/tag/v1.13.1
+
+
+A new release of gh is available: 1.13.1 → v2.14.3
+https://github.com/cli/cli/releases/tag/v2.14.3
+```
+
+... and use today as part of the exercise. With the `gh` module loaded, go ahead and run the following command to being the authentication process with GitHub.
+
+```
+[xdtr108@login01 ~]$ gh auth login
+? What account do you want to log into?  [Use arrows to move, type to filter]
+> GitHub.com
+  GitHub Enterprise Server
+```
+
+One important change that I would recommend here is that you **add a passphrase** to your SSH keys for additional security. 
+
+```
+[xdtr108@login01 ~]$ gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? SSH
+? Generate a new SSH key to add to your GitHub account? Yes
+? Enter a passphrase for your new SSH key (Optional) *******
+```
+
+Then, when you reach the time to enter your one-time code, here is the link to complete the authentication process. 
+
+- https://github.com/login/device
+
+Your final output after completing the GitHub CLI authentication process should look something like what you see here below. 
+
+```
+[xdtr108@login01 ~]$ gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? SSH
+? Generate a new SSH key to add to your GitHub account? Yes
+? Enter a passphrase for your new SSH key (Optional) *******
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 210E-C460
+- Press Enter to open github.com in your browser... 
+! Failed opening a web browser at https://github.com/login/device
+  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
+  Please try entering the URL in your browser manually
+✓ Authentication complete. Press Enter to continue...
+
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+✓ Uploaded the SSH key to your GitHub account: /home/xdtr108/.ssh/id_ed25519.pub
+✓ Logged in as mkandes
+```
+
+Once you've completed the authentication process. You can clone the example repository with the following command.
+
+```
+gh repo clone zonca/conversion_tofix
+```
+
+If you've secured your new SSH keypair with a passphrase, you'll be asked to enter it now. 
+
+```
+[xdtr108@login01 ~]$ gh repo clone zonca/conversion_tofix
+Cloning into 'conversion_tofix'...
+The authenticity of host 'github.com (192.30.255.112)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,192.30.255.112' (ECDSA) to the list of known hosts.
+Enter passphrase for key '/home/xdtr108/.ssh/id_ed25519': 
+remote: Enumerating objects: 102, done.
+remote: Counting objects: 100% (26/26), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 102 (delta 22), reused 15 (delta 15), pack-reused 76
+Receiving objects: 100% (102/102), 19.14 KiB | 2.73 MiB/s, done.
+Resolving deltas: 100% (55/55), done.
+```
+
+You should now have a copy of the example repository cloned to your HOME directory.
+
+```
+[xdtr108@login01 ~]$ ls
+conversion_tofix
+[xdtr108@login01 ~]$ cd conversion_tofix/
+[xdtr108@login01 conversion_tofix]$ ls
+conversion.py  LICENSE  README.md  test_conversion.py
+[xdtr108@login01 conversion_tofix]$ pwd
+/home/xdtr108/conversion_tofix
+```
+
+The final step of preparation for this session is to configure your standard `git` configuration variables, namely, your `user.name`, your `user.email`, and your preferred `core.editor`.
+
+```
+[xdtr108@login01 conversion_tofix]$ git config --global user.name 'Marty Kandes'
+[xdtr108@login01 conversion_tofix]$ git config --global user.email 'mkandes@sdsc.edu'
+[xdtr108@login01 conversion_tofix]$ git config --global core.editor 'vim'
+[xdtr108@login01 conversion_tofix]$ git config --list
+user.name=Marty Kandes
+user.email=mkandes@sdsc.edu
+core.editor=vim
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=git@github.com:zonca/conversion_tofix.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+```
+
+## Step 1 - Make a test
+
+#
+
+[Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
