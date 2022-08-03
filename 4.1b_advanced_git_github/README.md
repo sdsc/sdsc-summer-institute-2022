@@ -162,7 +162,7 @@ AssertionError
 
 Yup! There is a bug! 
 
-As a quick check, let's roll back the code to the last commit and re-run the test to see if the bug is still there.
+As a quick check, let's roll back the code to the previous commit and re-run the test to see if the bug is still there.
 
 ```
 git checkout HEAD~1
@@ -196,6 +196,14 @@ AssertionError
 [xdtr108@login01 conversion_tofix]$
 ```
 
+Unfortuantely, we find that the bug is still there. So, let's reset the repository to its original state before we proceed with the next step in our debugging process.
+
+```
+[xdtr108@login01 conversion_tofix]$ git checkout main
+Previous HEAD position was c4379b9 module load gh
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
 
 #
 
