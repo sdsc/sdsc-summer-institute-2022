@@ -14,7 +14,7 @@ Today's (last) session is quite short. So, I'd like to start with something a bi
 - Have you previously developed and run your own custom software containers? [ yes / no ]
 - What operating system do you use daily on your personal and/or work computer(s)? [ Linux / macOS / Windows / all of the above / none of the above ]
 - Have you ever run your own Linux (virtual) machine? [ yes / no ]
-- Have you ever seen [The Matrix](https://en.wikipedia.org/wiki/The_Matrix)? [ yes / no / idk]
+- Have you ever seen [The Matrix](https://en.wikipedia.org/wiki/The_Matrix)? [ yes / no / idk ]
 
 </br>
 
