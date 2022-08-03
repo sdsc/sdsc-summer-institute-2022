@@ -205,6 +205,44 @@ Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 ```
 
+## Step 2 - Find the commit with the bug
+
+You can find the problematic commit reference in Andrea's notes. However, let's try `git bisect` --- it might be helpful for some of us not familiar with this approach. To get started, we need to have reasonable guess as to when the conversion function worked as expected, prior to the bug being introduced. If we review the `git log` or commit history on GitHub, can you find a commit that might be a candidate? For example, what about this commit?
+
+- https://github.com/zonca/conversion_tofix/commit/15d81c7667e288a3d1f934e2e96414fb65af817b
+
+It looks like Google might agree this is using the correct conversion factor.
+
+- https://www.google.com/search?channel=fs&client=ubuntu&q=gallons+to+litres
+
+So, let's proceed assuming that at this commit, the bug had not yet been introduced. Start your bisect ...
+
+```
+git bisect start
+```
+
+... and then label the current commit the **bad** commit ...
+
+```
+git bisect bad
+```
+
+... while labeling the one we found in the commit history above the **good** commit ...
+
+```
+git bisect good 15d81c7667e288a3d1f934e2e96414fb65af817b
+```
+
+You should now find yourself here ...
+
+```
+[xdtr108@login01 conversion_tofix]$ git bisect start
+[xdtr108@login01 conversion_tofix]$ git bisect bad
+[xdtr108@login01 conversion_tofix]$ git bisect good 15d81c7667e288a3d1f934e2e96414fb65af817b
+Bisecting: 8 revisions left to test after this (roughly 3 steps)
+[1b32d7ba32ddce225444b43ecc8750b754dc58a4] mention git log --graph
+[xdtr108@login01 conversion_tofix]
+```
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
