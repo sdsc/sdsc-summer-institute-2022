@@ -150,6 +150,16 @@ branch.main.merge=refs/heads/main
 
 ## Step 1 - Make a test
 
+Once you've configured everything in your HOME directory, you can begin the series of exercies. Start by running the test, which should fail.
+
+```
+[xdtr108@login01 conversion_tofix]$ python3 test_conversion.py 
+Traceback (most recent call last):
+  File "test_conversion.py", line 7, in <module>
+    assert conversion.gallons2liters(1) == 3.78541
+AssertionError
+```
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
