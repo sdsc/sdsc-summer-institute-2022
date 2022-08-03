@@ -114,7 +114,38 @@ remote: Compressing objects: 100% (11/11), done.
 remote: Total 102 (delta 22), reused 15 (delta 15), pack-reused 76
 Receiving objects: 100% (102/102), 19.14 KiB | 2.73 MiB/s, done.
 Resolving deltas: 100% (55/55), done.
-[xdtr108@login01 ~]$
+```
+
+You should now have a copy of the example repository cloned to your HOME directory.
+
+```
+[xdtr108@login01 ~]$ ls
+conversion_tofix
+[xdtr108@login01 ~]$ cd conversion_tofix/
+[xdtr108@login01 conversion_tofix]$ ls
+conversion.py  LICENSE  README.md  test_conversion.py
+[xdtr108@login01 conversion_tofix]$ pwd
+/home/xdtr108/conversion_tofix
+```
+
+The final step of preparation for this session is to configure your standard `git` configuration variables, namely, your `user.name`, your `user.email`, and your preferred `core.editor`.
+
+```
+[xdtr108@login01 conversion_tofix]$ git config --global user.name 'Marty Kandes'
+[xdtr108@login01 conversion_tofix]$ git config --global user.email 'mkandes@sdsc.edu'
+[xdtr108@login01 conversion_tofix]$ git config --global core.editor 'vim'
+[xdtr108@login01 conversion_tofix]$ git config --list
+user.name=Marty Kandes
+user.email=mkandes@sdsc.edu
+core.editor=vim
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=git@github.com:zonca/conversion_tofix.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
 ```
 
 #
