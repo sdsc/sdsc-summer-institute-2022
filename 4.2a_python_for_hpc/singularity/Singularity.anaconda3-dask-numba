@@ -1,0 +1,62 @@
+Bootstrap: oras
+From: ghcr.io/mkandes/naked-singularity:anaconda3-py39-2021.11-ubuntu-20.04
+
+
+%labels
+
+    APPLICATION_NAME anaconda3dasknumba
+
+    AUTHOR_NAME Andrea Zonca
+    AUTHOR_EMAIL zonca@sdsc.edu
+
+    LAST_UPDATED 20220708
+
+%setup
+
+%environment
+    export CONDA_DISTRIBUTION='anaconda'
+    export CONDA_VERSION='3'
+    export CONDA_PYTHON_VERSION='py39'
+    export CONDA_INSTALL_DIR="/opt/${CONDA_DISTRIBUTION}${CONDA_VERSION}"
+
+    # Set PATH to conda distribution
+    export PATH="${CONDA_INSTALL_DIR}/bin:${PATH}"
+
+%post -c /bin/bash
+
+    # Set operating system mirror URL
+    export MIRRORURL='http://us.archive.ubuntu.com/ubuntu'
+
+    # Set operating system version
+    export OSVERSION='bionic'
+
+    # Set system locale
+    export LC_ALL='C'
+
+    # Set debian frontend interface
+    export DEBIAN_FRONTEND='noninteractive'
+
+    export CONDA_INSTALL_DIR="/opt/${CONDA_DISTRIBUTION}${CONDA_VERSION}"
+
+    "${CONDA_INSTALL_DIR}/bin/conda" install -c conda-forge --quiet --yes \
+    'jupyterlab' \
+    'dask' \
+    'dask-labextension' \
+    'distributed' \
+    'numba' \
+    'python-graphviz' \
+    'pandas' \
+    'matplotlib' \
+    'Pillow' \
+    'zarr' && \
+    "${CONDA_INSTALL_DIR}/bin/conda" clean --all -f -y && \
+    "${CONDA_INSTALL_DIR}/bin/jupyter" serverextension enable dask_labextension
+
+    # Update database for mlocate
+    updatedb
+
+%files
+
+%runscript
+
+%test
