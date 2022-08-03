@@ -294,6 +294,22 @@ Bisecting: 0 revisions left to test after this (roughly 0 steps)
 [xdtr108@login01 conversion_tofix]$
 ```
 
+The test passed! Mark the last bisected commit as good and you've found the commit where the bug was introduced.
+
+```
+[xdtr108@login01 conversion_tofix]$ git bisect good
+363a5723a33f65afa189ea643fa04a39327bf0c4 is the first bad commit
+commit 363a5723a33f65afa189ea643fa04a39327bf0c4
+Author: Andrea Zonca <code@andreazonca.com>
+Date:   Tue Aug 1 08:54:27 2017 -0700
+
+    remove extra digits
+
+ conversion.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[xdtr108@login01 conversion_tofix]$
+```
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
