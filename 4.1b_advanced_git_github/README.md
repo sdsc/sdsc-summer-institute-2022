@@ -346,7 +346,40 @@ index eb1e0a6..247f0f6 100644
 
 ## Step 3 - Fix the bug in a (new) branch
 
+Start by creating the (new) branch where we'll fix the bug ... 
 
+```
+git checkout -b fix_bug
+```
+
+... and then try the quick fix with a `git revert`.
+
+
+```
+git revert 363a5723a33f65afa189ea643fa04a39327bf0c4
+```
+
+```
+Revert "remove extra digits"
+
+This reverts commit 363a5723a33f65afa189ea643fa04a39327bf0c4.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch fix_bug
+# Changes to be committed:
+#       modified:   conversion.py
+#
+```
+
+```
+[xdtr108@login01 conversion_tofix]$ git revert 363a5723a33f65afa189ea643fa04a39327bf0c4
+Auto-merging conversion.py
+[fix_bug 2a9c7cb] Revert "remove extra digits"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[xdtr108@login01 conversion_tofix]$
+```
 
 #
 
