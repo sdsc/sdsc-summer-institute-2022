@@ -310,6 +310,18 @@ Date:   Tue Aug 1 08:54:27 2017 -0700
 [xdtr108@login01 conversion_tofix]$
 ```
 
+Now you can reset the repository to its original state with the `git bisect reset` command ...
+
+```
+[xdtr108@login01 conversion_tofix]$ git bisect reset
+Previous HEAD position was 81c6aec add docstrings
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+[xdtr108@login01 conversion_tofix]$
+```
+
+... and resume where Andrea left off with trying to fix the bug now that we've found the commit with the problematic changes. 
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
