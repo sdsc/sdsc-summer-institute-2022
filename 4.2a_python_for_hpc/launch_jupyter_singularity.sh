@@ -4,6 +4,10 @@ SIMG='/expanse/lustre/projects/sds166/zonca/dask-numba-si22.sif'
 ACCOUNT=crl155
 # Use current folder
 NOTEBOOK_FOLDER=$(pwd -P)
+# Create link
+cd 1_dask_tutorial
+rm -f data
+ln -s /expanse/lustre/projects/sds166/zonca/dask_tutorial_data data
 # Use the user home
 # NOTEBOOK_FOLDER=${HOME}
 RESERVATION=SI2022DAY3
