@@ -1,8 +1,25 @@
-# Session 4.2a Pythona for HPC (Main Room) #
+## 2.1a. Python for HPC
+Andrea Zonca (@zonca), Senior Computational Scientist, SDSC
 
-**Date: Wednesday, August 3, 2022** 
+* [Introductory Slides on Google Docs](https://docs.google.com/presentation/d/1si5hoFxcZ5UOISjU3EzteFFDYT2AyhWX8ppvzmcKbps/edit?usp=sharing)
+* [Playlist on Youtube](https://youtube.com/playlist?list=PLSO-KmvudTTvSS_hEBSLdvKiteoTit541)
+* [Coordination slides](https://docs.google.com/presentation/d/1fxgeNcZeeoIOhVglI5enkFnoay35rdmkVQ2qGGFiqvg/edit?usp=sharing)
 
-[Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) (mtatineni at ucsd.edu)
+### Topics
 
-In this session we will introduce four key technologies in the Python ecosystem that provide significant benefits for scientific applications run in supercomputing environments. Previous Python experience is recommended but not required. 
-(1) First, we will learn how to speed up Python code compiling it on-the-fly with numba (2) Then we will introduce the threads, processes and the Global Interpreter lock and we will leverage first numba then dask to use all available cores on a machine (3) Finally we will distribute computations across multiple nodes launching dask workers on a separate Expanse job. 
+* Launch Jupyter Notebook on Expanse
+* Single-node Python code optimization with `numba`
+* Dask tutorial: overlap functions, introduction to dask array, dask dataframe, distributed scheduler, (optional dataframe storage)
+* Dask array in-depth tutorial for multi-core, out-of-core, multi-node computing
+
+### Requirements
+
+Basic Python knowledge is helpful but not strictly required.
+
+If you want to do a quick refresher of Python, take a look at the Software Carpentry tutorial material:
+
+http://swcarpentry.github.io/python-novice-gapminder/
+
+Or video recording:
+
+https://www.youtube.com/watch?v=JC8c-gE9uM0
