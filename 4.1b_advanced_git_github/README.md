@@ -92,6 +92,31 @@ Your final output after completing the GitHub CLI authentication process should 
 ✓ Logged in as mkandes
 ```
 
+Once you've completed the authentication process. You can clone the example repository with the following command.
+
+```
+gh repo clone zonca/conversion_tofix
+```
+
+If you've secured your new SSH keypair with a passphrase, you'll be asked to enter it now. 
+
+```
+[xdtr108@login01 ~]$ gh repo clone zonca/conversion_tofix
+Cloning into 'conversion_tofix'...
+The authenticity of host 'github.com (192.30.255.112)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,192.30.255.112' (ECDSA) to the list of known hosts.
+Enter passphrase for key '/home/xdtr108/.ssh/id_ed25519': 
+remote: Enumerating objects: 102, done.
+remote: Counting objects: 100% (26/26), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 102 (delta 22), reused 15 (delta 15), pack-reused 76
+Receiving objects: 100% (102/102), 19.14 KiB | 2.73 MiB/s, done.
+Resolving deltas: 100% (55/55), done.
+[xdtr108@login01 ~]$
+```
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
