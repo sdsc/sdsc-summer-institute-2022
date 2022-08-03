@@ -33,6 +33,8 @@ Resetting modules to system default. Reseting $MODULEPATH back to system default
 [xdtr108@login01 ~]$
 ```
 
+Now that your default software environment is set. We'll take a quick look at the [GitHub CLI](https://cli.github.com), which we'll use today as part of the exercise. 
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
