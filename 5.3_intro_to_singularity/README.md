@@ -1,7 +1,5 @@
 # 5.3 An Introduction to Singularity: Containers for Scientific and High-Performance Computing
 
-</br>
-
 Today's (last) session is quite short. So, I'd like to start with something a bit different --- a quick Zoom poll / survey. I'm hoping this will help me both focus our discussion for the next 30 minutes or so on the most relavent topics for the most people AND to help me adjust my training material for future presentations.  
 
 </br>
