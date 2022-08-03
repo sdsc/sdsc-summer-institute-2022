@@ -243,6 +243,57 @@ Bisecting: 8 revisions left to test after this (roughly 3 steps)
 [1b32d7ba32ddce225444b43ecc8750b754dc58a4] mention git log --graph
 [xdtr108@login01 conversion_tofix]
 ```
+
+Unfortunately, when you re-run the test at the bisected commit, you find it is still bad, so mark it as so ...
+
+```
+[xdtr108@login01 conversion_tofix]$ python3 test_conversion.py 
+Traceback (most recent call last):
+  File "test_conversion.py", line 7, in <module>
+    assert conversion.gallons2liters(1) == 3.78541
+AssertionError
+[xdtr108@login01 conversion_tofix]$ git bisect bad
+```
+
+... and again as needed until the test passes ...
+
+
+```
+[xdtr108@login01 conversion_tofix]$ git bisect start
+[xdtr108@login01 conversion_tofix]$ git bisect bad
+[xdtr108@login01 conversion_tofix]$ git bisect good 15d81c7667e288a3d1f934e2e96414fb65af817b
+Bisecting: 8 revisions left to test after this (roughly 3 steps)
+[1b32d7ba32ddce225444b43ecc8750b754dc58a4] mention git log --graph
+[xdtr108@login01 conversion_tofix]$ python3 test_conversion.py 
+Traceback (most recent call last):
+  File "test_conversion.py", line 7, in <module>
+    assert conversion.gallons2liters(1) == 3.78541
+AssertionError
+[xdtr108@login01 conversion_tofix]$ git bisect bad
+Bisecting: 3 revisions left to test after this (roughly 2 steps)
+[9f82cb99df91bab4ed2a36c6e469efc7f9d170ad] how to create pull requests
+[xdtr108@login01 conversion_tofix]$ python3 test_conversion.py 
+Traceback (most recent call last):
+  File "test_conversion.py", line 7, in <module>
+    assert conversion.gallons2liters(1) == 3.78541
+AssertionError
+[xdtr108@login01 conversion_tofix]$ git bisect bad
+Bisecting: 1 revision left to test after this (roughly 1 step)
+[363a5723a33f65afa189ea643fa04a39327bf0c4] remove extra digits
+[xdtr108@login01 conversion_tofix]$ python3 test_conversion.py 
+Traceback (most recent call last):
+  File "test_conversion.py", line 7, in <module>
+    assert conversion.gallons2liters(1) == 3.78541
+AssertionError
+[xdtr108@login01 conversion_tofix]$ git bisect bad
+Bisecting: 0 revisions left to test after this (roughly 0 steps)
+[81c6aecffa27183d4f504648a79a3ce6f6328253] add docstrings
+[xdtr108@login01 conversion_tofix]$ python3 test_conversion.py 
+[xdtr108@login01 conversion_tofix]$ echo $?
+0
+[xdtr108@login01 conversion_tofix]$
+```
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
