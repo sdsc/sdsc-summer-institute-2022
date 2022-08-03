@@ -55,9 +55,42 @@ https://github.com/cli/cli/releases/tag/v2.14.3
   GitHub Enterprise Server
 ```
 
-When you reach the time to enter your one-time code, here is the link to complete the authentication process. 
+One important change that I would recommend here is that you **add a passphrase** to your SSH keys for additional security. 
+
+```
+[xdtr108@login01 ~]$ gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? SSH
+? Generate a new SSH key to add to your GitHub account? Yes
+? Enter a passphrase for your new SSH key (Optional) *******
+```
+
+Then, when you reach the time to enter your one-time code, here is the link to complete the authentication process. 
 
 - https://github.com/login/device
+
+Your final output after completing the GitHub CLI authentication process should look something like what you see here below. 
+
+```
+[xdtr108@login01 ~]$ gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? SSH
+? Generate a new SSH key to add to your GitHub account? Yes
+? Enter a passphrase for your new SSH key (Optional) *******
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 210E-C460
+- Press Enter to open github.com in your browser... 
+! Failed opening a web browser at https://github.com/login/device
+  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
+  Please try entering the URL in your browser manually
+✓ Authentication complete. Press Enter to continue...
+
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+✓ Uploaded the SSH key to your GitHub account: /home/xdtr108/.ssh/id_ed25519.pub
+✓ Logged in as mkandes
+```
 
 #
 
