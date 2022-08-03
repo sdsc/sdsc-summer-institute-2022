@@ -18,7 +18,7 @@ Today's (last) session is quite short. So, I'd like to start with something a bi
 - https://www.sdsc.edu/event_items/202203_ExpanseWebinar-M.Kandes.html
 - https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/3.2_introduction_to_singularity
 - https://github.com/zonca/expanse_singularity
-- 
+
 #
 
 [Marty Kandes](https://github.com/mkandes), Computational & Data Science Research Specialist, HPC User Services Group, SDSC
