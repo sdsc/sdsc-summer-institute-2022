@@ -395,6 +395,38 @@ It's fixed!
 
 ## Step 4 - Create a pull request (with `gh`)
 
+```
+gh pr create
+```
+
+```
+[xdtr108@login01 conversion_tofix]$ gh pr create
+? Where should we push the 'fix_bug' branch?  [Use arrows to move, type to filter]
+> Create a fork of zonca/conversion_tofix
+  Skip pushing the branch
+  Cancel
+```
+
+```
+[xdtr108@login01 conversion_tofix]$ gh pr create
+? Where should we push the 'fix_bug' branch? Create a fork of zonca/conversion_tofix
+
+Creating pull request for mkandes:fix_bug into main in zonca/conversion_tofix
+
+? Title Revert "remove extra digits"
+? Body <Received>
+? What's next? Submit
+Enter passphrase for key '/home/xdtr108/.ssh/id_ed25519': 
+remote: 
+remote: 
+To github.com:mkandes/conversion_tofix.git
+ * [new branch]      HEAD -> fix_bug
+Branch 'fix_bug' set up to track remote branch 'fix_bug' from 'fork'.
+https://github.com/zonca/conversion_tofix/pull/70
+[xdtr108@login01 conversion_tofix]$
+```
+
+
 
 #
 
