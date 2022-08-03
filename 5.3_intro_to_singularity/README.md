@@ -2,7 +2,7 @@
 
 We'll start with a quick Zoom poll / survey.
 
-![Brewster's Millions](https://pbs.twimg.com/media/CuNfte0WEAAshOz?format=jpg&name=small)
+![Brewster's Millions](https://image-cdn.neatoshop.com/styleimg/92820/none/navy/default/430563-20;1567795896y.jpg)
 
 - Do you know what a software container is? [ yes / no / idk ]
 - Had you previously used a software container prior to this week? [ yes / no / idk ]
