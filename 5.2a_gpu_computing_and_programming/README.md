@@ -108,7 +108,7 @@ export CUDA_PATH=$NVHPCHOME/Linux_x86_64/22.2/cuda
 
 We can now move into the `device_query` source directory and compile the code with the `make` command. By default the Makefile will compile for all possible Nvidia GPU architectures. We restrict it to use SM version 7.0, which is the architecture of the V100 GPUs in Expanse:
 ```
-cd cuda-samples/Samples/1_Utilities/deviceQuery
+cd nvidia-cuda-samples/Samples/1_Utilities/deviceQuery
 ```
 ```
 make SMS=70
@@ -173,7 +173,7 @@ It is instructive to look at two different matrix multiplication examples and co
 
 First we will look at a hand-written matrix multiplication. This implementation features several performance optimizations such as minimize data transfer from GPU RAM to the GPU processors and increase floating point performance.
 ```
-cd cuda-samples/Samples/0_Introduction/matrixMul
+cd nvidia-cuda-samples/Samples/0_Introduction/matrixMul
 ```
 ```
 make SMS=70
@@ -209,7 +209,7 @@ export LIBRARY_PATH=$LIBRARY_PATH:$NVHPCHOME/Linux_x86_64/22.2/math_libs/lib64
 
 We are now ready to compile the example:
 ```
-cd cuda-samples/Samples/4_CUDA_Libraries/matrixMulCUBLAS
+cd nvidia-cuda-samples/Samples/4_CUDA_Libraries/matrixMulCUBLAS
 ```
 ```
 make SMS=70
@@ -235,5 +235,85 @@ NOTE: The CUDA Samples are not meant for performance measurements. Results may v
 ```
 
 How does the performance compare to the hand written (but optimized) matrix multiplication?
+
+
+### CUDA samples from slides
+
+Now take a look at the directory `cuda-samples`, which contains the examples that were discussed during the presentation.
+
+
+## Hands-on exercises on SDSC Expanse – OpenACC
+
+This Github repository also contains the OpenACC examples that were discussed during the presentation (directory `openacc-samples`).
+
+First, load the PGI compiler module
+```
+module load pgi
+```
+
+You should now have the PGI compiler available. We can check for example for the version of the PGI C compiler
+```
+pgcc --version
+```
+which should give the following output
+```
+pgcc (aka pgcc18) 20.4-0 LLVM 64-bit target on x86-64 Linux -tp skylake 
+PGI Compilers and Tools
+Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+```
+
+
+### `saxpy` OpenACC sample
+
+This example contains the C program `saxpy.c` that performs a single precision vector addition (y = a*x + y). It can be compiled with standard C compiler or PGI pgcc compiler with accelerator directives.
+```
+pgcc saxpy.c -o saxpy-cpu.x
+pgcc saxpy.c -acc -Minfo=accel -o saxpy-gpu.x
+```
+
+Compile and run the codes for CPU and GPU.
+
+
+### Jacobi solver of 2D Laplace equation,  OpenACC sample
+
+See subdirectory `laplace-2d`, which contains C and Fortran versions of a Jacobi solver for 2D Laplace equation including OpenMP and OpenACC versions.
+
+Compile the serial CPU code, the OpenMP parallelized CPU code, and the OpenACC GPU accelerated version of the code:
+```
+# Serial Fortran code
+pgf90 jacobi.f90 -fast -o jacobi-pgf90.x
+
+# Serial C code
+pgcc jacobi.c -fast -o jacobi-pgcc.x 
+
+# OpenMP parallel Fortran code
+pgf90 jacobi-omp.f90 -fast -mp -Minfo=mp -o jacobi-pgf90-omp.x 
+
+# OpenMP parallel C code
+pgcc jacobi-omp.c -fast -mp -Minfo=mp -o jacobi-pgfcc-omp.x 
+
+# OpenACC Fortran version
+pgf90 jacobi-acc.f90 -acc -Minfo=accel -o jacobi-pgf90-acc.x 
+
+# OpenACC C version
+pgcc jacobi-acc.c -acc -Minfo=accel -o jacobi-pgcc-acc.x  
+```
+
+Now benchmark the different versions. In order to use multiple cores with OpenACC, you need to set the corresponding environment variable:
+```
+# Example: Use 10 CPU cores with OpenMP Fortran version
+export OMP_NUM_THREADS=10
+./jacobi-pgf90-omp.x
+```
+
+In order to compute on the GPU code, just run the GPU executable:
+```
+# Example: Use GPU with OpenACC C version
+./jacobi-pgcc-acc.x
+```
+
+Compare the timings. How much faster is a single V100 GPU than 10 CPU cores?
+
+
 
 [Back to Top](#top)
