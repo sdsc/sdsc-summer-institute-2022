@@ -1,4 +1,4 @@
-[1] Copy all the examples to your home directory
+[1] Check for $HOME/PARALLEL directory. If it is already there (should be), skip this step. If the directory is missing copy it:
  
 cp -r /cm/shared/examples/sdsc/si/2022/PARALLEL $HOME
 
