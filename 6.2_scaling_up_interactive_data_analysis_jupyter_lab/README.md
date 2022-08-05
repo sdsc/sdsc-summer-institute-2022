@@ -15,6 +15,7 @@ Resources:
 -----
 ## TASK 1: Launch Jupyter Lab on Expanse using a CONDA environment
 1. Open a Terminal Window ("expanse Shell Access") through the [Expanse Portal](https://portal.expanse.sdsc.edu/) (use your trainxx login credentials)
+  * Note: At this point in time, the portal's Jupyter App form does not currently support all of the latest galyleo command-line options so you will learn to launch a notebook on Expanse using the Galyleo script.  
 
 2. Clone the Git repository df-parallel in your home directory
 ```
