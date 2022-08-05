@@ -14,7 +14,7 @@ Resources:
 
 -----
 ## TASK 1: Launch Jupyter Lab on Expanse using a CONDA environment
-1. Open a Terminal Window ("expanse Shell Access") through the [Expanse Portal](https://portal.expanse.sdsc.edu/) (use your xdtrxx login credentials)
+1. Open a Terminal Window ("expanse Shell Access") through the [Expanse Portal](https://portal.expanse.sdsc.edu/) (use your trainxx login credentials)
 
 2. Clone the Git repository df-parallel in your home directory
 ```
@@ -25,7 +25,7 @@ git clone https://github.com/sbl-sdsc/df-parallel.git
 
    This script will generate a URL for your Jupyter Lab session.
 ```
-galyleo launch --account crl155 --reservation SI2022DAY5 --qos gpu-shared-eot --partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 01:00:00 --conda-env df-parallel-gpu --conda-yml "${HOME}/df-parallel/environment-gpu.yml" --mamba
+galyleo launch --account <acount_number> --partition gpu-shared --cpus 10 --memory 92 --gpus 1 --time-limit 01:00:00 --conda-env df-parallel-gpu --conda-yml "${HOME}/df-parallel/environment-gpu.yml" --mamba
 ```
 
 4. Open a new tab in your web browser and paste the Jupyter Lab URL.  
@@ -45,7 +45,7 @@ For this task you will compare the runtime for a simple data analysis using 5 da
 
 2. Copy data files
 
-    Run the ```1-FetchDataSI2022.ipynb``` notebook to copy datasets to the local scratch disk on the GPU node.
+    Run the ```1-DownloadData.ipynb``` and ```1a-Csv2Parquet.ipynb``` notebooks to copy datasets to the local scratch disk on the GPU node.
 
 3. Run the Dataframe notebooks with a csv input file
 
@@ -63,7 +63,7 @@ For this task you will compare the runtime for a simple data analysis using 5 da
 
 4. Run Cuda Dataframe notebook with a parquet input file
 
-    In the 5-CudaDataframe.ipynb notebook, change the file format to parquet: ```file_format = "parquet"```'
+    In the 5-CudaDataframe.ipynb notebook, change the file format to parquet: ```file_format = "parquet"```
     
 > To get exact timings, run the notebook with the **```>>```** (Run All) button!
     
