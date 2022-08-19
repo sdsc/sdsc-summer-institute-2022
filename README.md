@@ -5,7 +5,7 @@ SDSC Summer Institute 2022 material
 This repository hosts all material and slides of the presentations at the Summer Institute
 
 ## Interactive Videos
-* A link to the recorded sessions will be made available a.s.a.p after the program has concluded
+* Recorded sessions can be found [here](https://education.sdsc.edu/training/interactive/202208_sdscsi/)
 * A full catalog of all our trainings at SDSC can be found [here](https://www.sdsc.edu/education_and_training/training_hpc.html#catalog).
 
 ## Aliases, symlinks and reservations
