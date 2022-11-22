@@ -47,13 +47,13 @@ All times are in Pacific time.
 ### Scalable Machine Learning (Tuesday, 06/28/22)<a name="agenda-scalable-ml"></a>
 | **TIME (Pacific time)**       | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
-| 8:00 AM – 8:05 AM   |  [3.1 Quick Welcome](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/3.1_quick_welcome_introduction)  | [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)  |
-| 8:05 AM – 9:15 AM   | 	[3.2 Introduction to Singularity: Containers for Scientific and <br>High-Performance Computing](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/3.2_introduction_to_singularity)  |  [Marty Kandes](https://www.linkedin.com/in/marty-kandes-b53a34144/)  |
-| 9:15 AM – 11:00 AM  |  [3.3 CONDA Environments and Jupyter Notebook on Expanse: Scalable & Reproducible Data Exploration and ML](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/3.3_conda_environments_and_jupyter_notebooks_on_expanse) | [Peter Rose](https://www.sdsc.edu/research/researcher_spotlight/rose_peter.html) |
+| 8:00 AM – 8:05 AM   |  [3.1 Security](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.1_security) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_1/)  | [Nicole Wolter](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)  |
+| 8:05 AM – 9:15 AM   | 	[3.2 Interactive Computing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.2_interactive_computing) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_2/)  |  [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)  |
+| 9:15 AM – 11:00 AM  |  [3.3 Getting Help](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.3_getting_help) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_3/) | [Nicole Wolter](https://www.sdsc.edu/research/researcher_spotlight/rose_peter.html) |
 | 11:00 AM – 11:30 AM |  Break/ Lunch |  |
-| 11:30 AM – 11:45 AM |  [3.4 Machine Learning (ML) Overview](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/3.4_machine_learning_overview) <br> Session was skipped, but resources are still availabe | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html) |
-| 11:45 AM – 12:15 PM |  [3.5 R on HPC Demo](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/3.5_r_on_hpc_demo) | [Paul Rodriguez](https://www.coursera.org/instructor/~13847302) |
-| 12:15 PM – 2:15 PM  |  [3.6 Spark](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/3.6_spark)   | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html) |
+| 11:30 AM – 11:45 AM |  [3.4 Code Migration](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.4_code_migration)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_4/)| [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) |
+| 11:45 AM – 12:15 PM |  [3.5 High Throughput Computing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.5_high_throughput_computing)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_5/)| [Marty Kandes](https://github.com/mkandes) |
+| 12:15 PM – 2:15 PM  |  [3.6 Linux Tools for File Processing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.6_linux_tools_file_processing)    [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_6/)| [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html) |
 
 [Back to Top](#top)
 
