@@ -18,23 +18,23 @@ For your convenience, we’ve create aliases and symlinks for the Summer Institu
 * data – symlink to staged data
 In the event that you need to explicitly use the reservation, training accounts will have access to SI2021RES for duration of SI
 
-## Agenda:<a name="agenda"></a>
+## Agenda<a name="agenda"></a>
 All times are in Pacific time.
 
-### Preparation Day (Wednesday, 06/22/22) <a name="agenda-prep"></a>
+### Preparation Day (Wednesday, 07/27/22) <a name="agenda-prep"></a>
 | **TIME (Pacific time)**       |   **TOPIC** | **PRESENTER** |
 | -------------------- |  ----------- | ----------- |
-| 9:00 AM - 9:20 AM	   |  [1.1 Welcome & Orientation](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/1.1_prep_day_welcome_and_orientation) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202206_ciml_si22/section1_1/)| [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)   |
-| 9:20 AM – 9:50 AM    |  [1.2 Access, Accounts, Login, Environment, Expanse User Portal](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/1.2_accounts_login_environments_expanse_portal) | [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)  |
-| 9:50 AM – 10:10 AM   |  [1.3 Running Jupyter Notebooks on Expanse ](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/1.3_running_jupyter_notebooks_expanse)| [Marty Kandes](https://www.linkedin.com/in/marty-kandes-b53a34144/) |
+| 9:00 AM - 9:20 AM	   |  [1.1 Accounts, Login, Enviroments](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/1.1_accessing_expanse) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section1_1/)| [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)   |
+| 9:20 AM – 9:50 AM    |  [1.2  Running Jobs on Expanse](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/1.2_accounts_login_environments_expanse_portal) | [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)  |
 | 10:10 AM – 10:30 AM	 |  Q&A, Wrap-up  | All |
 
 [Back to Top](#top)
 
- ### HPC & Parallel Concepts (Monday, 06/27/22)<a name="agenda-hpc-pc"></a>
+ ### HPC & Parallel Concepts (Monday, 08/01/22)<a name="agenda-hpc-pc"></a>
 | **TIME (Pacific time)**       | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
-| 8:00 AM – 8:05 AM    | 	[2.1 Quick Welcome](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/2.1_welcome_orientation_introductions)|  [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)  |
+| 8:00 AM – 8:15 PM    | Welcome|    |
+| 8:15 AM – 9:15 AM    | 	[2.1 Parallel Computing Concepts](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/2.1_parallel_computing_concepts)|  [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html)  |
 | 8:05 AM – 9:05 AM	   |  [2.2 Introduction HPC/Cyberinfrastructure](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/2.2_introduction_hpc_cyberinfrastructure)| [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html) |
 | 9:05 AM – 10:05 AM   | 	[2.3 CPU Computing - Hardware, Architecture, Software, Running Jobs](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/2.3_cpu_computing_hardware_architecture_and_software_infrastructure)| [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html) |
 | 10:05 AM – 11:35 AM	 |  [2.4 Data Management and File Systems](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/2.4_data_management_and_file_systems) | [Marty Kandes](https://www.linkedin.com/in/marty-kandes-b53a34144/) |
