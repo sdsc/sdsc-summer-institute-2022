@@ -44,53 +44,53 @@ All times are in Pacific time.
 
 [Back to Top](#top)
 
-### Scalable Machine Learning (Tuesday, 06/28/22)<a name="agenda-scalable-ml"></a>
+### Scalable Machine Learning (Tuesday, 08/02/22)<a name="agenda-scalable-ml"></a>
 | **TIME (Pacific time)**       | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
-| 8:00 AM – 8:05 AM   |  [3.1 Security](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.1_security) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_1/)  | [Nicole Wolter](https://www.linkedin.com/in/nicole-wolter-bbb94a3)  |
-| 8:05 AM – 9:15 AM   | 	[3.2 Interactive Computing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.2_interactive_computing) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_2/)  |  [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)  |
-| 9:15 AM – 11:00 AM  |  [3.3 Getting Help](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.3_getting_help) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_3/) | [Nicole Wolter](https://www.linkedin.com/in/nicole-wolter-bbb94a3) |
-| 11:00 AM – 11:30 AM |  Break/ Lunch |  |
-| 11:30 AM – 11:45 AM |  [3.4 Code Migration](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.4_code_migration)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_4/)| [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) |
-| 11:45 AM – 12:15 PM |  [3.5 High Throughput Computing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.5_high_throughput_computing)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_5/)| [Marty Kandes](https://github.com/mkandes) |
-| 12:15 PM – 2:15 PM  |  [3.6 Linux Tools for File Processing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.6_linux_tools_file_processing)    [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_6/)| [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html) |
+| 8:00 AM – 8:30 AM   |  [3.1 Security](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.1_security) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_1/)  | [Nicole Wolter](https://www.linkedin.com/in/nicole-wolter-bbb94a3)  |
+| 8:30 AM – 9:30 AM   | 	[3.2 Interactive Computing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.2_interactive_computing) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_2/)  |  [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)  |
+| 9:30 AM – 9:45 AM |  Break |  |
+| 9:45 AM – 10:30 AM  |  [3.3 Getting Help](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.3_getting_help) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_3/) | [Nicole Wolter](https://www.linkedin.com/in/nicole-wolter-bbb94a3) |
+| 10:30 AM – 11:30 AM|  [3.4 Code Migration](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.4_code_migration)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_4/)| [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) |
+| 11:30 AM – 11:45 AM |  Break |  |
+| 11:45 AM – 12:45 PM |  [3.5 High Throughput Computing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.5_high_throughput_computing)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_5/)| [Marty Kandes](https://github.com/mkandes) |
+| 12:45 PM – 1:45 PM |  [3.6 Linux Tools for File Processing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.6_linux_tools_file_processing)    [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_6/)| [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html) |
 
 [Back to Top](#top)
 
-### Deep Learning (Wednesday, 06/29/22)<a name="agenda-deep-ml"></a>
+### Deep Learning (Wednesday, 08/03/22)<a name="agenda-deep-ml"></a>
 | **TIME (Pacific time)** | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
-| 8:00 AM – 8:05 AM    |  [4.1a Intro to Git & GitHub](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.1a_intro_to_git_github)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_1a/)  | [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html) |
-| 8:05 AM – 9:05 AM    |  [4.1b Advanced Git & GitHub](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.1b_advanced_git_github)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_1b/) | [Marty Kandes](https://github.com/mkandes) |
-| 9:05 AM – 10:05 AM   |  [4.2a Python for HPC](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.2a_python_for_hpc)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_2a/) | [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html)  |
-| 10:05 AM – 10:50 AM	 |  [4.2b A Short Introduction to Data Science and its Applications](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.2b_data_science_applications)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_2b/) | [Ilkay Altintas](https://www.sdsc.edu/research/researcher_spotlight/altintas_ilkay.html) |
-| 10:55 AM – 11:25 AM	 |  Break/Lunch  |  |
-| 11:25 AM – 12:25 PM   |  [4.3a Performance Tuning](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.3a_performance_tuning)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_3a/)  | [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html) |
-| 12:25 PM – 1:25 PM    |  [4.3b Scalable Machine Learning](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.3b_scalable_ml)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_3b/)  | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html) |
-| 1:25 PM – 2:00 PM   | Q&A, wrap-up | |
+| 8:00 AM – 9:30 AM    |  [4.1a Intro to Git & GitHub](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.1a_intro_to_git_github)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_1a/)  | [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html) |
+| 8:00 AM – 9:30 AM    |  [4.1b Advanced Git & GitHub](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.1b_advanced_git_github)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_1b/) | [Marty Kandes](https://github.com/mkandes) |
+| 9:30 AM – 9:45 AM	 |  Break  |  |
+| 9:45 AM – 12:00 PM   |  [4.2a Python for HPC](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.2a_python_for_hpc)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_2a/) | [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html)  |
+| 9:45 AM – 12:00 PM	 |  [4.2b A Short Introduction to Data Science and its Applications](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.2b_data_science_applications)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_2b/) | [Ilkay Altintas](https://www.sdsc.edu/research/researcher_spotlight/altintas_ilkay.html) |
+| 12:00 PM – 2:30 PM   |  [4.3a Performance Tuning](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.3a_performance_tuning)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_3a/)  | [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html) |
+| 12:00 PM – 2:30 PM   |  [4.3b Scalable Machine Learning](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.3b_scalable_ml)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_3b/)  | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html) |
 
 [Back to Top](#top)
 
-### Deep Learning (Wednesday, 06/29/22)<a name="agenda-deep-ml"></a>
+### Deep Learning (Thursday, 08/04/22)<a name="agenda-deep-ml"></a>
 | **TIME (Pacific time)** | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
-| 8:00 AM – 8:05 AM    |  [5.1a Scientific Visualization for mesh based data with Visit](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.1a_scientific_vis_with_visit)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_1a/)  | [Amit Chourasia](https://www.sdsc.edu/research/researcher_spotlight/chourasia_amit.html) |
-| 8:05 AM – 9:05 AM    |  [5.1b Deep Learning - Part 1](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.1b_deep_learning_pt1)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_1b/) | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html) |
-| 9:05 AM – 10:05 AM   |  [5.2a GPU Computing and Programming](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.2a_gpu_computing_and_programming)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_2a/) | [Andreas Goetz](https://www.sdsc.edu/research/researcher_spotlight/goetz_andreas.html)  |
-| 10:05 AM – 10:50 AM	 |  [5.2b Deep Learning – Part 2](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.2b_deep_learning_pt2)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_2b/) | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html) |
-| 10:55 AM – 11:25 AM	 |  Break/Lunch  |  |
-| 11:25 AM – 12:25 PM   |  [5.3 An Introduction to Singularity: Containers for Scientific and High-Performance Computing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.3_intro_to_singularity)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_3/)  | [Martin Kandes](https://github.com/mkandes) |
-| 1:25 PM – 2:00 PM   | Q&A, wrap-up | |
+| 8:00 AM – 10:30 AM   |  [5.1a Scientific Visualization for mesh based data with Visit](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.1a_scientific_vis_with_visit)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_1a/)  | [Amit Chourasia](https://www.sdsc.edu/research/researcher_spotlight/chourasia_amit.html) |
+| 8:00 AM – 10:30 AM   |  [5.1b Deep Learning - Part 1](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.1b_deep_learning_pt1)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_1b/) | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html) |
+| 10:30 AM – 10:45 AM	 |  Break  |  |
+| 10:45 AM – 1:30 PM  |  [5.2a GPU Computing and Programming](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.2a_gpu_computing_and_programming)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_2a/) | [Andreas Goetz](https://www.sdsc.edu/research/researcher_spotlight/goetz_andreas.html)  |
+| 10:45 AM – 1:30 PM	 |  [5.2b Deep Learning – Part 2](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.2b_deep_learning_pt2)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_2b/) | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html) |
+| 1:30 PM – 2:00 PM  |  [5.3 An Introduction to Singularity: Containers for Scientific and High-Performance Computing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.3_intro_to_singularity)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_3/)  | [Martin Kandes](https://github.com/mkandes) |
 
 [Back to Top](#top)
 
-### Deep Learning (Wednesday, 06/29/22)<a name="agenda-deep-ml"></a>
+### Deep Learning (Friday, 08/05/22)<a name="agenda-deep-ml"></a>
 | **TIME (Pacific time)** | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
-| 8:00 AM – 8:05 AM    |  [6.1a Parallel Computing using MPI & Open MP](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/6.1a_parallel_computing_using_MPI_OpenMP)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section6_1a/)  | [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) |
-| 8:05 AM – 9:05 AM    |  [6.1b Information Visualization Concepts](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/6.1b_info_visualization_concepts)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section6_1b/) | [Amit Chourasia](https://www.sdsc.edu/research/researcher_spotlight/chourasia_amit.html) |
-| 9:05 AM – 10:05 AM   |  [6.2 Scaling up Interactive Data Analysis in Jupyter Lab: From Laptop to HPC](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/6.2_scaling_up_interactive_data_analysis_jupyter_lab)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section6_2/) | [Peter Rose](https://www.sdsc.edu/research/researcher_spotlight/rose_peter.html)  |
-| 1:25 PM – 2:00 PM   | Q&A, wrap-up | |
+| 8:00 AM – 11:00 AM    |  [6.1a Parallel Computing using MPI & Open MP](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/6.1a_parallel_computing_using_MPI_OpenMP)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section6_1a/)  | [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) |
+| 8:00 AM – 11:00 AM   |  [6.1b Information Visualization Concepts](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/6.1b_info_visualization_concepts)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section6_1b/) | [Amit Chourasia](https://www.sdsc.edu/research/researcher_spotlight/chourasia_amit.html) |
+| 11:00 AM – 11:15 AM | Break | |
+| 11:15 AM – 12:00 PM   |  [6.2 Scaling up Interactive Data Analysis in Jupyter Lab: From Laptop to HPC](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/6.2_scaling_up_interactive_data_analysis_jupyter_lab)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section6_2/) | [Peter Rose](https://www.sdsc.edu/research/researcher_spotlight/rose_peter.html)  |
+| 12:00 PM – 12:15 PM  | Closing Remarks | [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html) |
 
 [Back to Top](#top)
 
