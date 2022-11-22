@@ -21,7 +21,7 @@ In the event that you need to explicitly use the reservation, training accounts 
 ## Agenda<a name="agenda"></a>
 All times are in Pacific time.
 
-### Preparation Day (Wednesday, 07/27/22) <a name="agenda-prep"></a>
+### Day 1 (Wednesday, 07/27/22) <a name="agenda-1"></a>
 | **TIME (Pacific time)**       |   **TOPIC** | **PRESENTER** |
 | -------------------- |  ----------- | ----------- |
 | 9:00 AM - 9:25 AM	   |  [1.1 Accounts, Login, Enviroments](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/1.1_accessing_expanse) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section1_1/)| [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html)   |
@@ -30,7 +30,7 @@ All times are in Pacific time.
 
 [Back to Top](#top)
 
- ### HPC & Parallel Concepts (Monday, 08/01/22)<a name="agenda-hpc-pc"></a>
+ ### Day 2 (Monday, 08/01/22)<a name="agenda-2"></a>
 | **TIME (Pacific time)**       | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
 | 8:00 AM – 8:15 PM    | Welcome|    |
@@ -44,7 +44,7 @@ All times are in Pacific time.
 
 [Back to Top](#top)
 
-### Scalable Machine Learning (Tuesday, 08/02/22)<a name="agenda-scalable-ml"></a>
+### Day 3 (Tuesday, 08/02/22)<a name="agenda-3"></a>
 | **TIME (Pacific time)**       | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
 | 8:00 AM – 8:30 AM   |  [3.1 Security](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/3.1_security) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section3_1/)  | [Nicole Wolter](https://www.linkedin.com/in/nicole-wolter-bbb94a3)  |
@@ -58,7 +58,7 @@ All times are in Pacific time.
 
 [Back to Top](#top)
 
-### Deep Learning (Wednesday, 08/03/22)<a name="agenda-deep-ml"></a>
+### Day 4 (Wednesday, 08/03/22)<a name="agenda-4"></a>
 | **TIME (Pacific time)** | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
 | 8:00 AM – 9:30 AM    |  [4.1a Intro to Git & GitHub](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.1a_intro_to_git_github)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_1a/)  | [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html) |
@@ -71,7 +71,7 @@ All times are in Pacific time.
 
 [Back to Top](#top)
 
-### Deep Learning (Thursday, 08/04/22)<a name="agenda-deep-ml"></a>
+### Day 5 (Thursday, 08/04/22)<a name="agenda-5"></a>
 | **TIME (Pacific time)** | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
 | 8:00 AM – 10:30 AM   |  [5.1a Scientific Visualization for mesh based data with Visit](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.1a_scientific_vis_with_visit)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_1a/)  | [Amit Chourasia](https://www.sdsc.edu/research/researcher_spotlight/chourasia_amit.html) |
@@ -83,7 +83,7 @@ All times are in Pacific time.
 
 [Back to Top](#top)
 
-### Deep Learning (Friday, 08/05/22)<a name="agenda-deep-ml"></a>
+### Day 6 (Friday, 08/05/22)<a name="agenda-6"></a>
 | **TIME (Pacific time)** | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
 | 8:00 AM – 11:00 AM    |  [6.1a Parallel Computing using MPI & Open MP](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/6.1a_parallel_computing_using_MPI_OpenMP)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section6_1a/)  | [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) |
