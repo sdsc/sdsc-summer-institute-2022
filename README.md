@@ -87,7 +87,7 @@ All times are in Pacific time.
 ### Deep Learning (Wednesday, 06/29/22)<a name="agenda-deep-ml"></a>
 | **TIME (Pacific time)** | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
-| 8:00 AM – 8:05 AM    |  [6.1a Parallel Computing using MPI & Open MP](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/6.1a_parallel_computing_using_MPI_OpenMP)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section6_1a/  | [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) |
+| 8:00 AM – 8:05 AM    |  [6.1a Parallel Computing using MPI & Open MP](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/6.1a_parallel_computing_using_MPI_OpenMP)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section6_1a/)  | [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html) |
 | 8:05 AM – 9:05 AM    |  [6.1b Information Visualization Concepts](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/6.1b_info_visualization_concepts)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section6_1b/) | [Amit Chourasia](https://www.sdsc.edu/research/researcher_spotlight/chourasia_amit.html) |
 | 9:05 AM – 10:05 AM   |  [6.2 Scaling up Interactive Data Analysis in Jupyter Lab: From Laptop to HPC](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/6.2_scaling_up_interactive_data_analysis_jupyter_lab)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section6_2/) | [Peter Rose](https://www.sdsc.edu/research/researcher_spotlight/rose_peter.html)  |
 | 1:25 PM – 2:00 PM   | Q&A, wrap-up | |
