@@ -34,12 +34,13 @@ All times are in Pacific time.
 | **TIME (Pacific time)**       | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
 | 8:00 AM – 8:15 PM    | Welcome|    |
-| 8:15 AM – 9:15 AM    | 	[2.1 Parallel Computing Concepts](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/2.1_parallel_computing_concepts)|  [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html)  |
-| 8:05 AM – 9:05 AM	   |  [2.2 Introduction HPC/Cyberinfrastructure](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/2.2_introduction_hpc_cyberinfrastructure)| [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html) |
-| 9:05 AM – 10:05 AM   | 	[2.3 CPU Computing - Hardware, Architecture, Software, Running Jobs](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/2.3_cpu_computing_hardware_architecture_and_software_infrastructure)| [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html) |
-| 10:05 AM – 11:35 AM	 |  [2.4 Data Management and File Systems](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/2.4_data_management_and_file_systems) | [Marty Kandes](https://www.linkedin.com/in/marty-kandes-b53a34144/) |
-| 11:35 AM – 12:05 PM  | Break/Lunch |    |
-| 12:05 PM – 1:50 PM   |  [2.5  GPU Computing - Hardware architecture and software infrastructure](https://github.com/ciml-org/ciml-summer-institute-2022/tree/main/2.5_gpu_computing_hardware_architecture_and_software_infrastructure)| [Andreas Goetz](https://www.sdsc.edu/research/researcher_spotlight/goetz_andreas.html) |
+| 8:15 AM – 9:15 AM    | 	[2.1 Parallel Computing Concepts](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/2.1_parallel_computing_concepts) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section2_1/)|  [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html)  |
+| 9:15 AM – 10:00 AM	   |  [2.2 Hardware Overview](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/2.2_hardware_overview) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section2_2/)| [Andreas Goetz](https://www.sdsc.edu/research/researcher_spotlight/goetz_andreas.html) |
+| 10:00 AM – 10:15 AM  | Break |    |
+| 10:15 AM – 11:30 AM  | 	[2.3 Intermediate Linux](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/2.3_intermediate_linux) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section2_3/)| [Andreas Goetz](https://www.sdsc.edu/research/researcher_spotlight/goetz_andreas.html) |
+| 11:30 AM – 12:30 PM	 |  [2.4 Batch Computing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/2.4_batch_computing) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section2_4/) | [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html) |
+| 12:30 PM – 12:45 PM | Break |    |
+| 12:45 PM – 2:15 PM   |  [2.5 Data Management](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/2.5_data_management) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section2_5/)| [Marty Kandes](https://github.com/mkandes) |
 | 12:05 PM – 1:50 PM   |  Q&A, Wrap-up | All |
 
 [Back to Top](#top)
