@@ -41,7 +41,6 @@ All times are in Pacific time.
 | 11:30 AM – 12:30 PM	 |  [2.4 Batch Computing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/2.4_batch_computing) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section2_4/) | [Mary Thomas](https://www.sdsc.edu/research/researcher_spotlight/thomas_mary.html) |
 | 12:30 PM – 12:45 PM | Break |    |
 | 12:45 PM – 2:15 PM   |  [2.5 Data Management](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/2.5_data_management) [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section2_5/)| [Marty Kandes](https://github.com/mkandes) |
-| 12:05 PM – 1:50 PM   |  Q&A, Wrap-up | All |
 
 [Back to Top](#top)
 
