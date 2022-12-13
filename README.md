@@ -67,8 +67,7 @@ All times are in Pacific time.
 | 9:45 AM – 12:00 PM  |  [4.2a Python for HPC](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.2a_python_for_hpc)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_2a/) | [Mahidhar Tatineni](https://www.sdsc.edu/research/researcher_spotlight/tatineni_mahidhar.html)  |
 | 9:45 AM – 12:00 PM	|  [4.2b A Short Introduction to Data Science and its Applications](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.2b_data_science_applications)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_2b/) | [Ilkay Altintas](https://www.sdsc.edu/research/researcher_spotlight/altintas_ilkay.html) [Subhasis Dasgupta](https://www.sdsc.edu/research/researcher_spotlight/altintas_ilkay.html) [Shweta Purawat](https://www.sdsc.edu/research/researcher_spotlight/altintas_ilkay.html)|
 | 12:00 PM – 2:30 PM  |  [4.3a Performance Tuning](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.3a_performance_tuning)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_3a/)  | [Robert Sinkovits](https://www.sdsc.edu/research/researcher_spotlight/sinkovits_robert.html) |
-| 12:00 PM – 2:30 PM  |  [4.3b Scalable Machine Learning](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.3b_scalable_ml)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_3b/)  | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html)\
-[Paul Rodriguez](https://www.coursera.org/instructor/~13847302)|
+| 12:00 PM – 2:30 PM  |  [4.3b Scalable Machine Learning](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/4.3b_scalable_ml)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section4_3b/)  | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html) <br />[Paul Rodriguez](https://www.coursera.org/instructor/~13847302)|
 
 [Back to Top](#top)
 
@@ -76,12 +75,10 @@ All times are in Pacific time.
 | **TIME (Pacific time)** | **TOPIC** | **PRESENTER** |
 | -------------------- | ----------- | ----------- |
 | 8:00 AM – 10:30 AM  |  [5.1a Scientific Visualization for mesh based data with Visit](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.1a_scientific_vis_with_visit)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_1a/)  | [Amit Chourasia](https://www.sdsc.edu/research/researcher_spotlight/chourasia_amit.html) |
-| 8:00 AM – 10:30 AM  |  [5.1b Deep Learning - Part 1](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.1b_deep_learning_pt1)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_1b/) | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html)\
-[Paul Rodriguez](https://www.coursera.org/instructor/~13847302)|
+| 8:00 AM – 10:30 AM  |  [5.1b Deep Learning - Part 1](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.1b_deep_learning_pt1)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_1b/) | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html) <br />[Paul Rodriguez](https://www.coursera.org/instructor/~13847302)|
 | 10:30 AM – 10:45 AM	|  Break  |  |
 | 10:45 AM – 1:30 PM |  [5.2a GPU Computing and Programming](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.2a_gpu_computing_and_programming)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_2a/) | [Andreas Goetz](https://www.sdsc.edu/research/researcher_spotlight/goetz_andreas.html)  |
-| 10:45 AM – 1:30 PM	|  [5.2b Deep Learning – Part 2](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.2b_deep_learning_pt2)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_2b/) | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html)\
-[Paul Rodriguez](https://www.coursera.org/instructor/~13847302)|
+| 10:45 AM – 1:30 PM	|  [5.2b Deep Learning – Part 2](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.2b_deep_learning_pt2)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_2b/) | [Mai Nguyen](https://www.sdsc.edu/research/researcher_spotlight/nguyen_mai.html) <br />[Paul Rodriguez](https://www.coursera.org/instructor/~13847302)|
 | 1:30 PM – 2:00 PM |  [5.3 An Introduction to Singularity: Containers for Scientific and High-Performance Computing](https://github.com/sdsc/sdsc-summer-institute-2022/tree/main/5.3_intro_to_singularity)  [ [Interactive Video] ](https://education.sdsc.edu/training/interactive/202208_sdscsi/section5_3/)  | [Martin Kandes](https://github.com/mkandes) |
 
 [Back to Top](#top)
