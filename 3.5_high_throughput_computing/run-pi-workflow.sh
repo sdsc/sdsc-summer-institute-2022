@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 #SBATCH --job-name=run-pi-workflow
-#SBATCH --account=crl155
-#SBATCH --reservation=SI2022DAY2
+#SBATCH --account=gue998
+#SBATCH --reservation=hpcds23cpu
 #SBATCH --partition=shared
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
